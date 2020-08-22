@@ -27,11 +27,15 @@ class _ElementMainPageState extends State<ElementMainPage> {
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-
                     children: [
                       Row(
                         children: [
-                          Text("DreamWalker"),
+                          Text(
+                            "DreamWalker",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Spacer(),
                           Container(
                             height: 32,
@@ -43,7 +47,6 @@ class _ElementMainPageState extends State<ElementMainPage> {
                           IconButton(icon: Icon(Icons.list), onPressed: () {})
                         ],
                       ),
-
                       Text(
                         "Chemical",
                         style: TextStyle(fontSize: 38),
