@@ -68,7 +68,9 @@ class _ElementMainPageState extends State<ElementMainPage> {
                 Expanded(
                     flex: 2,
                     child: Placeholder()),
-                Expanded(child: Placeholder()),
+                Expanded(
+                    flex: 8,
+                    child: Placeholder()),
               ],
             )),
           ],
