@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ChemicalElementApp extends StatelessWidget {
@@ -42,7 +43,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                             width: 32,
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey),
-                            
+                            shape: BoxShape.circle
                             ),
                             child: Center(
                               child: Icon(Icons.search),
