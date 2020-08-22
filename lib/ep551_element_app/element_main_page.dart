@@ -63,10 +63,31 @@ class _ElementMainPageState extends State<ElementMainPage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 8, child: Placeholder()),
+            Expanded(flex: 8, child: Row(
+              children: [
+                Expanded(child: Placeholder()),
+                Expanded(child: Placeholder()),
+              ],
+            )),
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
