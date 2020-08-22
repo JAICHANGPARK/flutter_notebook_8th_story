@@ -23,7 +23,9 @@ class _ElementMainPageState extends State<ElementMainPage> {
           children: [
             Expanded(flex: 3, child: Column(
               children: [
-
+                Row(children: [
+                  
+                ],)
               ],
             )),
             Expanded(flex: 8, child: Placeholder()),
@@ -33,3 +35,22 @@ class _ElementMainPageState extends State<ElementMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
