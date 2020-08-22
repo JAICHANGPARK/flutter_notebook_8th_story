@@ -24,7 +24,14 @@ class _ElementMainPageState extends State<ElementMainPage> {
             Expanded(flex: 3, child: Column(
               children: [
                 Row(children: [
-                  
+                  Text("DreamWalker"),
+                  Container(
+                    height: 32,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.grey),
+                    ),
+                  )
                 ],)
               ],
             )),
