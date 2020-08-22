@@ -4,6 +4,21 @@ import 'package:flutter/material.dart';
 class ChemicalElementApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: ElementMainPage(),
+    );
   }
 }
+
+class ElementMainPage extends StatefulWidget {
+  @override
+  _ElementMainPageState createState() => _ElementMainPageState();
+}
+
+class _ElementMainPageState extends State<ElementMainPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
