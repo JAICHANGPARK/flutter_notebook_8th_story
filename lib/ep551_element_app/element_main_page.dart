@@ -21,24 +21,37 @@ class _ElementMainPageState extends State<ElementMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(flex: 3, child: Column(
-              children: [
-                Row(children: [
-                  Text("DreamWalker"),
-                  Spacer(),
-                  Container(
-                    height: 32,
-                    width: 32,
-                    decoration: BoxDecoration(
-                      border: Border.all(color: Colors.grey),
-                    ),
+            Expanded(
+                flex: 3,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text("DreamWalker"),
+                          Spacer(),
+                          Container(
+                            height: 32,
+                            width: 32,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey),
+                            ),
+                          ),
+                          IconButton(icon: Icon(Icons.list), onPressed: () {})
+                        ],
+                      ),
+                      Text(
+                        "Chemical",
+                        style: TextStyle(fontSize: 38),
+                      ),
+                      Text(
+                        "elements",
+                        style: TextStyle(fontSize: 38, fontWeight: FontWeight.bold),
+                      )
+                    ],
                   ),
-                  IconButton(icon: Icon(Icons.list), onPressed: (){
-
-                  })
-                ],)
-              ],
-            )),
+                )),
             Expanded(flex: 8, child: Placeholder()),
           ],
         ),
@@ -46,22 +59,3 @@ class _ElementMainPageState extends State<ElementMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
