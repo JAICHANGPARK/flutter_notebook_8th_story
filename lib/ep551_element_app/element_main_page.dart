@@ -16,6 +16,7 @@ class ElementMainPage extends StatefulWidget {
 }
 
 class _ElementMainPageState extends State<ElementMainPage> {
+  PageController _pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,7 +71,11 @@ class _ElementMainPageState extends State<ElementMainPage> {
                     child: Placeholder()),
                 Expanded(
                     flex: 8,
-                    child: Placeholder()),
+                    child: Stack(
+                      children: [
+
+                      ],
+                    )),
               ],
             )),
           ],
