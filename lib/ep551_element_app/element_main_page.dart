@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class ChemicalElementApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -22,49 +21,11 @@ class _ElementMainPageState extends State<ElementMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
+            Expanded(flex: 2, child: Placeholder()),
+            Expanded(flex: 8, child: Placeholder()),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
