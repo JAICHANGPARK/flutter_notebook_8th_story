@@ -42,6 +42,10 @@ class _ElementMainPageState extends State<ElementMainPage> {
                             width: 32,
                             decoration: BoxDecoration(
                               border: Border.all(color: Colors.grey),
+                            
+                            ),
+                            child: Center(
+                              child: Icon(Icons.search),
                             ),
                           ),
                           IconButton(icon: Icon(Icons.list), onPressed: () {})
