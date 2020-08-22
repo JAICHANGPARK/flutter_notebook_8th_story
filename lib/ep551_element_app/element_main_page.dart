@@ -25,13 +25,17 @@ class _ElementMainPageState extends State<ElementMainPage> {
               children: [
                 Row(children: [
                   Text("DreamWalker"),
+                  Spacer(),
                   Container(
                     height: 32,
                     width: 32,
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.grey),
                     ),
-                  )
+                  ),
+                  IconButton(icon: Icon(Icons.list), onPressed: (){
+
+                  })
                 ],)
               ],
             )),
