@@ -87,7 +87,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                           width: 6,
                             height: MediaQuery.of(context).size.height / 2.6,
                             decoration: BoxDecoration(
-                              color: Colors.grey,
+                              color: Colors.grey[400],
                               borderRadius: BorderRadius.circular(8)
                             ),
                             child: Stack(
