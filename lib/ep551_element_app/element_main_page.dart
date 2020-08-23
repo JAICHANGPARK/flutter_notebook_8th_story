@@ -17,6 +17,7 @@ class ElementMainPage extends StatefulWidget {
 
 class _ElementMainPageState extends State<ElementMainPage> {
   PageController _pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,10 +43,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                           Container(
                             height: 32,
                             width: 32,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey),
-                            shape: BoxShape.circle
-                            ),
+                            decoration: BoxDecoration(border: Border.all(color: Colors.grey), shape: BoxShape.circle),
                             child: Center(
                               child: Icon(Icons.search),
                             ),
@@ -64,39 +62,21 @@ class _ElementMainPageState extends State<ElementMainPage> {
                     ],
                   ),
                 )),
-            Expanded(flex: 8, child: Row(
-              children: [
-                Expanded(
-                    flex: 2,
-                    child: Placeholder()),
-                Expanded(
-                    flex: 8,
-                    child: Stack(
-                      children: [
-
-                      ],
-                    )),
-              ],
-            )),
+            Expanded(
+                flex: 8,
+                child: Row(
+                  children: [
+                    Expanded(flex: 2, child: Placeholder()),
+                    Expanded(
+                        flex: 8,
+                        child: Stack(
+                          children: [],
+                        )),
+                  ],
+                )),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
