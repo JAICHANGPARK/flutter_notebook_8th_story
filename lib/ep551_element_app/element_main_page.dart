@@ -17,7 +17,7 @@ class ElementMainPage extends StatefulWidget {
 
 class _ElementMainPageState extends State<ElementMainPage> {
   PageController _pageController = PageController(viewportFraction: 0.7);
-  double _indicatorHeight = 0.0;
+  double _indicatorHeight = 35.45;
   @override
   void initState() {
     // TODO: implement initState
@@ -27,7 +27,8 @@ class _ElementMainPageState extends State<ElementMainPage> {
 
   @override
   Widget build(BuildContext context) {
-    _indicatorHeight = MediaQuery.of(context).size.height / 2.6 / 8;
+//    _indicatorHeight = MediaQuery.of(context).size.height / 2.6 / 8;
+//    print(MediaQuery.of(context).size.height / 2.6 / 8);
 
     return Scaffold(
       body: SafeArea(
@@ -124,14 +125,29 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                 controller: _pageController,
                                 onPageChanged: (value){
                                   setState(() {
-                                    _indicatorHeight = _indicatorHeight * value;
+                                    if(value == 0){
+                                      _indicatorHeight = MediaQuery.of(context).size.height / 2.6 / 8;
+                                    }else{
+                                      _indicatorHeight = MediaQuery.of(context).size.height / 2.6 / 8 * (value + 1);
+                                    }
+                                    print(_indicatorHeight);
+
+                                    print(value.toString());
                                   });
 
                                 },
                                 children: [
                                   Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(
                                       color: Colors.red
+                                    ),
+                                    child: Center(),
+                                  ),
+                                  Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 16),
+                                    decoration: BoxDecoration(
+                                        color: Colors.red
                                     ),
                                     child: Center(),
                                   )
