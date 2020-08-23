@@ -93,7 +93,6 @@ class _ElementMainPageState extends State<ElementMainPage> {
                             child: Stack(
                               children: [
                                 AnimatedContainer(
-
                                   height: _indicatorHeight,
                                   decoration: BoxDecoration(
                                       color: Colors.red,
@@ -115,7 +114,29 @@ class _ElementMainPageState extends State<ElementMainPage> {
                     Expanded(
                         flex: 8,
                         child: Stack(
-                          children: [],
+                          children: [
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              bottom: 160,
+                              top: 0,
+                              child: PageView(
+                                controller: _pageController,
+                                onPageChanged: (value){
+                                  setState(() {
+                                    _indicatorHeight = _indicatorHeight * value;
+                                  });
+
+                                },
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(),
+                                    child: Center(),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
                         )),
                   ],
                 )),
