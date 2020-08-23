@@ -70,7 +70,13 @@ class _ElementMainPageState extends State<ElementMainPage> {
                       children: [
                         Text("01",style: TextStyle(
                           color: Colors.red
-                        ),)
+                        ),),
+                        Container(
+                          height: MediaQuery.of(context).size.height / 2,
+                          decoration: BoxDecoration(
+                            color: Colors.grey
+                          ),
+                        )
                       ],
                     )),
                     Expanded(
