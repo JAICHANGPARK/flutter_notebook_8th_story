@@ -96,7 +96,8 @@ class _ElementMainPageState extends State<ElementMainPage> {
 
                                   height: _indicatorHeight,
                                   decoration: BoxDecoration(
-                                      color: Colors.red
+                                      color: Colors.red,
+                                    borderRadius: BorderRadius.circular(8)
                                   ), duration: Duration(
                                     milliseconds: 500
                                 ),
