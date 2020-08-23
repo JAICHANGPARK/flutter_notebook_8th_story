@@ -90,13 +90,19 @@ class _ElementMainPageState extends State<ElementMainPage> {
                               color: Colors.grey,
                               borderRadius: BorderRadius.circular(8)
                             ),
-                            child: AnimatedContainer(
-                              height: _indicatorHeight,
-                              decoration: BoxDecoration(
-                                color: Colors.red
-                              ), duration: Duration(
-                              milliseconds: 500
-                            ),
+                            child: Stack(
+                              children: [
+                                AnimatedContainer(
+
+                                  height: _indicatorHeight,
+                                  decoration: BoxDecoration(
+                                      color: Colors.red
+                                  ), duration: Duration(
+                                    milliseconds: 500
+                                ),
+                                ),
+                              ],
+
                             ),
                           ),
                         ),
