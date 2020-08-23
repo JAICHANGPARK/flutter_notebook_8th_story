@@ -80,7 +80,8 @@ class _ElementMainPageState extends State<ElementMainPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("01",style: TextStyle(
-                          color: Colors.red
+                          color: Colors.red,
+                            fontWeight: FontWeight.bold
                         ),),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 12),
@@ -108,7 +109,8 @@ class _ElementMainPageState extends State<ElementMainPage> {
                           ),
                         ),
                         Text("08",style: TextStyle(
-                            color: Colors.red
+                            color: Colors.red,
+                          fontWeight: FontWeight.bold
                         ),),
                       ],
                     )),
