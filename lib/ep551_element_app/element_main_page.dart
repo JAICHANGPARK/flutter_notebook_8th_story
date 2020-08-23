@@ -17,9 +17,18 @@ class ElementMainPage extends StatefulWidget {
 
 class _ElementMainPageState extends State<ElementMainPage> {
   PageController _pageController = PageController();
+  double _indicatorHeight = 0.0;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+  }
 
   @override
   Widget build(BuildContext context) {
+    _indicatorHeight = MediaQuery.of(context).size.height / 2.6 / 8;
+
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -75,11 +84,19 @@ class _ElementMainPageState extends State<ElementMainPage> {
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 12),
                           child: Container(
-                          width: 8,
-                            height: MediaQuery.of(context).size.height / 2,
+                          width: 6,
+                            height: MediaQuery.of(context).size.height / 2.6,
                             decoration: BoxDecoration(
                               color: Colors.grey,
                               borderRadius: BorderRadius.circular(8)
+                            ),
+                            child: AnimatedContainer(
+                              height: _indicatorHeight,
+                              decoration: BoxDecoration(
+                                color: Colors.red
+                              ), duration: Duration(
+                              milliseconds: 500
+                            ),
                             ),
                           ),
                         ),
