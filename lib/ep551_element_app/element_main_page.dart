@@ -67,16 +67,20 @@ class _ElementMainPageState extends State<ElementMainPage> {
                 child: Row(
                   children: [
                     Expanded(flex: 2, child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text("01",style: TextStyle(
                           color: Colors.red
                         ),),
-                        Container(
-                        width: 8,
-                          height: MediaQuery.of(context).size.height / 2,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(8)
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 12),
+                          child: Container(
+                          width: 8,
+                            height: MediaQuery.of(context).size.height / 2,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(8)
+                            ),
                           ),
                         ),
                         Text("08",style: TextStyle(
