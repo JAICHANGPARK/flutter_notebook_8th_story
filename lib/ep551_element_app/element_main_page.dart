@@ -72,11 +72,16 @@ class _ElementMainPageState extends State<ElementMainPage> {
                           color: Colors.red
                         ),),
                         Container(
+                        width: 8,
                           height: MediaQuery.of(context).size.height / 2,
                           decoration: BoxDecoration(
-                            color: Colors.grey
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(8)
                           ),
-                        )
+                        ),
+                        Text("08",style: TextStyle(
+                            color: Colors.red
+                        ),),
                       ],
                     )),
                     Expanded(
