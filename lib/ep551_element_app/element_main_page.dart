@@ -121,7 +121,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                               right: 0,
                               bottom: 160,
                               top: 0,
-                              child: PageView(
+                              child: PageView.builder(
                                 controller: _pageController,
                                 onPageChanged: (value){
                                   setState(() {
@@ -136,22 +136,17 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   });
 
                                 },
-                                children: [
-                                  Container(
-                                    margin: EdgeInsets.symmetric(horizontal: 16),
-                                    decoration: BoxDecoration(
-                                      color: Colors.red
-                                    ),
-                                    child: Center(),
-                                  ),
-                                  Container(
+                                itemCount: 8,
+                                itemBuilder: (context, index){
+                                  return  Container(
                                     margin: EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(
                                         color: Colors.red
                                     ),
                                     child: Center(),
-                                  )
-                                ],
+                                  );
+                                },
+
                               ),
                             )
                           ],
