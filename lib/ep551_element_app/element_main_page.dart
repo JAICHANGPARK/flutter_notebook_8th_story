@@ -16,7 +16,7 @@ class ElementMainPage extends StatefulWidget {
 }
 
 class _ElementMainPageState extends State<ElementMainPage> {
-  PageController _pageController = PageController();
+  PageController _pageController = PageController(viewportFraction: 0.7);
   double _indicatorHeight = 0.0;
   @override
   void initState() {
@@ -130,7 +130,9 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                 },
                                 children: [
                                   Container(
-                                    decoration: BoxDecoration(),
+                                    decoration: BoxDecoration(
+                                      color: Colors.red
+                                    ),
                                     child: Center(),
                                   )
                                 ],
