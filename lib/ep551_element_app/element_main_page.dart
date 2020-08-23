@@ -66,7 +66,13 @@ class _ElementMainPageState extends State<ElementMainPage> {
                 flex: 8,
                 child: Row(
                   children: [
-                    Expanded(flex: 2, child: Placeholder()),
+                    Expanded(flex: 2, child: Column(
+                      children: [
+                        Text("01",style: TextStyle(
+                          color: Colors.red
+                        ),)
+                      ],
+                    )),
                     Expanded(
                         flex: 8,
                         child: Stack(
@@ -80,3 +86,17 @@ class _ElementMainPageState extends State<ElementMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
