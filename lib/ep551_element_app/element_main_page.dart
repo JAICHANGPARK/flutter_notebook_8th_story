@@ -140,7 +140,8 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                 itemBuilder: (context, index) {
                                   return Container(
                                     margin: EdgeInsets.symmetric(horizontal: 16),
-                                    decoration: BoxDecoration(color: Colors.red),
+                                    decoration: BoxDecoration(color: Colors.red,
+                                    borderRadius: BorderRadius.circular(24)),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
