@@ -141,6 +141,14 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   return Container(
                                     margin: EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.yellow,
+                                          spreadRadius: 4,
+                                          blurRadius: 4,
+                                          offset: Offset(0, 10)
+                                        )
+                                      ],
                                         color: Colors.red,
                                         image: DecorationImage(
                                             image: NetworkImage(
