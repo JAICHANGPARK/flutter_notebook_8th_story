@@ -18,11 +18,11 @@ class ElementMainPage extends StatefulWidget {
 class _ElementMainPageState extends State<ElementMainPage> {
   PageController _pageController = PageController(viewportFraction: 0.7);
   double _indicatorHeight = 35.45;
+
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-
   }
 
   @override
@@ -55,7 +55,10 @@ class _ElementMainPageState extends State<ElementMainPage> {
                             width: 32,
                             decoration: BoxDecoration(border: Border.all(color: Colors.grey), shape: BoxShape.circle),
                             child: Center(
-                              child: Icon(Icons.search, size: 18,),
+                              child: Icon(
+                                Icons.search,
+                                size: 18,
+                              ),
                             ),
                           ),
                           IconButton(icon: Icon(Icons.list), onPressed: () {})
@@ -76,44 +79,40 @@ class _ElementMainPageState extends State<ElementMainPage> {
                 flex: 8,
                 child: Row(
                   children: [
-                    Expanded(flex: 2, child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text("01",style: TextStyle(
-                          color: Colors.red,
-                            fontWeight: FontWeight.bold
-                        ),),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 12),
-                          child: Container(
-                          width: 6,
-                            height: MediaQuery.of(context).size.height / 2.6,
-                            decoration: BoxDecoration(
-                              color: Colors.grey[400],
-                              borderRadius: BorderRadius.circular(8)
+                    Expanded(
+                        flex: 2,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "01",
+                              style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
                             ),
-                            child: Stack(
-                              children: [
-                                AnimatedContainer(
-                                  height: _indicatorHeight,
-                                  decoration: BoxDecoration(
-                                      color: Colors.red,
-                                    borderRadius: BorderRadius.circular(8)
-                                  ), duration: Duration(
-                                    milliseconds: 500
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 12),
+                              child: Container(
+                                width: 6,
+                                height: MediaQuery.of(context).size.height / 2.6,
+                                decoration:
+                                    BoxDecoration(color: Colors.grey[400], borderRadius: BorderRadius.circular(8)),
+                                child: Stack(
+                                  children: [
+                                    AnimatedContainer(
+                                      height: _indicatorHeight,
+                                      decoration:
+                                          BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
+                                      duration: Duration(milliseconds: 500),
+                                    ),
+                                  ],
                                 ),
-                                ),
-                              ],
-
+                              ),
                             ),
-                          ),
-                        ),
-                        Text("08",style: TextStyle(
-                            color: Colors.red,
-                          fontWeight: FontWeight.bold
-                        ),),
-                      ],
-                    )),
+                            Text(
+                              "08",
+                              style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        )),
                     Expanded(
                         flex: 8,
                         child: Stack(
@@ -125,30 +124,26 @@ class _ElementMainPageState extends State<ElementMainPage> {
                               top: 0,
                               child: PageView.builder(
                                 controller: _pageController,
-                                onPageChanged: (value){
+                                onPageChanged: (value) {
                                   setState(() {
-                                    if(value == 0){
+                                    if (value == 0) {
                                       _indicatorHeight = MediaQuery.of(context).size.height / 2.6 / 8;
-                                    }else{
+                                    } else {
                                       _indicatorHeight = MediaQuery.of(context).size.height / 2.6 / 8 * (value + 1);
                                     }
                                     print(_indicatorHeight);
 
                                     print(value.toString());
                                   });
-
                                 },
                                 itemCount: 8,
-                                itemBuilder: (context, index){
-                                  return  Container(
+                                itemBuilder: (context, index) {
+                                  return Container(
                                     margin: EdgeInsets.symmetric(horizontal: 16),
-                                    decoration: BoxDecoration(
-                                        color: Colors.red
-                                    ),
+                                    decoration: BoxDecoration(color: Colors.red),
                                     child: Center(),
                                   );
                                 },
-
                               ),
                             )
                           ],
@@ -161,17 +156,3 @@ class _ElementMainPageState extends State<ElementMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
