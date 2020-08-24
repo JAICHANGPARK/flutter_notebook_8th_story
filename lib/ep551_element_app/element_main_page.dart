@@ -142,6 +142,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                     margin: EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(color: Colors.red,
                                     borderRadius: BorderRadius.circular(24)),
+                                    padding: EdgeInsets.all(16),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
