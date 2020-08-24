@@ -158,9 +158,12 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                         Text("diatomic nonmetal", style: TextStyle(
                                           fontSize: 16,
                                           color: Colors.white,
-                                          
+
                                         ),),
-                                        Text("Bromine")
+                                        Text("Bromine", style: TextStyle(
+                                          fontSize: 24,
+                                          color: Colors.white
+                                        ),)
                                       ],
                                     ),
                                   );
