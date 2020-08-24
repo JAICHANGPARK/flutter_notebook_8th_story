@@ -167,6 +167,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                             color: Colors.white.withOpacity(0.5)
                                           ),
                                         ),
+                                        SizedBox(height: 8,),
                                         Text(
                                           "diatomic nonmetal",
                                           style: TextStyle(
