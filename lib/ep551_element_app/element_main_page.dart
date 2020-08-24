@@ -139,14 +139,14 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                 itemCount: 8,
                                 itemBuilder: (context, index) {
                                   return Container(
-                                    margin: EdgeInsets.symmetric(horizontal: 16),
+                                    margin: EdgeInsets.only(left: 16, right: 16, bottom: 24),
                                     decoration: BoxDecoration(
                                       boxShadow: [
                                         BoxShadow(
-                                          color: Colors.yellow,
-                                          spreadRadius: 4,
+                                          color: Colors.yellow.withOpacity(0.2),
+                                          spreadRadius: 8,
                                           blurRadius: 4,
-                                          offset: Offset(0, 10)
+                                          offset: Offset(0, 24)
                                         )
                                       ],
                                         color: Colors.red,
