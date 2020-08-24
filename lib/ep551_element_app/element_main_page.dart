@@ -141,7 +141,11 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   return Container(
                                     margin: EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(color: Colors.red),
-                                    child: Center(),
+                                    child: Column(
+                                      children: [
+                                        
+                                      ],
+                                    ),
                                   );
                                 },
                               ),
