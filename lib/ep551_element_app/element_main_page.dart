@@ -160,7 +160,13 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Spacer(),
-                                        Container(),
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                            color: Colors.white.withOpacity(0.5)
+                                          ),
+                                        ),
                                         Text(
                                           "diatomic nonmetal",
                                           style: TextStyle(
