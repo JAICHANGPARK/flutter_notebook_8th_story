@@ -141,6 +141,12 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   return Container(
                                     margin: EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(color: Colors.red,
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2017/08/25/18/48/art-2681039_960_720.jpg"
+                                      ),
+                                      fit: BoxFit.cover
+                                    ),
                                     borderRadius: BorderRadius.circular(24)),
                                     padding: EdgeInsets.all(16),
                                     child: Column(
