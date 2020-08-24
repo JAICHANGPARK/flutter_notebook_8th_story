@@ -164,7 +164,11 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                           height: 48,
                                           width: 48,
                                           decoration: BoxDecoration(
-                                            color: Colors.white.withOpacity(0.5)
+                                            color: Colors.white.withOpacity(0.5),
+                                            borderRadius: BorderRadius.circular(8)
+                                          ),
+                                          child: Center(
+                                            child: Text("BR", style: TextStyle(),),
                                           ),
                                         ),
                                         SizedBox(height: 8,),
