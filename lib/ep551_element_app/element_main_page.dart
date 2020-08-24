@@ -143,7 +143,10 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                     decoration: BoxDecoration(color: Colors.red),
                                     child: Column(
                                       children: [
-                                        
+
+                                        Spacer(),
+                                        Container()
+
                                       ],
                                     ),
                                   );
