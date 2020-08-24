@@ -142,11 +142,13 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                     margin: EdgeInsets.symmetric(horizontal: 16),
                                     decoration: BoxDecoration(color: Colors.red),
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
 
                                         Spacer(),
-                                        Container()
-
+                                        Container(),
+                                        Text("diatomic nonmetal"),
+                                        Text("Bromine")
                                       ],
                                     ),
                                   );
