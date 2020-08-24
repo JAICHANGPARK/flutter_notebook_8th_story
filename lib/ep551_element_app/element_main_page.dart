@@ -140,30 +140,34 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                 itemBuilder: (context, index) {
                                   return Container(
                                     margin: EdgeInsets.symmetric(horizontal: 16),
-                                    decoration: BoxDecoration(color: Colors.red,
-                                    image: DecorationImage(
-                                      image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2017/08/25/18/48/art-2681039_960_720.jpg"
-                                      ),
-                                      fit: BoxFit.cover
-                                    ),
-                                    borderRadius: BorderRadius.circular(24)),
+                                    decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2017/08/25/18/48/art-2681039_960_720.jpg"),
+                                            fit: BoxFit.cover),
+                                        borderRadius: BorderRadius.circular(24)),
                                     padding: EdgeInsets.all(16),
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-
                                         Spacer(),
                                         Container(),
-                                        Text("diatomic nonmetal", style: TextStyle(
-                                          fontSize: 16,
-                                          color: Colors.white,
-
-                                        ),),
-                                        Text("Bromine", style: TextStyle(
-                                          fontSize: 24,
-                                          color: Colors.white
-                                        ),)
+                                        Text(
+                                          "diatomic nonmetal",
+                                          style: TextStyle(
+                                            fontSize: 16,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          "Bromine",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                            color: Colors.white,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        )
                                       ],
                                     ),
                                   );
