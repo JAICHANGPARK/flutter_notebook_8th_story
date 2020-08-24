@@ -144,9 +144,9 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                       boxShadow: [
                                         BoxShadow(
                                           color: Colors.yellow.withOpacity(0.2),
-                                          spreadRadius: 8,
+                                          spreadRadius: -4,
                                           blurRadius: 4,
-                                          offset: Offset(0, 24)
+                                          offset: Offset(-4, 24)
                                         )
                                       ],
                                         color: Colors.red,
@@ -181,6 +181,11 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   );
                                 },
                               ),
+                            ),
+                            Positioned(
+                              bottom: 16,
+                              left: 16,
+                              child: Column(),
                             )
                           ],
                         )),
