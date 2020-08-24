@@ -168,7 +168,11 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                             borderRadius: BorderRadius.circular(8)
                                           ),
                                           child: Center(
-                                            child: Text("BR", style: TextStyle(),),
+                                            child: Text("Br", style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                              fontSize: 18
+                                            ),),
                                           ),
                                         ),
                                         SizedBox(height: 8,),
