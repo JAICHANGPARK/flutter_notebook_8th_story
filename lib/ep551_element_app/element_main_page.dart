@@ -232,7 +232,18 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                     child: ListView(
                                       scrollDirection: Axis.horizontal,
                                       children: [
-                                        
+                                        Column(
+                                          children: [
+                                            Container(
+                                              height: 54,
+                                              width: 54,
+                                              decoration: BoxDecoration(
+                                                color: Colors.red
+                                              ),
+                                            ),
+                                            Text("Nonmetal")
+                                          ],
+                                        )
                                       ],
                                     ),
                                   )
