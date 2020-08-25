@@ -202,7 +202,12 @@ class _ElementMainPageState extends State<ElementMainPage> {
                               left: 16,
                               child: Column(
                                 children: [
-                                  
+                                  Row(
+                                    children: [
+                                      Text("01"),
+                                      Text("01")
+                                    ],
+                                  )
                                 ],
                               ),
                             )
