@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class ChemicalElementApp extends StatelessWidget {
   @override
@@ -219,11 +220,21 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                         ),
                                         child: Center(
                                           child: Text("See all",style: TextStyle(
-                                            fontWeight: FontWeight.bold
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.red
                                           ),),
                                         ),
                                       ),
                                     ],
+                                  ),
+                                  Container(
+                                    height: 72,
+                                    child: ListView(
+                                      scrollDirection: Axis.horizontal,
+                                      children: [
+                                        
+                                      ],
+                                    ),
                                   )
                                 ],
                               ),
