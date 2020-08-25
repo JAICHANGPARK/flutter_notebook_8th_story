@@ -250,7 +250,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                           ],
                                         ),
                                         SizedBox(
-                                          width: 16,
+                                          width: 24,
                                         ),
                                         Column(
                                           children: [
@@ -268,7 +268,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                           ],
                                         ),
                                         SizedBox(
-                                          width: 16,
+                                          width: 24,
                                         ),
                                         Column(
                                           children: [
@@ -286,7 +286,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                           ],
                                         ),
                                         SizedBox(
-                                          width: 16,
+                                          width: 24,
                                         ),
                                         Column(
                                           children: [
