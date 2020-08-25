@@ -19,6 +19,7 @@ class ElementMainPage extends StatefulWidget {
 class _ElementMainPageState extends State<ElementMainPage> {
   PageController _pageController = PageController(viewportFraction: 0.7);
   double _indicatorHeight = 35.45;
+  int _pageIndex = 0;
 
   @override
   void initState() {
@@ -127,6 +128,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                 controller: _pageController,
                                 onPageChanged: (value) {
                                   setState(() {
+                                    _pageIndex = value + 1;
                                     if (value == 0) {
                                       _indicatorHeight = MediaQuery.of(context).size.height / 2.6 / 8;
                                     } else {
@@ -207,7 +209,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text("01"),
+                                      Text("0${_pageIndex}",style: TextStyle(),),
                                       Text("/09"),
                                       Spacer(),
                                       Container(
