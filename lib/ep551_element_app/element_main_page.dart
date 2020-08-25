@@ -200,12 +200,14 @@ class _ElementMainPageState extends State<ElementMainPage> {
                             Positioned(
                               bottom: 16,
                               left: 16,
+                              right: 16,
                               child: Column(
                                 children: [
                                   Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text("01"),
-                                      Text("/09")
+                                      Text("/09"),
                                     ],
                                   )
                                 ],
