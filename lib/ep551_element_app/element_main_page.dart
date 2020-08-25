@@ -266,6 +266,60 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                                   fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 12),
                                             )
                                           ],
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Container(
+                                              height: 54,
+                                              width: 54,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                            ),
+                                            Text(
+                                              "Metalloid",
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 12),
+                                            )
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Container(
+                                              height: 54,
+                                              width: 54,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                            ),
+                                            Text(
+                                              "Metalloid",
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 12),
+                                            )
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          width: 24,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Container(
+                                              height: 54,
+                                              width: 54,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                            ),
+                                            Text(
+                                              "Metalloid",
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 12),
+                                            )
+                                          ],
                                         )
                                       ],
                                     ),
