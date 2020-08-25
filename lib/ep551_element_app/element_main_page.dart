@@ -211,10 +211,16 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                       Spacer(),
                                       Container(
                                         height: 28,
-                                        width: 120,
+                                        width: 64,
                                         decoration: BoxDecoration(
                                           border: Border.all(color: Colors.red),
-                                          borderRadius: BorderRadius.circular(24)
+                                          borderRadius: BorderRadius.circular(24),
+
+                                        ),
+                                        child: Center(
+                                          child: Text("See all",style: TextStyle(
+                                            fontWeight: FontWeight.bold
+                                          ),),
                                         ),
                                       ),
                                     ],
