@@ -200,7 +200,11 @@ class _ElementMainPageState extends State<ElementMainPage> {
                             Positioned(
                               bottom: 16,
                               left: 16,
-                              child: Column(),
+                              child: Column(
+                                children: [
+                                  
+                                ],
+                              ),
                             )
                           ],
                         )),
