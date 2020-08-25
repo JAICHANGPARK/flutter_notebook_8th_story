@@ -241,7 +241,10 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                                 color: Colors.red
                                               ),
                                             ),
-                                            Text("Nonmetal")
+                                            Text("Nonmetal", style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.red
+                                            ),)
                                           ],
                                         )
                                       ],
