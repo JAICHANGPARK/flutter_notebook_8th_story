@@ -205,7 +205,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   Row(
                                     children: [
                                       Text("01"),
-                                      Text("01")
+                                      Text("/09")
                                     ],
                                   )
                                 ],
