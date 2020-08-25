@@ -226,6 +226,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                       ),
                                     ],
                                   ),
+                                  SizedBox(height: 8,),
                                   Container(
                                     height: 72,
                                     child: ListView(
