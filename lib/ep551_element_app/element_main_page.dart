@@ -226,7 +226,9 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                       ),
                                     ],
                                   ),
-                                  SizedBox(height: 8,),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
                                   Container(
                                     height: 72,
                                     child: ListView(
@@ -237,12 +239,31 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                             Container(
                                               height: 54,
                                               width: 54,
-                                              decoration: BoxDecoration(color: Colors.red),
+                                              decoration: BoxDecoration(
+                                                  color: Colors.red, borderRadius: BorderRadius.circular(16)),
                                             ),
                                             Text(
                                               "Nonmetal",
                                               style: TextStyle(
                                                   fontWeight: FontWeight.bold, color: Colors.red, fontSize: 12),
+                                            )
+                                          ],
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        Column(
+                                          children: [
+                                            Container(
+                                              height: 54,
+                                              width: 54,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                                            ),
+                                            Text(
+                                              "Metalloid",
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.grey, fontSize: 12),
                                             )
                                           ],
                                         )
