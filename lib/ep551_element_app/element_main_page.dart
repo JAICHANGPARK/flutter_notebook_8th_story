@@ -142,14 +142,13 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   return Container(
                                     margin: EdgeInsets.only(left: 16, right: 16, bottom: 24),
                                     decoration: BoxDecoration(
-                                      boxShadow: [
-                                        BoxShadow(
-                                          color: Colors.yellow.withOpacity(0.2),
-                                          spreadRadius: -4,
-                                          blurRadius: 4,
-                                          offset: Offset(-4, 24)
-                                        )
-                                      ],
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: Colors.yellow.withOpacity(0.2),
+                                              spreadRadius: -4,
+                                              blurRadius: 4,
+                                              offset: Offset(-4, 24))
+                                        ],
                                         color: Colors.red,
                                         image: DecorationImage(
                                             image: NetworkImage(
@@ -165,18 +164,19 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                           height: 48,
                                           width: 48,
                                           decoration: BoxDecoration(
-                                            color: Colors.white.withOpacity(0.5),
-                                            borderRadius: BorderRadius.circular(8)
-                                          ),
+                                              color: Colors.white.withOpacity(0.5),
+                                              borderRadius: BorderRadius.circular(8)),
                                           child: Center(
-                                            child: Text("Br", style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.white,
-                                              fontSize: 18
-                                            ),),
+                                            child: Text(
+                                              "Br",
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                                            ),
                                           ),
                                         ),
-                                        SizedBox(height: 8,),
+                                        SizedBox(
+                                          height: 8,
+                                        ),
                                         Text(
                                           "diatomic nonmetal",
                                           style: TextStyle(
@@ -216,13 +216,12 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                         decoration: BoxDecoration(
                                           border: Border.all(color: Colors.red),
                                           borderRadius: BorderRadius.circular(24),
-
                                         ),
                                         child: Center(
-                                          child: Text("See all",style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.red
-                                          ),),
+                                          child: Text(
+                                            "See all",
+                                            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -237,14 +236,13 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                             Container(
                                               height: 54,
                                               width: 54,
-                                              decoration: BoxDecoration(
-                                                color: Colors.red
-                                              ),
+                                              decoration: BoxDecoration(color: Colors.red),
                                             ),
-                                            Text("Nonmetal", style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.red
-                                            ),)
+                                            Text(
+                                              "Nonmetal",
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold, color: Colors.red, fontSize: 12),
+                                            )
                                           ],
                                         )
                                       ],
