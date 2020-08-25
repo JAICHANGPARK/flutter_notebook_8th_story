@@ -208,6 +208,15 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                     children: [
                                       Text("01"),
                                       Text("/09"),
+                                      Spacer(),
+                                      Container(
+                                        height: 28,
+                                        width: 120,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.red),
+                                          borderRadius: BorderRadius.circular(24)
+                                        ),
+                                      ),
                                     ],
                                   )
                                 ],
