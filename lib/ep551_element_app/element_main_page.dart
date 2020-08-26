@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+import 'element_detail_page.dart';
+
 class ChemicalElementApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -144,8 +146,9 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   return Hero(
                                     tag: "image",
                                     child: GestureDetector(
-                                      onTap: (){
-                                        Navigator.of(context).push(route)
+                                      onTap: () {
+                                        Navigator.of(context)
+                                            .push(MaterialPageRoute(builder: (context) => ElementDetailPage()));
                                       },
                                       child: Container(
                                         margin: EdgeInsets.only(left: 16, right: 16, bottom: 24),
@@ -217,10 +220,10 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
-                                      Text("0${_pageIndex}",style: TextStyle(
-                                        color: Colors.red,
-                                        fontWeight: FontWeight.bold
-                                      ),),
+                                      Text(
+                                        "0${_pageIndex}",
+                                        style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                                      ),
                                       Text("/09"),
                                       Spacer(),
                                       Container(
