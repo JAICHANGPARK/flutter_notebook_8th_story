@@ -141,60 +141,68 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                 },
                                 itemCount: 8,
                                 itemBuilder: (context, index) {
-                                  return Container(
-                                    margin: EdgeInsets.only(left: 16, right: 16, bottom: 24),
-                                    decoration: BoxDecoration(
-                                        boxShadow: [
-                                          BoxShadow(
-                                              color: Colors.yellow.withOpacity(0.2),
-                                              spreadRadius: -4,
-                                              blurRadius: 4,
-                                              offset: Offset(-4, 24))
-                                        ],
-                                        color: Colors.red,
-                                        image: DecorationImage(
-                                            image: NetworkImage(
-                                                "https://cdn.pixabay.com/photo/2017/08/25/18/48/art-2681039_960_720.jpg"),
-                                            fit: BoxFit.cover),
-                                        borderRadius: BorderRadius.circular(24)),
-                                    padding: EdgeInsets.all(16),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Spacer(),
-                                        Container(
-                                          height: 48,
-                                          width: 48,
-                                          decoration: BoxDecoration(
-                                              color: Colors.white.withOpacity(0.5),
-                                              borderRadius: BorderRadius.circular(8)),
-                                          child: Center(
-                                            child: Text(
-                                              "Br",
-                                              style: TextStyle(
-                                                  fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                                  return Hero(
+                                    tag: "image",
+                                    child: GestureDetector(
+                                      onTap: (){
+                                        Navigator.of(context).push(route)
+                                      },
+                                      child: Container(
+                                        margin: EdgeInsets.only(left: 16, right: 16, bottom: 24),
+                                        decoration: BoxDecoration(
+                                            boxShadow: [
+                                              BoxShadow(
+                                                  color: Colors.yellow.withOpacity(0.2),
+                                                  spreadRadius: -4,
+                                                  blurRadius: 4,
+                                                  offset: Offset(-4, 24))
+                                            ],
+                                            color: Colors.red,
+                                            image: DecorationImage(
+                                                image: NetworkImage(
+                                                    "https://cdn.pixabay.com/photo/2017/08/25/18/48/art-2681039_960_720.jpg"),
+                                                fit: BoxFit.cover),
+                                            borderRadius: BorderRadius.circular(24)),
+                                        padding: EdgeInsets.all(16),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Spacer(),
+                                            Container(
+                                              height: 48,
+                                              width: 48,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white.withOpacity(0.5),
+                                                  borderRadius: BorderRadius.circular(8)),
+                                              child: Center(
+                                                child: Text(
+                                                  "Br",
+                                                  style: TextStyle(
+                                                      fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                                                ),
+                                              ),
                                             ),
-                                          ),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
+                                            Text(
+                                              "diatomic nonmetal",
+                                              style: TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            Text(
+                                              "Bromine",
+                                              style: TextStyle(
+                                                fontSize: 24,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            )
+                                          ],
                                         ),
-                                        SizedBox(
-                                          height: 8,
-                                        ),
-                                        Text(
-                                          "diatomic nonmetal",
-                                          style: TextStyle(
-                                            fontSize: 16,
-                                            color: Colors.white,
-                                          ),
-                                        ),
-                                        Text(
-                                          "Bromine",
-                                          style: TextStyle(
-                                            fontSize: 24,
-                                            color: Colors.white,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        )
-                                      ],
+                                      ),
                                     ),
                                   );
                                 },
