@@ -10,6 +10,7 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
+
         children: [
           Positioned(
               left: 0,
@@ -18,12 +19,13 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
               bottom: 0,
               child: Hero(
                 tag: "tImage",
-                child: Image.network(
-                  "https://cdn.pixabay.com/photo/2017/08/25/18/48/art-2681039_960_720.jpg",
-                  fit: BoxFit.cover,
+                child: Container(
+                  decoration: BoxDecoration(),
                 ),
               )),
           Positioned(
+            left: 16,
+              top: 32,
               child: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
