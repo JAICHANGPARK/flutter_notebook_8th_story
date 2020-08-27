@@ -23,6 +23,8 @@ class _ElementMainPageState extends State<ElementMainPage> {
   double _indicatorHeight = 35.45;
   int _pageIndex = 0;
 
+  List<String> _heroTag = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
   @override
   void initState() {
     // TODO: implement initState
@@ -149,7 +151,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                           .push(MaterialPageRoute(builder: (context) => ElementDetailPage()));
                                     },
                                     child: Hero(
-                                      tag: "tImage",
+                                      tag: "",
                                       child: Container(
                                         margin: EdgeInsets.only(left: 16, right: 16, bottom: 24),
                                         decoration: BoxDecoration(
