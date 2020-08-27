@@ -32,23 +32,27 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
                     )
                   ),
                   padding: EdgeInsets.only(left: 24),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  child: ListView(
                     children: [
                       SizedBox(height: 100,),
-                      Container(
-                        height: 64,
-                        width: 64,
-                        decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.5),
-                            borderRadius: BorderRadius.circular(8)),
-                        child: Center(
-                          child: Text(
-                            "Br",
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 64,
+                            width: 64,
+                            decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.5),
+                                borderRadius: BorderRadius.circular(8)),
+                            child: Center(
+                              child: Text(
+                                "Br",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                              ),
+                            ),
                           ),
-                        ),
+                        ],
                       ),
                       SizedBox(
                         height: 8,
@@ -74,7 +78,9 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
                           "room temperature that evaporates readily to form a similarly coloured gas. It"
                           "s properties are thus intermediate between those of chlorine and iodine. Isolated "
                           " by two chemists, Carl Jacob Löwig (in 1825) and Antoine Jérôme Balard (in 1826), its name was"
-                          " derived from the Ancient Greek βρῶμος referenci"),
+                          " derived from the Ancient Greek βρῶμος referenci", style: TextStyle(
+                        color: Colors.white
+                      ),),
 
                     ],
                   ),
@@ -85,6 +91,7 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
               top: 32,
               child: IconButton(
             icon: Icon(Icons.arrow_back),
+            color: Colors.white,
             onPressed: () {
               Navigator.of(context).pop();
             },
