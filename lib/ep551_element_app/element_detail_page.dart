@@ -32,45 +32,51 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
                     )
                   ),
                   padding: EdgeInsets.only(left: 24),
-                  child: SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(height: 100,),
-                        Container(
-                          height: 64,
-                          width: 64,
-                          decoration: BoxDecoration(
-                              color: Colors.white.withOpacity(0.5),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Center(
-                            child: Text(
-                              "Br",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
-                            ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(height: 100,),
+                      Container(
+                        height: 64,
+                        width: 64,
+                        decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.5),
+                            borderRadius: BorderRadius.circular(8)),
+                        child: Center(
+                          child: Text(
+                            "Br",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
                           ),
                         ),
-                        SizedBox(
-                          height: 8,
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Text(
+                        "diatomic nonmetal",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
                         ),
-                        Text(
-                          "diatomic nonmetal",
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                          ),
+                      ),
+                      Text(
+                        "Bromine",
+                        style: TextStyle(
+                          fontSize: 64,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
                         ),
-                        Text(
-                          "Bromine",
-                          style: TextStyle(
-                            fontSize: 64,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        )
-                      ],
-                    ),
+                      ),
+                      Text(""
+                          "Bromine is a chemical element with the symbol Br and atomic number 35."
+                          " It is the third-lightest halogen, and is a fuming red-brown liquid at "
+                          "room temperature that evaporates readily to form a similarly coloured gas. It"
+                          "s properties are thus intermediate between those of chlorine and iodine. Isolated "
+                          " by two chemists, Carl Jacob Löwig (in 1825) and Antoine Jérôme Balard (in 1826), its name was"
+                          " derived from the Ancient Greek βρῶμος referenci"),
+
+                    ],
                   ),
                 ),
               )),
