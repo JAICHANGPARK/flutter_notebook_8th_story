@@ -143,13 +143,13 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                 },
                                 itemCount: 8,
                                 itemBuilder: (context, index) {
-                                  return Hero(
-                                    tag: "image",
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        Navigator.of(context)
-                                            .push(MaterialPageRoute(builder: (context) => ElementDetailPage()));
-                                      },
+                                  return GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => ElementDetailPage()));
+                                    },
+                                    child: Hero(
+                                      tag: "tImage",
                                       child: Container(
                                         margin: EdgeInsets.only(left: 16, right: 16, bottom: 24),
                                         decoration: BoxDecoration(
