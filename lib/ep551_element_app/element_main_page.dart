@@ -148,10 +148,12 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   return GestureDetector(
                                     onTap: () {
                                       Navigator.of(context)
-                                          .push(MaterialPageRoute(builder: (context) => ElementDetailPage()));
+                                          .push(MaterialPageRoute(builder: (context) => ElementDetailPage(
+                                        _heroTag[index]
+                                      )));
                                     },
                                     child: Hero(
-                                      tag: "",
+                                      tag: _heroTag[index],
                                       child: Container(
                                         margin: EdgeInsets.only(left: 16, right: 16, bottom: 24),
                                         decoration: BoxDecoration(
