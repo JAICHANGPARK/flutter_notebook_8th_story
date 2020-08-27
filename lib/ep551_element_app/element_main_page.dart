@@ -24,7 +24,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
   int _pageIndex = 0;
 
   List<String> _heroTag = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  List<String> _heroTextTag = List.generate(8, (index) => "t${index}");
+  List<String> _heroTextTag = List.generate(10, (index) => "t$index");
 
   @override
   void initState() {
@@ -148,9 +148,9 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                 itemBuilder: (context, index) {
                                   return GestureDetector(
                                     onTap: () {
-                                      Navigator.of(context).push(
-                                          MaterialPageRoute(builder: (context) => ElementDetailPage(_heroTag[index],
-                                              _heroTextTag[index])));
+                                      Navigator.of(context).push(MaterialPageRoute(
+                                          builder: (context) =>
+                                              ElementDetailPage(_heroTag[index], _heroTextTag[index])));
                                     },
                                     child: Hero(
                                       tag: _heroTag[index],
@@ -175,46 +175,38 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Spacer(),
-                                          Hero(
-                                            tag: _heroTextTag[index],
-                                              child: Column(
-                                                children: [
-                                                  Container(
-                                                    height: 48,
-                                                    width: 48,
-                                                    decoration: BoxDecoration(
-                                                        color: Colors.white.withOpacity(0.5),
-                                                        borderRadius: BorderRadius.circular(8)),
-                                                    child: Center(
-                                                      child: Text(
-                                                        "Br",
-                                                        style: TextStyle(
-                                                            fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                  SizedBox(
-                                                    height: 8,
-                                                  ),
-                                                  Text(
-                                                    "diatomic nonmetal",
-                                                    style: TextStyle(
-                                                      fontSize: 16,
-                                                      color: Colors.white,
-                                                    ),
-                                                  ),
-                                                  Text(
-                                                    "Bromine",
-                                                    style: TextStyle(
-                                                      fontSize: 24,
-                                                      color: Colors.white,
-                                                      fontWeight: FontWeight.bold,
-                                                    ),
-                                                  )
-                                                ],
+                                            Container(
+                                              height: 48,
+                                              width: 48,
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white.withOpacity(0.5),
+                                                  borderRadius: BorderRadius.circular(8)),
+                                              child: Center(
+                                                child: Text(
+                                                  "Br",
+                                                  style: TextStyle(
+                                                      fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                                                ),
+                                              ),
+                                            ),
+                                            SizedBox(
+                                              height: 8,
+                                            ),
+                                            Text(
+                                              "diatomic nonmetal",
+                                              style: TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            Text(
+                                              "Bromine",
+                                              style: TextStyle(
+                                                fontSize: 24,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.bold,
                                               ),
                                             )
-
                                           ],
                                         ),
                                       ),
