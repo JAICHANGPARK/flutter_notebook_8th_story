@@ -17,7 +17,7 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
               top: 0,
               bottom: 0,
               child: Hero(
-                tag: "image",
+                tag: "tImage",
                 child: Image.network(
                   "https://cdn.pixabay.com/photo/2017/08/25/18/48/art-2681039_960_720.jpg",
                   fit: BoxFit.cover,
