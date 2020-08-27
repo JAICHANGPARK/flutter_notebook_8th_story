@@ -31,6 +31,47 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
                       fit: BoxFit.cover
                     )
                   ),
+                  padding: EdgeInsets.only(left: 24),
+                  child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 100,),
+                        Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.5),
+                              borderRadius: BorderRadius.circular(8)),
+                          child: Center(
+                            child: Text(
+                              "Br",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, color: Colors.white, fontSize: 18),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "diatomic nonmetal",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          "Bromine",
+                          style: TextStyle(
+                            fontSize: 64,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               )),
           Positioned(
