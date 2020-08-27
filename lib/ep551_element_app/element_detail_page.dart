@@ -17,11 +17,9 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
               right: 0,
               top: 0,
               bottom: 0,
-              child: Hero(
-                tag: "tImage",
-                child: Container(
-                  decoration: BoxDecoration(),
-                ),
+              child: Container(
+                color: Colors.red,
+                decoration: BoxDecoration(),
               )),
           Positioned(
             left: 16,
