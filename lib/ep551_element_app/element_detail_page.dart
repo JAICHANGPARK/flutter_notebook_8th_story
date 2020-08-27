@@ -26,7 +26,7 @@ class _ElementDetailPageState extends State<ElementDetailPage> {
                 child: Container(
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage(),
+                      image: NetworkImage("https://cdn.pixabay.com/photo/2017/08/25/18/48/art-2681039_960_720.jpg"),
                       fit: BoxFit.cover
                     )
                   ),
