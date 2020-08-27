@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ElementDetailPage extends StatefulWidget {
+  String imageTag ;
+
+  ElementDetailPage(this.imageTag);
+
   @override
   _ElementDetailPageState createState() => _ElementDetailPageState();
 }
