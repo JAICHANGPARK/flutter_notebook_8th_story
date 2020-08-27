@@ -149,7 +149,8 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                   return GestureDetector(
                                     onTap: () {
                                       Navigator.of(context).push(
-                                          MaterialPageRoute(builder: (context) => ElementDetailPage(_heroTag[index])));
+                                          MaterialPageRoute(builder: (context) => ElementDetailPage(_heroTag[index],
+                                              _heroTextTag[index])));
                                     },
                                     child: Hero(
                                       tag: _heroTag[index],
@@ -175,7 +176,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                           children: [
                                             Spacer(),
                                           Hero(
-                                            tag: _heroTag[index] + "",
+                                            tag: _heroTextTag[index],
                                               child: Column(
                                                 children: [
                                                   Container(
