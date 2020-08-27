@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class ElementDetailPage extends StatefulWidget {
   String imageTag ;
+  String titleTag ;
 
-  ElementDetailPage(this.imageTag);
+  ElementDetailPage(this.imageTag, this.titleTag);
 
   @override
   _ElementDetailPageState createState() => _ElementDetailPageState();
