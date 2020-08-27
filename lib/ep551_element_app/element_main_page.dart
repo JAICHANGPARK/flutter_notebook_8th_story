@@ -221,7 +221,7 @@ class _ElementMainPageState extends State<ElementMainPage> {
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        "0${_pageIndex}",
+                                        "0$_pageIndex",
                                         style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
                                       ),
                                       Text("/09"),
