@@ -23,8 +23,14 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     FlatButton(onPressed: () {}, child: Text("CALENDAR"))
                   ],
                 ),
-                Text("Current Location"),
+                Text(
+                  "Current Location",
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(Icons.location_on),
                     Text(
