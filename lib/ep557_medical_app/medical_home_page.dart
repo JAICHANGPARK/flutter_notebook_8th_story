@@ -45,13 +45,15 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
               ],
             )),
             Positioned(
+                bottom: 16,
+                right: 16,
                 child: Container(
-              height: 100,
-              width: 100,
-              decoration: BoxDecoration(
-                color: Colors.black,
-              ),
-            ))
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                  ),
+                ))
           ],
         ),
       ),
