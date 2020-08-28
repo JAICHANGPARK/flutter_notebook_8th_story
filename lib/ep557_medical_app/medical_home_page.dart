@@ -11,7 +11,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+
         ],
       ),
     );
