@@ -52,6 +52,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                   width: 100,
                   decoration: BoxDecoration(
                     color: Colors.black,
+                    shape: BoxShape.circle
+                  ),
+                  child: Center(
+                    child: Icon(Icons.keyboard_arrow_left, color: Colors.white,),
                   ),
                 ))
           ],
