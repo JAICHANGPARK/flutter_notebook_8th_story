@@ -44,6 +44,11 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                 )
               ],
             )),
+            Positioned(
+                child: Container(
+              height: 100,
+              width: 100,
+            ))
           ],
         ),
       ),
