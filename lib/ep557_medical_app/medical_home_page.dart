@@ -9,10 +9,17 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-
-        ],
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(child: Row(
+              children: [
+                FlatButton(onPressed: (){}, child: Text("MENU"))
+              ],
+            ))
+              
+          ],
+        ),
       ),
     );
   }
