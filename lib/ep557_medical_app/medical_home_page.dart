@@ -12,12 +12,20 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned(child: Row(
+            Positioned(
+                child: Column(
+                  children: [
+                    Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                FlatButton(onPressed: (){}, child: Text("MENU"))
+                    FlatButton(onPressed: () {}, child: Text("MENU")),
+                    FlatButton(onPressed: () {}, child: Text("CALENDAR"))
               ],
-            ))
-              
+            ),
+                    
+                  ],
+                )),
+
           ],
         ),
       ),
