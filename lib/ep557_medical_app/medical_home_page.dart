@@ -48,6 +48,9 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                 child: Container(
               height: 100,
               width: 100,
+              decoration: BoxDecoration(
+                color: Colors.black,
+              ),
             ))
           ],
         ),
