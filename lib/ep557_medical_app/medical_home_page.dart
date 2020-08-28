@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MedicalHomePage extends StatefulWidget {
   @override
@@ -14,18 +15,29 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
           children: [
             Positioned(
                 child: Column(
-                  children: [
-                    Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
                     FlatButton(onPressed: () {}, child: Text("MENU")),
                     FlatButton(onPressed: () {}, child: Text("CALENDAR"))
-              ],
-            ),
-                    
                   ],
-                )),
-
+                ),
+                Text("Current Location"),
+                Row(
+                  children: [
+                    Icon(Icons.location_on),
+                    Text(
+                      "Montreal, CA",
+                      style: GoogleFonts.playfairDisplay(
+                        fontSize: 28,
+                      ),
+                    ),
+                    IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: () {})
+                  ],
+                )
+              ],
+            )),
           ],
         ),
       ),
