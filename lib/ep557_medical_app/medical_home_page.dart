@@ -77,11 +77,19 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text("Dr. Annette Black", style: GoogleFonts.playfairDisplay(
-                                fontSize: 18,
-                              ),),
-                              SizedBox(height: 8,),
-                              Text("Heart Specialist")
+                              Text(
+                                "Dr. Annette Black",
+                                style: GoogleFonts.playfairDisplay(
+                                  fontSize: 18,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "Heart Specialist",
+                                style: TextStyle(fontSize: 12, color: Colors.grey),
+                              )
                             ],
                           ),
                         )
