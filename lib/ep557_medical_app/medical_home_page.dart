@@ -51,7 +51,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                 alignment: Alignment.centerLeft,),
               ],
             )),
-            Positioned(child: ListView.builder(itemBuilder: (context, index){
+            Positioned(
+                top: 180,
+
+                child: ListView.builder(itemBuilder: (context, index){
               return Container(
                 margin: EdgeInsets.only(bottom: 16),
                 height: 72,
