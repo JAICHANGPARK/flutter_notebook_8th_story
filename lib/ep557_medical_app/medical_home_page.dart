@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -70,14 +71,19 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                             color: Colors.blue,
                           ),
                         ),
-                        Column(
-                          children: [
-                            Text("Dr. Annette Black", style: GoogleFonts.playfairDisplay(
-                              fontSize: 18,
-
-                            ),),
-                            Text("Heart Specialist")
-                          ],
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text("Dr. Annette Black", style: GoogleFonts.playfairDisplay(
+                                fontSize: 18,
+                              ),),
+                              SizedBox(height: 8,),
+                              Text("Heart Specialist")
+                            ],
+                          ),
                         )
                       ],
                     ),
