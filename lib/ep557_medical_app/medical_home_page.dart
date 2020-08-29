@@ -61,6 +61,23 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     margin: EdgeInsets.only(bottom: 16),
                     height: 72,
                     color: Colors.red,
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(
+                            color: Colors.blue,
+                          ),
+                        ),
+                        Column(
+                          children: [
+                            Text("Dr. Annette Black", style: playfairDisplay,),
+                            Text("Heart Specialist")
+                          ],
+                        )
+                      ],
+                    ),
                   );
                 })),
             Positioned(
