@@ -61,7 +61,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                   return Container(
                     margin: EdgeInsets.only(bottom: 16),
                     height: 72,
-                    color: Colors.red,
+
                     child: Row(
                       children: [
                         Container(
@@ -92,7 +92,9 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                               )
                             ],
                           ),
-                        )
+                        ),
+                        Spacer(),
+                        IconButton(icon: Icon(Icons.arrow_forward), onPressed: (){})
                       ],
                     ),
                   );
