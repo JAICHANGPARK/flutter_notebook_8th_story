@@ -41,10 +41,13 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     ),
                     IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: () {})
                   ],
-                )
+                ),
+                Align(child: Text("ALL SPECIALISTS")),
               ],
             )),
-            Positioned(child: ListView.builder(itemBuilder: (context, index))),
+            Positioned(child: ListView.builder(itemBuilder: (context, index){
+
+            })),
             Positioned(
                 bottom: 16,
                 right: 16,
