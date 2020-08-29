@@ -44,7 +44,9 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                 ),
                 Align(child: Padding(
                   padding: const EdgeInsets.only(left: 24, top: 32),
-                  child: Text("ALL SPECIALISTS"),
+                  child: Text("ALL SPECIALISTS", style: TextStyle(
+                    color: Colors.grey
+                  ),),
                 ),
                 alignment: Alignment.centerLeft,),
               ],
