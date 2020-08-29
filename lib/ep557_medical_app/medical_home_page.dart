@@ -42,39 +42,40 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                     IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: () {})
                   ],
                 ),
-                Align(child: Padding(
-                  padding: const EdgeInsets.only(left: 24, top: 32),
-                  child: Text("ALL SPECIALISTS", style: TextStyle(
-                    color: Colors.grey
-                  ),),
+                Align(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 24, top: 32),
+                    child: Text(
+                      "ALL SPECIALISTS",
+                      style: TextStyle(color: Colors.grey),
+                    ),
+                  ),
+                  alignment: Alignment.centerLeft,
                 ),
-                alignment: Alignment.centerLeft,),
               ],
             )),
             Positioned(
                 top: 180,
-
-                child: ListView.builder(itemBuilder: (context, index){
-              return Container(
-                margin: EdgeInsets.only(bottom: 16),
-                height: 72,
-                color: Colors.red,
-              );
-
-            })),
+                child: ListView.builder(itemBuilder: (context, index) {
+                  return Container(
+                    margin: EdgeInsets.only(bottom: 16),
+                    height: 72,
+                    color: Colors.red,
+                  );
+                })),
             Positioned(
                 bottom: 16,
                 right: 16,
                 child: Container(
                   height: 84,
                   width: 84,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    shape: BoxShape.circle
-                  ),
+                  decoration: BoxDecoration(color: Colors.black, shape: BoxShape.circle),
                   child: Center(
-                    child: Icon(Icons.keyboard_arrow_left, color: Colors.white,
-                    size: 34,),
+                    child: Icon(
+                      Icons.keyboard_arrow_left,
+                      color: Colors.white,
+                      size: 34,
+                    ),
                   ),
                 ))
           ],
@@ -83,16 +84,3 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
