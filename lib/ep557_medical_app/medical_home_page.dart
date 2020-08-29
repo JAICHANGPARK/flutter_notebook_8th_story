@@ -72,7 +72,10 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                         ),
                         Column(
                           children: [
-                            Text("Dr. Annette Black", style: playfairDisplay,),
+                            Text("Dr. Annette Black", style: GoogleFonts.playfairDisplay(
+                              fontSize: 18,
+
+                            ),),
                             Text("Heart Specialist")
                           ],
                         )
