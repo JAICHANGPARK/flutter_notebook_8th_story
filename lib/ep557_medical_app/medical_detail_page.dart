@@ -93,6 +93,9 @@ class MedicalDetailPage extends StatelessWidget {
                                     color: Colors.black,
                                   ),
                                 ),
+                                SizedBox(
+                                  width: 8,
+                                ),
                                 CircleAvatar(
                                   backgroundColor: Colors.white,
                                   child: Icon(
@@ -100,7 +103,6 @@ class MedicalDetailPage extends StatelessWidget {
                                     color: Colors.black,
                                   ),
                                 ),
-
                               ],
                             ),
                           )
