@@ -37,14 +37,19 @@ class MedicalDetailPage extends StatelessWidget {
                       ),
                       child: Stack(
                         children: [
-                          Positioned(child: Row(children: [
+                          Positioned(
+                              left: 24,
+                              top: 24,
+                              child: Row(children: [
                             Container(
                               padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                               decoration: BoxDecoration(
                                 color: Colors.red,
                                 borderRadius: BorderRadius.circular(4)
                               ),
-                              child: Text("LIVE"),
+                              child: Text("LIVE", style: TextStyle(
+                                color: Colors.white,
+                              ),),
                             )
                           ],))
                         ],
