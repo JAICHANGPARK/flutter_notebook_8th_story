@@ -28,6 +28,13 @@ class MedicalDetailPage extends StatelessWidget {
                           Navigator.of(context).pop();
                         },
                         child: Text("BACK")),
+                    Container(
+                      height: MediaQuery.of(context).size.height / 2.1,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(36)
+                      ),
+                    )
                   ],
                 ),
               ),
