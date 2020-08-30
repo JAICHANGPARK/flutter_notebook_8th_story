@@ -32,7 +32,7 @@ class MedicalDetailPage extends StatelessWidget {
                       height: MediaQuery.of(context).size.height / 2,
                       margin: EdgeInsets.only(left: 24, right: 24, top: 18),
                       decoration: BoxDecoration(
-                        color: Colors.grey,
+                        color: Colors.orange,
                         borderRadius: BorderRadius.circular(36),
                       ),
                       child: Stack(
@@ -50,7 +50,25 @@ class MedicalDetailPage extends StatelessWidget {
                               child: Text("LIVE", style: TextStyle(
                                 color: Colors.white,
                               ),),
-                            )
+                            ),
+                                Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                  decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(4)
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.security, size: 18,),
+                                      Padding(
+                                        padding: const EdgeInsets.only(left: 4),
+                                        child: Text("3.2k", style: TextStyle(
+                                          color: Colors.white,
+                                        ),),
+                                      ),
+                                    ],
+                                  ),
+                                )
                           ],))
                         ],
                       ),
