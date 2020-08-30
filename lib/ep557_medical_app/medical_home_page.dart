@@ -57,7 +57,11 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
             )),
             Positioned(
                 top: 180,
+                bottom: 0,
+                left: 0,
+                right: 0,
                 child: ListView.builder(
+                  shrinkWrap: true,
                     itemCount: 10,
                     itemBuilder: (context, index) {
                   return Container(
