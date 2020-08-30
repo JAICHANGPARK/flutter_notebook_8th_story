@@ -9,7 +9,7 @@ class MedicalDetailPage extends StatelessWidget {
         child: Stack(
           children: [
             Positioned(
-                top: 48,
+                top: 24,
                 bottom: 0,
                 left: 0,
                 right: 0,
@@ -21,7 +21,17 @@ class MedicalDetailPage extends StatelessWidget {
                       topLeft: Radius.circular(36),
                     )
                   ),
-                ))
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      FlatButton(onPressed: (){}, child: Text("BACK")),
+
+                    ],
+                  ),
+                ),
+
+              
+            )
           ],
         ),
       ),
