@@ -14,11 +14,10 @@ class MedicalDetailPage extends StatelessWidget {
                 left: 0,
                 right: 0,
                 child: Container(
-              decoration: BoxDecoration(
-                color: Colors.white,
-
-              ),
-            ))
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                ))
           ],
         ),
       ),
