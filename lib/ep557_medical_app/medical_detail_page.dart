@@ -40,36 +40,43 @@ class MedicalDetailPage extends StatelessWidget {
                           Positioned(
                               left: 24,
                               top: 24,
-                              child: Row(children: [
-                            Container(
-                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: Colors.red,
-                                borderRadius: BorderRadius.circular(4)
-                              ),
-                              child: Text("LIVE", style: TextStyle(
-                                color: Colors.white,
-                              ),),
-                            ),
-                                Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                                  decoration: BoxDecoration(
-                                      color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(4)
-                                  ),
-                                  child: Row(
-                                    children: [
-                                      Icon(Icons.security, size: 18,),
-                                      Padding(
-                                        padding: const EdgeInsets.only(left: 4),
-                                        child: Text("3.2k", style: TextStyle(
-                                          color: Colors.white,
-                                        ),),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    decoration:
+                                        BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(4)),
+                                    child: Text(
+                                      "LIVE",
+                                      style: TextStyle(
+                                        color: Colors.white,
                                       ),
-                                    ],
+                                    ),
                                   ),
-                                )
-                          ],))
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                                    decoration:
+                                        BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          Icons.security,
+                                          size: 18,
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 4),
+                                          child: Text(
+                                            "3.2k",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ))
                         ],
                       ),
                     )
@@ -83,29 +90,3 @@ class MedicalDetailPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
