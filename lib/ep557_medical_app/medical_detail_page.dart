@@ -53,7 +53,9 @@ class MedicalDetailPage extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  SizedBox(width: 4,),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                     decoration:
@@ -86,9 +88,18 @@ class MedicalDetailPage extends StatelessWidget {
                               children: [
                                 CircleAvatar(
                                   backgroundColor: Colors.white,
-                                  child: Icon(Icons.file_upload, color: Colors.black,),
-
-                                )
+                                  child: Icon(
+                                    Icons.volume_down,
+                                    color: Colors.black,
+                                  ),
+                                ),
+                                CircleAvatar(
+                                  backgroundColor: Colors.white,
+                                  child: Icon(
+                                    Icons.file_upload,
+                                    color: Colors.black,
+                                  ),
+                                ),
 
                               ],
                             ),
@@ -106,23 +117,3 @@ class MedicalDetailPage extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
