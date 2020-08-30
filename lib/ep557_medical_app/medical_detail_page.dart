@@ -80,9 +80,16 @@ class MedicalDetailPage extends StatelessWidget {
                                 ],
                               )),
                           Positioned(
+                            right: 16,
+                            bottom: 16,
                             child: Row(
                               children: [
-                                
+                                CircleAvatar(
+                                  backgroundColor: Colors.white,
+                                  child: Icon(Icons.file_upload, color: Colors.black,),
+
+                                )
+
                               ],
                             ),
                           )
@@ -99,3 +106,23 @@ class MedicalDetailPage extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
