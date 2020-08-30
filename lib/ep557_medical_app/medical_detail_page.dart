@@ -29,11 +29,25 @@ class MedicalDetailPage extends StatelessWidget {
                         },
                         child: Text("BACK")),
                     Container(
-                      height: MediaQuery.of(context).size.height / 2.1,
+                      height: MediaQuery.of(context).size.height / 2,
                       margin: EdgeInsets.only(left: 24, right: 24, top: 18),
                       decoration: BoxDecoration(
                         color: Colors.grey,
                         borderRadius: BorderRadius.circular(36),
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(child: Row(children: [
+                            Container(
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                              decoration: BoxDecoration(
+                                color: Colors.red,
+                                borderRadius: BorderRadius.circular(4)
+                              ),
+                              child: Text("LIVE"),
+                            )
+                          ],))
+                        ],
                       ),
                     )
                   ],
