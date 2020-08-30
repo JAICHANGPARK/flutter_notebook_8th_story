@@ -57,11 +57,12 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
             )),
             Positioned(
                 top: 180,
-                child: ListView.builder(itemBuilder: (context, index) {
+                child: ListView.builder(
+                    itemCount: 10,
+                    itemBuilder: (context, index) {
                   return Container(
-                    margin: EdgeInsets.only(bottom: 16),
+                    margin: EdgeInsets.only(bottom: 16, left: 16, right: 16),
                     height: 72,
-
                     child: Row(
                       children: [
                         Container(
