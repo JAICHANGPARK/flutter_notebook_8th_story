@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'medical_detail_page.dart';
+
 class MedicalHomePage extends StatefulWidget {
   @override
   _MedicalHomePageState createState() => _MedicalHomePageState();
@@ -99,7 +101,13 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                           ),
                         ),
                         Spacer(),
-                        IconButton(icon: Icon(Icons.arrow_forward), onPressed: (){})
+                        IconButton(icon: Icon(Icons.arrow_forward), onPressed: (){
+
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context)=>MedicalDetailPage()
+                          ));
+
+                        })
                       ],
                     ),
                   );
