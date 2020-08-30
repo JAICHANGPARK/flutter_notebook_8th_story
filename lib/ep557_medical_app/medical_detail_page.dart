@@ -5,6 +5,11 @@ class MedicalDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      body: Stack(
+        children: [
+          Positioned(child: Container())
+        ],
+      ),
     );
   }
 }
