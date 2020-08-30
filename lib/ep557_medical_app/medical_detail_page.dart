@@ -16,6 +16,10 @@ class MedicalDetailPage extends StatelessWidget {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(36),
+                      topLeft: Radius.circular(36),
+                    )
                   ),
                 ))
           ],
