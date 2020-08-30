@@ -53,6 +53,7 @@ class MedicalDetailPage extends StatelessWidget {
                                       ),
                                     ),
                                   ),
+                                  SizedBox(width: 4,),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                                     decoration:
@@ -61,7 +62,8 @@ class MedicalDetailPage extends StatelessWidget {
                                       children: [
                                         Icon(
                                           Icons.security,
-                                          size: 18,
+                                          size: 14,
+                                          color: Colors.white,
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.only(left: 4),
@@ -76,7 +78,14 @@ class MedicalDetailPage extends StatelessWidget {
                                     ),
                                   )
                                 ],
-                              ))
+                              )),
+                          Positioned(
+                            child: Row(
+                              children: [
+                                
+                              ],
+                            ),
+                          )
                         ],
                       ),
                     )
