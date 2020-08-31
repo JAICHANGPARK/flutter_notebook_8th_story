@@ -63,56 +63,61 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                 left: 0,
                 right: 0,
                 child: ListView.builder(
-                  shrinkWrap: true,
+                    shrinkWrap: true,
                     itemCount: 10,
                     itemBuilder: (context, index) {
-                  return Container(
-                    margin: EdgeInsets.only(bottom: 16, left: 16, right: 16),
-                    height: 72,
-                    child: Row(
-                      children: [
-                        Container(
-                          height: 64,
-                          width: 64,
-                          decoration: BoxDecoration(
-                            color: Colors.blue,
-                            borderRadius: BorderRadius.circular(8)
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Dr. Annette Black",
-                                style: GoogleFonts.playfairDisplay(
-                                  fontSize: 18,
+                      return Container(
+                        margin: EdgeInsets.only(bottom: 16, left: 16, right: 16),
+                        height: 72,
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2017/05/23/17/12/doctor-2337835_960_720.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
                                 ),
                               ),
-                              SizedBox(
-                                height: 8,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "Dr. Annette Black",
+                                    style: GoogleFonts.playfairDisplay(
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 8,
+                                  ),
+                                  Text(
+                                    "Heart Specialist",
+                                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                                  )
+                                ],
                               ),
-                              Text(
-                                "Heart Specialist",
-                                style: TextStyle(fontSize: 12, color: Colors.grey),
-                              )
-                            ],
-                          ),
+                            ),
+                            Spacer(),
+                            IconButton(
+                                icon: Icon(Icons.arrow_forward),
+                                onPressed: () {
+                                  Navigator.of(context)
+                                      .push(MaterialPageRoute(builder: (context) => MedicalDetailPage()));
+                                })
+                          ],
                         ),
-                        Spacer(),
-                        IconButton(icon: Icon(Icons.arrow_forward), onPressed: (){
-
-                          Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context)=>MedicalDetailPage()
-                          ));
-
-                        })
-                      ],
-                    ),
-                  );
-                })),
+                      );
+                    })),
             Positioned(
                 bottom: 16,
                 right: 16,
