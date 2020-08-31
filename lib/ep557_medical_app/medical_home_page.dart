@@ -76,6 +76,7 @@ class _MedicalHomePageState extends State<MedicalHomePage> {
                           width: 64,
                           decoration: BoxDecoration(
                             color: Colors.blue,
+                            borderRadius: BorderRadius.circular(8)
                           ),
                         ),
                         Padding(
