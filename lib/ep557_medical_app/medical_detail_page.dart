@@ -160,6 +160,11 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                                   color: _index == 1 ? Colors.white : Colors.transparent,
                                   borderRadius: BorderRadius.circular(8)
                               ),
+                              child: Center(
+                                child: Text("Live Comments", style: TextStyle(
+                                  color: Colors.black,
+                                ),),
+                              ),
 
                             ),
                           )),
