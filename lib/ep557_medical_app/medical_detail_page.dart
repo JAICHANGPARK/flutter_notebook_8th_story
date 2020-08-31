@@ -111,6 +111,12 @@ class MedicalDetailPage extends StatelessWidget {
                           )
                         ],
                       ),
+                    ),
+                    Container(
+                      height: 48,
+                      decoration: BoxDecoration(
+                        color: Colors.grey
+                      ),
                     )
                   ],
                 ),
@@ -122,3 +128,23 @@ class MedicalDetailPage extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
