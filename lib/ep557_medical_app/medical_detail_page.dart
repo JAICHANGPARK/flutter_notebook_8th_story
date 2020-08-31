@@ -130,11 +130,15 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                         children: [
                           Expanded(child: GestureDetector(
                             onTap: (){
-
+                              setState(() {
+                                _index = 0;
+                              });
                             },
                             child: Container(
+                              margin: EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                color: _index == 0 ? Colors.white : Colors.transparent
+                                color: _index == 0 ? Colors.white : Colors.transparent,
+                                borderRadius: BorderRadius.circular(8)
                               ),
 
                             ),
