@@ -240,6 +240,21 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                               ),
                             ],
                           ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 24, right: 24, ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Commnets",
+                                style: GoogleFonts.playfairDisplay(
+                                  fontSize: 24,
+                                ),
+                              ),
+                             
+                            ],
+                          ),
                         )
                       ],
                     )
