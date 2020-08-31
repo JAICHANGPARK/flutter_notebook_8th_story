@@ -190,9 +190,51 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                             ),
                             Row(
                               children: [
-
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  decoration: BoxDecoration(
+                                    color: Colors.blue,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2017/05/23/17/12/doctor-2337835_960_720.jpg",
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "Dr. Annette Black",
+                                        style: GoogleFonts.playfairDisplay(
+                                          fontSize: 18,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "Heart Specialist",
+                                        style: TextStyle(fontSize: 12, color: Colors.grey),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                Spacer(),
+                                IconButton(
+                                    icon: Icon(Icons.arrow_forward),
+                                    onPressed: () {
+                                      Navigator.of(context)
+                                          .push(MaterialPageRoute(builder: (context) => MedicalDetailPage()));
+                                    })
                               ],
-                            )
+                            ),
                           ],
                         )
                       ],
