@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MedicalDetailPage extends StatelessWidget {
+class MedicalDetailPage extends StatefulWidget {
+  @override
+  _MedicalDetailPageState createState() => _MedicalDetailPageState();
+}
+
+class _MedicalDetailPageState extends State<MedicalDetailPage> {
+  int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -121,9 +128,15 @@ class MedicalDetailPage extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          Expanded(child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white
+                          Expanded(child: GestureDetector(
+                            onTap: (){
+
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: _index == 0 ? Colors.white : Colors.transparent
+                              ),
+
                             ),
                           )),
                           Expanded(child: Container()),
