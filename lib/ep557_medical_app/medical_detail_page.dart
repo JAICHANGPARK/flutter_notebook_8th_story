@@ -121,9 +121,12 @@ class MedicalDetailPage extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
+                          Expanded(child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white
+                            ),
+                          )),
                           Expanded(child: Container()),
-                          Expanded(child: Container()),
-
                         ],
                       ),
                     )
