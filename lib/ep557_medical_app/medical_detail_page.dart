@@ -114,7 +114,7 @@ class MedicalDetailPage extends StatelessWidget {
                     ),
                     Container(
                       height: 64,
-                      margin: EdgeInsets.symmetric(horizontal: 16),
+                      margin: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                       decoration: BoxDecoration(
                         color: Colors.grey,
                         borderRadius: BorderRadius.circular(8),
