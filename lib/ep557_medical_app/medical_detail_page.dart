@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MedicalDetailPage extends StatefulWidget {
   @override
@@ -128,8 +129,9 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                       ),
                       child: Row(
                         children: [
-                          Expanded(child: GestureDetector(
-                            onTap: (){
+                          Expanded(
+                              child: GestureDetector(
+                            onTap: () {
                               setState(() {
                                 _index = 0;
                               });
@@ -137,19 +139,21 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                             child: Container(
                               margin: EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                color: _index == 0 ? Colors.white : Colors.transparent,
-                                borderRadius: BorderRadius.circular(8)
-                              ),
+                                  color: _index == 0 ? Colors.white : Colors.transparent,
+                                  borderRadius: BorderRadius.circular(8)),
                               child: Center(
-                                child: Text("Informations", style: TextStyle(
-                                  color: Colors.black,
-                                ),),
+                                child: Text(
+                                  "Informations",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
                               ),
-
                             ),
                           )),
-                          Expanded(child: GestureDetector(
-                            onTap: (){
+                          Expanded(
+                              child: GestureDetector(
+                            onTap: () {
                               setState(() {
                                 _index = 1;
                               });
@@ -158,17 +162,40 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                               margin: EdgeInsets.all(8),
                               decoration: BoxDecoration(
                                   color: _index == 1 ? Colors.white : Colors.transparent,
-                                  borderRadius: BorderRadius.circular(8)
-                              ),
+                                  borderRadius: BorderRadius.circular(8)),
                               child: Center(
-                                child: Text("Live Comments", style: TextStyle(
-                                  color: Colors.black,
-                                ),),
+                                child: Text(
+                                  "Live Comments",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                  ),
+                                ),
                               ),
                             ),
                           )),
                         ],
                       ),
+                    ),
+                    IndexedStack(
+                      index: _index,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Diagnosis and Therapy of Tatto Complications",
+                              style: GoogleFonts.playfairDisplay(
+                                fontSize: 24,
+                              ),
+                            ),
+                            Row(
+                              children: [
+
+                              ],
+                            )
+                          ],
+                        )
+                      ],
                     )
                   ],
                 ),
@@ -180,23 +207,3 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
