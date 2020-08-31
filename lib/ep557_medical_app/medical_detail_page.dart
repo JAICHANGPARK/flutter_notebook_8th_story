@@ -143,7 +143,21 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
 
                             ),
                           )),
-                          Expanded(child: Container()),
+                          Expanded(child: GestureDetector(
+                            onTap: (){
+                              setState(() {
+                                _index = 1;
+                              });
+                            },
+                            child: Container(
+                              margin: EdgeInsets.all(8),
+                              decoration: BoxDecoration(
+                                  color: _index == 1 ? Colors.white : Colors.transparent,
+                                  borderRadius: BorderRadius.circular(8)
+                              ),
+
+                            ),
+                          )),
                         ],
                       ),
                     )
