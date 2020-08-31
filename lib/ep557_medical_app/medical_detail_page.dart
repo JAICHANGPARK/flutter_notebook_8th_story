@@ -35,10 +35,9 @@ class MedicalDetailPage extends StatelessWidget {
                           color: Colors.orange,
                           borderRadius: BorderRadius.circular(36),
                           image: DecorationImage(
-                            image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2019/12/06/13/40/anesthesia-4677401_960_720.jpg"),
-                            fit: BoxFit.cover
-                          )),
+                              image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2019/12/06/13/40/anesthesia-4677401_960_720.jpg"),
+                              fit: BoxFit.cover)),
                       child: Stack(
                         children: [
                           Positioned(
