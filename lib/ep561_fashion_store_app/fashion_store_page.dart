@@ -8,3 +8,15 @@ class FashionStoreApp extends StatelessWidget {
     );
   }
 }
+
+class FashionMainPage extends StatefulWidget {
+  @override
+  _FashionMainPageState createState() => _FashionMainPageState();
+}
+
+class _FashionMainPageState extends State<FashionMainPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
