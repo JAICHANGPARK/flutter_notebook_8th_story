@@ -25,9 +25,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
             Expanded(flex: 3, child: Placeholder()),
             Expanded(flex: 2, child: Placeholder()),
             Expanded(flex: 15,child: Placeholder()),
-            Expanded(flex: 4,child: Container(
+            Expanded(flex: 3,child: Container(
               decoration: BoxDecoration(
-
+                  color: Colors.lightGreenAccent,
+                
               ),
             )),
           ],
