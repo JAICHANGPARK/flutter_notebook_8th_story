@@ -23,7 +23,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
         child: Column(
           children: [
             Expanded(
-                flex: 4,
+                flex: 3,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -36,20 +36,24 @@ class _FashionMainPageState extends State<FashionMainPage> {
                   ],
                 )),
             Expanded(
-                flex: 3,
+                flex:3,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.black,
                   ),
                 )),
             Expanded(
-                flex: 2,
+                flex: 3,
                 child: Container(
                   decoration:
                       BoxDecoration(color: Colors.lightGreenAccent, border: Border.all(color: Colors.black,
                       width: 2)),
                 )),
-            Expanded(flex: 15, child: ListView()),
+            Expanded(flex: 20, child: ListView(
+              children: [
+
+              ],
+            )),
             Expanded(
                 flex: 3,
                 child: Container(
