@@ -252,7 +252,7 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                                   fontSize: 24,
                                 ),
                               ),
-                             
+
                             ],
                           ),
                         )
