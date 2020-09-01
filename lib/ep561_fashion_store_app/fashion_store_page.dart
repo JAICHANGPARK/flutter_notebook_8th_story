@@ -20,7 +20,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
     return Scaffold(
       body: Column(
         children: [
-            Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
+          Expanded(child: Placeholder()),
         ],
       ),
     );
