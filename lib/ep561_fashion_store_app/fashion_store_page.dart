@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FashionStoreApp extends StatelessWidget {
   @override
@@ -21,7 +22,16 @@ class _FashionMainPageState extends State<FashionMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(flex: 4, child: Placeholder()),
+            Expanded(flex: 4, child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                IconButton(icon: Icon(Icons.arrow_back_ios), onPressed: (){}),
+                Text("CHECKOUT", style: GoogleFonts.alata(
+                  fontWeight: FontWeight.bold
+                ),),
+                IconButton(icon: Icon(Icons.menu), onPressed: (){}),
+              ],
+            )),
             Expanded(flex: 3, child: Placeholder()),
             Expanded(flex: 2, child: Placeholder()),
             Expanded(flex: 15,child: Placeholder()),
@@ -32,6 +42,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     top: BorderSide(color: Colors.black,
                     width: 2)
                   )
+              ),
+              child: Center(
+                child: Text("PROCEED TO THE NEXT STEP", style: GoogleFonts.alata(
+                  fontWeight: FontWeight.bold,
+                ),),
               ),
             )),
           ],
