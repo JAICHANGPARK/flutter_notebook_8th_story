@@ -17,6 +17,12 @@ class FashionMainPage extends StatefulWidget {
 class _FashionMainPageState extends State<FashionMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
