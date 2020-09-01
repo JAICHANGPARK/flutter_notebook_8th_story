@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_notebook_8th_story/ep557_medical_app/medial_app.dart';
+import 'ep561_fashion_store_app/fashion_store_page.dart';
 
 
 void main() {
-  runApp(MedicalApp());
+  runApp(FashionStoreApp());
 }
 
