@@ -20,9 +20,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
-          Expanded(child: Placeholder()),
+          Expanded(flex: 3, child: Placeholder()),
+          Expanded(flex: 2, child: Placeholder()),
+          Expanded(flex: 1, child: Placeholder()),
           Expanded(child: Placeholder()),
           Expanded(child: Placeholder()),
         ],
