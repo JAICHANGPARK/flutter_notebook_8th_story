@@ -32,9 +32,18 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 IconButton(icon: Icon(Icons.menu), onPressed: (){}),
               ],
             )),
-            Expanded(flex: 3, child: Placeholder()),
-            Expanded(flex: 2, child: Placeholder()),
-            Expanded(flex: 15,child: Placeholder()),
+            Expanded(flex: 3, child: Container(
+              decoration: BoxDecoration(
+                color: Colors.black,
+              ),
+            )),
+            Expanded(flex: 2, child: Container(
+              decoration: BoxDecoration(
+                color: Colors.lightGreenAccent,
+                
+              ),
+            )),
+            Expanded(flex: 15,child: ListView()),
             Expanded(flex: 3,child: Container(
               decoration: BoxDecoration(
                   color: Colors.lightGreenAccent,
