@@ -180,7 +180,10 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                       index: _index,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(left: 24, right: 24, ),
+                          padding: const EdgeInsets.only(
+                            left: 24,
+                            right: 24,
+                          ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -190,7 +193,9 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                                   fontSize: 24,
                                 ),
                               ),
-                              SizedBox(height: 16,),
+                              SizedBox(
+                                height: 16,
+                              ),
                               Row(
                                 children: [
                                   Container(
@@ -242,7 +247,10 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 24, right: 24, ),
+                          padding: const EdgeInsets.only(
+                            left: 24,
+                            right: 24,
+                          ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -252,7 +260,6 @@ class _MedicalDetailPageState extends State<MedicalDetailPage> {
                                   fontSize: 24,
                                 ),
                               ),
-
                             ],
                           ),
                         )
