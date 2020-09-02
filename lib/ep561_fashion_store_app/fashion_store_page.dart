@@ -46,15 +46,21 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 flex: 3,
                 child: Container(
                   decoration:
-                      BoxDecoration(color: Colors.lightGreenAccent, border: Border.all(color: Colors.black, width: 2)),
+                      BoxDecoration(color: Colors.lightGreenAccent, border: Border.all(color: Colors.black, width: 2),
+                      ),
+                  child: Row(
+                    children: [
+                      
+                    ],
+                  ),
                 )),
             Expanded(
                 flex: 20,
                 child: ListView(
                   children: [
                     Container(
-                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2),
-                      color: Colors.grey[300]),
+                      decoration:
+                          BoxDecoration(border: Border.all(color: Colors.black, width: 2), color: Colors.grey[300]),
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                       child: Row(
                         children: [
@@ -79,8 +85,8 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       ),
                     ),
                     Container(
-                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2),
-                          color: Colors.grey[200]),
+                      decoration:
+                          BoxDecoration(border: Border.all(color: Colors.black, width: 2), color: Colors.grey[200]),
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                       child: Row(
                         children: [
@@ -109,8 +115,8 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       ),
                     ),
                     Container(
-                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2),
-                          color: Colors.grey[300]),
+                      decoration:
+                          BoxDecoration(border: Border.all(color: Colors.black, width: 2), color: Colors.grey[300]),
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                       child: Row(
                         children: [
@@ -135,8 +141,8 @@ class _FashionMainPageState extends State<FashionMainPage> {
                       ),
                     ),
                     Container(
-                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2),
-                          color: Colors.grey[200]),
+                      decoration:
+                          BoxDecoration(border: Border.all(color: Colors.black, width: 2), color: Colors.grey[200]),
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                       child: Row(
                         children: [
