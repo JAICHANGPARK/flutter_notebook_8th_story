@@ -59,7 +59,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             children: [
                               Text(
                                 "Delivery",
-                                style: GoogleFonts.alata(fontWeight: FontWeight.bold),
+                                style: GoogleFonts.alata(fontWeight: FontWeight.bold, fontSize: 34),
                               )
                             ],
                           )
