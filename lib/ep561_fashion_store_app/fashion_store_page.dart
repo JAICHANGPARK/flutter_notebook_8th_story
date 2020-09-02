@@ -89,17 +89,17 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             children: [
                               Text(
                                 "Payment",
-                                style: GoogleFonts.alata(fontWeight: FontWeight.bold, fontSize: 34),
+                                style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 34),
                               ),
                               Text(
                                 "method",
-                                style: GoogleFonts.alata(fontWeight: FontWeight.bold, fontSize: 34),
+                                style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 34),
                               ),
                               SizedBox(
                                 height: 8,
                               ),
                               Text(
-                                "UPS International -- Express Shipping",
+                                "Credit card -- ending in 4100",
                               )
                             ],
                           ),
