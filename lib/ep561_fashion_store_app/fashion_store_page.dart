@@ -45,9 +45,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
             Expanded(
                 flex: 3,
                 child: Container(
-                  decoration:
-                      BoxDecoration(color: Colors.lightGreenAccent, border: Border.all(color: Colors.black, width: 2),
-                      ),
+                  decoration: BoxDecoration(
+                    color: Colors.lightGreenAccent,
+                    border: Border.all(color: Colors.black, width: 2),
+                  ),
                   padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: 8),
                   child: Row(
                     children: [
@@ -55,15 +56,23 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("ORDER SUMMARY", style: GoogleFonts.alata(
-                            fontWeight: FontWeight.bold,
-                          ),),
+                          Text(
+                            "ORDER SUMMARY",
+                            style: GoogleFonts.alata(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Text("5 items in your cart")
                         ],
                       ),
                       Spacer(),
-                      Text("\$ 3550"),
-                      IconButton(icon: Icon(Icons.keyboard_arrow_down), onPressed:(){})
+                      Text(
+                        "\$ 3550",
+                        style: GoogleFonts.alata(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      IconButton(icon: Icon(Icons.keyboard_arrow_down), onPressed: () {})
                     ],
                   ),
                 )),
