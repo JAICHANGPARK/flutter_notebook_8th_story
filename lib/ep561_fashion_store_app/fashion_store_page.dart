@@ -48,7 +48,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                   decoration:
                       BoxDecoration(color: Colors.lightGreenAccent, border: Border.all(color: Colors.black, width: 2),
                       ),
-                  padding: EdgeInsets.only(left: 8, right: 8),
+                  padding: EdgeInsets.only(left: 8, right: 8, top: 24),
                   child: Row(
                     children: [
                       Column(
