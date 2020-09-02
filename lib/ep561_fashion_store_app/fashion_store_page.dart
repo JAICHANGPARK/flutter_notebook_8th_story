@@ -77,6 +77,36 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           IconButton(icon: Icon(Icons.arrow_forward), iconSize: 42, onPressed: () {})
                         ],
                       ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2),
+                          color: Colors.grey[300]),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                      child: Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Payment",
+                                style: GoogleFonts.alata(fontWeight: FontWeight.bold, fontSize: 34),
+                              ),
+                              Text(
+                                "method",
+                                style: GoogleFonts.alata(fontWeight: FontWeight.bold, fontSize: 34),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "UPS International -- Express Shipping",
+                              )
+                            ],
+                          ),
+                          Spacer(),
+                          IconButton(icon: Icon(Icons.arrow_forward), iconSize: 42, onPressed: () {})
+                        ],
+                      ),
                     )
                   ],
                 )),
