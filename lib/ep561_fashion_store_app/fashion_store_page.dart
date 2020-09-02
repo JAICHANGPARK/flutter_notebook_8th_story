@@ -63,7 +63,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             children: [
                               Text(
                                 "Delivery",
-                                style: GoogleFonts.alata(fontWeight: FontWeight.bold, fontSize: 34),
+                                style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 34),
                               ),
                               SizedBox(
                                 height: 8,
@@ -80,7 +80,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                     ),
                     Container(
                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2),
-                          color: Colors.grey[300]),
+                          color: Colors.grey[200]),
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                       child: Row(
                         children: [
