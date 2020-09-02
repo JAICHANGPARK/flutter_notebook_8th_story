@@ -53,10 +53,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 child: ListView(
                   children: [
                     Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.black,
-                        width: 2)
-                      ),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                       child: Row(
                         children: [
@@ -67,16 +64,16 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                 "Delivery",
                                 style: GoogleFonts.alata(fontWeight: FontWeight.bold, fontSize: 34),
                               ),
-                              SizedBox(height: 8,),
-                              Text("UPS International -- Express Shipping", )
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "UPS International -- Express Shipping",
+                              )
                             ],
                           ),
-                          
-                          IconButton(icon: Icon(Icons.arrow_forward),
-                              iconSize: 42,
-                              onPressed: (){
-
-                          })
+                          Spacer(),
+                          IconButton(icon: Icon(Icons.arrow_forward), iconSize: 42, onPressed: () {})
                         ],
                       ),
                     )
