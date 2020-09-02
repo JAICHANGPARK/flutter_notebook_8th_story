@@ -53,7 +53,8 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 child: ListView(
                   children: [
                     Container(
-                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
+                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2),
+                      color: Colors.grey[300]),
                       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                       child: Row(
                         children: [
