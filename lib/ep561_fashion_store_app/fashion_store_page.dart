@@ -60,7 +60,8 @@ class _FashionMainPageState extends State<FashionMainPage> {
                               Text(
                                 "Delivery",
                                 style: GoogleFonts.alata(fontWeight: FontWeight.bold, fontSize: 34),
-                              )
+                              ),
+                              Text("UPS International -- Express Shipping", )
                             ],
                           )
                         ],
