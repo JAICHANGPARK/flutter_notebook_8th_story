@@ -144,11 +144,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Payment",
+                                "Phone",
                                 style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 34),
                               ),
                               Text(
-                                "method",
+                                "number",
                                 style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 34),
                               ),
                               SizedBox(
