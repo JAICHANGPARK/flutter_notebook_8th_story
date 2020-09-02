@@ -70,7 +70,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                               SizedBox(height: 8,),
                               Text("UPS International -- Express Shipping", )
                             ],
-                          )
+                          ),
+                          IconButton(icon: Icon(Icons.arrow_forward), onPressed: (){
+                            
+                          })
                         ],
                       ),
                     )
