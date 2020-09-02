@@ -57,13 +57,15 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         children: [
                           Column(
                             children: [
-                              
+                              Text(
+                                "Delivery",
+                                style: GoogleFonts.alata(fontWeight: FontWeight.bold),
+                              )
                             ],
                           )
                         ],
                       ),
                     )
-
                   ],
                 )),
             Expanded(
