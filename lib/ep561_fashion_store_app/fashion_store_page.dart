@@ -53,6 +53,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 child: ListView(
                   children: [
                     Container(
+                      decoration: BoxDecoration(),
                       padding: EdgeInsets.all(16),
                       child: Row(
                         children: [
@@ -63,6 +64,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                 "Delivery",
                                 style: GoogleFonts.alata(fontWeight: FontWeight.bold, fontSize: 34),
                               ),
+                              SizedBox(height: 8,),
                               Text("UPS International -- Express Shipping", )
                             ],
                           )
