@@ -58,7 +58,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           Text("ORDER SUMMARY"),
                           Text("5 items in your cart")
                         ],
-                      )
+                      ),
+                      Spacer(),
+                      Text("\$ 3550"),
+                      IconButton(icon: Icon(Icons.keyboard_arrow_down), onPressed:(){})
                     ],
                   ),
                 )),
