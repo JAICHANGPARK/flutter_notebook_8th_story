@@ -57,7 +57,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         border: Border.all(color: Colors.black,
                         width: 2)
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                       child: Row(
                         children: [
                           Column(
