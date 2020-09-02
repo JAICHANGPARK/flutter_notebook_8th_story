@@ -51,7 +51,20 @@ class _FashionMainPageState extends State<FashionMainPage> {
             Expanded(
                 flex: 20,
                 child: ListView(
-                  children: [],
+                  children: [
+                    Container(
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              
+                            ],
+                          )
+                        ],
+                      ),
+                    )
+
+                  ],
                 )),
             Expanded(
                 flex: 3,
