@@ -55,7 +55,9 @@ class _FashionMainPageState extends State<FashionMainPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("ORDER SUMMARY"),
+                          Text("ORDER SUMMARY", style: GoogleFonts.alata(
+                            fontWeight: FontWeight.bold,
+                          ),),
                           Text("5 items in your cart")
                         ],
                       ),
