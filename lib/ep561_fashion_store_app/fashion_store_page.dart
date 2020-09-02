@@ -53,9 +53,11 @@ class _FashionMainPageState extends State<FashionMainPage> {
                 child: ListView(
                   children: [
                     Container(
+                      padding: EdgeInsets.all(16),
                       child: Row(
                         children: [
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "Delivery",
