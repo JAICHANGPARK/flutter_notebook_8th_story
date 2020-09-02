@@ -155,7 +155,7 @@ class _FashionMainPageState extends State<FashionMainPage> {
                                 height: 8,
                               ),
                               Text(
-                                "Credit card -- ending in 4100",
+                                "Preferred number - 070-123-4567",
                               )
                             ],
                           ),
