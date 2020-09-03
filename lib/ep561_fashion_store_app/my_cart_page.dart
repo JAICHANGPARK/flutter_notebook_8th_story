@@ -32,7 +32,8 @@ class _MyCartPageState extends State<MyCartPage> {
                 Expanded(child: Center(child: Text("MY CART"))),
                 
                 Expanded(
-                  child: Center(
+                  child: Align(
+                    alignment: Alignment.centerRight,
                     child: Badge(
                       child: Icon(Icons.shopping_cart),
                       badgeContent: Text("2"),
