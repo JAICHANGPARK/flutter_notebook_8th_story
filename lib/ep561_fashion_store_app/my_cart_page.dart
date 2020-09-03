@@ -17,15 +17,20 @@ class _MyCartPageState extends State<MyCartPage> {
               children: [
                 
                 Expanded(
-                  child: IconButton(icon: Icon(Icons.arrow_back_ios), onPressed: (){
-                    Navigator.of(context).pop();
-                  }),
-                ),
-                IconButton(icon: Icon(Icons.menu), onPressed: (){
+                  child: Row(
+                    children: [
+                      IconButton(icon: Icon(Icons.arrow_back_ios), onPressed: (){
+                        Navigator.of(context).pop();
+                      }),
+                      IconButton(icon: Icon(Icons.menu), onPressed: (){
 
-                }),
+                      }),
+                    ],
+                  ),
+                ),
+
                 
-                Text("MY CART"),
+                Expanded(child: Center(child: Text("MY CART"))),
                 
                 Badge(
                   child: Icon(Icons.shopping_cart),
