@@ -21,7 +21,7 @@ class _MyCartPageState extends State<MyCartPage> {
 
                 }),
                 Text("MY CART"),
-                
+
               ],
             )),
             Expanded(flex: 3, child: Placeholder()),
