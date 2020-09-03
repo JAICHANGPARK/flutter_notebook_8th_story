@@ -28,13 +28,16 @@ class _MyCartPageState extends State<MyCartPage> {
                     ],
                   ),
                 ),
-
                 
                 Expanded(child: Center(child: Text("MY CART"))),
                 
-                Badge(
-                  child: Icon(Icons.shopping_cart),
-                  badgeContent: Text("2"),
+                Expanded(
+                  child: Center(
+                    child: Badge(
+                      child: Icon(Icons.shopping_cart),
+                      badgeContent: Text("2"),
+                    ),
+                  ),
                 )
 
               ],
