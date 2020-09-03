@@ -12,7 +12,13 @@ class _MyCartPageState extends State<MyCartPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(flex: 2, child: Placeholder()),
+            Expanded(flex: 2, child: Row(
+              children: [
+                IconButton(icon: Icon(Icons.arrow_back_ios), onPressed: (){
+                  Navigator.of(context).pop();
+                })
+              ],
+            )),
             Expanded(flex: 3, child: Placeholder()),
             Expanded(flex: 15, child: Placeholder())
           ],
