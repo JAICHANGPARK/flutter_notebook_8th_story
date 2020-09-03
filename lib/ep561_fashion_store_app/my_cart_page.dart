@@ -16,7 +16,12 @@ class _MyCartPageState extends State<MyCartPage> {
               children: [
                 IconButton(icon: Icon(Icons.arrow_back_ios), onPressed: (){
                   Navigator.of(context).pop();
-                })
+                }),
+                IconButton(icon: Icon(Icons.menu), onPressed: (){
+
+                }),
+                Text("MY CART"),
+                
               ],
             )),
             Expanded(flex: 3, child: Placeholder()),
