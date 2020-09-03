@@ -12,7 +12,7 @@ class _MyCartPageState extends State<MyCartPage> {
     return Scaffold(
       body: Column(
         children: [
-          
+
         ],
       ),
     );
