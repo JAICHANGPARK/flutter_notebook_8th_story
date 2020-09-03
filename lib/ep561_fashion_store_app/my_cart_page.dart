@@ -61,7 +61,10 @@ class _MyCartPageState extends State<MyCartPage> {
               child: ListView.builder(
                 itemBuilder: (context, index){
                   return Container(
-
+                      height: MediaQuery.of(context).size.height / 2,
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200]
+                    ),
                   );
                 },
               ),
