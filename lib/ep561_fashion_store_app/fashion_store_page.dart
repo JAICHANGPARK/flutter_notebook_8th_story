@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_8th_story/ep561_fashion_store_app/my_cart_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FashionStoreApp extends StatelessWidget {
@@ -72,7 +73,10 @@ class _FashionMainPageState extends State<FashionMainPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      IconButton(icon: Icon(Icons.keyboard_arrow_down), onPressed: () {})
+                      IconButton(icon: Icon(Icons.keyboard_arrow_down), onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+                        MyCartPage()));
+                      })
                     ],
                   ),
                 )),
