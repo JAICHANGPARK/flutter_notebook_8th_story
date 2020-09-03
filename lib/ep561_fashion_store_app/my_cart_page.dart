@@ -49,7 +49,11 @@ class _MyCartPageState extends State<MyCartPage> {
                 ),
               ),
             )),
-            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 3, child: Container(
+              decoration: BoxDecoration(
+                color: Colors.black
+              ),
+            )),
             Expanded(flex: 15, child: Placeholder())
           ],
         ),
