@@ -54,7 +54,7 @@ class _MyCartPageState extends State<MyCartPage> {
                 color: Colors.black
               ),
             )),
-            Expanded(flex: 15, child: Container(
+            Expanded(flex: 18, child: Container(
               decoration: BoxDecoration(
                 color: Colors.grey[400]
               ),
