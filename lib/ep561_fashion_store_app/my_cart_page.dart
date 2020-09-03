@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MyCartPage extends StatefulWidget {
   @override
   _MyCartPageState createState() => _MyCartPageState();
@@ -13,11 +12,9 @@ class _MyCartPageState extends State<MyCartPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder()),
-            Expanded(child: Placeholder())
-
-
+            Expanded(flex: 2, child: Placeholder()),
+            Expanded(flex: 3, child: Placeholder()),
+            Expanded(flex: 15, child: Placeholder())
           ],
         ),
       ),
