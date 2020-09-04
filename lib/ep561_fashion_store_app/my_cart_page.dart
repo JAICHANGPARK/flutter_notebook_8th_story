@@ -115,6 +115,22 @@ class _MyCartPageState extends State<MyCartPage> {
                                           border: Border.all(
                                         color: Colors.black,
                                       )),
+                                    ),
+                                    Container(
+                                      width: 80,
+                                      height: 58,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.black,
+                                          )),
+                                    ),
+                                    Container(
+                                      width: 80,
+                                      height: 120,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.black,
+                                          )),
                                     )
                                   ],
                                 ))
@@ -130,3 +146,27 @@ class _MyCartPageState extends State<MyCartPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
