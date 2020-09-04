@@ -107,9 +107,11 @@ class _MyCartPageState extends State<MyCartPage> {
                                 left: 0,
                                 right: 0,
                                 child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Container(
-                                      width: 80,
+                                      width: 100,
+                                      
                                       height: 58,
                                       decoration: BoxDecoration(
                                           border: Border.all(
@@ -117,7 +119,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                       )),
                                     ),
                                     Container(
-                                      width: 80,
+                                      width: 100,
                                       height: 58,
                                       decoration: BoxDecoration(
                                           border: Border.all(
@@ -125,7 +127,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                           )),
                                     ),
                                     Container(
-                                      width: 80,
+                                      width: 160,
                                       height: 120,
                                       decoration: BoxDecoration(
                                           border: Border.all(
