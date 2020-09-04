@@ -67,7 +67,13 @@ class _MyCartPageState extends State<MyCartPage> {
                         margin: EdgeInsets.only(bottom: 16),
                         height: MediaQuery.of(context).size.height / 2.8,
                         decoration: BoxDecoration(color: Colors.grey[200],
-                        border: Border.all(color: Colors.black, width: 3)),
+                        border: Border.all(color: Colors.black, width: 3),
+                        ),
+                        child: Stack(
+                          children: [
+                            
+                          ],
+                        ),
                       );
                     },
                   ),
