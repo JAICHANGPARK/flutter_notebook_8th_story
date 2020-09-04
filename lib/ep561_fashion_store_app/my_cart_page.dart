@@ -75,11 +75,13 @@ class _MyCartPageState extends State<MyCartPage> {
                           children: [
                             Positioned(
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
                                     "POP\nTEMPLE\nPRINT\nT-\nSHIRT",
                                     style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 28),
                                   ),
+                                  Text("versace limited 2021"),
                                 ],
                               ),
                               left: 8,
@@ -97,3 +99,23 @@ class _MyCartPageState extends State<MyCartPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
