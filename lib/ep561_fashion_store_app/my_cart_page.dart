@@ -65,9 +65,9 @@ class _MyCartPageState extends State<MyCartPage> {
                     itemBuilder: (context, index) {
                       return Container(
                         margin: EdgeInsets.only(bottom: 16),
-                        height: MediaQuery.of(context).size.height / 3,
+                        height: MediaQuery.of(context).size.height / 2.8,
                         decoration: BoxDecoration(color: Colors.grey[200],
-                        border: Border.all(color: Colors.black)),
+                        border: Border.all(color: Colors.black, width: 3)),
                       );
                     },
                   ),
