@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyCartPage extends StatefulWidget {
   @override
@@ -72,7 +73,14 @@ class _MyCartPageState extends State<MyCartPage> {
                         child: Stack(
                           children: [
 
-                            Positioned(child: Text("POP TEMPLE PRINT T- SHIRT"),)
+                            Positioned(child: Text("POP\nTEMPLE\nPRINT\nT-\nSHIRT",
+                            style: GoogleFonts.montserrat(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 28
+                            ),),
+                              left: 8,
+                              top: 8,
+                            )
 
                           ],
                         ),
