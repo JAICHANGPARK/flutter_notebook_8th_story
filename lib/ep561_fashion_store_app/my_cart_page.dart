@@ -91,6 +91,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                 right: 8,
                                 top: 8,
                                 child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Text(
                                       "\$1990",
@@ -98,7 +99,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                     ),
                                     Text(
                                       "\$995 per piece",
-                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                     )
                                   ],
                                 )),
