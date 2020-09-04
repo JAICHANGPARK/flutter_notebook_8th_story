@@ -111,7 +111,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                   children: [
                                     Container(
                                       width: 100,
-                                      
+
                                       height: 58,
                                       decoration: BoxDecoration(
                                           border: Border.all(
@@ -128,7 +128,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                     ),
                                     Container(
                                       width: 160,
-                                      height: 120,
+                                      height: 160,
                                       decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Colors.black,
