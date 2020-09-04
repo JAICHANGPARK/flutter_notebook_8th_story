@@ -86,7 +86,10 @@ class _MyCartPageState extends State<MyCartPage> {
                               ),
                               left: 8,
                               top: 8,
-                            )
+                            ),
+                            Positioned(child: Column(children: [
+                              
+                            ],))
                           ],
                         ),
                       );
