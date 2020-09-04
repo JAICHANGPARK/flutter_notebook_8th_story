@@ -71,7 +71,9 @@ class _MyCartPageState extends State<MyCartPage> {
                         ),
                         child: Stack(
                           children: [
-                            
+
+                            Positioned(child: Text("POP TEMPLE PRINT T- SHIRT"),)
+
                           ],
                         ),
                       );
