@@ -101,7 +101,16 @@ class _MyCartPageState extends State<MyCartPage> {
                                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                                     )
                                   ],
-                                ))
+                                )),
+                            Positioned(
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
+                                child: Row(
+                              children: [
+
+                              ],
+                            ))
                           ],
                         ),
                       );
@@ -114,3 +123,24 @@ class _MyCartPageState extends State<MyCartPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
