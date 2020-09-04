@@ -107,16 +107,17 @@ class _MyCartPageState extends State<MyCartPage> {
                                 left: 0,
                                 right: 0,
                                 child: Row(
-                              children: [
+                                  children: [
                                     Container(
                                       width: 80,
                                       height: 58,
                                       decoration: BoxDecoration(
-                                        color: Colors.black
-                                      ),
+                                          border: Border.all(
+                                        color: Colors.black,
+                                      )),
                                     )
-                              ],
-                            ))
+                                  ],
+                                ))
                           ],
                         ),
                       );
@@ -129,24 +130,3 @@ class _MyCartPageState extends State<MyCartPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
