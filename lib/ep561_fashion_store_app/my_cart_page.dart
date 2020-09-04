@@ -87,8 +87,14 @@ class _MyCartPageState extends State<MyCartPage> {
                               left: 8,
                               top: 8,
                             ),
-                            Positioned(child: Column(children: [
-                              
+                            Positioned(
+                                right: 8,
+                                top:8,
+                                child: Column(children: [
+                                    Text("\$1990", style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24
+                                    ),)
                             ],))
                           ],
                         ),
