@@ -73,11 +73,16 @@ class _MyCartPageState extends State<MyCartPage> {
                         child: Stack(
                           children: [
 
-                            Positioned(child: Text("POP\nTEMPLE\nPRINT\nT-\nSHIRT",
-                            style: GoogleFonts.montserrat(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 28
-                            ),),
+                            Positioned(child: Column(
+                              children: [
+                                Text("POP\nTEMPLE\nPRINT\nT-\nSHIRT",
+                                style: GoogleFonts.montserrat(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 28
+                                ),),
+                                
+                              ],
+                            ),
                               left: 8,
                               top: 8,
                             )
