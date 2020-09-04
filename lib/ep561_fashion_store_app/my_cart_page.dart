@@ -99,7 +99,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                     ),
                                     Text(
                                       "\$995 per piece",
-                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                                     )
                                   ],
                                 )),
@@ -112,7 +112,6 @@ class _MyCartPageState extends State<MyCartPage> {
                                   children: [
                                     Container(
                                       width: 100,
-
                                       height: 58,
                                       decoration: BoxDecoration(
                                           border: Border.all(
@@ -124,17 +123,26 @@ class _MyCartPageState extends State<MyCartPage> {
                                       height: 58,
                                       decoration: BoxDecoration(
                                           border: Border.all(
-                                            color: Colors.black,
-                                          )),
+                                        color: Colors.black,
+                                      )),
                                     ),
                                     Container(
                                       width: 160,
-                                      height: 160,
+                                      height: 180,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                        color: Colors.black,
+                                      )),
+                                    ),
+                                    Container(
+                                      width: 26,
+                                      height: 58,
                                       decoration: BoxDecoration(
                                           border: Border.all(
                                             color: Colors.black,
+                                            width: 3
                                           )),
-                                    )
+                                    ),
                                   ],
                                 ))
                           ],
@@ -149,27 +157,3 @@ class _MyCartPageState extends State<MyCartPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
