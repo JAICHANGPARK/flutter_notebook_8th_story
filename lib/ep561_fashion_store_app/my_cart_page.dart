@@ -114,6 +114,13 @@ class _MyCartPageState extends State<MyCartPage> {
                                       width: 100,
                                       height: 58,
                                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(child: Column(children: [
+                                            
+                                          ],))
+                                        ],
+                                      ),
                                     ),
                                     Container(
                                       width: 100,
