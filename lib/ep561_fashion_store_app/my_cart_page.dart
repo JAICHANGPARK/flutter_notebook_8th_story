@@ -147,6 +147,34 @@ class _MyCartPageState extends State<MyCartPage> {
                                       width: 100,
                                       height: 58,
                                       decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(
+                                              top: 10,
+                                              left: 16,
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    "QT",
+                                                    style: TextStyle(fontSize: 12),
+                                                  ),
+                                                  Text(
+                                                    "2 pcs",
+                                                    style: TextStyle(fontSize: 12),
+                                                  ),
+                                                ],
+                                              )),
+                                          Positioned(
+                                              top: 16,
+                                              bottom: 8,
+                                              right: 0,
+                                              child: IconButton(
+                                                icon: Icon(Icons.arrow_downward),
+                                                onPressed: () {},
+                                              ))
+                                        ],
+                                      ),
                                     ),
                                     Container(
                                       width: 160,
