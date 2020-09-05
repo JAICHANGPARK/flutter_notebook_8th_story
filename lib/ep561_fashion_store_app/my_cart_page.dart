@@ -56,7 +56,17 @@ class _MyCartPageState extends State<MyCartPage> {
             Expanded(
                 flex: 3,
                 child: Container(
+                  width: double.infinity,
                   decoration: BoxDecoration(color: Colors.black),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text("\$ 3550", style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24
+                      ),)
+                    ],
+                  ),
                 )),
             Expanded(
                 flex: 18,
