@@ -63,8 +63,12 @@ class _MyCartPageState extends State<MyCartPage> {
                     children: [
                       Text("\$ 3550", style: TextStyle(
                         color: Colors.white,
-                        fontSize: 24
-                      ),)
+                        fontSize: 20
+                      ),),
+                      Text("based on your 5 items", style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 12
+                      ),),
                     ],
                   ),
                 )),
