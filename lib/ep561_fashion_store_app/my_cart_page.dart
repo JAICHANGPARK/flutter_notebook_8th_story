@@ -126,7 +126,12 @@ class _MyCartPageState extends State<MyCartPage> {
                                       decoration: BoxDecoration(
                                         color: Colors.grey[300],
                                         border: Border.all(color: Colors.black, width: 2),
+                                        image: DecorationImage(
+                                          image: NetworkImage("https://cdn.shopify.com/s/files/1/0034/8500/7936/products/DynamicImageHandler_29d95cf3-fefc-4f08-b3ad-b8e0a29d3d9f.png"),
+
+                                        )
                                       ),
+
                                     ),
                                     Container(
                                       width: 26,
