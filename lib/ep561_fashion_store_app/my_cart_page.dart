@@ -117,7 +117,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            top: 16,
+                                            top: 10,
                                               left: 16,
                                               child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -130,7 +130,11 @@ class _MyCartPageState extends State<MyCartPage> {
                                               ),),
                                             ],
                                           )),
-                                          Positioned(child: IconButton(icon: Icon(Icons.arrow_downward),
+                                          Positioned(
+                                            top: 16,
+                                              bottom: 8,
+                                              right: 0,
+                                              child: IconButton(icon: Icon(Icons.arrow_downward),
                                           onPressed: (){},))
 
                                         ],
