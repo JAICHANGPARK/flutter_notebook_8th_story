@@ -54,8 +54,9 @@ class _MyCartPageState extends State<MyCartPage> {
                   ),
                 )),
             Expanded(
-                flex: 3,
+                flex: 2,
                 child: Container(
+                  padding: EdgeInsets.all(8),
                   width: double.infinity,
                   decoration: BoxDecoration(color: Colors.black),
                   child: Column(
