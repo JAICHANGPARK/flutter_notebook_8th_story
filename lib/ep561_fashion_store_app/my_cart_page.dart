@@ -113,36 +113,25 @@ class _MyCartPageState extends State<MyCartPage> {
                                     Container(
                                       width: 100,
                                       height: 58,
-                                      decoration: BoxDecoration(
-                                          border: Border.all(
-                                        color: Colors.black,width: 2
-                                      )),
+                                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
                                     ),
                                     Container(
                                       width: 100,
                                       height: 58,
-                                      decoration: BoxDecoration(
-                                          border: Border.all(
-                                        color: Colors.black,width: 2
-                                      )),
+                                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
                                     ),
                                     Container(
                                       width: 160,
                                       height: 180,
                                       decoration: BoxDecoration(
                                         color: Colors.grey[300],
-                                          border: Border.all(
-                                        color: Colors.black,width: 2
-                                      )),
+                                        border: Border.all(color: Colors.black, width: 2),
+                                      ),
                                     ),
                                     Container(
                                       width: 26,
                                       height: 58,
-                                      decoration: BoxDecoration(
-                                          border: Border.all(
-                                            color: Colors.black,
-                                            width: 2
-                                          )),
+                                      decoration: BoxDecoration(border: Border.all(color: Colors.black, width: 2)),
                                     ),
                                   ],
                                 ))
