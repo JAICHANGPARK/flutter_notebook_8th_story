@@ -117,7 +117,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            top: 8,
+                                            top: 16,
                                               left: 16,
                                               child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -125,7 +125,9 @@ class _MyCartPageState extends State<MyCartPage> {
                                               Text("SIZE", style: TextStyle(
                                                 fontSize: 12
                                               ),),
-                                              Text("48 - L"),
+                                              Text("48 - L", style: TextStyle(
+                                                  fontSize: 12
+                                              ),),
                                             ],
                                           )),
 
