@@ -117,7 +117,8 @@ class _MyCartPageState extends State<MyCartPage> {
                                       child: Stack(
                                         children: [
                                           Positioned(child: Column(children: [
-                                            
+                                              Text("SIZE"),
+                                            Text("48 - L"),
                                           ],))
                                         ],
                                       ),
