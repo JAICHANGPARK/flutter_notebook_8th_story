@@ -117,26 +117,29 @@ class _MyCartPageState extends State<MyCartPage> {
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                            top: 10,
+                                              top: 10,
                                               left: 16,
                                               child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Text("SIZE", style: TextStyle(
-                                                fontSize: 12
-                                              ),),
-                                              Text("48 - L", style: TextStyle(
-                                                  fontSize: 12
-                                              ),),
-                                            ],
-                                          )),
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    "SIZE",
+                                                    style: TextStyle(fontSize: 12),
+                                                  ),
+                                                  Text(
+                                                    "48 - L",
+                                                    style: TextStyle(fontSize: 12),
+                                                  ),
+                                                ],
+                                              )),
                                           Positioned(
-                                            top: 16,
+                                              top: 16,
                                               bottom: 8,
                                               right: 0,
-                                              child: IconButton(icon: Icon(Icons.arrow_downward),
-                                          onPressed: (){},))
-
+                                              child: IconButton(
+                                                icon: Icon(Icons.arrow_downward),
+                                                onPressed: () {},
+                                              ))
                                         ],
                                       ),
                                     ),
