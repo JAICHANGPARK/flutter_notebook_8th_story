@@ -61,6 +61,7 @@ class _MyCartPageState extends State<MyCartPage> {
                   decoration: BoxDecoration(color: Colors.black),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Text("\$ 3550", style: TextStyle(
                         color: Colors.white,
