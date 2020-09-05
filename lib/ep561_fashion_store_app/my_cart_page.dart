@@ -180,7 +180,7 @@ class _MyCartPageState extends State<MyCartPage> {
                                       width: 160,
                                       height: 180,
                                       decoration: BoxDecoration(
-                                          color: Colors.grey[300],
+                                          color: Colors.grey[400],
                                           border: Border.all(color: Colors.black, width: 2),
                                           image: DecorationImage(
                                             image: NetworkImage(
