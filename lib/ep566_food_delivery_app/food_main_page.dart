@@ -28,6 +28,11 @@ class _FoodMainPageState extends State<FoodMainPage> {
                         selectedIcon: Icon(Icons.favorite),
                         label: Text('First'),
                       ),
+                      NavigationRailDestination(
+                        icon: Icon(Icons.favorite_border),
+                        selectedIcon: Icon(Icons.favorite),
+                        label: Text('First'),
+                      ),
                     ], selectedIndex: _pageIndex)
                   ],
                 ),
