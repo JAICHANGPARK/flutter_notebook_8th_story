@@ -6,6 +6,8 @@ class FoodMainPage extends StatefulWidget {
 }
 
 class _FoodMainPageState extends State<FoodMainPage> {
+  int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,12 +19,16 @@ class _FoodMainPageState extends State<FoodMainPage> {
               right: 0,
               bottom: 0,
               child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.teal[400]
-                ),
+                decoration: BoxDecoration(color: Colors.teal[400]),
                 child: Row(
                   children: [
-                    NavigationRail(destinations: [], selectedIndex: null)
+                    NavigationRail(destinations: [
+                      NavigationRailDestination(
+                        icon: Icon(Icons.favorite_border),
+                        selectedIcon: Icon(Icons.favorite),
+                        label: Text('First'),
+                      ),
+                    ], selectedIndex: _pageIndex)
                   ],
                 ),
               )),
@@ -32,36 +38,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
               bottom: 0,
               right: 0,
               child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.white
-                ),
+                decoration: BoxDecoration(color: Colors.white),
               ))
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
