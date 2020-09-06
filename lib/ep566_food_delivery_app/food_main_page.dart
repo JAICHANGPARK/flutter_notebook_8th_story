@@ -22,18 +22,27 @@ class _FoodMainPageState extends State<FoodMainPage> {
                 decoration: BoxDecoration(color: Colors.teal[400]),
                 child: Row(
                   children: [
-                    NavigationRail(destinations: [
-                      NavigationRailDestination(
-                        icon: Icon(Icons.favorite_border),
-                        selectedIcon: Icon(Icons.favorite),
-                        label: Text('First'),
-                      ),
-                      NavigationRailDestination(
-                        icon: Icon(Icons.favorite_border),
-                        selectedIcon: Icon(Icons.favorite),
-                        label: Text('First'),
-                      ),
-                    ], selectedIndex: _pageIndex)
+                    Expanded(
+                      child: NavigationRail(
+                          backgroundColor: Colors.teal[400],
+                          selectedLabelTextStyle: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                          destinations: [
+                        NavigationRailDestination(
+                          icon: Icon(Icons.favorite_border),
+                          selectedIcon: Icon(Icons.favorite),
+                          label: Text('First'),
+                        ),
+                        NavigationRailDestination(
+                          icon: Icon(Icons.favorite_border),
+                          selectedIcon: Icon(Icons.favorite),
+                          label: Text('First'),
+                        ),
+                      ], selectedIndex: _pageIndex),
+                    ),
+                    Expanded(child: Placeholder()),
                   ],
                 ),
               )),
