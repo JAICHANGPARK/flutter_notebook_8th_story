@@ -8,6 +8,6 @@ class FoodMainPage extends StatefulWidget {
 class _FoodMainPageState extends State<FoodMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
