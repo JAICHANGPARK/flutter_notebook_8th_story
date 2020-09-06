@@ -63,14 +63,14 @@ class _MyCartPageState extends State<MyCartPage> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Text("\$ 3550", style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20
-                      ),),
-                      Text("based on your 5 items", style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12
-                      ),),
+                      Text(
+                        "\$ 3550",
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                      Text(
+                        "based on your 5 items",
+                        style: TextStyle(color: Colors.white, fontSize: 12),
+                      ),
                     ],
                   ),
                 )),
