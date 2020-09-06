@@ -26,8 +26,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
                     Expanded(
                       flex: 2,
                       child: NavigationRail(
+
                         groupAlignment: 1,
 
+                        labelType: NavigationRailLabelType.selected,
                           backgroundColor: Colors.teal[400],
                           selectedLabelTextStyle: TextStyle(
                             fontSize: 18,
@@ -35,14 +37,14 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           ),
                           destinations: [
                         NavigationRailDestination(
-                          icon: Icon(Icons.favorite_border),
-                          selectedIcon: Icon(Icons.favorite),
+
+                          icon: SizedBox.shrink(),
+//                          selectedIcon: Icon(Icons.favorite),
                           label: Text('First'),
                         ),
                         NavigationRailDestination(
-                          icon: Icon(Icons.favorite_border),
-                          selectedIcon: Icon(Icons.favorite),
-                          label: Text('First'),
+                          icon: SizedBox.shrink(),
+                          label: Text('First', style: TextStyle(color: Colors.white),),
                         ),
                       ], selectedIndex: _pageIndex,
                       onDestinationSelected: (index){
