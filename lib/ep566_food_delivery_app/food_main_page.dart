@@ -21,7 +21,9 @@ class _FoodMainPageState extends State<FoodMainPage> {
                   color: Colors.teal[400]
                 ),
                 child: Row(
-                  children: [],
+                  children: [
+                    NavigationRail(destinations: [], selectedIndex: null)
+                  ],
                 ),
               )),
           Positioned(
