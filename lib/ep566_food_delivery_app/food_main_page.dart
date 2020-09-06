@@ -14,6 +14,14 @@ class _FoodMainPageState extends State<FoodMainPage> {
       body: Stack(
         children: [
           Positioned(
+              left: 64,
+              top: 0,
+              bottom: 0,
+              right: 0,
+              child: Container(
+                decoration: BoxDecoration(color: Colors.white),
+              )),
+          Positioned(
               left: 0,
               top: 0,
               right: 0,
@@ -23,6 +31,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                 child: Row(
                   children: [
                     Expanded(
+                      flex: 2,
                       child: NavigationRail(
                           backgroundColor: Colors.teal[400],
                           selectedLabelTextStyle: TextStyle(
@@ -42,18 +51,12 @@ class _FoodMainPageState extends State<FoodMainPage> {
                         ),
                       ], selectedIndex: _pageIndex),
                     ),
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                        flex: 10,child: Placeholder()),
                   ],
                 ),
               )),
-          Positioned(
-              left: 64,
-              top: 0,
-              bottom: 0,
-              right: 0,
-              child: Container(
-                decoration: BoxDecoration(color: Colors.white),
-              ))
+
         ],
       ),
     );
