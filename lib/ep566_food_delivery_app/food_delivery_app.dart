@@ -6,7 +6,7 @@ class FoodDeliveryApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: "/",
       routes: {
-        "/home" =>
+        "/home" : (context) =>
       },
     );
   }
