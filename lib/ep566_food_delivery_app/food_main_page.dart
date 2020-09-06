@@ -13,14 +13,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(
-              left: 64,
-              top: 0,
-              bottom: 0,
-              right: 0,
-              child: Container(
-                decoration: BoxDecoration(color: Colors.white),
-              )),
+
           Positioned(
               left: 0,
               top: 0,
@@ -56,7 +49,14 @@ class _FoodMainPageState extends State<FoodMainPage> {
                   ],
                 ),
               )),
-
+          Positioned(
+              left: 64,
+              top: 0,
+              bottom: 0,
+              right: 0,
+              child: Container(
+                decoration: BoxDecoration(color: Colors.white),
+              )),
         ],
       ),
     );
