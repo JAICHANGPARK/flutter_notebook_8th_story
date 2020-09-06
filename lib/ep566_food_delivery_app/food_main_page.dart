@@ -9,8 +9,14 @@ class _FoodMainPageState extends State<FoodMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Row(
+      body: Stack(
         children: [
+          Positioned(child: Row(
+            children: [
+              
+            ],
+          )),
+          Positioned(child: Container())
 
         ],
       ),
