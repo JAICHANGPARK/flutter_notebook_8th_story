@@ -70,7 +70,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                         },
                       ),
                     ),
-                    Expanded(flex: 10, child: Placeholder()),
+                    Expanded(flex: 10, child: Container()),
                   ],
                 ),
               )),
