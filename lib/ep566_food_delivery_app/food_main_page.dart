@@ -41,19 +41,25 @@ class _FoodMainPageState extends State<FoodMainPage> {
                             icon: SizedBox.shrink(),
                             label: RotatedBox(
                                 quarterTurns: -1,
-                                child: Text('First')),
+                                child: Text('All Items')),
                           ),
                           NavigationRailDestination(
                             icon: SizedBox.shrink(),
                             label: RotatedBox(
                                 quarterTurns: -1,
-                                child: Text('First')),
+                                child: Text('Popular')),
                           ),
                           NavigationRailDestination(
                             icon: SizedBox.shrink(),
                             label: RotatedBox(
                                 quarterTurns: -1,
-                                child: Text('First')),
+                                child: Text('New Items')),
+                          ),
+                          NavigationRailDestination(
+                            icon: SizedBox.shrink(),
+                            label: RotatedBox(
+                                quarterTurns: -1,
+                                child: Text('Special')),
                           ),
                         ],
                         selectedIndex: _pageIndex,
