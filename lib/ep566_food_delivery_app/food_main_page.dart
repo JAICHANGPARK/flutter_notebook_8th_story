@@ -32,18 +32,28 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           fontSize: 18,
                           color: Colors.white,
                         ),
+                        unselectedLabelTextStyle: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white
+                        ),
                         destinations: [
                           NavigationRailDestination(
                             icon: SizedBox.shrink(),
-//                          selectedIcon: Icon(Icons.favorite),
-                            label: Text('First'),
+                            label: RotatedBox(
+                                quarterTurns: -1,
+                                child: Text('First')),
                           ),
                           NavigationRailDestination(
                             icon: SizedBox.shrink(),
-                            label: Text(
-                              'First',
-                              style: TextStyle(color: Colors.white),
-                            ),
+                            label: RotatedBox(
+                                quarterTurns: -1,
+                                child: Text('First')),
+                          ),
+                          NavigationRailDestination(
+                            icon: SizedBox.shrink(),
+                            label: RotatedBox(
+                                quarterTurns: -1,
+                                child: Text('First')),
                           ),
                         ],
                         selectedIndex: _pageIndex,
