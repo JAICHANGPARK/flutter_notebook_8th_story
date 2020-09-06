@@ -36,7 +36,11 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           fontSize: 18,
                           color: Colors.white
                         ),
+                        leading: IconButton(
+                          icon: Icon(Icons.menu), onPressed: () {  },
+                        ),
                         destinations: [
+
                           NavigationRailDestination(
                             icon: SizedBox.shrink(),
                             label: RotatedBox(
