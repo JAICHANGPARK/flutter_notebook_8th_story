@@ -13,7 +13,6 @@ class _FoodMainPageState extends State<FoodMainPage> {
     return Scaffold(
       body: Stack(
         children: [
-
           Positioned(
               left: 0,
               top: 0,
@@ -26,35 +25,36 @@ class _FoodMainPageState extends State<FoodMainPage> {
                     Expanded(
                       flex: 2,
                       child: NavigationRail(
-
                         groupAlignment: 1,
-
-                        labelType: NavigationRailLabelType.selected,
-                          backgroundColor: Colors.teal[400],
-                          selectedLabelTextStyle: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                          ),
-                          destinations: [
-                        NavigationRailDestination(
-
-                          icon: SizedBox.shrink(),
+                        labelType: NavigationRailLabelType.all,
+                        backgroundColor: Colors.teal[400],
+                        selectedLabelTextStyle: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                        ),
+                        destinations: [
+                          NavigationRailDestination(
+                            icon: SizedBox.shrink(),
 //                          selectedIcon: Icon(Icons.favorite),
-                          label: Text('First'),
-                        ),
-                        NavigationRailDestination(
-                          icon: SizedBox.shrink(),
-                          label: Text('First', style: TextStyle(color: Colors.white),),
-                        ),
-                      ], selectedIndex: _pageIndex,
-                      onDestinationSelected: (index){
+                            label: Text('First'),
+                          ),
+                          NavigationRailDestination(
+                            icon: SizedBox.shrink(),
+                            label: Text(
+                              'First',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ],
+                        selectedIndex: _pageIndex,
+                        onDestinationSelected: (index) {
                           setState(() {
                             _pageIndex = index;
                           });
-                      },),
+                        },
+                      ),
                     ),
-                    Expanded(
-                        flex: 10,child: Placeholder()),
+                    Expanded(flex: 10, child: Placeholder()),
                   ],
                 ),
               )),
@@ -66,8 +66,8 @@ class _FoodMainPageState extends State<FoodMainPage> {
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(48),
-                      bottomLeft:  Radius.circular(48),
+                      topLeft: Radius.circular(48),
+                      bottomLeft: Radius.circular(48),
                     ),
                     color: Colors.white),
               )),
@@ -76,16 +76,3 @@ class _FoodMainPageState extends State<FoodMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
