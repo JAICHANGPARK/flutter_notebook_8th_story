@@ -17,19 +17,39 @@ class _FoodMainPageState extends State<FoodMainPage> {
               right: 0,
               bottom: 0,
               child: Container(
-            child: Row(
-              children: [
-
-              ],
-            ),
-          )),
-          Positioned(child: Container())
-
+                decoration: BoxDecoration(
+                  color: Colors.teal[400]
+                ),
+                child: Row(
+                  children: [],
+                ),
+              )),
+          Positioned(
+              left: 64,
+              top: 0,
+              bottom: 0,
+              right: 0,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white
+                ),
+              ))
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
