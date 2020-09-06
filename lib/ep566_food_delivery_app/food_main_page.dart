@@ -26,6 +26,8 @@ class _FoodMainPageState extends State<FoodMainPage> {
                     Expanded(
                       flex: 2,
                       child: NavigationRail(
+                        groupAlignment: 1,
+
                           backgroundColor: Colors.teal[400],
                           selectedLabelTextStyle: TextStyle(
                             fontSize: 18,
@@ -42,7 +44,12 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           selectedIcon: Icon(Icons.favorite),
                           label: Text('First'),
                         ),
-                      ], selectedIndex: _pageIndex),
+                      ], selectedIndex: _pageIndex,
+                      onDestinationSelected: (index){
+                          setState(() {
+                            _pageIndex = index;
+                          });
+                      },),
                     ),
                     Expanded(
                         flex: 10,child: Placeholder()),
@@ -57,7 +64,8 @@ class _FoodMainPageState extends State<FoodMainPage> {
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(48)
+                            topLeft: Radius.circular(48),
+                      bottomLeft:  Radius.circular(48),
                     ),
                     color: Colors.white),
               )),
