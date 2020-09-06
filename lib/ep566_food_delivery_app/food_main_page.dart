@@ -55,10 +55,27 @@ class _FoodMainPageState extends State<FoodMainPage> {
               bottom: 0,
               right: 0,
               child: Container(
-                decoration: BoxDecoration(color: Colors.white),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(48)
+                    ),
+                    color: Colors.white),
               )),
         ],
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
