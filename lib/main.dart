@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'ep561_fashion_store_app/fashion_store_page.dart';
+import 'ep566_food_delivery_app/food_delivery_app.dart';
 
 void main() {
-  runApp(FashionStoreApp());
+  runApp(FoodDeliveryApp());
 }
 
