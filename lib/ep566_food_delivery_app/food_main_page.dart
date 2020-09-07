@@ -9,7 +9,7 @@ class FoodMainPage extends StatefulWidget {
 
 class _FoodMainPageState extends State<FoodMainPage> {
   int _pageIndex = 0;
-  double _clipPosition = 240.0;
+  double _clipPosition = 280.0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
