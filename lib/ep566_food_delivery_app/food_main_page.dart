@@ -88,9 +88,9 @@ class _FoodMainPageState extends State<FoodMainPage> {
                 child: Stack(
                   children: [
                     Positioned(
-                        left: -32,
+                        left: -32,bottom: 64,
                         child: Container(
-                          height: 128,
+                          height: 84,
                           width: 64,
                           decoration: BoxDecoration(
                             color: Colors.teal[300],
