@@ -80,7 +80,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
                       bottomLeft: Radius.circular(48),
                     ),
                     color: Colors.white),
-              )),
+                child: ,
+              ),
+
+          ),
         ],
       ),
     );
