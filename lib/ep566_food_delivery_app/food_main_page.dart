@@ -32,38 +32,27 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           fontSize: 18,
                           color: Colors.white,
                         ),
-                        unselectedLabelTextStyle: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white
-                        ),
+                        unselectedLabelTextStyle: TextStyle(fontSize: 18, color: Colors.white),
                         leading: IconButton(
-                          icon: Icon(Icons.menu), onPressed: () {  },
+                          icon: Icon(Icons.menu),
+                          onPressed: () {},
                         ),
                         destinations: [
-
                           NavigationRailDestination(
                             icon: SizedBox.shrink(),
-                            label: RotatedBox(
-                                quarterTurns: -1,
-                                child: Text('All Items')),
+                            label: RotatedBox(quarterTurns: -1, child: Text('All Items')),
                           ),
                           NavigationRailDestination(
                             icon: SizedBox.shrink(),
-                            label: RotatedBox(
-                                quarterTurns: -1,
-                                child: Text('Popular')),
+                            label: RotatedBox(quarterTurns: -1, child: Text('Popular')),
                           ),
                           NavigationRailDestination(
                             icon: SizedBox.shrink(),
-                            label: RotatedBox(
-                                quarterTurns: -1,
-                                child: Text('New Items')),
+                            label: RotatedBox(quarterTurns: -1, child: Text('New Items')),
                           ),
                           NavigationRailDestination(
                             icon: SizedBox.shrink(),
-                            label: RotatedBox(
-                                quarterTurns: -1,
-                                child: Text('Special')),
+                            label: RotatedBox(quarterTurns: -1, child: Text('Special')),
                           ),
                         ],
                         selectedIndex: _pageIndex,
