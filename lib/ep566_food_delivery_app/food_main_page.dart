@@ -75,6 +75,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
               bottom: 0,
               right: 0,
               child: Container(
+                padding: EdgeInsets.only(left: 24),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(48),
@@ -82,12 +83,16 @@ class _FoodMainPageState extends State<FoodMainPage> {
                     ),
                     color: Colors.white),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text("Select",style: GoogleFonts.montserrat(
                       fontSize: 18,
                       color: Colors.teal[200]
                     ),),
-                    Text("Your Choices")
+                    Text("Your Choices",style: GoogleFonts.montserrat(
+                        fontSize: 18,
+                        color: Colors.teal[200]
+                    ),)
                   ],
                 ),
               ),
