@@ -34,6 +34,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                         ),
                         unselectedLabelTextStyle: TextStyle(fontSize: 18, color: Colors.white),
                         leading: IconButton(
+                          color: Colors.white,
                           icon: Icon(Icons.menu),
                           onPressed: () {},
                         ),
