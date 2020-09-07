@@ -63,7 +63,17 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           selectedIndex: _pageIndex,
                           onDestinationSelected: (index) {
                             print(index);
+                            if(index == 0){
+                              _clipPosition = 280;
+                            }else if(index == 1){
+                              _clipPosition =  280 + 64.0 + 32.0;
+                            }else if(index == 2){
+                              _clipPosition =  280 + (64.0 * 2 )+ (32.0 * 2) + 16;
+                            }else if(index == 3){
+                              _clipPosition =  280 + (64.0 * 2 )+ (32.0 * 2);
+                            }
                             setState(() {
+
                               _pageIndex = index;
                             });
                           },
