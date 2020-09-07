@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FoodMainPage extends StatefulWidget {
   @override
@@ -82,7 +83,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
                     color: Colors.white),
                 child: Column(
                   children: [
-                    Text("Select",),
+                    Text("Select",style: GoogleFonts.montserrat(
+                      fontSize: 18,
+                      color: Colors.teal[200]
+                    ),),
                     Text("Your Choices")
                   ],
                 ),
