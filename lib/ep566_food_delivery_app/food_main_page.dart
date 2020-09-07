@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -87,11 +88,12 @@ class _FoodMainPageState extends State<FoodMainPage> {
                   children: [
                     Text("Select",style: GoogleFonts.montserrat(
                       fontSize: 28,
-                      color: Colors.teal[200]
+                      color: Colors.teal[200],
+                      fontWeight: FontWeight.bold
                     ),),
                     Text("Your Choices",style: GoogleFonts.montserrat(
                         fontSize: 28,
-                        color: Colors.teal[200]
+                        color: Colors.teal[200],fontWeight: FontWeight.bold
                     ),)
                   ],
                 ),
