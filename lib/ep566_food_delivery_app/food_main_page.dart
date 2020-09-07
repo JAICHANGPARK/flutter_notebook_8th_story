@@ -93,7 +93,8 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           height: 64,
                           width: 64,
                           decoration: BoxDecoration(
-                            color: Colors.teal[300]
+                            color: Colors.teal[300],
+                            shape: BoxShape.circle
                           ),
                         )),
                     Positioned(
