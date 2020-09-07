@@ -10,6 +10,7 @@ class FoodMainPage extends StatefulWidget {
 class _FoodMainPageState extends State<FoodMainPage> {
   int _pageIndex = 0;
   double _clipPosition = 280.0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,17 +64,16 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           selectedIndex: _pageIndex,
                           onDestinationSelected: (index) {
                             print(index);
-                            if(index == 0){
+                            if (index == 0) {
                               _clipPosition = 280;
-                            }else if(index == 1){
-                              _clipPosition =  280 + 64.0 + 32.0;
-                            }else if(index == 2){
-                              _clipPosition =  280 + (64.0 * 2 )+ (32.0 * 2) + 16;
-                            }else if(index == 3){
-                              _clipPosition =  280 + (64.0 * 3 )+ (32.0 * 3) + 16;
+                            } else if (index == 1) {
+                              _clipPosition = 280 + 64.0 + 32.0;
+                            } else if (index == 2) {
+                              _clipPosition = 280 + (64.0 * 2) + (32.0 * 2) + 16;
+                            } else if (index == 3) {
+                              _clipPosition = 280 + (64.0 * 3) + (32.0 * 3) + 16;
                             }
                             setState(() {
-
                               _pageIndex = index;
                             });
                           },
