@@ -79,7 +79,6 @@ class _FoodMainPageState extends State<FoodMainPage> {
               bottom: 0,
               right: 0,
               child: Container(
-                padding: EdgeInsets.only(left: 24, top: 64),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(48),
@@ -94,22 +93,26 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           height: 64,
                           width: 64,
                           decoration: BoxDecoration(
-                            color: Colors.teal[200]
+                            color: Colors.teal[300]
                           ),
                         )),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Select",style: GoogleFonts.montserrat(
-                          fontSize: 28,
-                          color: Colors.teal[200],
-                          fontWeight: FontWeight.bold
-                        ),),
-                        Text("Your Choices",style: GoogleFonts.montserrat(
+                    Positioned(
+                      left: 32,
+                      top: 64,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Select",style: GoogleFonts.montserrat(
                             fontSize: 28,
-                            color: Colors.teal[200],fontWeight: FontWeight.bold
-                        ),)
-                      ],
+                            color: Colors.teal[200],
+                            fontWeight: FontWeight.bold
+                          ),),
+                          Text("Your Choices",style: GoogleFonts.montserrat(
+                              fontSize: 28,
+                              color: Colors.teal[200],fontWeight: FontWeight.bold
+                          ),)
+                        ],
+                      ),
                     ),
                   ],
                 ),
