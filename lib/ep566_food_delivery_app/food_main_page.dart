@@ -88,6 +88,15 @@ class _FoodMainPageState extends State<FoodMainPage> {
                     color: Colors.white),
                 child: Stack(
                   children: [
+                    Positioned(
+                        left: -32,
+                        child: Container(
+                          height: 64,
+                          width: 64,
+                          decoration: BoxDecoration(
+                            color: Colors.teal[200]
+                          ),
+                        )),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
