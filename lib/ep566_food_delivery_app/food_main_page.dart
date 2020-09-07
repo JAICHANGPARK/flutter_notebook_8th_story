@@ -93,11 +93,16 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           height: 84,
                           width: 64,
                           decoration: BoxDecoration(
-                            color: Colors.teal[300],
+                            color: Colors.teal[400],
                             borderRadius: BorderRadius.circular(24)
                           ),
-                          child: Icon(
-                            Icons.keyboard_arrow_right
+                          child: Center(
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 32),
+                              child: Icon(
+                                Icons.keyboard_arrow_right
+                              ),
+                            ),
                           ),
                         )),
                     Positioned(
