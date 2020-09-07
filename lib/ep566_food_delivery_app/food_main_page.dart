@@ -26,44 +26,47 @@ class _FoodMainPageState extends State<FoodMainPage> {
                   children: [
                     Expanded(
                       flex: 2,
-                      child: NavigationRail(
-                        groupAlignment: 1,
-                        labelType: NavigationRailLabelType.all,
-                        backgroundColor: Colors.teal[400],
-                        selectedLabelTextStyle: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 64),
+                        child: NavigationRail(
+                          groupAlignment: 1,
+                          labelType: NavigationRailLabelType.all,
+                          backgroundColor: Colors.teal[400],
+                          selectedLabelTextStyle: TextStyle(
+                            fontSize: 18,
+                            color: Colors.white,
+                          ),
+                          unselectedLabelTextStyle: TextStyle(fontSize: 18, color: Colors.white),
+                          leading: IconButton(
+                            color: Colors.white,
+                            icon: Icon(Icons.menu),
+                            onPressed: () {},
+                          ),
+                          destinations: [
+                            NavigationRailDestination(
+                              icon: SizedBox.shrink(),
+                              label: RotatedBox(quarterTurns: -1, child: Text('All Items')),
+                            ),
+                            NavigationRailDestination(
+                              icon: SizedBox.shrink(),
+                              label: RotatedBox(quarterTurns: -1, child: Text('Popular')),
+                            ),
+                            NavigationRailDestination(
+                              icon: SizedBox.shrink(),
+                              label: RotatedBox(quarterTurns: -1, child: Text('New Items')),
+                            ),
+                            NavigationRailDestination(
+                              icon: SizedBox.shrink(),
+                              label: RotatedBox(quarterTurns: -1, child: Text('Special')),
+                            ),
+                          ],
+                          selectedIndex: _pageIndex,
+                          onDestinationSelected: (index) {
+                            setState(() {
+                              _pageIndex = index;
+                            });
+                          },
                         ),
-                        unselectedLabelTextStyle: TextStyle(fontSize: 18, color: Colors.white),
-                        leading: IconButton(
-                          color: Colors.white,
-                          icon: Icon(Icons.menu),
-                          onPressed: () {},
-                        ),
-                        destinations: [
-                          NavigationRailDestination(
-                            icon: SizedBox.shrink(),
-                            label: RotatedBox(quarterTurns: -1, child: Text('All Items')),
-                          ),
-                          NavigationRailDestination(
-                            icon: SizedBox.shrink(),
-                            label: RotatedBox(quarterTurns: -1, child: Text('Popular')),
-                          ),
-                          NavigationRailDestination(
-                            icon: SizedBox.shrink(),
-                            label: RotatedBox(quarterTurns: -1, child: Text('New Items')),
-                          ),
-                          NavigationRailDestination(
-                            icon: SizedBox.shrink(),
-                            label: RotatedBox(quarterTurns: -1, child: Text('Special')),
-                          ),
-                        ],
-                        selectedIndex: _pageIndex,
-                        onDestinationSelected: (index) {
-                          setState(() {
-                            _pageIndex = index;
-                          });
-                        },
                       ),
                     ),
                     Expanded(flex: 10, child: Container()),
