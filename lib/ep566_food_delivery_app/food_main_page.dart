@@ -90,11 +90,11 @@ class _FoodMainPageState extends State<FoodMainPage> {
                     Positioned(
                         left: -32,
                         child: Container(
-                          height: 64,
+                          height: 128,
                           width: 64,
                           decoration: BoxDecoration(
                             color: Colors.teal[300],
-                            shape: BoxShape.circle
+                            borderRadius: BorderRadius.circular(24)
                           ),
                         )),
                     Positioned(
