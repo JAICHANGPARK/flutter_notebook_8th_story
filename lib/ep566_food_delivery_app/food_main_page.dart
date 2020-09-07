@@ -86,18 +86,22 @@ class _FoodMainPageState extends State<FoodMainPage> {
                       bottomLeft: Radius.circular(48),
                     ),
                     color: Colors.white),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                child: Stack(
                   children: [
-                    Text("Select",style: GoogleFonts.montserrat(
-                      fontSize: 28,
-                      color: Colors.teal[200],
-                      fontWeight: FontWeight.bold
-                    ),),
-                    Text("Your Choices",style: GoogleFonts.montserrat(
-                        fontSize: 28,
-                        color: Colors.teal[200],fontWeight: FontWeight.bold
-                    ),)
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Select",style: GoogleFonts.montserrat(
+                          fontSize: 28,
+                          color: Colors.teal[200],
+                          fontWeight: FontWeight.bold
+                        ),),
+                        Text("Your Choices",style: GoogleFonts.montserrat(
+                            fontSize: 28,
+                            color: Colors.teal[200],fontWeight: FontWeight.bold
+                        ),)
+                      ],
+                    ),
                   ],
                 ),
               ),
