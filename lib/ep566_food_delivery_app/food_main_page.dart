@@ -9,7 +9,7 @@ class FoodMainPage extends StatefulWidget {
 
 class _FoodMainPageState extends State<FoodMainPage> {
   int _pageIndex = 0;
-
+  double _clipPosition = 240.0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,6 +62,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           ],
                           selectedIndex: _pageIndex,
                           onDestinationSelected: (index) {
+                            print(index);
                             setState(() {
                               _pageIndex = index;
                             });
@@ -89,7 +90,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                 children: [
                   AnimatedPositioned(
                       left: -32,
-                      bottom: 64,
+                      top: _clipPosition,
                       duration: Duration(milliseconds: 500),
                       child: Container(
                         height: 84,
