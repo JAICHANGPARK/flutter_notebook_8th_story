@@ -80,7 +80,12 @@ class _FoodMainPageState extends State<FoodMainPage> {
                       bottomLeft: Radius.circular(48),
                     ),
                     color: Colors.white),
-                child: Column(),
+                child: Column(
+                  children: [
+                    Text("Select",),
+                    Text("Your Choices")
+                  ],
+                ),
               ),
 
           ),
