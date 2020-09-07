@@ -27,7 +27,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                     Expanded(
                       flex: 2,
                       child: Padding(
-                        padding: const EdgeInsets.only(bottom: 64),
+                        padding: const EdgeInsets.only(bottom: 64, top: 48),
                         child: NavigationRail(
                           groupAlignment: 1,
                           labelType: NavigationRailLabelType.all,
