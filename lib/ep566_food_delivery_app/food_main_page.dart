@@ -74,80 +74,59 @@ class _FoodMainPageState extends State<FoodMainPage> {
                 ),
               )),
           Positioned(
-              left: 64,
-              top: 0,
-              bottom: 0,
-              right: 0,
-              child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(48),
-                      bottomLeft: Radius.circular(48),
-                    ),
-                    color: Colors.white),
-                child: Stack(
-                  children: [
-                    Positioned(
-                        left: -32,bottom: 64,
-                        child: Container(
-                          height: 84,
-                          width: 64,
-                          decoration: BoxDecoration(
-                            color: Colors.teal[400],
-                            borderRadius: BorderRadius.circular(24)
+            left: 64,
+            top: 0,
+            bottom: 0,
+            right: 0,
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(48),
+                    bottomLeft: Radius.circular(48),
+                  ),
+                  color: Colors.white),
+              child: Stack(
+                children: [
+                  AnimatedPositioned(
+                      left: -32,
+                      bottom: 64,
+                      duration: Duration(milliseconds: 500),
+                      child: Container(
+                        height: 84,
+                        width: 64,
+                        decoration: BoxDecoration(color: Colors.teal[400], borderRadius: BorderRadius.circular(24)),
+                        child: Center(
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 32),
+                            child: Icon(Icons.keyboard_arrow_right),
                           ),
-                          child: Center(
-                            child: Padding(
-                              padding: const EdgeInsets.only(left: 32),
-                              child: Icon(
-                                Icons.keyboard_arrow_right
-                              ),
-                            ),
-                          ),
-                        )),
-                    Positioned(
-                      left: 32,
-                      top: 64,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Select",style: GoogleFonts.montserrat(
-                            fontSize: 28,
-                            color: Colors.teal[200],
-                            fontWeight: FontWeight.bold
-                          ),),
-                          Text("Your Choices",style: GoogleFonts.montserrat(
-                              fontSize: 28,
-                              color: Colors.teal[200],fontWeight: FontWeight.bold
-                          ),)
-                        ],
-                      ),
+                        ),
+                      )),
+                  Positioned(
+                    left: 32,
+                    top: 64,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Select",
+                          style: GoogleFonts.montserrat(
+                              fontSize: 28, color: Colors.teal[200], fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          "Your Choices",
+                          style: GoogleFonts.montserrat(
+                              fontSize: 28, color: Colors.teal[200], fontWeight: FontWeight.bold),
+                        )
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-
+            ),
           ),
         ],
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
