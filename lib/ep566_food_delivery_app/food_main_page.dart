@@ -80,7 +80,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                       bottomLeft: Radius.circular(48),
                     ),
                     color: Colors.white),
-                child: ,
+                child: Column(),
               ),
 
           ),
@@ -89,3 +89,21 @@ class _FoodMainPageState extends State<FoodMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
