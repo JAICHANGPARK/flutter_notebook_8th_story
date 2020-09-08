@@ -146,7 +146,8 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                   left: 64,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.teal[300]
+                                      color: Colors.teal[300],
+                                        borderRadius: BorderRadius.circular(12)
                                     ),
                                   )),
                               Positioned(
