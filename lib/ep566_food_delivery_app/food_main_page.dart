@@ -7,7 +7,7 @@ class FoodMainPage extends StatefulWidget {
   _FoodMainPageState createState() => _FoodMainPageState();
 }
 
-class _FoodMainPageState extends State<FoodMainPage> {
+class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderStateMixin {
   int _pageIndex = 0;
   double _clipPosition = 280.0;
   TabController _tabController;
@@ -176,7 +176,27 @@ class _FoodMainPageState extends State<FoodMainPage> {
                             ],
                           ),
                         ),
-                        TabBar(tabs: [])
+                        TabBar(
+                          tabs: [
+                            Tab(
+                              text: "Daily",
+                            ),
+                            Tab(
+                              text: "Daily",
+                            ),
+                            Tab(
+                              text: "Daily",
+                            ),
+                            Tab(
+                              text: "Daily",
+                            )
+                          ],
+                          controller: _tabController,
+                        ),
+                        TabBarView(
+                          children: [],
+                          controller: _tabController,
+                        )
                       ],
                     ),
                   ),
