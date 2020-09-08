@@ -168,16 +168,21 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                                   bottom: 0,
                                   right: 48,
                                   child: Container(
+                                    padding: EdgeInsets.only(left: 24, top: 8, bottom: 8),
                                     decoration:
                                         BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(12)),
                                     child: TextField(
                                       decoration: InputDecoration(
                                         hintText: "Search",
+                                        border: InputBorder.none,
                                       ),
                                     ),
                                   )),
                             ],
                           ),
+                        ),
+                        SizedBox(
+                          height: 24,
                         ),
                         Container(
                           height: 48,
@@ -206,9 +211,12 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                         Container(
                           height: 360,
                           child: TabBarView(
-
                             children: [
-                              Container(),
+                              ListView.builder(
+                                  
+                                  itemBuilder: (context, index){
+                                return Container();
+                              }),
                               Container(),
                               Container(),
                               Container(),
