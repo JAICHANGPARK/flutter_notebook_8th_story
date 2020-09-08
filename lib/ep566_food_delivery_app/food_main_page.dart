@@ -134,7 +134,7 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           height: 58,
                           width: 280,
                           decoration: BoxDecoration(
-                            
+
                           ),
                           child: Stack(
                             children: [
@@ -148,7 +148,13 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                   color: Colors.grey[100],
                                   borderRadius: BorderRadius.circular(12)
                                 ),
-                              ))
+                              )),
+                              Positioned(
+                                  right: 0,
+                                  bottom: 0,
+                                  top: 0,
+                                  left: 0,
+                                  child: Container())
                             ],
                           ),
                         )
