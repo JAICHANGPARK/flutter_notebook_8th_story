@@ -182,13 +182,13 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                               text: "Daily",
                             ),
                             Tab(
-                              text: "Daily",
+                              text: "Italian",
                             ),
                             Tab(
-                              text: "Daily",
+                              text: "mexican",
                             ),
                             Tab(
-                              text: "Daily",
+                              text: "Asian",
                             )
                           ],
                           controller: _tabController,
