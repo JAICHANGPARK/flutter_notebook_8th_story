@@ -129,38 +129,42 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           style: GoogleFonts.montserrat(
                               fontSize: 28, color: Colors.teal[200], fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(height: 24,),
+                        SizedBox(
+                          height: 24,
+                        ),
                         Container(
                           height: 58,
                           width: 280,
-                          decoration: BoxDecoration(
-
-                          ),
+                          decoration: BoxDecoration(),
                           child: Stack(
                             children: [
-
                               Positioned(
-                                  right: 0,
-                                  bottom: 0,
-                                  top: 0,
-                                  left: 64,
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      color: Colors.teal[300],
-                                        borderRadius: BorderRadius.circular(12)
-                                    ),
-                                  )),
+                                right: 0,
+                                bottom: 0,
+                                top: 0,
+                                left: 64,
+                                child: Container(
+                                  decoration:
+                                      BoxDecoration(color: Colors.teal[300], borderRadius: BorderRadius.circular(12)),
+                                  child:
+                                ),
+                              ),
                               Positioned(
                                   left: 0,
                                   top: 0,
                                   bottom: 0,
                                   right: 48,
                                   child: Container(
-                                    decoration: BoxDecoration(
-                                        color: Colors.grey[100],
-                                        borderRadius: BorderRadius.circular(12)
+                                    decoration:
+                                        BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(12)),
+child:                                    TextField(
+                                      decoration: InputDecoration(
+                                        hintText: "Search",
+                                      ),
                                     ),
-                                  )),
+                                  )
+
+                              ),
                             ],
                           ),
                         )
