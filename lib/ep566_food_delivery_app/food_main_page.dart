@@ -125,7 +125,7 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                     left: 32,
                     top: 64,
                     bottom: 0,
-                    
+                    right: 0,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -202,6 +202,7 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                         Container(
                           height: 360,
                           child: TabBarView(
+                            
                             children: [
                               Container(),
                               Container(),
