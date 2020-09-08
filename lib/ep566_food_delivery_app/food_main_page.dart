@@ -124,6 +124,8 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                   Positioned(
                     left: 32,
                     top: 64,
+                    bottom: 0,
+                    
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
