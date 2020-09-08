@@ -213,10 +213,15 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                           child: TabBarView(
                             children: [
                               ListView.builder(
-                                  
-                                  itemBuilder: (context, index){
-                                return Container();
-                              }),
+                                  scrollDirection: Axis.horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      width: MediaQuery.of(context).size.width / 2,
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                      ),
+                                    );
+                                  }),
                               Container(),
                               Container(),
                               Container(),
