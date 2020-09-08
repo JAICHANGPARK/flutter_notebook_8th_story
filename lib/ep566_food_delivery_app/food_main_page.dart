@@ -136,6 +136,11 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           decoration: BoxDecoration(
                             color: Colors.grey
                           ),
+                          child: Stack(
+                            children: [
+                              Positioned(child: Container())
+                            ],
+                          ),
                         )
                       ],
                     ),
