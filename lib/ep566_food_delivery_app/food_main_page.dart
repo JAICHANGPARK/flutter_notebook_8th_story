@@ -125,6 +125,7 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                     left: 32,
                     top: 64,
                     child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -176,26 +177,37 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                             ],
                           ),
                         ),
-                        TabBar(
-                          tabs: [
-                            Tab(
-                              text: "Daily",
-                            ),
-                            Tab(
-                              text: "Italian",
-                            ),
-                            Tab(
-                              text: "mexican",
-                            ),
-                            Tab(
-                              text: "Asian",
-                            )
-                          ],
-                          controller: _tabController,
+                        Container(
+                          height: 48,
+                          child: TabBar(
+                            tabs: [
+                              Tab(
+                                text: "Daily",
+                              ),
+                              Tab(
+                                text: "Italian",
+                              ),
+                              Tab(
+                                text: "mexican",
+                              ),
+                              Tab(
+                                text: "Asian",
+                              )
+                            ],
+                            controller: _tabController,
+                          ),
                         ),
-                        TabBarView(
-                          children: [],
-                          controller: _tabController,
+                        Container(
+                          height: 360,
+                          child: TabBarView(
+                            children: [
+                              Container(),
+                              Container(),
+                              Container(),
+                              Container(),
+                            ],
+                            controller: _tabController,
+                          ),
                         )
                       ],
                     ),
