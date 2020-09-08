@@ -128,6 +128,10 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           "Your Choices",
                           style: GoogleFonts.montserrat(
                               fontSize: 28, color: Colors.teal[200], fontWeight: FontWeight.bold),
+                        ),
+                        Container(
+                          height: 58,
+                          width: double.infinity,
                         )
                       ],
                     ),
