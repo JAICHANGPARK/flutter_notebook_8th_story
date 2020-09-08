@@ -10,6 +10,14 @@ class FoodMainPage extends StatefulWidget {
 class _FoodMainPageState extends State<FoodMainPage> {
   int _pageIndex = 0;
   double _clipPosition = 280.0;
+  TabController _tabController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 4, vsync: this);
+  }
 
   @override
   Widget build(BuildContext context) {
