@@ -209,14 +209,17 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                           ),
                         ),
                         Container(
-                          height: 360,
+                          height: 320,
+                          padding: EdgeInsets.only(top: 16, left: 8),
                           child: TabBarView(
                             children: [
                               ListView.builder(
                                   scrollDirection: Axis.horizontal,
+                                  itemCount: 10,
                                   itemBuilder: (context, index) {
                                     return Container(
-                                      width: MediaQuery.of(context).size.width / 2,
+                                      margin: EdgeInsets.only(right: 24),
+                                      width: MediaQuery.of(context).size.width / 1.8,
                                       decoration: BoxDecoration(
                                         color: Colors.red,
                                       ),
