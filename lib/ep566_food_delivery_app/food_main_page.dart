@@ -129,9 +129,13 @@ class _FoodMainPageState extends State<FoodMainPage> {
                           style: GoogleFonts.montserrat(
                               fontSize: 28, color: Colors.teal[200], fontWeight: FontWeight.bold),
                         ),
+                        SizedBox(height: 24,),
                         Container(
                           height: 58,
-                          width: double.infinity,
+                          width: 280,
+                          decoration: BoxDecoration(
+                            color: Colors.grey
+                          ),
                         )
                       ],
                     ),
