@@ -182,6 +182,10 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                         Container(
                           height: 48,
                           child: TabBar(
+                            isScrollable: true,
+                            indicatorColor: Colors.teal,
+                            labelColor: Colors.teal,
+                            unselectedLabelColor: Colors.black87,
                             tabs: [
                               Tab(
                                 text: "Daily",
@@ -202,7 +206,7 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                         Container(
                           height: 360,
                           child: TabBarView(
-                            
+
                             children: [
                               Container(),
                               Container(),
