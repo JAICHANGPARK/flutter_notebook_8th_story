@@ -167,7 +167,8 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                   )),
                             ],
                           ),
-                        )
+                        ),
+                        TabBar(tabs: [])
                       ],
                     ),
                   ),
