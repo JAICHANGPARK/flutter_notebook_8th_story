@@ -144,13 +144,12 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                 top: 0,
                                 left: 64,
                                 child: Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.teal[300], borderRadius: BorderRadius.circular(12)),
-                                  child: Align(
-                                    alignment: Alignment.centerRight,
-                                    child: Icon(Icons.search),
-                                  )
-                                ),
+                                    decoration:
+                                        BoxDecoration(color: Colors.teal[300], borderRadius: BorderRadius.circular(12)),
+                                    child: Align(
+                                      alignment: Alignment.centerRight,
+                                      child: Icon(Icons.search),
+                                    )),
                               ),
                               Positioned(
                                   left: 0,
@@ -160,14 +159,12 @@ class _FoodMainPageState extends State<FoodMainPage> {
                                   child: Container(
                                     decoration:
                                         BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(12)),
-child:                                    TextField(
+                                    child: TextField(
                                       decoration: InputDecoration(
                                         hintText: "Search",
                                       ),
                                     ),
-                                  )
-
-                              ),
+                                  )),
                             ],
                           ),
                         )
