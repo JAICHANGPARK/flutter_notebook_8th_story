@@ -225,7 +225,14 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                                       ),
                                       child: Stack(
                                         children: [
-                                          Positioned(child: Container())
+                                          Positioned(
+                                              left: 8,
+                                              bottom: 0,
+                                              top: 0,
+                                              right: 8,
+                                              child: Container(
+                                                color: Colors.teal[100],
+                                              ))
                                         ],
                                       ),
                                     );
@@ -242,29 +249,28 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Salad Name",style: TextStyle(
-                                fontSize: 24,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.teal[300]
-                              ),),
-                              IconButton(icon: Icon(Icons.add_circle), onPressed: (){},
-                                  color: Colors.teal[300])
+                              Text(
+                                "Salad Name",
+                                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.teal[300]),
+                              ),
+                              IconButton(icon: Icon(Icons.add_circle), onPressed: () {}, color: Colors.teal[300])
                             ],
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 8),
-                          child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l"
-                              "abore et dolore magna aliqua.", style: TextStyle(
-                            fontSize: 11,
-                            color: Colors.grey
-                          ),),
+                          child: Text(
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l"
+                            "abore et dolore magna aliqua.",
+                            style: TextStyle(fontSize: 11, color: Colors.grey),
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text("\$5.99", style: TextStyle(
-                            fontSize: 18
-                          ),),
+                          child: Text(
+                            "\$5.99",
+                            style: TextStyle(fontSize: 18),
+                          ),
                         )
                       ],
                     ),
