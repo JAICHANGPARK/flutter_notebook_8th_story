@@ -251,6 +251,12 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                               "abore et dolore magna aliqua.", style: TextStyle(
                             fontSize: 12
                           ),),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text("\$5.99", style: TextStyle(
+                            fontSize: 18
+                          ),),
                         )
                       ],
                     ),
