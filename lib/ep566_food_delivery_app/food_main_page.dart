@@ -239,9 +239,11 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                             children: [
                               Text("Salad Name",style: TextStyle(
                                 fontSize: 24,
-                                fontWeight: FontWeight.bold
+                                fontWeight: FontWeight.bold,
+                                color: Colors.teal[300]
                               ),),
-                              IconButton(icon: Icon(Icons.add_circle), onPressed: (){})
+                              IconButton(icon: Icon(Icons.add_circle), onPressed: (){},
+                                  color: Colors.teal[300])
                             ],
                           ),
                         ),
@@ -249,7 +251,8 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                           padding: const EdgeInsets.only(left: 8),
                           child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l"
                               "abore et dolore magna aliqua.", style: TextStyle(
-                            fontSize: 12
+                            fontSize: 11,
+                            color: Colors.grey
                           ),),
                         ),
                         Padding(
