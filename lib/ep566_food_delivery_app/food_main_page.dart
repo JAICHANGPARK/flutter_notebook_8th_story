@@ -22,6 +22,7 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Positioned(
