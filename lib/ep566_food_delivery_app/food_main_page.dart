@@ -223,6 +223,11 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                                       decoration: BoxDecoration(
                                         color: Colors.red,
                                       ),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(child: Container())
+                                        ],
+                                      ),
                                     );
                                   }),
                               Container(),
