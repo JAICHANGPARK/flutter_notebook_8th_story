@@ -233,7 +233,7 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.only(left: 8),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -245,8 +245,13 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                             ],
                           ),
                         ),
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l"
-                            "abore et dolore magna aliqua.")
+                        Padding(
+                          padding: const EdgeInsets.only(left: 8),
+                          child: Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l"
+                              "abore et dolore magna aliqua.", style: TextStyle(
+                            fontSize: 12
+                          ),),
+                        )
                       ],
                     ),
                   ),
