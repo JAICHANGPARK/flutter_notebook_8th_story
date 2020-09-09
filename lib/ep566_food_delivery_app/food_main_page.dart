@@ -221,7 +221,7 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                                       margin: EdgeInsets.only(right: 24),
                                       width: MediaQuery.of(context).size.width / 1.8,
                                       decoration: BoxDecoration(
-                                        color: Colors.red,
+//                                        color: Colors.red,
                                       ),
                                       child: Stack(
                                         children: [
