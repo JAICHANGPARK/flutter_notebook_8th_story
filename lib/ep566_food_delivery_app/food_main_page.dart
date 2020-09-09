@@ -231,6 +231,12 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                             ],
                             controller: _tabController,
                           ),
+                        ),
+                        Row(
+                          children: [
+                            Text("Salad Name"),
+                            IconButton(icon: Icon(Icons.add_circle), onPressed: (){})
+                          ],
                         )
                       ],
                     ),
