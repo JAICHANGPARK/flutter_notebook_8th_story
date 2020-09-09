@@ -234,13 +234,11 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                                                 color: Colors.teal[100],
                                               )),
                                           Positioned(
-                                              left: 8,
+                                              left: 0,
                                               bottom: 0,
                                               top: 0,
-                                              right: 8,
-                                              child: Container(
-                                                color: Colors.teal[100],
-                                              )),
+                                              right: 0,
+                                              child: Image.network("https://www.uokpl.rs/fpng/f/580-5806917_top-view-food.png")),
                                         ],
                                       ),
                                     );
