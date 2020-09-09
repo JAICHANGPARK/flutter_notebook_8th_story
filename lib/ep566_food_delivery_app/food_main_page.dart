@@ -226,10 +226,10 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                                       child: Stack(
                                         children: [
                                           Positioned(
-                                              left: 8,
+                                              left: 16,
                                               bottom: 0,
                                               top: 0,
-                                              right: 8,
+                                              right: 16,
                                               child: Container(
                                                 color: Colors.teal[100],
                                               )),
