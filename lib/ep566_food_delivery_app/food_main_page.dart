@@ -222,7 +222,7 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                                       width: MediaQuery.of(context).size.width / 1.8,
                                       decoration: BoxDecoration(
 //                                        color: Colors.red,
-                                      ),
+                                          ),
                                       child: Stack(
                                         children: [
                                           Positioned(
@@ -238,7 +238,8 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                                               bottom: 0,
                                               top: 0,
                                               right: 0,
-                                              child: Image.network("https://www.uokpl.rs/fpng/f/580-5806917_top-view-food.png")),
+                                              child: Image.network(
+                                                  "https://www.uokpl.rs/fpng/f/580-5806917_top-view-food.png")),
                                         ],
                                       ),
                                     );
