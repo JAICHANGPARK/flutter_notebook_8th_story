@@ -159,7 +159,8 @@ class _FoodMainPageState extends State<FoodMainPage> with SingleTickerProviderSt
                                         BoxDecoration(color: Colors.teal[300], borderRadius: BorderRadius.circular(12)),
                                     child: Align(
                                       alignment: Alignment.centerRight,
-                                      child: Icon(Icons.search),
+                                      child: Icon(Icons.search, color: Colors.white,
+                                      ),
                                     )),
                               ),
                               Positioned(
