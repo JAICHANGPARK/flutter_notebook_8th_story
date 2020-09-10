@@ -9,19 +9,4 @@ void main() {
   runApp(ProviderScope(child: SampleApp()));
 }
 
-class SampleApp extends HookWidget {
-  @override
-  Widget build(BuildContext context) {
-    final String value = useProvider(helloWorldProvider);
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(),
-        body: Center(
-          child: Text(value),
-        ),
 
-      ),
-
-    );
-  }
-}
