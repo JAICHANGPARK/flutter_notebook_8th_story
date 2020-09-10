@@ -16,7 +16,9 @@ class SampleApp extends HookWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(),
-        body: Center(),
+        body: Center(
+          child: Text(value),
+        ),
 
       ),
 
