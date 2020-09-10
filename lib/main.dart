@@ -5,7 +5,10 @@ import 'ep566_food_delivery_app/food_delivery_app.dart';
 final helloWorldProvider = Provider((_) => "Hello world");
 
 void main() {
-  runApp(SampleApp());
+  runApp(
+    ProviderScope(child: SampleApp())
+    
+  );
 }
 class SampleApp extends StatefulWidget {
   @override
