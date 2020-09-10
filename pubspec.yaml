@@ -30,6 +30,8 @@ dependencies:
   cupertino_icons: ^1.0.0
   google_fonts: any
   badges: any
+  flutter_hooks: ^0.14.0
+  hooks_riverpod: ^0.9.1
 
 dev_dependencies:
   flutter_test:
