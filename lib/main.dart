@@ -15,8 +15,10 @@ void main() {
 class SampleApp extends HookWidget{
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+  return MaterialApp(
+
+  );
+
   }
   
 }
