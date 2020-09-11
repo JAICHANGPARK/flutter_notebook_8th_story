@@ -3,9 +3,7 @@ import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_notebook_8th_story/main.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-final myProvider = Provider((ref) {
-  return "Tokyo";
-});
+final myProvider = Provider((ref) => "Tokyo");
 
 class SampleApp extends HookWidget {
   @override
