@@ -12,6 +12,13 @@ class CounterApp extends StatelessWidget {
 class CounterBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Counter Riverpod"),
+      ),
+      body: Center(
+        child: Text("Counter"),
+      ),
+    );
   }
 }
