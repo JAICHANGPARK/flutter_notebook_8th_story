@@ -19,6 +19,12 @@ class CounterBody extends StatelessWidget {
       body: Center(
         child: Text("Counter"),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+
+        },
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
