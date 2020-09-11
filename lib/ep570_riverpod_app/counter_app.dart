@@ -15,13 +15,16 @@ class CounterApp extends StatelessWidget {
 class CounterBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Counter Riverpod"),
       ),
-      body: Center(
-        child: Text("Counter"),
+      body: Consumer(
+        builder: (context, value, _){
+          final count = value(counterProvider).state;
+          return Center(child: Text("Count : $count"));
+        },
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
