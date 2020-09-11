@@ -8,3 +8,10 @@ class CounterApp extends StatelessWidget {
     );
   }
 }
+
+class CounterBody extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}
