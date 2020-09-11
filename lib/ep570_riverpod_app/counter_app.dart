@@ -1,5 +1,8 @@
-import 'package:flutter/material.dart';
 
+
+import 'package:flutter/material.dart';
+import 'package:flutter_notebook_8th_story/main.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 class CounterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -12,6 +15,7 @@ class CounterApp extends StatelessWidget {
 class CounterBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         title: Text("Counter Riverpod"),
@@ -22,6 +26,7 @@ class CounterBody extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: (){
 
+          context.read(counterProvider).state++;
         },
         child: Icon(Icons.add),
       ),
