@@ -16,14 +16,7 @@ class TodoList extends StateNotifier<List<Todo>> {
   void toggle(String id) {
     state = [
       for (final td in state)
-        {
-          if (td.id == id)
-            {Todo(id: td.id, isCompleted: !td.isCompleted, description: td.description)}
-          else
-            {
-              td,
-            }
-        }
+        if (td.id == id) Todo(id: td.id, isCompleted: !td.isCompleted, description: td.description) else td,
     ];
   }
 }
