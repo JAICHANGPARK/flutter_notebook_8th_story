@@ -10,6 +10,10 @@ class TodoList extends StateNotifier<List<Todo>>{
     state = [...state, Todo(description: value)];
   }
 
+  void remove(Todo value){
+    state = state.where((element) => element.id != value.id).toList();
+  }
+  
 
 
 }
