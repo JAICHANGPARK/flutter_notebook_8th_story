@@ -9,7 +9,8 @@ class Todo {
   final String description;
   final bool isCompleted;
 
-  Todo({this.id, this.description, this.isCompleted = false});
+  Todo({String id, this.description, this.isCompleted = false}):
+  this.id = id ?? _uuid.v4();
   @override
   String toString() {
     // TODO: implement toString
