@@ -11,9 +11,11 @@ class Todo {
 
   Todo({String id, this.description, this.isCompleted = false}):
   this.id = id ?? _uuid.v4();
+
   @override
   String toString() {
     // TODO: implement toString
     return 'Todo(description: $description , completed: $isCompleted';
   }
 }
+
