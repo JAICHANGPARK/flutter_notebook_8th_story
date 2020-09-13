@@ -21,7 +21,7 @@ class TodoMainPage extends HookWidget {
 
   @override
   Widget build(BuildContext context) {
-    final todos = useProvider(filterdTodos);
+    final todos = useProvider(filteredTodos);
     final newTodoController = useTextEditingController();
     final filter = useProvider(todoListFilter);
     Color _textColor(TodoListFilter value) {
@@ -51,84 +51,66 @@ class TodoMainPage extends HookWidget {
                 ),
                 Material(
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Expanded(
-                          child: Text(""
-                              "${useProvider(uncompletedTodosCount).toString()} item left")),
+                        child: Text(
+                          '${useProvider(uncompletedTodosCount).toString()} items left',
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
                       Tooltip(
                         key: allFilterKey,
                         message: 'All todos',
                         child: FlatButton(
-                          onPressed: () {
-                            filter.state = TodoListFilter.all;
-                          },
+                          onPressed: () => filter.state = TodoListFilter.all,
                           visualDensity: VisualDensity.compact,
                           textColor: _textColor(TodoListFilter.all),
-                          child: Text("All"),
+                          child: const Text('All'),
                         ),
                       ),
                       Tooltip(
                         key: activeFilterKey,
-                        message: 'Need to complete',
+                        message: 'Only uncompleted todos',
                         child: FlatButton(
-                          onPressed: () {
-                            filter.state = TodoListFilter.active;
-                          },
+                          onPressed: () => filter.state = TodoListFilter.active,
                           visualDensity: VisualDensity.compact,
                           textColor: _textColor(TodoListFilter.active),
-                          child: Text("Active"),
+                          child: const Text('Active'),
                         ),
                       ),
                       Tooltip(
                         key: completedFilterKey,
-                        message: 'Completed',
+                        message: 'Only completed todos',
                         child: FlatButton(
-                          onPressed: () {
-                            filter.state = TodoListFilter.completed;
-                          },
+                          onPressed: () => filter.state = TodoListFilter.completed,
                           visualDensity: VisualDensity.compact,
                           textColor: _textColor(TodoListFilter.completed),
-                          child: Text("Completed"),
+                          child: const Text('Completed'),
                         ),
                       ),
                     ],
                   ),
                 ),
-                // if(todos.isNotEmpty) Divider(height: 0,),
+                if (todos.isNotEmpty) const Divider(height: 0),
                 for (var i = 0; i < todos.length; i++) ...[
-                  if (i > 0) Divider(),
+                  if (i > 0) const Divider(height: 0),
                   Dismissible(
-                      key: ValueKey(todos[i].id),
-                      child: ProviderScope(
-                        overrides: [
-                          currentTodo.overrideWithValue(todos[i]),
-                        ],
-                        child: TodoItem(),
-                      ))
-                ]
+                    key: ValueKey(todos[i].id),
+                    onDismissed: (_) {
+                      context.read(todoListProvider).remove(todos[i]);
+                    },
+                    child: ProviderScope(
+                      overrides: [
+                        currentTodo.overrideWithValue(todos[i]),
+                      ],
+                      child: TodoItem(),
+                    ),
+                  )
+                ],
               ],
             ),
           ),
         ));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
