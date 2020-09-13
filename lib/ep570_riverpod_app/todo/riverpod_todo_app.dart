@@ -23,9 +23,11 @@ class TodoMainPage extends HookWidget {
     final todos = useProvider(filterdTodos);
     final newTodoController = useTextEditingController();
 
-
-
-    return Scaffold();
+    return GestureDetector(
+        onTap: (){
+          FocusScope.of(context).unfocus();
+        },
+        child: Scaffold());
   }
 }
 
