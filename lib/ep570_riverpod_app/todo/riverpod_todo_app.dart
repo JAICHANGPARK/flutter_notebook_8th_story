@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:flutter_notebook_8th_story/ep570_riverpod_app/todo/model/todos.dart';
 import 'package:flutter_notebook_8th_story/main.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -8,26 +9,26 @@ class RiverPodTodoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: TodoMainPage(),
-
     );
   }
 }
 
+final _currentTodo = ScopedProvider<Todo>(null);
 
 class TodoMainPage extends HookWidget {
   const TodoMainPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
     final todos = useProvider(filterdTodos);
     final newTodoController = useTextEditingController();
     final filter = useProvider(todoListFilter);
-    Color _textColor(TodoListFilter value){
+    Color _textColor(TodoListFilter value) {
       return filter.state == value ? Colors.blue : null;
     }
+
     return GestureDetector(
-        onTap: (){
+        onTap: () {
           FocusScope.of(context).unfocus();
         },
         child: Scaffold(
@@ -41,10 +42,8 @@ class TodoMainPage extends HookWidget {
                 TextField(
                   key: addTodoKey,
                   controller: newTodoController,
-                  decoration: InputDecoration(
-                    labelText: "Input todo"
-                  ),
-                  onSubmitted: (value){
+                  decoration: InputDecoration(labelText: "Input todo"),
+                  onSubmitted: (value) {
                     context.read(todoListProvider).add(value);
                     newTodoController.clear();
                   },
@@ -52,13 +51,14 @@ class TodoMainPage extends HookWidget {
                 Material(
                   child: Row(
                     children: [
-                      Expanded(child: Text(""
-                          "${useProvider(uncompletedTodosCount).toString()} item left")),
+                      Expanded(
+                          child: Text(""
+                              "${useProvider(uncompletedTodosCount).toString()} item left")),
                       Tooltip(
                         key: allFilterKey,
                         message: 'All todos',
                         child: FlatButton(
-                          onPressed: (){
+                          onPressed: () {
                             filter.state = TodoListFilter.all;
                           },
                           visualDensity: VisualDensity.compact,
@@ -70,7 +70,7 @@ class TodoMainPage extends HookWidget {
                         key: activeFilterKey,
                         message: 'Need to complete',
                         child: FlatButton(
-                          onPressed: (){
+                          onPressed: () {
                             filter.state = TodoListFilter.active;
                           },
                           visualDensity: VisualDensity.compact,
@@ -82,7 +82,7 @@ class TodoMainPage extends HookWidget {
                         key: completedFilterKey,
                         message: 'Completed',
                         child: FlatButton(
-                          onPressed: (){
+                          onPressed: () {
                             filter.state = TodoListFilter.completed;
                           },
                           visualDensity: VisualDensity.compact,
@@ -90,40 +90,32 @@ class TodoMainPage extends HookWidget {
                           child: Text("Completed"),
                         ),
                       ),
-
                     ],
                   ),
-                )
+                ),
+                // if(todos.isNotEmpty) Divider(height: 0,),
+                for (var i = 0; i < todos.length; i++) ...[
+                  if (i > 0) Divider(),
+                  Dismissible(
+                      key: ValueKey(todos[i].id),
+                      child: ProviderScope(
+                        overrides: [
+                          _currentTodo.overrideWithValue(todos[i]),
+                        ],
+                        child: TodoItem(),
+                      ))
+                ]
               ],
-
             ),
           ),
-
         ));
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class TodoItem extends HookWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    throw Material();
+  }
+}
