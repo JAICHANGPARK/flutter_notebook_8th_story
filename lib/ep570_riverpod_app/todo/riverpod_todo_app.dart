@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_notebook_8th_story/ep570_riverpod_app/todo/model/todos.dart';
+import 'package:flutter_notebook_8th_story/ep570_riverpod_app/todo/todoItem.dart';
 import 'package:flutter_notebook_8th_story/main.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -13,7 +14,7 @@ class RiverPodTodoApp extends StatelessWidget {
   }
 }
 
-final _currentTodo = ScopedProvider<Todo>(null);
+final currentTodo = ScopedProvider<Todo>(null);
 
 class TodoMainPage extends HookWidget {
   const TodoMainPage({Key key}) : super(key: key);
@@ -100,7 +101,7 @@ class TodoMainPage extends HookWidget {
                       key: ValueKey(todos[i].id),
                       child: ProviderScope(
                         overrides: [
-                          _currentTodo.overrideWithValue(todos[i]),
+                          currentTodo.overrideWithValue(todos[i]),
                         ],
                         child: TodoItem(),
                       ))
@@ -111,5 +112,23 @@ class TodoMainPage extends HookWidget {
         ));
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
