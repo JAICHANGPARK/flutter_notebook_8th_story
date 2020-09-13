@@ -22,7 +22,10 @@ class TodoMainPage extends HookWidget {
 
     final todos = useProvider(filterdTodos);
     final newTodoController = useTextEditingController();
-
+    final filter = useProvider(todoListFilter);
+    Color _textColor(TodoListFilter value){
+      return filter.state == value ? Colors.blue : null;
+    }
     return GestureDetector(
         onTap: (){
           FocusScope.of(context).unfocus();
@@ -36,7 +39,13 @@ class TodoMainPage extends HookWidget {
               TextField(
                 key: addTodoKey,
                 controller: newTodoController,
-                decoration: InputDecoration(),
+                decoration: InputDecoration(
+                  labelText: "Input todo"
+                ),
+                onSubmitted: (value){
+                  context.read(todoListProvider).add(value);
+                  newTodoController.clear();
+                },
               )
             ],
 
