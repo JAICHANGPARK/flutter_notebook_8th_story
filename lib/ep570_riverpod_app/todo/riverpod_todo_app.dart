@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 
 class RiverPodTodoApp extends StatelessWidget {
   @override
@@ -11,7 +12,7 @@ class RiverPodTodoApp extends StatelessWidget {
 }
 
 
-class TodoMainPage extends StatelessWidget {
+class TodoMainPage extends HookWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold();
