@@ -28,6 +28,11 @@ final todoListProvider = StateNotifierProvider((ref) {
 
 final todoListFilter = StateProvider((_) => TodoListFilter.all);
 
+final uncompletedTodosCount = Provider((ref){
+  return ref.watch(todoListProvider.state).where((element) => !element.isCompleted)
+      .length;
+});
+
 
 void main() {
   runApp(RiverPodTodoApp());
