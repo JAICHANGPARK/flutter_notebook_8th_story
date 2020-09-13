@@ -34,38 +34,69 @@ class TodoMainPage extends HookWidget {
           appBar: AppBar(
             title: Text("Riverpod Todos"),
           ),
-          body: ListView(
-            children: [
-              TextField(
-                key: addTodoKey,
-                controller: newTodoController,
-                decoration: InputDecoration(
-                  labelText: "Input todo"
+          body: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: ListView(
+              children: [
+                TextField(
+                  key: addTodoKey,
+                  controller: newTodoController,
+                  decoration: InputDecoration(
+                    labelText: "Input todo"
+                  ),
+                  onSubmitted: (value){
+                    context.read(todoListProvider).add(value);
+                    newTodoController.clear();
+                  },
                 ),
-                onSubmitted: (value){
-                  context.read(todoListProvider).add(value);
-                  newTodoController.clear();
-                },
-              ),
-              Material(
-                child: Row(
-                  children: [
-                    Expanded(child: Text(""
-                        "${useProvider(uncompletedTodosCount).toString()} item left")),
-                    Tooltip(
-                      key: allFilterKey,
-                      message: 'All todos',
-                      child: FlatButton(
-                        onPressed: (){
-                          filter.state = TodoListFilter.all;
-                        },
+                Material(
+                  child: Row(
+                    children: [
+                      Expanded(child: Text(""
+                          "${useProvider(uncompletedTodosCount).toString()} item left")),
+                      Tooltip(
+                        key: allFilterKey,
+                        message: 'All todos',
+                        child: FlatButton(
+                          onPressed: (){
+                            filter.state = TodoListFilter.all;
+                          },
+                          visualDensity: VisualDensity.compact,
+                          textColor: _textColor(TodoListFilter.all),
+                          child: Text("All"),
+                        ),
                       ),
-                    )
-                  ],
-                ),
-              )
-            ],
+                      Tooltip(
+                        key: activeFilterKey,
+                        message: 'Need to complete',
+                        child: FlatButton(
+                          onPressed: (){
+                            filter.state = TodoListFilter.active;
+                          },
+                          visualDensity: VisualDensity.compact,
+                          textColor: _textColor(TodoListFilter.active),
+                          child: Text("Active"),
+                        ),
+                      ),
+                      Tooltip(
+                        key: completedFilterKey,
+                        message: 'Completed',
+                        child: FlatButton(
+                          onPressed: (){
+                            filter.state = TodoListFilter.completed;
+                          },
+                          visualDensity: VisualDensity.compact,
+                          textColor: _textColor(TodoListFilter.completed),
+                          child: Text("Completed"),
+                        ),
+                      ),
 
+                    ],
+                  ),
+                )
+              ],
+
+            ),
           ),
 
         ));
