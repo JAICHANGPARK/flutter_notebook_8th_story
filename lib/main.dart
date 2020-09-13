@@ -26,6 +26,28 @@ final todoListProvider = StateNotifierProvider((ref) {
   ]);
 });
 
+final todoListFilter = StateProvider((_) => TodoListFilter.all);
+
+
 void main() {
   runApp(RiverPodTodoApp());
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
