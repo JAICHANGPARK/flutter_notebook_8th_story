@@ -46,6 +46,23 @@ class TodoMainPage extends HookWidget {
                   context.read(todoListProvider).add(value);
                   newTodoController.clear();
                 },
+              ),
+              Material(
+                child: Row(
+                  children: [
+                    Expanded(child: Text(""
+                        "${useProvider(uncompletedTodosCount).toString()} item left")),
+                    Tooltip(
+                      key: allFilterKey,
+                      message: 'All todos',
+                      child: FlatButton(
+                        onPressed: (){
+                          filter.state = TodoListFilter.all;
+                        },
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
 
