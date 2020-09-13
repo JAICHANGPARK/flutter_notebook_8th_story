@@ -5,6 +5,8 @@ import 'ep570_riverpod_app/todo/riverpod_todo_app.dart';
 final helloWorldProvider = Provider((_) => "Hello world");
 final counterProvider = StateProvider((ref) => 0);
 
+final addTodoKey = UniqueKey();
+
 void main() {
   runApp(RiverPodTodoApp());
 }
