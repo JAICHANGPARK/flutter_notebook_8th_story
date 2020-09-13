@@ -38,7 +38,6 @@ final filterdTodos = Provider((ref){
   final todos = ref.watch(todoListProvider.state);
   switch(filter.state){
     case TodoListFilter.all:
-      break;
     case TodoListFilter.completed:
       return todos.where((todo) => todo.isCompleted).toList();
     case TodoListFilter.active:
