@@ -27,7 +27,22 @@ class TodoMainPage extends HookWidget {
         onTap: (){
           FocusScope.of(context).unfocus();
         },
-        child: Scaffold());
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text("Riverpod Todos"),
+          ),
+          body: ListView(
+            children: [
+              TextField(
+                key: addTodoKey,
+                controller: newTodoController,
+                decoration: InputDecoration(),
+              )
+            ],
+
+          ),
+
+        ));
   }
 }
 
