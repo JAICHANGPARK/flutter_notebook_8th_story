@@ -47,8 +47,9 @@ final filterdTodos = Provider((ref){
       return todos;
   }
 });
+
 void main() {
-  runApp(RiverPodTodoApp());
+  runApp(ProviderScope(child: RiverPodTodoApp()));
 }
 
 
