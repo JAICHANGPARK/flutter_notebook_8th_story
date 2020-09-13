@@ -33,7 +33,20 @@ final uncompletedTodosCount = Provider((ref){
       .length;
 });
 
-
+final filterdTodos = Provider((ref){
+  final filter = ref.watch(todoListFilter);
+  final todos = ref.watch(todoListProvider.state);
+  switch(filter.state){
+    case TodoListFilter.all:
+      break;
+    case TodoListFilter.completed:
+      return todos.where((todo) => todo.isCompleted).toList();
+    case TodoListFilter.active:
+      return todos.where((todo) => !todo.isCompleted).toList();
+    default:
+      return todos;
+  }
+});
 void main() {
   runApp(RiverPodTodoApp());
 }
