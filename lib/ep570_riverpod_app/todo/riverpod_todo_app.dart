@@ -21,8 +21,35 @@ class TodoMainPage extends HookWidget {
   Widget build(BuildContext context) {
 
     final todos = useProvider(filterdTodos);
-    
+    final newTodoController = useTextEditingController();
+
+
 
     return Scaffold();
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
