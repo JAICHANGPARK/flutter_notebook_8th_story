@@ -112,10 +112,4 @@ class TodoMainPage extends HookWidget {
   }
 }
 
-class TodoItem extends HookWidget {
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw Material();
-  }
-}
+
