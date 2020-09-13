@@ -6,6 +6,9 @@ final helloWorldProvider = Provider((_) => "Hello world");
 final counterProvider = StateProvider((ref) => 0);
 
 final addTodoKey = UniqueKey();
+final activeFilterKey = UniqueKey();
+final completedFilterKey = UniqueKey();
+final allFilterKey = UniqueKey();
 
 void main() {
   runApp(RiverPodTodoApp());
