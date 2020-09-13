@@ -10,6 +10,8 @@ final activeFilterKey = UniqueKey();
 final completedFilterKey = UniqueKey();
 final allFilterKey = UniqueKey();
 
+final todoListProvider = StateNotifierProvider((ref){});
+
 void main() {
   runApp(RiverPodTodoApp());
 }
