@@ -4,6 +4,12 @@ import 'package:flutter_notebook_8th_story/ep570_riverpod_app/todo/model/todos.d
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'ep570_riverpod_app/todo/riverpod_todo_app.dart';
 
+enum TodoListFilter{
+  all,
+  active,
+  completed
+}
+
 final helloWorldProvider = Provider((_) => "Hello world");
 final counterProvider = StateProvider((ref) => 0);
 
