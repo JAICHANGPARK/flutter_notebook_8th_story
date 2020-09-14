@@ -66,26 +66,26 @@ class _ReservePageState extends State<ReservePage> {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 11,
-margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-decoration: BoxDecoration(
-  color: Colors.red,
-  borderRadius: BorderRadius.circular(32)
-),
-              child: Center(
-                child: Text("CHECKOUT", style: TextStyle(
-                  fontSize: 24,
-                  color: Colors.white,
-
-                ),),
-              )
-            ),
+                height: MediaQuery.of(context).size.height / 11,
+                margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(32)),
+                child: Center(
+                  child: Text(
+                    "CHECKOUT",
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                    ),
+                  ),
+                )),
           ],
         ),
       ),
     );
   }
 }
+
+
 
 
 
