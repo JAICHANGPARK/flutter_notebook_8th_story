@@ -66,10 +66,11 @@ class _ReservePageState extends State<ReservePage> {
                 children: [
                   Text("Total: \$13.99 x 3 seats = ", style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18
+                    fontSize: 18,
+                    fontWeight: FontWeight.w300
                   ),),
                   Text("\$41.97", style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    
                     color: Colors.white,
                     fontSize: 22
                   ),),
