@@ -26,6 +26,7 @@ class _ReservePageState extends State<ReservePage> {
         title: Text("Black Panther", style: TextStyle(
           color: Colors.white
         ),),
+        centerTitle: true,
       ),
       body: Column(
         children: [
@@ -36,3 +37,18 @@ class _ReservePageState extends State<ReservePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
