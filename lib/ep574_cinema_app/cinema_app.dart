@@ -21,7 +21,11 @@ class _ReservePageState extends State<ReservePage> {
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),
+          onPressed: (){},
         ),
+        title: Text("Black Panther", style: TextStyle(
+          color: Colors.white
+        ),),
       ),
       body: Column(
         children: [
