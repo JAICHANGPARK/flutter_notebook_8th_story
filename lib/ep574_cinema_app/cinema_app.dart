@@ -67,10 +67,12 @@ class _ReservePageState extends State<ReservePage> {
             ),
             Container(
               height: MediaQuery.of(context).size.height / 9,
-              
+decoration: BoxDecoration(),
               child: Center(
                 child: Text("CHECKOUT", style: TextStyle(
-                  fontSize: 24
+                  fontSize: 24,
+                  color: Colors.white,
+
                 ),),
               )
             ),
@@ -80,3 +82,17 @@ class _ReservePageState extends State<ReservePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
