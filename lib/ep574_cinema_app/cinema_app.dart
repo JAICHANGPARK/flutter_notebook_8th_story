@@ -63,8 +63,13 @@ class _ReservePageState extends State<ReservePage> {
               height: MediaQuery.of(context).size.height / 9,
               child: Row(
                 children: [
-                  Text("Total: \$13.99 x 3 seats = "),
-                  Text("\$41.97"),
+                  Text("Total: \$13.99 x 3 seats = ", style: TextStyle(
+                    color: Colors.white
+                  ),),
+                  Text("\$41.97", style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white
+                  ),),
                 ],
               ),
             ),
