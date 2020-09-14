@@ -58,7 +58,13 @@ class _ReservePageState extends State<ReservePage> {
                 color: Colors.white,
               ),
             ),
-            Divider(),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Divider(
+                color: Colors.grey,
+                thickness: 4,
+              ),
+            ),
             Container(
               height: MediaQuery.of(context).size.height / 9,
               padding: EdgeInsets.symmetric(horizontal: 16),
@@ -70,7 +76,7 @@ class _ReservePageState extends State<ReservePage> {
                     fontWeight: FontWeight.w300
                   ),),
                   Text("\$41.97", style: TextStyle(
-                    
+
                     color: Colors.white,
                     fontSize: 22
                   ),),
