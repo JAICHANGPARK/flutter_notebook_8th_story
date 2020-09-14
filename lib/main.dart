@@ -72,7 +72,7 @@ final filteredTodos = Provider((ref) {
 });
 
 void main() {
-  runApp(ProviderScope(child: RiverPodTodoApp()));
+  runApp(CinemaApp());
 }
 
 
