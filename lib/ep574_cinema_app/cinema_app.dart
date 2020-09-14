@@ -27,6 +27,7 @@ class _ReservePageState extends State<ReservePage> {
           color: Colors.white
         ),),
         centerTitle: true,
+        backgroundColor: Colors.black,
       ),
       body: Column(
         children: [
