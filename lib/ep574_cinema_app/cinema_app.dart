@@ -32,17 +32,31 @@ class _ReservePageState extends State<ReservePage> {
       body: Column(
         children: [
             Container(
-              height: MediaQuery.of(context).size.height / 6,
+              height: MediaQuery.of(context).size.height / 7,
               child: Placeholder(color: Colors.white,),
             ),
           Container(
-            height: MediaQuery.of(context).size.height / 2.5,
+            height: MediaQuery.of(context).size.height / 3,
             child: Placeholder(color: Colors.white,),
           ),
           Container(
             height: MediaQuery.of(context).size.height / 10,
             child: Placeholder(color: Colors.white,),
           ),
+          Container(
+            height: MediaQuery.of(context).size.height / 10,
+            child: Placeholder(color: Colors.white,),
+          ),
+          Divider(),
+          Container(
+            height: MediaQuery.of(context).size.height / 10,
+            child: Placeholder(color: Colors.white,),
+          ),
+          Container(
+            height: MediaQuery.of(context).size.height / 10,
+            child: Placeholder(color: Colors.white,),
+          ),
+
 
 
         ],
