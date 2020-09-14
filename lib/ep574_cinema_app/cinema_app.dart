@@ -31,6 +31,10 @@ class _ReservePageState extends State<ReservePage> {
       ),
       body: Column(
         children: [
+            Container(
+              height: MediaQuery.of(context).size.height / 4,
+              child: Placeholder(color: Colors.white,),
+            ),
 
         ],
       ),
