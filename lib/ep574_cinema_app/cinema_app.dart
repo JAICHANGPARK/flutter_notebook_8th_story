@@ -18,7 +18,11 @@ class _ReservePageState extends State<ReservePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios),
+        ),
+      ),
       body: Column(
         children: [
 
