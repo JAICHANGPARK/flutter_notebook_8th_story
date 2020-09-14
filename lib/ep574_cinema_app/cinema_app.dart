@@ -61,14 +61,17 @@ class _ReservePageState extends State<ReservePage> {
             Divider(),
             Container(
               height: MediaQuery.of(context).size.height / 9,
+              padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
                   Text("Total: \$13.99 x 3 seats = ", style: TextStyle(
-                    color: Colors.white
+                    color: Colors.white,
+                    fontSize: 18
                   ),),
                   Text("\$41.97", style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: Colors.white
+                    color: Colors.white,
+                    fontSize: 22
                   ),),
                 ],
               ),
