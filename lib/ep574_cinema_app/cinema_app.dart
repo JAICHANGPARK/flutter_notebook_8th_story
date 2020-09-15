@@ -48,6 +48,7 @@ class _ReservePageState extends State<ReservePage> {
             ),
             Container(
               height: MediaQuery.of(context).size.height / 10,
+              padding: EdgeInsets.only(left: 16),
               child: Row(
                 children: [
                   Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300),),
