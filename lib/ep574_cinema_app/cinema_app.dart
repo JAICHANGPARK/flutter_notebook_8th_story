@@ -16,7 +16,6 @@ class ReservePage extends StatefulWidget {
 }
 
 class _ReservePageState extends State<ReservePage> {
-
   List<Chair> _row1 = [
     Chair(reserveState: ReserveState.reserved),
     Chair(reserveState: ReserveState.available),
@@ -27,6 +26,7 @@ class _ReservePageState extends State<ReservePage> {
     Chair(reserveState: ReserveState.available),
     Chair(reserveState: ReserveState.available),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,62 +56,74 @@ class _ReservePageState extends State<ReservePage> {
               height: MediaQuery.of(context).size.height / 2.5,
               child: Column(
                 children: [
+                  ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      itemCount: _row1.length,
+                      itemBuilder: (context, index) {
+                    return Container(
+                      margin: EdgeInsets.all(4),
+                      height: 28,
+                      width: 16,
+                      decoration: BoxDecoration(
+                          color: _row1[index].reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
+                          borderRadius: BorderRadius.circular(4)),
+                    );
+                  }),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      ..._row1.map((e) => GestureDetector(
-                        onTap: (){
-
-                        },
-                        child: Container(
-                          margin: EdgeInsets.all(4),
-                          height: 28,
-                          width: 16,
-                          decoration: BoxDecoration(
-                              color: e.reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
-                            borderRadius: BorderRadius.circular(4)
-                          ),
-                        ),
-                      )).toList()
+                      // ..._row1.map((e) => GestureDetector(
+                      //   onTap: (){
+                      //   },
+                      //   child: Container(
+                      //     margin: EdgeInsets.all(4),
+                      //     height: 28,
+                      //     width: 16,
+                      //     decoration: BoxDecoration(
+                      //         color: e.reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
+                      //       borderRadius: BorderRadius.circular(4)
+                      //     ),
+                      //   ),
+                      // )).toList()
                     ],
                   )
-
                 ],
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 10,
-              padding: EdgeInsets.only(left: 16),
-              child: Row()
-            ),
+                height: MediaQuery.of(context).size.height / 10, padding: EdgeInsets.only(left: 16), child: Row()),
             Container(
-              height: MediaQuery.of(context).size.height / 9,
+                height: MediaQuery.of(context).size.height / 9,
                 padding: EdgeInsets.only(left: 16),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 24),
-                        child: VerticalDivider(
-                          color: Colors.white,
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          "Time: 20:00",
+                          style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),
                         ),
-                      ),
-                      Text("11th March",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300)),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 24),
-                        child: VerticalDivider(
-                          color: Colors.white,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 24),
+                          child: VerticalDivider(
+                            color: Colors.white,
+                          ),
                         ),
-                      ),
-                      Text("Black Panther",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300))
-
-                    ],
-                  ),
-                ],
-              )
-            ),
+                        Text("11th March",
+                            style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300)),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 24),
+                          child: VerticalDivider(
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text("Black Panther",
+                            style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300))
+                      ],
+                    ),
+                  ],
+                )),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Divider(
