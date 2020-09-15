@@ -55,13 +55,19 @@ class _ReservePageState extends State<ReservePage> {
               height: MediaQuery.of(context).size.height / 2.5,
               child: Column(
                 children: [
-                  ..._row1.map((e) => Container(
-                    height: 16,
-                    width: 8,
-                    decoration: BoxDecoration(
-                      color: Colors.white
-                    ),
-                  )).toList()
+                  Row(
+                    children: [
+                      ..._row1.map((e) => Container(
+                        
+                        height: 38,
+                        width: 16,
+                        decoration: BoxDecoration(
+                            color: Colors.white
+                        ),
+                      )).toList()
+                    ],
+                  )
+
                 ],
               ),
             ),
