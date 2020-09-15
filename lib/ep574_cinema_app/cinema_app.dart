@@ -56,20 +56,23 @@ class _ReservePageState extends State<ReservePage> {
               height: MediaQuery.of(context).size.height / 2.5,
               child: Column(
                 children: [
-                  ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      shrinkWrap: true,
-                      itemCount: _row1.length,
-                      itemBuilder: (context, index) {
-                    return Container(
-                      margin: EdgeInsets.all(4),
-                      height: 28,
-                      width: 16,
-                      decoration: BoxDecoration(
-                          color: _row1[index].reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
-                          borderRadius: BorderRadius.circular(4)),
-                    );
-                  }),
+                  Container(
+                    height: 32,
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        shrinkWrap: true,
+                        itemCount: _row1.length,
+                        itemBuilder: (context, index) {
+                      return Container(
+                        margin: EdgeInsets.all(4),
+                        height: 28,
+                        width: 16,
+                        decoration: BoxDecoration(
+                            color: _row1[index].reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
+                            borderRadius: BorderRadius.circular(4)),
+                      );
+                    }),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
