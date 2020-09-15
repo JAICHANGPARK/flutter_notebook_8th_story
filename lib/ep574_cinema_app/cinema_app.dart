@@ -58,13 +58,18 @@ class _ReservePageState extends State<ReservePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      ..._row1.map((e) => Container(
-                        margin: EdgeInsets.all(4),
-                        height: 28,
-                        width: 16,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                          borderRadius: BorderRadius.circular(4)
+                      ..._row1.map((e) => GestureDetector(
+                        onTap: (){
+
+                        },
+                        child: Container(
+                          margin: EdgeInsets.all(4),
+                          height: 28,
+                          width: 16,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                            borderRadius: BorderRadius.circular(4)
+                          ),
                         ),
                       )).toList()
                     ],
