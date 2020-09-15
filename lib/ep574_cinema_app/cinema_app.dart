@@ -60,32 +60,35 @@ class _ReservePageState extends State<ReservePage> {
             Container(
               height: MediaQuery.of(context).size.height / 10,
               padding: EdgeInsets.only(left: 16),
-              child: Row(
-                children: [
-                  Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 24),
-                  child: VerticalDivider(
-                    color: Colors.white,
-                  ),
-                ),
-                  Text("11th March",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300)),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 24),
-                    child: VerticalDivider(
-                      color: Colors.white,
-                    ),
-                  ),
-                  Text("Black Panther",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300))
-
-                ],
-              ),
+              child: Row()
             ),
             Container(
               height: MediaQuery.of(context).size.height / 9,
-              child: Placeholder(
-                color: Colors.white,
-              ),
+                padding: EdgeInsets.only(left: 16),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 24),
+                        child: VerticalDivider(
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text("11th March",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300)),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 24),
+                        child: VerticalDivider(
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text("Black Panther",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300))
+
+                    ],
+                  ),
+                ],
+              )
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
