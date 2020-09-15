@@ -50,7 +50,9 @@ class _ReservePageState extends State<ReservePage> {
               height: MediaQuery.of(context).size.height / 10,
               child: Row(
                 children: [
-                  Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300),)
+                  Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300),),
+                VerticalDivider(),
+                  Text("11th March")
 
                 ],
               ),
