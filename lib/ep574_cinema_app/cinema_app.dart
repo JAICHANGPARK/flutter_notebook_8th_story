@@ -52,7 +52,7 @@ class _ReservePageState extends State<ReservePage> {
                 children: [
                   Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300),),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  padding: const EdgeInsets.symmetric(vertical: 24),
                   child: VerticalDivider(
                     color: Colors.white,
                   ),
