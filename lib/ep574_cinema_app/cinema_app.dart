@@ -51,21 +51,21 @@ class _ReservePageState extends State<ReservePage> {
               padding: EdgeInsets.only(left: 16),
               child: Row(
                 children: [
-                  Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300),),
+                  Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24),
                   child: VerticalDivider(
                     color: Colors.white,
                   ),
                 ),
-                  Text("11th March",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300)),
+                  Text("11th March",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300)),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 24),
                     child: VerticalDivider(
                       color: Colors.white,
                     ),
                   ),
-                  Text("Black Panther",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300))
+                  Text("Black Panther",style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300))
 
                 ],
               ),
