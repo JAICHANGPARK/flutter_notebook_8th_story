@@ -27,6 +27,16 @@ class _ReservePageState extends State<ReservePage> {
     Chair(reserveState: ReserveState.available),
   ];
 
+  Color chiarColor(ReserveState reserveState) {
+    if (reserveState == ReserveState.reserved) {
+      return Colors.grey;
+    } else if (reserveState == ReserveState.selected) {
+      return Colors.red;
+    } else {
+      return Colors.white;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,15 +73,28 @@ class _ReservePageState extends State<ReservePage> {
                         shrinkWrap: true,
                         itemCount: _row1.length,
                         itemBuilder: (context, index) {
-                      return Container(
-                        margin: EdgeInsets.all(4),
-                        height: 28,
-                        width: 16,
-                        decoration: BoxDecoration(
-                            color: _row1[index].reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
-                            borderRadius: BorderRadius.circular(4)),
-                      );
-                    }),
+                          return GestureDetector(
+                            onTap: () {
+                              if (_row1[index].reserveState == ReserveState.reserved) {
+                                return;
+                              }
+                              if (_row1[index].reserveState == ReserveState.available) {
+                                setState(() {
+                                  _row1[index].reserveState = ReserveState.selected;
+                                });
+                              }
+                            },
+                            child: Container(
+                              margin: EdgeInsets.all(4),
+                              height: 28,
+                              width: 16,
+                              decoration: BoxDecoration(
+                                  color:
+                                      _row1[index].reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
+                                  borderRadius: BorderRadius.circular(4)),
+                            ),
+                          );
+                        }),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
