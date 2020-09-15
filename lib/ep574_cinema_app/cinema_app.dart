@@ -70,16 +70,14 @@ class _ReservePageState extends State<ReservePage> {
               padding: EdgeInsets.symmetric(horizontal: 16),
               child: Row(
                 children: [
-                  Text("Total: \$13.99 x 3 seats = ", style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w300
-                  ),),
-                  Text("\$41.97", style: TextStyle(
-
-                    color: Colors.white,
-                    fontSize: 22
-                  ),),
+                  Text(
+                    "Total: \$13.99 x 3 seats = ",
+                    style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300),
+                  ),
+                  Text(
+                    "\$41.97",
+                    style: TextStyle(color: Colors.white, fontSize: 22),
+                  ),
                 ],
               ),
             ),
@@ -102,19 +100,3 @@ class _ReservePageState extends State<ReservePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
