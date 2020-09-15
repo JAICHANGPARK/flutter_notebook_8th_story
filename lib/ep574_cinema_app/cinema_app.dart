@@ -56,6 +56,7 @@ class _ReservePageState extends State<ReservePage> {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ..._row1.map((e) => Container(
                         margin: EdgeInsets.all(4),
