@@ -82,6 +82,10 @@ class _ReservePageState extends State<ReservePage> {
                                 setState(() {
                                   _row1[index].reserveState = ReserveState.selected;
                                 });
+                              }else{
+                                setState(() {
+                                  _row1[index].reserveState = ReserveState.available;
+                                });
                               }
                             },
                             child: Container(
@@ -89,9 +93,7 @@ class _ReservePageState extends State<ReservePage> {
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
-                                  color:
-                                      _row1[index].reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
-                                  borderRadius: BorderRadius.circular(4)),
+                                  color: chiarColor(_row1[index].reserveState), borderRadius: BorderRadius.circular(4)),
                             ),
                           );
                         }),
