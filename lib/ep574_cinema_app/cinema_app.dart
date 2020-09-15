@@ -22,6 +22,7 @@ class _ReservePageState extends State<ReservePage> {
     Chair(reserveState: ReserveState.available),
     Chair(reserveState: ReserveState.available),
     Chair(reserveState: ReserveState.available),
+    Chair(reserveState: ReserveState.reserved),
     Chair(reserveState: ReserveState.available),
     Chair(reserveState: ReserveState.available),
     Chair(reserveState: ReserveState.available),
@@ -67,7 +68,7 @@ class _ReservePageState extends State<ReservePage> {
                           height: 28,
                           width: 16,
                           decoration: BoxDecoration(
-                              color: Colors.white,
+                              color: e.reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
                             borderRadius: BorderRadius.circular(4)
                           ),
                         ),
