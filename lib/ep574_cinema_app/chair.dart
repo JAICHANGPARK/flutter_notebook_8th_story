@@ -5,9 +5,7 @@ enum ReserveState{
   selected
 }
 class Chair{
-
   final ReserveState reserveState;
-
   Chair({this.reserveState = ReserveState.available})
   :assert(reserveState != null);
 }
