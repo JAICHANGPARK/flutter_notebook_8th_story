@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_8th_story/ep574_cinema_app/chair.dart';
 
 class CinemaApp extends StatelessWidget {
   @override
@@ -15,6 +16,16 @@ class ReservePage extends StatefulWidget {
 }
 
 class _ReservePageState extends State<ReservePage> {
+
+  List<Chair> _row1 = [
+    Chair(reserveState: ReserveState.reserved),
+    Chair(reserveState: ReserveState.available),
+    Chair(reserveState: ReserveState.available),
+    Chair(reserveState: ReserveState.available),
+    Chair(reserveState: ReserveState.available),
+    Chair(reserveState: ReserveState.available),
+    Chair(reserveState: ReserveState.available),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
