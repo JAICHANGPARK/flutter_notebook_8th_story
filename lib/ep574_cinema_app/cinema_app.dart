@@ -57,7 +57,14 @@ class _ReservePageState extends State<ReservePage> {
                     color: Colors.white,
                   ),
                 ),
-                  Text("11th March",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300))
+                  Text("11th March",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300)),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 24),
+                    child: VerticalDivider(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text("Black Panther",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300))
 
                 ],
               ),
