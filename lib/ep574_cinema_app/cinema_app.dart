@@ -51,7 +51,9 @@ class _ReservePageState extends State<ReservePage> {
               child: Row(
                 children: [
                   Text("Time: 20:00",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300),),
-                VerticalDivider(),
+                VerticalDivider(
+                  color: Colors.white,
+                ),
                   Text("11th March",style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w300))
 
                 ],
