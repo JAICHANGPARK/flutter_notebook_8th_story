@@ -58,11 +58,11 @@ class _ReservePageState extends State<ReservePage> {
                   Row(
                     children: [
                       ..._row1.map((e) => Container(
-                        
+                        margin: EdgeInsets.all(4),
                         height: 38,
-                        width: 16,
+                        width: 20,
                         decoration: BoxDecoration(
-                            color: Colors.white
+                            color: Colors.white,
                         ),
                       )).toList()
                     ],
