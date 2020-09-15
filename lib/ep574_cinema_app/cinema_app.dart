@@ -82,7 +82,7 @@ class _ReservePageState extends State<ReservePage> {
                                 setState(() {
                                   _row1[index].reserveState = ReserveState.selected;
                                 });
-                              }else{
+                              } else {
                                 setState(() {
                                   _row1[index].reserveState = ReserveState.available;
                                 });
