@@ -277,7 +277,11 @@ class _ReservePageState extends State<ReservePage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(4)),
                     ),
-                    Text("Available"),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Available"),
+                    ),
+                    Spacer(),
                     Container(
                       margin: EdgeInsets.fromLTRB(2,4,2,4),
                       height: 28,
@@ -287,6 +291,7 @@ class _ReservePageState extends State<ReservePage> {
                           borderRadius: BorderRadius.circular(4)),
                     ),
                     Text("Reserved"),
+                    Spacer(),
                     Container(
                       margin: EdgeInsets.fromLTRB(2,4,2,4),
                       height: 28,
