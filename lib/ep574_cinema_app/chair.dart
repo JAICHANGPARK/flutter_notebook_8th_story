@@ -46,6 +46,22 @@ List<Chair> chairRow3 = [
   Chair(3, 11, reserveState: ReserveState.available),
   Chair(3, 12, reserveState: ReserveState.available),
 ];
+List<Chair> chairRow4 = [
+  Chair(4, 1, reserveState: ReserveState.available),
+  Chair(4, 2, reserveState: ReserveState.available),
+  Chair(4, 3, reserveState: ReserveState.available),
+  Chair(4, 4, reserveState: ReserveState.available),
+  Chair(4, 5, reserveState: ReserveState.available),
+  Chair(4, 6, reserveState: ReserveState.available),
+  Chair(4, 7, reserveState: ReserveState.available),
+  Chair(4, 8, reserveState: ReserveState.available),
+  Chair(4, 9, reserveState: ReserveState.available),
+  Chair(4, 10, reserveState: ReserveState.available),
+  Chair(4, 11, reserveState: ReserveState.available),
+  Chair(4, 12, reserveState: ReserveState.available),
+  Chair(4, 13, reserveState: ReserveState.available),
+  Chair(4, 14, reserveState: ReserveState.available),
+];
 
 
 
