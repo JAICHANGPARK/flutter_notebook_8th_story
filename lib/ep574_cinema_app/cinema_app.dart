@@ -266,7 +266,6 @@ class _ReservePageState extends State<ReservePage> {
             ),
             Container(
                 height: MediaQuery.of(context).size.height / 10, padding: EdgeInsets.only(left: 16),
-                color: Colors.blue,
                 child: Row(
                   children: [
                     Container(
@@ -279,7 +278,9 @@ class _ReservePageState extends State<ReservePage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text("Available"),
+                      child: Text("Available", style: TextStyle(
+                        color: Colors.white
+                      ),),
                     ),
                     Spacer(),
                     Container(
@@ -290,7 +291,12 @@ class _ReservePageState extends State<ReservePage> {
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(4)),
                     ),
-                    Text("Reserved"),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Reserved", style: TextStyle(
+                          color: Colors.white
+                      ),),
+                    ),
                     Spacer(),
                     Container(
                       margin: EdgeInsets.fromLTRB(2,4,2,4),
@@ -300,7 +306,12 @@ class _ReservePageState extends State<ReservePage> {
                           color: Colors.red,
                           borderRadius: BorderRadius.circular(4)),
                     ),
-                    Text("Selected by you"),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text("Selected by you", style: TextStyle(
+                          color: Colors.white
+                      ),),
+                    ),
                   ],
                 )),
             Container(
