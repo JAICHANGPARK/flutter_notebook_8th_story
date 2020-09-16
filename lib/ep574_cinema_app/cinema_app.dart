@@ -16,8 +16,6 @@ class ReservePage extends StatefulWidget {
 }
 
 class _ReservePageState extends State<ReservePage> {
-
-
   Color chiarColor(ReserveState reserveState) {
     if (reserveState == ReserveState.reserved) {
       return Colors.grey;
@@ -84,7 +82,8 @@ class _ReservePageState extends State<ReservePage> {
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
-                                  color: chiarColor(chairRow1[index].reserveState), borderRadius: BorderRadius.circular(4)),
+                                  color: chiarColor(chairRow1[index].reserveState),
+                                  borderRadius: BorderRadius.circular(4)),
                             ),
                           );
                         }),
@@ -116,7 +115,41 @@ class _ReservePageState extends State<ReservePage> {
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
-                                  color: chiarColor(chairRow2[index].reserveState), borderRadius: BorderRadius.circular(4)),
+                                  color: chiarColor(chairRow2[index].reserveState),
+                                  borderRadius: BorderRadius.circular(4)),
+                            ),
+                          );
+                        }),
+                  ),
+                  Container(
+                    height: 32,
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        shrinkWrap: true,
+                        itemCount: chairRow3.length,
+                        itemBuilder: (context, index) {
+                          return GestureDetector(
+                            onTap: () {
+                              if (chairRow3[index].reserveState == ReserveState.reserved) {
+                                return;
+                              }
+                              if (chairRow3[index].reserveState == ReserveState.available) {
+                                setState(() {
+                                  chairRow3[index].reserveState = ReserveState.selected;
+                                });
+                              } else {
+                                setState(() {
+                                  chairRow3[index].reserveState = ReserveState.available;
+                                });
+                              }
+                            },
+                            child: Container(
+                              margin: EdgeInsets.all(4),
+                              height: 28,
+                              width: 16,
+                              decoration: BoxDecoration(
+                                  color: chiarColor(chairRow3[index].reserveState),
+                                  borderRadius: BorderRadius.circular(4)),
                             ),
                           );
                         }),
