@@ -269,7 +269,33 @@ class _ReservePageState extends State<ReservePage> {
                 color: Colors.blue,
                 child: Row(
                   children: [
-
+                    Container(
+                      margin: EdgeInsets.fromLTRB(2,4,2,4),
+                      height: 28,
+                      width: 16,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(4)),
+                    ),
+                    Text("Available"),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(2,4,2,4),
+                      height: 28,
+                      width: 16,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(4)),
+                    ),
+                    Text("Available"),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(2,4,2,4),
+                      height: 28,
+                      width: 16,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(4)),
+                    ),
+                    Text("Available"),
                   ],
                 )),
             Container(
