@@ -282,7 +282,9 @@ class _ReservePageState extends State<ReservePage> {
               ),
             ),
             Container(
-                height: MediaQuery.of(context).size.height / 10, padding: EdgeInsets.only(left: 16), child: Row()),
+                height: MediaQuery.of(context).size.height / 10, padding: EdgeInsets.only(left: 16),
+                color: Colors.blue,
+                child: Row()),
             Container(
                 height: MediaQuery.of(context).size.height / 9,
                 padding: EdgeInsets.only(left: 16),
