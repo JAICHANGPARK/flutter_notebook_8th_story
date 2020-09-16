@@ -283,19 +283,19 @@ class _ReservePageState extends State<ReservePage> {
                       height: 28,
                       width: 16,
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.grey,
                           borderRadius: BorderRadius.circular(4)),
                     ),
-                    Text("Available"),
+                    Text("Reserved"),
                     Container(
                       margin: EdgeInsets.fromLTRB(2,4,2,4),
                       height: 28,
                       width: 16,
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.red,
                           borderRadius: BorderRadius.circular(4)),
                     ),
-                    Text("Available"),
+                    Text("Selected by you"),
                   ],
                 )),
             Container(
