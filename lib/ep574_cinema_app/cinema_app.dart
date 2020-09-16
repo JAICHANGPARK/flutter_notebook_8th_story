@@ -260,31 +260,18 @@ class _ReservePageState extends State<ReservePage> {
                           );
                         }),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      // ..._row1.map((e) => GestureDetector(
-                      //   onTap: (){
-                      //   },
-                      //   child: Container(
-                      //     margin: EdgeInsets.all(4),
-                      //     height: 28,
-                      //     width: 16,
-                      //     decoration: BoxDecoration(
-                      //         color: e.reserveState == ReserveState.reserved ? Colors.grey : Colors.white,
-                      //       borderRadius: BorderRadius.circular(4)
-                      //     ),
-                      //   ),
-                      // )).toList()
-                    ],
-                  )
+
                 ],
               ),
             ),
             Container(
                 height: MediaQuery.of(context).size.height / 10, padding: EdgeInsets.only(left: 16),
                 color: Colors.blue,
-                child: Row()),
+                child: Row(
+                  children: [
+
+                  ],
+                )),
             Container(
                 height: MediaQuery.of(context).size.height / 9,
                 padding: EdgeInsets.only(left: 16),
