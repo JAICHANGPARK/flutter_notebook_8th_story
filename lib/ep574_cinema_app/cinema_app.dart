@@ -62,20 +62,20 @@ class _ReservePageState extends State<ReservePage> {
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         shrinkWrap: true,
-                        itemCount: row1.length,
+                        itemCount: chairRow1.length,
                         itemBuilder: (context, index) {
                           return GestureDetector(
                             onTap: () {
-                              if (_row1[index].reserveState == ReserveState.reserved) {
+                              if (chairRow1[index].reserveState == ReserveState.reserved) {
                                 return;
                               }
-                              if (_row1[index].reserveState == ReserveState.available) {
+                              if (chairRow1[index].reserveState == ReserveState.available) {
                                 setState(() {
-                                  _row1[index].reserveState = ReserveState.selected;
+                                  chairRow1[index].reserveState = ReserveState.selected;
                                 });
                               } else {
                                 setState(() {
-                                  _row1[index].reserveState = ReserveState.available;
+                                  chairRow1[index].reserveState = ReserveState.available;
                                 });
                               }
                             },
@@ -84,7 +84,7 @@ class _ReservePageState extends State<ReservePage> {
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
-                                  color: chiarColor(_row1[index].reserveState), borderRadius: BorderRadius.circular(4)),
+                                  color: chiarColor(chairRow1[index].reserveState), borderRadius: BorderRadius.circular(4)),
                             ),
                           );
                         }),
