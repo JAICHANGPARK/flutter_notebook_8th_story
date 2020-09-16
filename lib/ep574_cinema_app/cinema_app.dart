@@ -16,16 +16,7 @@ class ReservePage extends StatefulWidget {
 }
 
 class _ReservePageState extends State<ReservePage> {
-  List<Chair> _row1 = [
-    Chair(1,1,reserveState: ReserveState.reserved),
-    Chair(1,2,reserveState: ReserveState.available),
-    Chair(1,3,reserveState: ReserveState.available),
-    Chair(1,4,reserveState: ReserveState.available),
-    Chair(1,5,reserveState: ReserveState.reserved),
-    Chair(1,6,reserveState: ReserveState.available),
-    Chair(1,7,reserveState: ReserveState.available),
-    Chair(1,8,reserveState: ReserveState.available),
-  ];
+
 
   Color chiarColor(ReserveState reserveState) {
     if (reserveState == ReserveState.reserved) {
@@ -71,7 +62,7 @@ class _ReservePageState extends State<ReservePage> {
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         shrinkWrap: true,
-                        itemCount: _row1.length,
+                        itemCount: row1.length,
                         itemBuilder: (context, index) {
                           return GestureDetector(
                             onTap: () {
