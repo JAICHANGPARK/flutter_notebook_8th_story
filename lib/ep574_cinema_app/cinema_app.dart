@@ -154,6 +154,39 @@ class _ReservePageState extends State<ReservePage> {
                           );
                         }),
                   ),
+                  Container(
+                    height: 32,
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        shrinkWrap: true,
+                        itemCount: chairRow4.length,
+                        itemBuilder: (context, index) {
+                          return GestureDetector(
+                            onTap: () {
+                              if (chairRow4[index].reserveState == ReserveState.reserved) {
+                                return;
+                              }
+                              if (chairRow4[index].reserveState == ReserveState.available) {
+                                setState(() {
+                                  chairRow4[index].reserveState = ReserveState.selected;
+                                });
+                              } else {
+                                setState(() {
+                                  chairRow4[index].reserveState = ReserveState.available;
+                                });
+                              }
+                            },
+                            child: Container(
+                              margin: EdgeInsets.all(4),
+                              height: 28,
+                              width: 16,
+                              decoration: BoxDecoration(
+                                  color: chiarColor(chairRow4[index].reserveState),
+                                  borderRadius: BorderRadius.circular(4)),
+                            ),
+                          );
+                        }),
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
