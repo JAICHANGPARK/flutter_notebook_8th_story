@@ -51,9 +51,11 @@ class _ReservePageState extends State<ReservePage> {
                 color: Colors.white,
               ),
             ),
+            SizedBox(height: 24,),
             Container(
-              height: MediaQuery.of(context).size.height / 2.5,
+              height: MediaQuery.of(context).size.height / 3,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
                     height: 32,
