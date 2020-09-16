@@ -196,20 +196,20 @@ class _ReservePageState extends State<ReservePage> {
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         shrinkWrap: true,
-                        itemCount: chairRow4.length,
+                        itemCount: chairRow5.length,
                         itemBuilder: (context, index) {
                           return GestureDetector(
                             onTap: () {
-                              if (chairRow4[index].reserveState == ReserveState.reserved) {
+                              if (chairRow5[index].reserveState == ReserveState.reserved) {
                                 return;
                               }
-                              if (chairRow4[index].reserveState == ReserveState.available) {
+                              if (chairRow5[index].reserveState == ReserveState.available) {
                                 setState(() {
-                                  chairRow4[index].reserveState = ReserveState.selected;
+                                  chairRow5[index].reserveState = ReserveState.selected;
                                 });
                               } else {
                                 setState(() {
-                                  chairRow4[index].reserveState = ReserveState.available;
+                                  chairRow5[index].reserveState = ReserveState.available;
                                 });
                               }
                             },
@@ -218,7 +218,7 @@ class _ReservePageState extends State<ReservePage> {
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
-                                  color: chiarColor(chairRow4[index].reserveState),
+                                  color: chiarColor(chairRow5[index].reserveState),
                                   borderRadius: BorderRadius.circular(4)),
                             ),
                           );
@@ -230,20 +230,20 @@ class _ReservePageState extends State<ReservePage> {
                     child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         shrinkWrap: true,
-                        itemCount: chairRow4.length,
+                        itemCount: chairRow6.length,
                         itemBuilder: (context, index) {
                           return GestureDetector(
                             onTap: () {
-                              if (chairRow4[index].reserveState == ReserveState.reserved) {
+                              if (chairRow6[index].reserveState == ReserveState.reserved) {
                                 return;
                               }
-                              if (chairRow4[index].reserveState == ReserveState.available) {
+                              if (chairRow6[index].reserveState == ReserveState.available) {
                                 setState(() {
-                                  chairRow4[index].reserveState = ReserveState.selected;
+                                  chairRow6[index].reserveState = ReserveState.selected;
                                 });
                               } else {
                                 setState(() {
-                                  chairRow4[index].reserveState = ReserveState.available;
+                                  chairRow6[index].reserveState = ReserveState.available;
                                 });
                               }
                             },
@@ -252,7 +252,7 @@ class _ReservePageState extends State<ReservePage> {
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
-                                  color: chiarColor(chairRow4[index].reserveState),
+                                  color: chiarColor(chairRow6[index].reserveState),
                                   borderRadius: BorderRadius.circular(4)),
                             ),
                           );
