@@ -78,7 +78,7 @@ class _ReservePageState extends State<ReservePage> {
                               }
                             },
                             child: Container(
-                              margin: EdgeInsets.all(4),
+                              margin: EdgeInsets.fromLTRB(2,4,2,4),
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
@@ -112,7 +112,7 @@ class _ReservePageState extends State<ReservePage> {
                               }
                             },
                             child: Container(
-                              margin: EdgeInsets.all(4),
+                              margin: EdgeInsets.fromLTRB(2,4,2,4),
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
@@ -146,7 +146,7 @@ class _ReservePageState extends State<ReservePage> {
                               }
                             },
                             child: Container(
-                              margin: EdgeInsets.all(4),
+                              margin: EdgeInsets.fromLTRB(2,4,2,4),
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
@@ -180,7 +180,7 @@ class _ReservePageState extends State<ReservePage> {
                               }
                             },
                             child: Container(
-                              margin: EdgeInsets.all(4),
+                              margin: EdgeInsets.fromLTRB(2,4,2,4),
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
@@ -214,7 +214,7 @@ class _ReservePageState extends State<ReservePage> {
                               }
                             },
                             child: Container(
-                              margin: EdgeInsets.all(4),
+                              margin: EdgeInsets.fromLTRB(2,4,2,4),
                               height: 28,
                               width: 16,
                               decoration: BoxDecoration(
