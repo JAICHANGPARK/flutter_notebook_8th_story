@@ -19,6 +19,14 @@ class CinemaProvider with ChangeNotifier {
   }
 
   void removeSelectedChair(int column) {
-    
+
+  }
+
+  String selectedToString(){
+    String s = "";
+    for(int i = 0; i < _columnSelected.length ; i++){
+      s += _columnSelected[i].cNum.toString() + ", ";
+    }
+    return s;
   }
 }
