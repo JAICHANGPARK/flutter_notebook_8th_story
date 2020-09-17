@@ -353,7 +353,9 @@ class _ReservePageState extends State<ReservePage> {
                       ),
                       Row(
                         children: [
-                          Text("Row"),
+                          Text("Row", style: TextStyle(
+                            color: Colors.white
+                          ),),
                           Consumer<CinemaProvider>(builder: (context, value, child){
                             return Text(value.rowSelected);
                           }),
