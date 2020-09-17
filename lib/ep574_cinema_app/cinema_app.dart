@@ -32,8 +32,6 @@ class _ReservePageState extends State<ReservePage> {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => CinemaProvider(),
-
-
       child: Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
@@ -57,7 +55,9 @@ class _ReservePageState extends State<ReservePage> {
                   color: Colors.white,
                 ),
               ),
-              SizedBox(height: 24,),
+              SizedBox(
+                height: 24,
+              ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
                 child: Column(
@@ -86,7 +86,7 @@ class _ReservePageState extends State<ReservePage> {
                                 }
                               },
                               child: Container(
-                                margin: EdgeInsets.fromLTRB(2,4,2,4),
+                                margin: EdgeInsets.fromLTRB(2, 4, 2, 4),
                                 height: 28,
                                 width: 16,
                                 decoration: BoxDecoration(
@@ -96,7 +96,9 @@ class _ReservePageState extends State<ReservePage> {
                             );
                           }),
                     ),
-                    SizedBox(height: 6,),
+                    SizedBox(
+                      height: 6,
+                    ),
                     Container(
                       height: 32,
                       child: ListView.builder(
@@ -120,7 +122,7 @@ class _ReservePageState extends State<ReservePage> {
                                 }
                               },
                               child: Container(
-                                margin: EdgeInsets.fromLTRB(2,4,2,4),
+                                margin: EdgeInsets.fromLTRB(2, 4, 2, 4),
                                 height: 28,
                                 width: 16,
                                 decoration: BoxDecoration(
@@ -130,7 +132,9 @@ class _ReservePageState extends State<ReservePage> {
                             );
                           }),
                     ),
-                    SizedBox(height: 6,),
+                    SizedBox(
+                      height: 6,
+                    ),
                     Container(
                       height: 32,
                       child: ListView.builder(
@@ -154,7 +158,7 @@ class _ReservePageState extends State<ReservePage> {
                                 }
                               },
                               child: Container(
-                                margin: EdgeInsets.fromLTRB(2,4,2,4),
+                                margin: EdgeInsets.fromLTRB(2, 4, 2, 4),
                                 height: 28,
                                 width: 16,
                                 decoration: BoxDecoration(
@@ -164,7 +168,9 @@ class _ReservePageState extends State<ReservePage> {
                             );
                           }),
                     ),
-                    SizedBox(height: 6,),
+                    SizedBox(
+                      height: 6,
+                    ),
                     Container(
                       height: 32,
                       child: ListView.builder(
@@ -188,7 +194,7 @@ class _ReservePageState extends State<ReservePage> {
                                 }
                               },
                               child: Container(
-                                margin: EdgeInsets.fromLTRB(2,4,2,4),
+                                margin: EdgeInsets.fromLTRB(2, 4, 2, 4),
                                 height: 28,
                                 width: 16,
                                 decoration: BoxDecoration(
@@ -198,7 +204,9 @@ class _ReservePageState extends State<ReservePage> {
                             );
                           }),
                     ),
-                    SizedBox(height: 6,),
+                    SizedBox(
+                      height: 6,
+                    ),
                     Container(
                       height: 32,
                       child: ListView.builder(
@@ -212,19 +220,19 @@ class _ReservePageState extends State<ReservePage> {
                                   return;
                                 }
                                 if (chairRow5[index].reserveState == ReserveState.available) {
-                                  Provider.of<CinemaProvider>(context, listen: false).setRowSelected("");
+                                  Provider.of<CinemaProvider>(context, listen: false).setRowSelected("5");
                                   setState(() {
                                     chairRow5[index].reserveState = ReserveState.selected;
                                   });
                                 } else {
-                                  Provider.of<CinemaProvider>(context, listen: false).setRowSelected("5");
+                                  Provider.of<CinemaProvider>(context, listen: false).setRowSelected("");
                                   setState(() {
                                     chairRow5[index].reserveState = ReserveState.available;
                                   });
                                 }
                               },
                               child: Container(
-                                margin: EdgeInsets.fromLTRB(2,4,2,4),
+                                margin: EdgeInsets.fromLTRB(2, 4, 2, 4),
                                 height: 28,
                                 width: 16,
                                 decoration: BoxDecoration(
@@ -234,7 +242,9 @@ class _ReservePageState extends State<ReservePage> {
                             );
                           }),
                     ),
-                    SizedBox(height: 6,),
+                    SizedBox(
+                      height: 6,
+                    ),
                     Container(
                       height: 32,
                       child: ListView.builder(
@@ -258,7 +268,7 @@ class _ReservePageState extends State<ReservePage> {
                                 }
                               },
                               child: Container(
-                                margin: EdgeInsets.fromLTRB(2,4,2,4),
+                                margin: EdgeInsets.fromLTRB(2, 4, 2, 4),
                                 height: 28,
                                 width: 16,
                                 decoration: BoxDecoration(
@@ -268,57 +278,54 @@ class _ReservePageState extends State<ReservePage> {
                             );
                           }),
                     ),
-
                   ],
                 ),
               ),
               Container(
-                  height: MediaQuery.of(context).size.height / 10, padding: EdgeInsets.only(left: 16),
+                  height: MediaQuery.of(context).size.height / 10,
+                  padding: EdgeInsets.only(left: 16),
                   child: Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.fromLTRB(2,4,2,4),
+                        margin: EdgeInsets.fromLTRB(2, 4, 2, 4),
                         height: 28,
                         width: 16,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(4)),
+                        decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text("Available", style: TextStyle(
-                          color: Colors.white
-                        ),),
+                        child: Text(
+                          "Available",
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                       Spacer(),
                       Container(
-                        margin: EdgeInsets.fromLTRB(2,4,2,4),
+                        margin: EdgeInsets.fromLTRB(2, 4, 2, 4),
                         height: 28,
                         width: 16,
-                        decoration: BoxDecoration(
-                            color: Colors.grey,
-                            borderRadius: BorderRadius.circular(4)),
+                        decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(4)),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text("Reserved", style: TextStyle(
-                            color: Colors.white
-                        ),),
+                        child: Text(
+                          "Reserved",
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                       Spacer(),
                       Container(
-                        margin: EdgeInsets.fromLTRB(2,4,2,4),
+                        margin: EdgeInsets.fromLTRB(2, 4, 2, 4),
                         height: 28,
                         width: 16,
-                        decoration: BoxDecoration(
-                            color: Colors.red,
-                            borderRadius: BorderRadius.circular(4)),
+                        decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(4)),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Text("Selected by you", style: TextStyle(
-                            color: Colors.white
-                        ),),
+                        child: Text(
+                          "Selected by you",
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     ],
                   )),
@@ -353,13 +360,18 @@ class _ReservePageState extends State<ReservePage> {
                       ),
                       Row(
                         children: [
-                          Text("Row", style: TextStyle(
-                            color: Colors.white
-                          ),),
-                          Consumer<CinemaProvider>(builder: (context, value, child){
-                            return Text(value.rowSelected);
+                          Text(
+                            "Row",
+                            style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),
+                          ),
+                          Consumer<CinemaProvider>(builder: (context, value, child) {
+                            return Text(value.rowSelected,
+                              style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),);
                           }),
-                          Text("Seat"),
+                          Text(
+                            "Seat",
+                            style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),
+                          ),
                         ],
                       )
                     ],
@@ -407,29 +419,3 @@ class _ReservePageState extends State<ReservePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
