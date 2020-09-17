@@ -429,7 +429,11 @@ class SelectedSeatItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cinemaProvider = Provider.of<CinemaProvider>(context);
-    return Text("${cinemaProvider.selectedToString()}");
+    return Text("${cinemaProvider.selectedToString()}", style: TextStyle(
+      color: Colors.white,
+      fontSize: 16,
+      fontWeight: FontWeight.w300
+    ),);
   }
 }
 
