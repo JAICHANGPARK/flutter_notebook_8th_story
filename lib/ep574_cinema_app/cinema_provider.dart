@@ -14,7 +14,11 @@ class CinemaProvider with ChangeNotifier {
 
   List<Chair> get columnSelected => _columnSelected;
 
-  void addSelectedChair(int row) {}
+  void addSelectedChair(Chair chair) {
+    _columnSelected.add(chair);
+  }
 
-  void removeSelectedChair(int column) {}
+  void removeSelectedChair(int column) {
+    
+  }
 }
