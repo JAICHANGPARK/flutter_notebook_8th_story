@@ -1,9 +1,10 @@
 import 'package:flutter/foundation.dart';
+import 'package:flutter_notebook_8th_story/ep574_cinema_app/chair.dart';
 
 class CinemaProvider with ChangeNotifier{
 
   String _rowSelected = "";
-  List<int> _columnSelected = [];
+  List<Chair> _columnSelected = Map<int, int>();
 
   String get rowSelected => _rowSelected;
   void setRowSelected(String s){
@@ -11,10 +12,10 @@ class CinemaProvider with ChangeNotifier{
     notifyListeners();
   }
 
-  List<int> get columnSelected => _columnSelected;
+  Map<int, int> get columnSelected => _columnSelected;
 
-  void addSelectedChair(int column){
-    _columnSelected.add(column);
+  void addSelectedChair(int row){
+    _columnSelected[] = ;
   }
 
   void removeSelectedChair(int column){
