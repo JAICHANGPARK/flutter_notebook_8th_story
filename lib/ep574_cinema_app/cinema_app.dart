@@ -212,6 +212,7 @@ class _ReservePageState extends State<ReservePage> {
                                   return;
                                 }
                                 if (chairRow5[index].reserveState == ReserveState.available) {
+                                  
                                   setState(() {
                                     chairRow5[index].reserveState = ReserveState.selected;
                                   });
