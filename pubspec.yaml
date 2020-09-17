@@ -31,8 +31,10 @@ dependencies:
   google_fonts: any
   badges: any
   flutter_hooks: ^0.14.0
-  hooks_riverpod: ^0.9.2
+  hooks_riverpod: ^0.10.1
   uuid: any
+
+
 
 dev_dependencies:
   flutter_test:
