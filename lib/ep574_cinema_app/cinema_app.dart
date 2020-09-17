@@ -221,9 +221,8 @@ class _ReservePageState extends State<ReservePage> {
                                 }
                                 if (chairRow5[index].reserveState == ReserveState.available) {
                                   Provider.of<CinemaProvider>(context, listen: false).setRowSelected("5");
-                                  Provider.of<CinemaProvider>(context, listen: false).addSelectedChair(
-                                    chairRow5[index]
-                                  );
+                                  Provider.of<CinemaProvider>(context, listen: false)
+                                      .addSelectedChair(chairRow5[index]);
                                   setState(() {
                                     chairRow5[index].reserveState = ReserveState.selected;
                                   });
@@ -364,19 +363,20 @@ class _ReservePageState extends State<ReservePage> {
                       Row(
                         children: [
                           Text(
-                            "Row",
+                            "Row ",
                             style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),
                           ),
                           Consumer<CinemaProvider>(builder: (context, value, child) {
                             return Text(
-                              value.rowSelected,
+                              "${value.rowSelected}, ",
                               style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),
                             );
                           }),
                           Text(
-                            "Seat",
+                            "Seat ",
                             style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300),
                           ),
+                          SelectedSeatItem(),
                         ],
                       )
                     ],
@@ -424,3 +424,33 @@ class _ReservePageState extends State<ReservePage> {
     );
   }
 }
+
+class SelectedSeatItem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final cinemaProvider = Provider.of<CinemaProvider>(context);
+    return Text("${cinemaProvider.selectedToString()}");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
