@@ -16,7 +16,7 @@ class CinemaProvider with ChangeNotifier{
   void addSelectedChair(int column){
     _columnSelected.add(column);
   }
-  
+
   void removeSelectedChair(int column){
 
   }
