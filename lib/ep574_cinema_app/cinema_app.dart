@@ -349,6 +349,11 @@ class _ReservePageState extends State<ReservePage> {
                               style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w300))
                         ],
                       ),
+                      Row(
+                        children: [
+                          
+                        ],
+                      )
                     ],
                   )),
               Padding(
