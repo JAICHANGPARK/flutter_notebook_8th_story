@@ -351,7 +351,8 @@ class _ReservePageState extends State<ReservePage> {
                       ),
                       Row(
                         children: [
-                          
+                          Text("Row"),
+                          Text("Seat"),
                         ],
                       )
                     ],
