@@ -352,6 +352,9 @@ class _ReservePageState extends State<ReservePage> {
                       Row(
                         children: [
                           Text("Row"),
+                          Consumer(builder: (context, value, child){
+                            return Text();
+                          }),
                           Text("Seat"),
                         ],
                       )
