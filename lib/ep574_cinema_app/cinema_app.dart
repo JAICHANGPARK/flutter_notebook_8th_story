@@ -353,7 +353,7 @@ class _ReservePageState extends State<ReservePage> {
                         children: [
                           Text("Row"),
                           Consumer<CinemaProvider>(builder: (context, value, child){
-                            return Text("");
+                            return Text(value.rowSelected);
                           }),
                           Text("Seat"),
                         ],
