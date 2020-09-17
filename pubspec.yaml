@@ -33,6 +33,7 @@ dependencies:
   flutter_hooks: ^0.14.0
   hooks_riverpod: ^0.10.1
   uuid: any
+  provider: any
 
 
 
