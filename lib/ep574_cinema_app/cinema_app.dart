@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_8th_story/ep574_cinema_app/chair.dart';
-import 'package:hooks_riverpod/all.dart';
+import 'package:flutter_notebook_8th_story/ep574_cinema_app/cinema_provider.dart';
+import 'package:provider/provider.dart';
 
 class CinemaApp extends StatelessWidget {
   @override
@@ -30,6 +31,8 @@ class _ReservePageState extends State<ReservePage> {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
+      create: (context) => CinemaProvider(),
+
 
       child: Scaffold(
         backgroundColor: Colors.black,
@@ -391,3 +394,29 @@ class _ReservePageState extends State<ReservePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
