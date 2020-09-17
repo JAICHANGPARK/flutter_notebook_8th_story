@@ -212,11 +212,12 @@ class _ReservePageState extends State<ReservePage> {
                                   return;
                                 }
                                 if (chairRow5[index].reserveState == ReserveState.available) {
-                                  
+                                  Provider.of<CinemaProvider>(context, listen: false).setRowSelected("");
                                   setState(() {
                                     chairRow5[index].reserveState = ReserveState.selected;
                                   });
                                 } else {
+                                  Provider.of<CinemaProvider>(context, listen: false).setRowSelected("5");
                                   setState(() {
                                     chairRow5[index].reserveState = ReserveState.available;
                                   });
