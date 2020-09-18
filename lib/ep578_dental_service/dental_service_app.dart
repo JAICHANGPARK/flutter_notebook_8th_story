@@ -63,11 +63,19 @@ class _DentalMainPageState extends State<DentalMainPage> {
                 ),
                 leading: Icon(Icons.auto_awesome, size: 48,),
                 children: [
+                  Text("- subtitle 1"),
+                  Text("- subtitle 1"),
+                  Text("- subtitle 1"),
+                  Text("- subtitle 1"),
+                  Text("- subtitle 1"),
+                  Text("- subtitle 1")
 
-                ],),
+                ],
+                
+                ),
+
               ),
-             Divider(height: 48,
-             color: Colors.grey,),
+
             ],
           ),
         ),
