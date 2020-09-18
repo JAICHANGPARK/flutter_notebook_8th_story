@@ -52,13 +52,16 @@ class _DentalMainPageState extends State<DentalMainPage> {
                 height: 160,
                 decoration: BoxDecoration(color: Colors.brown[200]),
               ),
-              ExpansionTile(title: Text("Title1", style: TextStyle(
-                fontSize: 18
-              ),),
-              leading: Icon(Icons.auto_awesome, size: 48,),
-              children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 16),
+                child: ExpansionTile(title: Text("Title1", style: TextStyle(
+                  fontSize: 18
+                ),),
+                leading: Icon(Icons.auto_awesome, size: 48,),
+                children: [
 
-              ],),
+                ],),
+              ),
              Divider(height: 48,
              color: Colors.grey,),
             ],
