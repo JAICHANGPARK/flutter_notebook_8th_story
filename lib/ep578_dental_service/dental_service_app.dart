@@ -17,6 +17,34 @@ class DentalMainPage extends StatefulWidget {
 class _DentalMainPageState extends State<DentalMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
