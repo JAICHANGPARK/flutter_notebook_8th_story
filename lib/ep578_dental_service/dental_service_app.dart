@@ -20,7 +20,11 @@ class _DentalMainPageState extends State<DentalMainPage> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Column(),
+          child: Column(
+            children: [
+              
+            ],
+          ),
         ),
       ),
     );
