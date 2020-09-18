@@ -8,3 +8,15 @@ class DentalServiceApp extends StatelessWidget {
     );
   }
 }
+
+class DentalMainPage extends StatefulWidget {
+  @override
+  _DentalMainPageState createState() => _DentalMainPageState();
+}
+
+class _DentalMainPageState extends State<DentalMainPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
