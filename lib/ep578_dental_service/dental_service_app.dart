@@ -22,7 +22,15 @@ class _DentalMainPageState extends State<DentalMainPage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              
+              Row(
+                children: [
+                  Expanded(
+                    child: IconButton(
+                      icon: Icon(Icons.search),
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),
