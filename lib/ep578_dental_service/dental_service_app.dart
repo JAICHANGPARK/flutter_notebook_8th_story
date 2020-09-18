@@ -25,16 +25,22 @@ class _DentalMainPageState extends State<DentalMainPage> {
               Row(
                 children: [
                   Expanded(
-                    child: IconButton(
-                      icon: Icon(Icons.search), onPressed: () {  },
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: IconButton(
+                        icon: Icon(Icons.search), onPressed: () {  },
+                      ),
                     ),
                   ),
                   Expanded(
                     child: Text("Place logo image")
                   ),
                   Expanded(
-                    child: IconButton(
-                      icon: Icon(Icons.menu), onPressed: () {  },
+                    child: Align(
+                      alignment: Alignment.centerRight,
+                      child: IconButton(
+                        icon: Icon(Icons.menu), onPressed: () {  },
+                      ),
                     ),
                   )
                 ],
