@@ -59,7 +59,8 @@ class _DentalMainPageState extends State<DentalMainPage> {
               children: [
 
               ],),
-              
+             Divider(height: 48,
+             color: Colors.grey,),
             ],
           ),
         ),
