@@ -22,29 +22,35 @@ class _DentalMainPageState extends State<DentalMainPage> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Row(
-                children: [
-                  Expanded(
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: IconButton(
-                        icon: Icon(Icons.search), onPressed: () {  },
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: IconButton(
+                          icon: Icon(Icons.search), onPressed: () {  },
+                        ),
                       ),
                     ),
-                  ),
-                  Expanded(
-                    child: Text("Place logo image")
-                  ),
-                  Expanded(
-                    child: Align(
-                      alignment: Alignment.centerRight,
-                      child: IconButton(
-                        icon: Icon(Icons.menu), onPressed: () {  },
-                      ),
+                    Expanded(
+                      child: Text("Place logo image")
                     ),
-                  )
-                ],
-              )
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.centerRight,
+                        child: IconButton(
+                          icon: Icon(Icons.menu), onPressed: () {  },
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+height:                160
+              ),
             ],
           ),
         ),
