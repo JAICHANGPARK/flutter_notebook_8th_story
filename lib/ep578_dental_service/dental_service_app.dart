@@ -18,8 +18,10 @@ class _DentalMainPageState extends State<DentalMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(),
+        ),
       ),
     );
   }
