@@ -52,6 +52,10 @@ class _DentalMainPageState extends State<DentalMainPage> {
                 height: 160,
                 decoration: BoxDecoration(color: Colors.brown[200]),
               ),
+              ExpansionTile(title: Text("Title1", style: TextStyle(
+                fontSize: 18
+              ),),
+              leading: Icon(Icons.auto_awesome, size: 48,), )
             ],
           ),
         ),
@@ -59,3 +63,22 @@ class _DentalMainPageState extends State<DentalMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
