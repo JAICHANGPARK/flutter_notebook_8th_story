@@ -28,6 +28,16 @@ class _DentalMainPageState extends State<DentalMainPage> {
                     child: IconButton(
                       icon: Icon(Icons.search),
                     ),
+                  ),
+                  Expanded(
+                    child: IconButton(
+                      icon: Icon(Icons.search),
+                    ),
+                  ),
+                  Expanded(
+                    child: IconButton(
+                      icon: Icon(Icons.search),
+                    ),
                   )
                 ],
               )
