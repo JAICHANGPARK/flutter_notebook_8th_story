@@ -30,18 +30,18 @@ class _DentalMainPageState extends State<DentalMainPage> {
                       child: Align(
                         alignment: Alignment.centerLeft,
                         child: IconButton(
-                          icon: Icon(Icons.search), onPressed: () {  },
+                          icon: Icon(Icons.search),
+                          onPressed: () {},
                         ),
                       ),
                     ),
-                    Expanded(
-                      child: Text("Place logo image")
-                    ),
+                    Expanded(child: Text("Place logo image")),
                     Expanded(
                       child: Align(
                         alignment: Alignment.centerRight,
                         child: IconButton(
-                          icon: Icon(Icons.menu), onPressed: () {  },
+                          icon: Icon(Icons.menu),
+                          onPressed: () {},
                         ),
                       ),
                     )
@@ -49,7 +49,8 @@ class _DentalMainPageState extends State<DentalMainPage> {
                 ),
               ),
               Container(
-height:                160
+                height: 160,
+                decoration: BoxDecoration(color: Colors.brown[200]),
               ),
             ],
           ),
@@ -58,29 +59,3 @@ height:                160
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
