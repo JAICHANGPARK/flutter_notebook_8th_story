@@ -71,15 +71,18 @@ class _DentalMainPageState extends State<DentalMainPage> {
                   ),
                   tilePadding: EdgeInsets.all(16),
                   children: [
-                    Column(
-                      children: [
-                        Text("- subtitle 1"),
-                        Text("- subtitle 1"),
-                        Text("- subtitle 1"),
-                        Text("- subtitle 1"),
-                        Text("- subtitle 1"),
-                        Text("- subtitle 1")
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Column(
+                        children: [
+                          Text("- subtitle 1"),
+                          Text("- subtitle 1"),
+                          Text("- subtitle 1"),
+                          Text("- subtitle 1"),
+                          Text("- subtitle 1"),
+                          Text("- subtitle 1")
+                        ],
+                      ),
                     )
 
                   ],
