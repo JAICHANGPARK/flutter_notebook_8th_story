@@ -50,7 +50,8 @@ class _DentalMainPageState extends State<DentalMainPage> {
               ),
               Container(
                 height: 160,
-                decoration: BoxDecoration(color: Colors.brown[200],
+                decoration: BoxDecoration(
+                  color: Colors.brown[200],
                 ),
                 padding: EdgeInsets.only(left: 16, top: 8, bottom: 16, right: 16),
                 child: Column(
@@ -58,16 +59,19 @@ class _DentalMainPageState extends State<DentalMainPage> {
                     Row(
                       children: [
                         Text("Dropdown"),
-                        IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: (){}),
+                        IconButton(icon: Icon(Icons.arrow_drop_down), onPressed: () {}),
                         Text("Flutter"),
                       ],
                     ),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
-                      child: Text("Dreamwalker", style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                      ),),
+                      child: Text(
+                        "Dreamwalker",
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ],
                 ),
