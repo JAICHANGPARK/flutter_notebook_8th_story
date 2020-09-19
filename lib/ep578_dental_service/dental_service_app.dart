@@ -52,7 +52,7 @@ class _DentalMainPageState extends State<DentalMainPage> {
                 height: 160,
                 decoration: BoxDecoration(color: Colors.brown[200],
                 ),
-                padding: EdgeInsets.only(left: 16, top: 16, bottom: 16, right: 16),
+                padding: EdgeInsets.only(left: 16, top: 8, bottom: 16, right: 16),
                 child: Column(
                   children: [
                     Row(
@@ -64,7 +64,10 @@ class _DentalMainPageState extends State<DentalMainPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
-                      child: Text("Dreamwalker"),
+                      child: Text("Dreamwalker", style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),),
                     ),
                   ],
                 ),
