@@ -50,7 +50,17 @@ class _DentalMainPageState extends State<DentalMainPage> {
               ),
               Container(
                 height: 160,
-                decoration: BoxDecoration(color: Colors.brown[200]),
+                decoration: BoxDecoration(color: Colors.brown[200],
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        
+                      ],
+                    )
+                  ],
+                ),
               ),
               ...List.generate(
                 10,
