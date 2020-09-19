@@ -63,6 +63,8 @@ class _DentalMainPageState extends State<DentalMainPage> {
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ),
+                  expandedCrossAxisAlignment: CrossAxisAlignment.start,
+                  
                   leading: Icon(
                     Icons.auto_awesome,
                     size: 48,
