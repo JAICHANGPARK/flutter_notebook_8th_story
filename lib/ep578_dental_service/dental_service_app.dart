@@ -55,6 +55,7 @@ class _DentalMainPageState extends State<DentalMainPage> {
               Padding(
                 padding: const EdgeInsets.only(top: 16),
                 child: ExpansionTile(
+                  expandedAlignment: Alignment.centerLeft,
                   title: Padding(
                     padding: const EdgeInsets.only(left: 16),
                     child: Text(
