@@ -103,8 +103,20 @@ class _DentalMainPageState extends State<DentalMainPage> {
                                 fontWeight: FontWeight.bold
                             ),),
                           ),
-                          Text("- subtitle 5"),
-                          Text("- subtitle 6")
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
                         ],
                       ),
                     )
