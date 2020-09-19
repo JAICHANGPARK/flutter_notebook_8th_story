@@ -135,7 +135,6 @@ class _DentalMainPageState extends State<DentalMainPage> {
                     ),
                   ),
                   expandedCrossAxisAlignment: CrossAxisAlignment.start,
-
                   leading: Icon(
                     Icons.auto_awesome,
                     size: 48,
