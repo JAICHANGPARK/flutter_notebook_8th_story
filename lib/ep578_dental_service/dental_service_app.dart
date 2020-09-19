@@ -69,6 +69,7 @@ class _DentalMainPageState extends State<DentalMainPage> {
                     Icons.auto_awesome,
                     size: 48,
                   ),
+                  tilePadding: EdgeInsets.all(16),
                   children: [
                     Text("- subtitle 1"),
                     Text("- subtitle 1"),
