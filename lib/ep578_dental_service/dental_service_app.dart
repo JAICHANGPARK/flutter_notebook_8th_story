@@ -75,13 +75,34 @@ class _DentalMainPageState extends State<DentalMainPage> {
                       padding: const EdgeInsets.only(left: 16),
                       child: Column(
                         children: [
-                          Text("- subtitle 1", style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold
-                          ),),
-                          Text("- subtitle 2"),
-                          Text("- subtitle 3"),
-                          Text("- subtitle 4"),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
                           Text("- subtitle 5"),
                           Text("- subtitle 6")
                         ],
