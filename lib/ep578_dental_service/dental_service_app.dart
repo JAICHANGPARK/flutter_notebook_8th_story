@@ -52,6 +52,79 @@ class _DentalMainPageState extends State<DentalMainPage> {
                 height: 160,
                 decoration: BoxDecoration(color: Colors.brown[200]),
               ),
+
+             ... List.generate(10, (index) =>  Padding(
+                padding: const EdgeInsets.only(top: 16),
+                child: ExpansionTile(
+                  expandedAlignment: Alignment.centerLeft,
+                  title: Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Text(
+                      "Title 1 2 3 4",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  expandedCrossAxisAlignment: CrossAxisAlignment.start,
+
+                  leading: Icon(
+                    Icons.auto_awesome,
+                    size: 48,
+                  ),
+                  tilePadding: EdgeInsets.all(16),
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 16),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 8),
+                            child: Text("- subtitle 1", style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold
+                            ),),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),).toList(),
+
               Padding(
                 padding: const EdgeInsets.only(top: 16),
                 child: ExpansionTile(
