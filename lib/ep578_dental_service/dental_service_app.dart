@@ -52,6 +52,7 @@ class _DentalMainPageState extends State<DentalMainPage> {
                 height: 160,
                 decoration: BoxDecoration(color: Colors.brown[200],
                 ),
+                padding: EdgeInsets.only(left: 16, top: 16, bottom: 16, right: 16),
                 child: Column(
                   children: [
                     Row(
