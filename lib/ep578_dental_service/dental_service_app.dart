@@ -54,28 +54,28 @@ class _DentalMainPageState extends State<DentalMainPage> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 16),
-                child: ExpansionTile(title: Padding(
-                  padding: const EdgeInsets.only(left: 16),
-                  child: Text("Title 1 2 3 4", style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold
-                  ),),
+                child: ExpansionTile(
+                  title: Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Text(
+                      "Title 1 2 3 4",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  leading: Icon(
+                    Icons.auto_awesome,
+                    size: 48,
+                  ),
+                  children: [
+                    Text("- subtitle 1"),
+                    Text("- subtitle 1"),
+                    Text("- subtitle 1"),
+                    Text("- subtitle 1"),
+                    Text("- subtitle 1"),
+                    Text("- subtitle 1")
+                  ],
                 ),
-                leading: Icon(Icons.auto_awesome, size: 48,),
-                children: [
-                  Text("- subtitle 1"),
-                  Text("- subtitle 1"),
-                  Text("- subtitle 1"),
-                  Text("- subtitle 1"),
-                  Text("- subtitle 1"),
-                  Text("- subtitle 1")
-
-                ],
-                
-                ),
-
               ),
-
             ],
           ),
         ),
@@ -83,22 +83,3 @@ class _DentalMainPageState extends State<DentalMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
