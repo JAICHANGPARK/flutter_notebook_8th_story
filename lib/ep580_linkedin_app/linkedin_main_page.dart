@@ -10,9 +10,9 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
-
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
