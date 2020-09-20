@@ -77,7 +77,14 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                     child: Card(
                       child: Row(
                         children: [
-
+                          Column(
+                            children: [
+                              Icon(Icons.home_outlined),
+                              CircleAvatar(
+                                radius: 3,
+                              )
+                            ],
+                          )
                         ],
                       ),
                     ),
