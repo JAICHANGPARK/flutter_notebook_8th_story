@@ -23,7 +23,21 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
             children: [
               Expanded(
                 flex: 2,
-                child: Placeholder(),
+                child: Row(
+                  children: [
+                    CircleAvatar(),
+                    Expanded(
+                      flex: 6,
+                      child: Card(
+                        child: TextField(),
+                      ),
+                    ),
+                    Expanded(child: Card(
+                      child: IconButton(icon: Icon(Icons.chat_bubble_outline),
+                      onPressed: (){},),
+                    )),
+                  ],
+                ),
               ),
               Expanded(
                 flex: 3,
