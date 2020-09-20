@@ -30,9 +30,11 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                 child: Placeholder(),
               ),
               Expanded(
+                flex: 6,
                 child: Placeholder(),
               ),
               Expanded(
+                flex: 1,
                 child: Placeholder(),
               ),
 
