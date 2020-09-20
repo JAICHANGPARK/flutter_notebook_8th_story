@@ -22,8 +22,20 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
           child: Column(
             children: [
               Expanded(
+                flex: 1,
                 child: Placeholder(),
-              )
+              ),
+              Expanded(
+                flex: 3,
+                child: Placeholder(),
+              ),
+              Expanded(
+                child: Placeholder(),
+              ),
+              Expanded(
+                child: Placeholder(),
+              ),
+
             ],
           ),
         ),
@@ -31,3 +43,19 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
