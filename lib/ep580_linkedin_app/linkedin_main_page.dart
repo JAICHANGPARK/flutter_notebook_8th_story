@@ -8,6 +8,17 @@ class LinkedinMainPage extends StatefulWidget {
 class _LinkedinMainPageState extends State<LinkedinMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          
+        ),
+        child: Column(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
