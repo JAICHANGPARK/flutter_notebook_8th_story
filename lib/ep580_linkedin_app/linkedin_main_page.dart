@@ -79,12 +79,25 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                         children: [
                           Column(
                             children: [
-                              Icon(Icons.home_outlined),
+                              Icon(Icons.home_outlined, size: 28,),
                               CircleAvatar(
                                 radius: 3,
                               )
                             ],
-                          )
+                          ),
+                          Column(
+                            children: [
+                              Icon(Icons.home_outlined, size: 28,),
+                              CircleAvatar(
+                                radius: 3,
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: FloatingActionButton(onPressed: (){}),
+                          ),
+                          
                         ],
                       ),
                     ),
