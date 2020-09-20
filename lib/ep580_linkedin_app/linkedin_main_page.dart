@@ -13,21 +13,19 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            stops: [0.0, 0.4, 0.8],
-            colors: [
-              Colors.blue[100],
-              Colors.blue[50],
-              Colors.blue[50]
-            ]
-          )
-        ),
-        child: Column(
-          children: [
-
-          ],
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                stops: [0.0, 0.4, 0.8],
+                colors: [Colors.blue[100], Colors.blue[50], Colors.blue[50]])),
+        child: SafeArea(
+          child: Column(
+            children: [
+              Expanded(
+                child: Placeholder(),
+              )
+            ],
+          ),
         ),
       ),
     );
