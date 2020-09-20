@@ -19,6 +19,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
             stops: [0.0, 0.4],
             colors: [
               Colors.blue[400],
+              Colors.blue[200],
               Colors.blue[50]
             ]
           )
