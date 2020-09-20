@@ -76,6 +76,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                     padding: const EdgeInsets.only(top: 8),
                     child: Card(
                       child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Column(
                             children: [
