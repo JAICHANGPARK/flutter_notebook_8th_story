@@ -10,11 +10,15 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+
         decoration: BoxDecoration(
+
           gradient: LinearGradient(
-            
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            stops: [0.0, 0.4],
             colors: [
-              Colors.blue[100],
+              Colors.blue[400],
               Colors.blue[50]
             ]
           )
