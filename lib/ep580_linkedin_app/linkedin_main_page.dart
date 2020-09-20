@@ -76,9 +76,11 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                     padding: const EdgeInsets.only(top: 8),
                     child: Card(
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.home_outlined, size: 28,),
                               CircleAvatar(
@@ -87,6 +89,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                             ],
                           ),
                           Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.home_outlined, size: 28,),
                               CircleAvatar(
@@ -98,7 +101,24 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                             padding: const EdgeInsets.all(5.0),
                             child: FloatingActionButton(onPressed: (){}),
                           ),
-                          
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.home_outlined, size: 28,),
+                              CircleAvatar(
+                                radius: 3,
+                              )
+                            ],
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(Icons.home_outlined, size: 28,),
+                              CircleAvatar(
+                                radius: 3,
+                              )
+                            ],
+                          ),
                         ],
                       ),
                     ),
