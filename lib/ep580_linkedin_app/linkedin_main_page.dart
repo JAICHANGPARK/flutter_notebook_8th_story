@@ -73,7 +73,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                 Expanded(
                   flex: 2,
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 8, bottom: 8),
+                    padding: const EdgeInsets.only(top: 8),
                     child: Card(
                       child: Row(
                         children: [
