@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_8th_story/ep570_riverpod_app/todo/model/todo_list.dart';
 import 'package:flutter_notebook_8th_story/ep570_riverpod_app/todo/model/todos.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'ep570_riverpod_app/todo/riverpod_todo_app.dart';
-import 'ep574_cinema_app/cinema_app.dart';
-import 'ep578_dental_service/dental_service_app.dart';
 import 'ep580_linkedin_app/linkedin_app.dart';
 
 enum TodoListFilter{
