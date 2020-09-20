@@ -16,7 +16,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            stops: [0.0, 0.4],
+            stops: [0.0, 0.4, 0.8],
             colors: [
               Colors.blue[400],
               Colors.blue[200],
