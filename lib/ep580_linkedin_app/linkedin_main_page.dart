@@ -11,7 +11,13 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          
+          gradient: LinearGradient(
+            
+            colors: [
+              Colors.blue[100],
+              Colors.blue[50]
+            ]
+          )
         ),
         child: Column(
           children: [
