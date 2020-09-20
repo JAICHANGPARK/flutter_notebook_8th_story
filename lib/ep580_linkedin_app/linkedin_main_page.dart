@@ -18,8 +18,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
             end: Alignment.bottomRight,
             stops: [0.0, 0.4, 0.8],
             colors: [
-              Colors.blue[400],
-              Colors.blue[200],
+              Colors.blue[100],
+              Colors.blue[50],
               Colors.blue[50]
             ]
           )
