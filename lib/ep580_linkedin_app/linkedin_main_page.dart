@@ -35,7 +35,19 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Card(
-                            child: TextField(),
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 8),
+                              child: TextField(
+                                decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  icon: Icon(Icons.search),
+                                  hintText: "Search",
+                                  hintStyle: TextStyle(
+                                    fontSize: 12
+                                  )
+                                ),
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -63,7 +75,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                   child: Card(
                     child: Row(
                       children: [
-                        
+
                       ],
                     ),
                   ),
