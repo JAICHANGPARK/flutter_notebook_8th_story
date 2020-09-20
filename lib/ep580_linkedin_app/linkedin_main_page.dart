@@ -29,7 +29,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                     children: [
                       CircleAvatar(),
                       Expanded(
-                        flex: 6,
+                        flex: 9,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Card(
@@ -37,10 +37,14 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           ),
                         ),
                       ),
-                      Expanded(child: Card(
-                        child: IconButton(icon: Icon(Icons.chat_bubble_outline),
-                        onPressed: (){},),
-                      )),
+                      Expanded(
+                          flex: 2,child: Padding(
+                            padding: const EdgeInsets.only(top: 8, left: 8, bottom: 8),
+                            child: Card(
+                              child: IconButton(icon: Icon(Icons.chat_bubble_outline),
+                              onPressed: (){},),
+                            ),
+                          )),
                     ],
                   ),
                 ),
