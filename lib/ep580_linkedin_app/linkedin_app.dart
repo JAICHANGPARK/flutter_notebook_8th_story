@@ -8,3 +8,14 @@ class LinkedinApp extends StatelessWidget {
     );
   }
 }
+class LinkedinMainPage extends StatefulWidget {
+  @override
+  _LinkedinMainPageState createState() => _LinkedinMainPageState();
+}
+
+class _LinkedinMainPageState extends State<LinkedinMainPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
