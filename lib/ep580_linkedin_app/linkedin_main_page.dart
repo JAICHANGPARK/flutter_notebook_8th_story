@@ -102,7 +102,10 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                         ),
                         Expanded(
                           child: Row(
-                            children: [],
+                            children: [
+                              Icon(Icons.camera_alt),
+                              Text("")
+                            ],
                           ),
                         )
                       ],
