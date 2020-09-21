@@ -130,9 +130,9 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 Icons.home_outlined,
                                 size: 28,
                               ),
-                              CircleAvatar(
+                              _pageIndex == 2 ? CircleAvatar(
                                 radius: 3,
-                              )
+                              ): Container()
                             ],
                           ),
                           Column(
