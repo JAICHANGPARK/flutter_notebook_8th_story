@@ -104,7 +104,9 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           child: Row(
                             children: [
                               Icon(Icons.camera_alt),
-                              Text("")
+                              Text("Image", style: TextStyle(
+                                fontSize: 12
+                              ),)
                             ],
                           ),
                         )
