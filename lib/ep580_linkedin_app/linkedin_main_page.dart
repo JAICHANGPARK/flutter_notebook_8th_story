@@ -67,7 +67,13 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                 ),
                 Expanded(
                   flex: 3,
-                  child: Placeholder(),
+                  child: Card(
+                    child: Column(
+                      children: [
+                        Divider(color: ,)
+                      ],
+                    ),
+                  ),
                 ),
                 Expanded(
                   flex: 15,
@@ -149,7 +155,12 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                             children: [
                              Badge(
                                child: Icon(Icons.notifications_none),
-                               badgeContent: Text("5"),
+                               badgeContent: Text("5", style: TextStyle(
+                                 fontSize: 10,
+                               ),),
+                               borderRadius: 4,
+
+
                              ),
                             ],
                           ),
