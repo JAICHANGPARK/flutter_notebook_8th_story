@@ -99,15 +99,34 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                         ),
                         Divider(
                           color: Colors.grey,
+
                         ),
                         Expanded(
-                          child: Row(
-                            children: [
-                              Icon(Icons.camera_alt),
-                              Text("Image", style: TextStyle(
-                                fontSize: 12
-                              ),)
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              children: [
+                                Icon(Icons.camera_alt, size: 18,),
+                                Text("Image", style: TextStyle(
+                                  fontSize: 12
+                                ),),
+                                Spacer(),
+                                Icon(Icons.camera_alt, size: 18,),
+                                Text("Image", style: TextStyle(
+                                    fontSize: 12
+                                ),),
+                                Spacer(),
+                                Icon(Icons.camera_alt, size: 18,),
+                                Text("Image", style: TextStyle(
+                                    fontSize: 12
+                                ),),
+                                Spacer(),
+                                Icon(Icons.camera_alt, size: 18,),
+                                Text("Image", style: TextStyle(
+                                    fontSize: 12
+                                ),)
+                              ],
+                            ),
                           ),
                         )
                       ],
