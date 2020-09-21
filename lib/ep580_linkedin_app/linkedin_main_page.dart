@@ -1,3 +1,4 @@
+import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 
 class LinkedinMainPage extends StatefulWidget {
@@ -146,13 +147,9 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
-                                Icons.home_outlined,
-                                size: 28,
-                              ),
-                              CircleAvatar(
-                                radius: 3,
-                              )
+                             Badge(
+                               child: Icon(Icons.notifications_none),
+                             )
                             ],
                           ),
                         ],
