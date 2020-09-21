@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LinkedinMainPage extends StatefulWidget {
   @override
@@ -7,8 +8,8 @@ class LinkedinMainPage extends StatefulWidget {
 }
 
 class _LinkedinMainPageState extends State<LinkedinMainPage> {
-
   int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,26 +73,32 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                       children: [
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.only(left: 8, ),
+                            padding: const EdgeInsets.only(
+                              left: 8,
+                            ),
                             child: Row(
                               children: [
                                 Expanded(child: Icon(Icons.add_to_photos)),
                                 Expanded(
                                   flex: 10,
                                   child: TextField(
-                        
+                                    decoration: InputDecoration(
+                                      border: InputBorder.none,
+                                      hintText: "What on your mind?",
+                                      hintStyle: GoogleFonts.montserrat()
+                                    ),
                                   ),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                        Divider(color: Colors.grey,),
+                        Divider(
+                          color: Colors.grey,
+                        ),
                         Expanded(
                           child: Row(
-                            children: [
-
-                            ],
+                            children: [],
                           ),
                         )
                       ],
@@ -115,26 +122,28 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               GestureDetector(
-                                onTap: (){
-                                setState(() {
-                                  _pageIndex = 0;
-                                });
+                                onTap: () {
+                                  setState(() {
+                                    _pageIndex = 0;
+                                  });
                                 },
                                 child: Icon(
                                   Icons.home_outlined,
                                   size: 28,
                                 ),
                               ),
-                              _pageIndex == 0 ? CircleAvatar(
-                                radius: 3,
-                              ): Container()
+                              _pageIndex == 0
+                                  ? CircleAvatar(
+                                      radius: 3,
+                                    )
+                                  : Container()
                             ],
                           ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               GestureDetector(
-                                onTap: (){
+                                onTap: () {
                                   setState(() {
                                     _pageIndex = 1;
                                   });
@@ -144,21 +153,25 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                   size: 28,
                                 ),
                               ),
-                              _pageIndex == 1 ? CircleAvatar(
-                                radius: 3,
-                              ): Container()
+                              _pageIndex == 1
+                                  ? CircleAvatar(
+                                      radius: 3,
+                                    )
+                                  : Container()
                             ],
                           ),
                           Padding(
                             padding: const EdgeInsets.all(5.0),
-                            child: FloatingActionButton(onPressed: () {},
-                            child: Icon(Icons.add),),
+                            child: FloatingActionButton(
+                              onPressed: () {},
+                              child: Icon(Icons.add),
+                            ),
                           ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               GestureDetector(
-                                onTap: (){
+                                onTap: () {
                                   setState(() {
                                     _pageIndex = 2;
                                   });
@@ -168,23 +181,26 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                   size: 28,
                                 ),
                               ),
-                              _pageIndex == 2 ? CircleAvatar(
-                                radius: 3,
-                              ): Container()
+                              _pageIndex == 2
+                                  ? CircleAvatar(
+                                      radius: 3,
+                                    )
+                                  : Container()
                             ],
                           ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                             Badge(
-                               child: Icon(Icons.notifications_none),
-                               badgeContent: Text("5", style: TextStyle(
-                                 fontSize: 10,
-                               ),),
-                               borderRadius: 4,
-
-
-                             ),
+                              Badge(
+                                child: Icon(Icons.notifications_none),
+                                badgeContent: Text(
+                                  "5",
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                  ),
+                                ),
+                                borderRadius: 4,
+                              ),
                             ],
                           ),
                         ],
