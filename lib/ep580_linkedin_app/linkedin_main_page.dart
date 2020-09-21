@@ -39,24 +39,24 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                               padding: const EdgeInsets.only(left: 8, bottom: 8),
                               child: TextField(
                                 decoration: InputDecoration(
-                                  border: InputBorder.none,
-                                  icon: Icon(Icons.search),
-                                  hintText: "Search",
-                                  hintStyle: TextStyle(
-                                    fontSize: 14
-                                  )
-                                ),
+                                    border: InputBorder.none,
+                                    icon: Icon(Icons.search),
+                                    hintText: "Search",
+                                    hintStyle: TextStyle(fontSize: 14)),
                               ),
                             ),
                           ),
                         ),
                       ),
                       Expanded(
-                          flex: 2,child: Padding(
+                          flex: 2,
+                          child: Padding(
                             padding: const EdgeInsets.only(top: 8, left: 8, bottom: 8),
                             child: Card(
-                              child: IconButton(icon: Icon(Icons.chat_bubble_outline),
-                              onPressed: (){},),
+                              child: IconButton(
+                                icon: Icon(Icons.chat_bubble_outline),
+                                onPressed: () {},
+                              ),
                             ),
                           )),
                     ],
@@ -82,7 +82,10 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.home_outlined, size: 28,),
+                              Icon(
+                                Icons.home_outlined,
+                                size: 28,
+                              ),
                               CircleAvatar(
                                 radius: 3,
                               )
@@ -91,7 +94,10 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.home_outlined, size: 28,),
+                              Icon(
+                                Icons.home_outlined,
+                                size: 28,
+                              ),
                               CircleAvatar(
                                 radius: 3,
                               )
@@ -99,12 +105,15 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           ),
                           Padding(
                             padding: const EdgeInsets.all(5.0),
-                            child: FloatingActionButton(onPressed: (){}),
+                            child: FloatingActionButton(onPressed: () {}),
                           ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.home_outlined, size: 28,),
+                              Icon(
+                                Icons.home_outlined,
+                                size: 28,
+                              ),
                               CircleAvatar(
                                 radius: 3,
                               )
@@ -113,7 +122,10 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.home_outlined, size: 28,),
+                              Icon(
+                                Icons.home_outlined,
+                                size: 28,
+                              ),
                               CircleAvatar(
                                 radius: 3,
                               )
@@ -124,7 +136,6 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                     ),
                   ),
                 ),
-
               ],
             ),
           ),
@@ -133,19 +144,3 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
