@@ -110,7 +110,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                   });
                                 },
                                 child: Icon(
-                                  Icons.home_outlined,
+                                  Icons.person_outlined,
                                   size: 28,
                                 ),
                               ),
