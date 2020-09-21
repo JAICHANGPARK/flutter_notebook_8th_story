@@ -116,7 +116,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 ),
                                 Spacer(),
                                 Icon(
-                                  Icons.camera_alt,
+                                  Icons.movie,
                                   size: 18,
                                 ),
                                 Padding(
@@ -128,7 +128,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 ),
                                 Spacer(),
                                 Icon(
-                                  Icons.camera_alt,
+                                  Icons.attachment,
                                   size: 18,
                                 ),
                                 Padding(
@@ -140,7 +140,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 ),
                                 Spacer(),
                                 Icon(
-                                  Icons.camera_alt,
+                                  Icons.receipt,
                                   size: 18,
                                 ),
                                 Padding(
