@@ -84,11 +84,12 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 Expanded(
                                   flex: 10,
                                   child: TextField(
-
                                     decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: "What on your mind?",
-                                      hintStyle: GoogleFonts.montserrat()
+                                      hintStyle: GoogleFonts.montserrat(
+                                        fontSize: 12
+                                      )
                                     ),
                                   ),
                                 ),
