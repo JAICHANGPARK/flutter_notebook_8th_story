@@ -70,7 +70,14 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                   child: Card(
                     child: Column(
                       children: [
-                        Divider(color: ,)
+                        Expanded(
+                          child: Row(
+                            children: [
+                              Icon(Icons.add_to_photos),
+                            ],
+                          ),
+                        ),
+                        Divider(color: Colors.grey,)
                       ],
                     ),
                   ),
