@@ -126,9 +126,16 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
-                                Icons.home_outlined,
-                                size: 28,
+                              GestureDetector(
+                                onTap: (){
+                                  setState(() {
+                                    _pageIndex = 2;
+                                  });
+                                },
+                                child: Icon(
+                                  Icons.business_center,
+                                  size: 28,
+                                ),
                               ),
                               _pageIndex == 2 ? CircleAvatar(
                                 radius: 3,
