@@ -75,6 +75,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           child: Padding(
                             padding: const EdgeInsets.only(
                               left: 8,
+                              top: 8
                             ),
                             child: Row(
                               children: [
@@ -82,6 +83,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 Expanded(
                                   flex: 10,
                                   child: TextField(
+
                                     decoration: InputDecoration(
                                       border: InputBorder.none,
                                       hintText: "What on your mind?",
