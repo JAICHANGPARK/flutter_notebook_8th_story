@@ -115,9 +115,12 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 ),
                                 Spacer(),
                                 Icon(Icons.camera_alt, size: 18,),
-                                Text("Video", style: TextStyle(
-                                    fontSize: 12
-                                ),),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Text("Video", style: TextStyle(
+                                      fontSize: 12
+                                  ),),
+                                ),
                                 Spacer(),
                                 Icon(Icons.camera_alt, size: 18,),
                                 Text("File", style: TextStyle(
