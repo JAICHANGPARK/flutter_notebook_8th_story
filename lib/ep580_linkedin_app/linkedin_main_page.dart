@@ -121,7 +121,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           ),
                           Padding(
                             padding: const EdgeInsets.all(5.0),
-                            child: FloatingActionButton(onPressed: () {}),
+                            child: FloatingActionButton(onPressed: () {},
+                            child: Icon(Icons.add),),
                           ),
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -133,7 +134,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                   });
                                 },
                                 child: Icon(
-                                  Icons.business_center,
+                                  Icons.business_center_outlined,
                                   size: 28,
                                 ),
                               ),
