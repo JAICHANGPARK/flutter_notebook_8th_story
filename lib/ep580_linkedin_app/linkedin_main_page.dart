@@ -78,6 +78,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                               top: 8
                             ),
                             child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Expanded(child: Icon(Icons.add_to_photos)),
                                 Expanded(
