@@ -149,7 +149,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                             children: [
                              Badge(
                                child: Icon(Icons.notifications_none),
-                             )
+                               badgeContent: Text("5"),
+                             ),
                             ],
                           ),
                         ],
