@@ -6,6 +6,8 @@ class LinkedinMainPage extends StatefulWidget {
 }
 
 class _LinkedinMainPageState extends State<LinkedinMainPage> {
+
+  int _pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -82,13 +84,18 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(
-                                Icons.home_outlined,
-                                size: 28,
+                              GestureDetector(
+                                onTap: (){
+                                  
+                                },
+                                child: Icon(
+                                  Icons.home_outlined,
+                                  size: 28,
+                                ),
                               ),
-                              CircleAvatar(
+                              _pageIndex == 0 ? CircleAvatar(
                                 radius: 3,
-                              )
+                              ): Container()
                             ],
                           ),
                           Column(
