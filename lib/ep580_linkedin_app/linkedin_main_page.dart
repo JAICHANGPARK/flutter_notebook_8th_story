@@ -73,11 +73,23 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                         Expanded(
                           child: Row(
                             children: [
-                              Icon(Icons.add_to_photos),
+                              Expanded(child: Icon(Icons.add_to_photos)),
+                              Expanded(
+                                child: TextField(
+                                  
+                                ),
+                              ),
                             ],
                           ),
                         ),
-                        Divider(color: Colors.grey,)
+                        Divider(color: Colors.grey,),
+                        Expanded(
+                          child: Row(
+                            children: [
+
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   ),
