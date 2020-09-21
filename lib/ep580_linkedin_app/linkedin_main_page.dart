@@ -73,25 +73,22 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                       children: [
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.only(
-                              left: 8,
-                              top: 8
-                            ),
+                            padding: const EdgeInsets.only(left: 8, top: 8),
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Expanded(child: Icon(Icons.add_to_photos,
-                                size: 20,)),
+                                Expanded(
+                                    child: Icon(
+                                  Icons.add_to_photos,
+                                  size: 20,
+                                )),
                                 Expanded(
                                   flex: 10,
                                   child: TextField(
                                     decoration: InputDecoration(
-                                      border: InputBorder.none,
-                                      hintText: "What on your mind?",
-                                      hintStyle: GoogleFonts.montserrat(
-                                        fontSize: 12
-                                      )
-                                    ),
+                                        border: InputBorder.none,
+                                        hintText: "What on your mind?",
+                                        hintStyle: GoogleFonts.montserrat(fontSize: 12)),
                                   ),
                                 ),
                               ],
@@ -100,43 +97,58 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                         ),
                         Divider(
                           color: Colors.grey,
-
                         ),
                         Expanded(
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Row(
                               children: [
-                                Icon(Icons.camera_alt, size: 18,),
+                                Icon(
+                                  Icons.camera_alt,
+                                  size: 18,
+                                ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
-                                  child: Text("Image", style: TextStyle(
-                                    fontSize: 12
-                                  ),),
+                                  child: Text(
+                                    "Image",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
                                 ),
                                 Spacer(),
-                                Icon(Icons.camera_alt, size: 18,),
+                                Icon(
+                                  Icons.camera_alt,
+                                  size: 18,
+                                ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
-                                  child: Text("Video", style: TextStyle(
-                                      fontSize: 12
-                                  ),),
+                                  child: Text(
+                                    "Video",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
                                 ),
                                 Spacer(),
-                                Icon(Icons.camera_alt, size: 18,),
+                                Icon(
+                                  Icons.camera_alt,
+                                  size: 18,
+                                ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
-                                  child: Text("File", style: TextStyle(
-                                      fontSize: 12
-                                  ),),
+                                  child: Text(
+                                    "File",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
                                 ),
                                 Spacer(),
-                                Icon(Icons.camera_alt, size: 18,),
+                                Icon(
+                                  Icons.camera_alt,
+                                  size: 18,
+                                ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
-                                  child: Text("Article", style: TextStyle(
-                                      fontSize: 12
-                                  ),),
+                                  child: Text(
+                                    "Article",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
                                 )
                               ],
                             ),
