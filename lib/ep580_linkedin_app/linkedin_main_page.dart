@@ -124,14 +124,20 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 ),
                                 Spacer(),
                                 Icon(Icons.camera_alt, size: 18,),
-                                Text("File", style: TextStyle(
-                                    fontSize: 12
-                                ),),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Text("File", style: TextStyle(
+                                      fontSize: 12
+                                  ),),
+                                ),
                                 Spacer(),
                                 Icon(Icons.camera_alt, size: 18,),
-                                Text("Article", style: TextStyle(
-                                    fontSize: 12
-                                ),)
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Text("Article", style: TextStyle(
+                                      fontSize: 12
+                                  ),),
+                                )
                               ],
                             ),
                           ),
