@@ -86,7 +86,9 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                             children: [
                               GestureDetector(
                                 onTap: (){
-                                  
+                                setState(() {
+                                  _pageIndex = 0;
+                                });
                                 },
                                 child: Icon(
                                   Icons.home_outlined,
