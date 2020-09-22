@@ -255,8 +255,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 ),
                                 Spacer(),
                                 Icon(
-                                  Icons.receipt,
-                                  size: 18,
+                                  Icons.send,
+                                  size: 16,
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
