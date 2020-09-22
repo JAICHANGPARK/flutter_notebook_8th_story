@@ -171,11 +171,10 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                         ),
                         Expanded(
                           child: Placeholder(),
-                        ),Expanded(
+                        ),
+                        Expanded(
                           child: Placeholder(),
                         ),
-
-
                       ],
                     ),
                   ),
