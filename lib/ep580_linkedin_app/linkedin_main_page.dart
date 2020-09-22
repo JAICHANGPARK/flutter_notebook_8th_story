@@ -197,14 +197,16 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           flex: 2,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text("Flutter is a powerful framework "),
+                            child: Text("Flutter is a powerful framework. Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase."),
                           ),
                         ),
                         Expanded(
                           flex: 10,
                           child: Container(
                             decoration: BoxDecoration(
-                              image: DecorationImage()
+                              image: DecorationImage(
+                                
+                              )
                             ),
                           ),
                         ),
