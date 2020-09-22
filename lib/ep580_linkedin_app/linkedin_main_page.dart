@@ -177,7 +177,10 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text("Dreamwalker"),
-                                      Text("Minato-Ku at Tokyo. 10 min ago")
+                                      Text("Minato-Ku at Tokyo. 10 min ago", style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey
+                                      ),)
                                     ],
                                   ),
                                 )
