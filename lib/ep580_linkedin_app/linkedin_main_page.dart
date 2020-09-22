@@ -232,7 +232,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 ),
                                 Spacer(),
                                 Icon(
-                                  Icons.movie,
+                                  Icons.message,
                                   size: 16,
 
                                 ),
