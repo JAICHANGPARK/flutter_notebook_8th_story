@@ -163,6 +163,18 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                   child: Card(
                     child: Column(
                       children: [
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                        ),
+                        Expanded(
+                          child: Placeholder(),
+                        ),Expanded(
+                          child: Placeholder(),
+                        ),
+
 
                       ],
                     ),
