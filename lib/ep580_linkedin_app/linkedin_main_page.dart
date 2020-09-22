@@ -165,18 +165,24 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                       children: [
                         Expanded(
                           flex: 2,
-                          child: Row(
-                            children: [
-                              CircleAvatar(),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text("Dreamwalker"),
-                                  Text("Minato-Ku at Tokyo. 10 min ago")
-                                ],
-                              )
-                            ],
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            child: Row(
+                              children: [
+                                CircleAvatar(),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Text("Dreamwalker"),
+                                      Text("Minato-Ku at Tokyo. 10 min ago")
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Expanded(
