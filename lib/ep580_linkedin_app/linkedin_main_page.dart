@@ -213,7 +213,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           ),
                         ),
                         Expanded(
-                          flex: 2,
+                          flex: 1,
                           child: Placeholder(),
                         ),
                       ],
