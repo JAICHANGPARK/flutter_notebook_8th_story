@@ -243,13 +243,13 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 ),
                                 Spacer(),
                                 Icon(
-                                  Icons.attachment,
+                                  Icons.share,
                                   size: 18,
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
                                   child: Text(
-                                    "File",
+                                    "Share",
                                     style: TextStyle(fontSize: 12),
                                   ),
                                 ),
