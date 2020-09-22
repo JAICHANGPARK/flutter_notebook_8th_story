@@ -214,7 +214,60 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                         ),
                         Expanded(
                           flex: 1,
-                          child: Placeholder(),
+                          child:  Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.thumb_up,
+                                  size: 18,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Text(
+                                    "100+",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                ),
+                                Spacer(),
+                                Icon(
+                                  Icons.movie,
+                                  size: 18,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Text(
+                                    "500+",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                ),
+                                Spacer(),
+                                Icon(
+                                  Icons.attachment,
+                                  size: 18,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Text(
+                                    "File",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                ),
+                                Spacer(),
+                                Icon(
+                                  Icons.receipt,
+                                  size: 18,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 8),
+                                  child: Text(
+                                    "Article",
+                                    style: TextStyle(fontSize: 12),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
                         ),
                       ],
                     ),
