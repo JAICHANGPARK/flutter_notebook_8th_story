@@ -195,11 +195,18 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                         ),
                         Expanded(
                           flex: 2,
-                          child: Text("Flutter is a powerful framework "),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text("Flutter is a powerful framework "),
+                          ),
                         ),
                         Expanded(
                           flex: 10,
-                          child: Placeholder(),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              image: DecorationImage()
+                            ),
+                          ),
                         ),
                         Expanded(
                           flex: 2,
