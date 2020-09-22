@@ -170,6 +170,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                               CircleAvatar(),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text("Dreamwalker"),
                                   Text("Minato-Ku at Tokyo. 10 min ago")
