@@ -205,7 +205,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           child: Container(
                             decoration: BoxDecoration(
                               image: DecorationImage(
-                                
+                                image: NetworkImage("https://cdn.pixabay.com/photo/2020/09/17/12/39/sunflowers-5579060_960_720.jpg"),
+                                fit: BoxFit.cover
                               )
                             ),
                           ),
