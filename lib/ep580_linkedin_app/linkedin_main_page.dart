@@ -220,7 +220,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                               children: [
                                 Icon(
                                   Icons.thumb_up,
-                                  size: 18,
+                                  size: 16,
+
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
@@ -232,7 +233,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 Spacer(),
                                 Icon(
                                   Icons.movie,
-                                  size: 18,
+                                  size: 16,
+
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
@@ -244,7 +246,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 Spacer(),
                                 Icon(
                                   Icons.share,
-                                  size: 18,
+                                  size: 16,
+
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
