@@ -162,6 +162,7 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                   flex: 15,
                   child: Card(
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
                           flex: 2,
@@ -183,14 +184,18 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                       ),)
                                     ],
                                   ),
-                                )
+                                ),
+                                Spacer(),
+                                IconButton(icon: Icon(Icons.more_horiz), onPressed: (){
+
+                                })
                               ],
                             ),
                           ),
                         ),
                         Expanded(
                           flex: 2,
-                          child: Placeholder(),
+                          child: Text("Flutter is a powerful framework "),
                         ),
                         Expanded(
                           flex: 10,
