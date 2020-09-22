@@ -170,7 +170,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                               CircleAvatar(),
                               Column(
                                 children: [
-                                  
+                                  Text("Dreamwalker"),
+                                  Text("Minato-Ku at Tokyo. 10 min ago")
                                 ],
                               )
                             ],
