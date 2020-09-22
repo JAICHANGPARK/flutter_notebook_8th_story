@@ -165,7 +165,16 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                       children: [
                         Expanded(
                           flex: 2,
-                          child: Placeholder(),
+                          child: Row(
+                            children: [
+                              CircleAvatar(),
+                              Column(
+                                children: [
+                                  
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                         Expanded(
                           flex: 2,
