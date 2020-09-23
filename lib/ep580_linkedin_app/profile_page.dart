@@ -22,10 +22,14 @@ class _ProfilePageState extends State<ProfilePage> {
               child: Column(
                 children: [
                   Card(
-                    child: Column(
-                      children: [
-
-                      ],
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Column(
+                        children: [
+                          Text("About"),
+                          Text("Hello, I am Dreamwalker, ")
+                        ],
+                      ),
                     ),
                   ),
                   Card(),
