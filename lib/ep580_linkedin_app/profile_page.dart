@@ -36,36 +36,39 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                   ),
-                  SizedBox(
-                    width: double.infinity,
-                    child: Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("About"),
-                            Row(
-                              children: [
-                                Container(
-                                  height: 84,
-                                  width: 84,
-                                  decoration: BoxDecoration(
-                                    color: Colors.green
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: SizedBox(
+                      width: double.infinity,
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("About"),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 84,
+                                    width: 84,
+                                    decoration: BoxDecoration(
+                                      color: Colors.green
+                                    ),
                                   ),
-                                ),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
 
-                                    Text("Flutter Live Coding"),
-                                    Text("Flutter Live Coding in YouTube"),
-                                  ],
-                                )
-                              ],
-                            )
+                                      Text("Flutter Live Coding"),
+                                      Text("Flutter Live Coding in YouTube"),
+                                    ],
+                                  )
+                                ],
+                              )
 
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
