@@ -10,4 +10,3 @@ class LinkedinApp extends StatelessWidget {
     );
   }
 }
-
