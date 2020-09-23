@@ -36,7 +36,26 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                   ),
-                  Card(),
+                  SizedBox(
+                    width: double.infinity,
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("About"),
+                            Row(
+                              children: [
+                                Text("Hello, I am Dreamwalker, ")
+                              ],
+                            )
+
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                   Card(),
                 ],
               ),
@@ -48,3 +67,16 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
