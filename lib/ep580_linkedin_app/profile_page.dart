@@ -86,7 +86,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Activity"),
+                              Text("Experience"),
                               Row(
                                 children: [
                                   Container(
@@ -96,13 +96,16 @@ class _ProfilePageState extends State<ProfilePage> {
                                         color: Colors.green
                                     ),
                                   ),
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
 
-                                      Text("Flutter Live Coding"),
-                                      Text("Flutter Live Coding in YouTube"),
-                                    ],
+                                        Text("Flutter Live Coding"),
+                                        Text("Flutter Live Coding in YouTube"),
+                                      ],
+                                    ),
                                   )
                                 ],
                               )
