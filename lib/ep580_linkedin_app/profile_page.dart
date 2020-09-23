@@ -21,17 +21,20 @@ class _ProfilePageState extends State<ProfilePage> {
             Expanded(
               child: Column(
                 children: [
-                  SizedBox(
-                    width: double.infinity,
-                    child: Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("About"),
-                            Text("Hello, I am Dreamwalker, ")
-                          ],
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: SizedBox(
+                      width: double.infinity,
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("About"),
+                              Text("Hello, I am Dreamwalker, ")
+                            ],
+                          ),
                         ),
                       ),
                     ),
