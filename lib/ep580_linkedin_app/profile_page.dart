@@ -18,7 +18,15 @@ class _ProfilePageState extends State<ProfilePage> {
           Expanded(
             child: Column(
               children: [
-                
+                Card(
+                  child: Column(
+                    children: [
+                      
+                    ],
+                  ),
+                ),
+                Card(),
+                Card(),
               ],
             ),
           )
