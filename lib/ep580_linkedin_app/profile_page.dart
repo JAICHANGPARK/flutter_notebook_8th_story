@@ -49,7 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("About"),
+                              Text("Activity"),
                               Row(
                                 children: [
                                   Container(
