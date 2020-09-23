@@ -47,7 +47,13 @@ class _ProfilePageState extends State<ProfilePage> {
                             Text("About"),
                             Row(
                               children: [
-                                Container(),
+                                Container(
+                                  height: 84,
+                                  width: 84,
+                                  decoration: BoxDecoration(
+                                    color: Colors.green
+                                  ),
+                                ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
