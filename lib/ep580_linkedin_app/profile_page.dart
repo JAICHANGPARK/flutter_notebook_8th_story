@@ -18,7 +18,9 @@ class _ProfilePageState extends State<ProfilePage> {
             colors: [
               Colors.blue[50],
               Colors.red[50],
-            ]
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight
           )
         ),
         child: Column(
