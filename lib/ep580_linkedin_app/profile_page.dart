@@ -12,7 +12,11 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       body: Column(
         children: [
+          Expanded(
+            child: Placeholder(),
+          ),
           
+
         ],
       ),
     );
