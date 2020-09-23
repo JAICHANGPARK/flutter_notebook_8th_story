@@ -10,28 +10,32 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(
-            child: Placeholder(),
-          ),
-          Expanded(
-            child: Column(
-              children: [
-                Card(
-                  child: Column(
-                    children: [
-                      
-                    ],
-                  ),
-                ),
-                Card(),
-                Card(),
-              ],
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: Column(
+          children: [
+            Expanded(
+              child: Placeholder(),
             ),
-          )
+            Expanded(
+              child: Column(
+                children: [
+                  Card(
+                    child: Column(
+                      children: [
 
-        ],
+                      ],
+                    ),
+                  ),
+                  Card(),
+                  Card(),
+                ],
+              ),
+            )
+
+          ],
+        ),
       ),
     );
   }
