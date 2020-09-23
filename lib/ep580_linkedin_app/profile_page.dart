@@ -47,7 +47,12 @@ class _ProfilePageState extends State<ProfilePage> {
                             Text("About"),
                             Row(
                               children: [
-                                Text("Hello, I am Dreamwalker, ")
+                                Column(
+                                  children: [
+                                    Text("Flutter Live Coding"),
+                                    Text("Flutter Live Coding in YouTube"),
+                                  ],
+                                )
                               ],
                             )
 
