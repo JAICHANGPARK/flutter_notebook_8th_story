@@ -47,8 +47,11 @@ class _ProfilePageState extends State<ProfilePage> {
                             Text("About"),
                             Row(
                               children: [
+                                Container(),
                                 Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
+
                                     Text("Flutter Live Coding"),
                                     Text("Flutter Live Coding in YouTube"),
                                   ],
