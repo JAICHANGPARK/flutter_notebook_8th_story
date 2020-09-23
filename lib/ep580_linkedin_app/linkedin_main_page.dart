@@ -35,16 +35,14 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                   child: Row(
                     children: [
                       GestureDetector(
-                        onTap: (){
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context)
-                          {
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context) {
                             return ProfilePage();
                           }));
-
                         },
                         child: CircleAvatar(
-
-                          backgroundImage: NetworkImage("https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4"),
+                          backgroundImage: NetworkImage(
+                              "https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4"),
                         ),
                       ),
                       Expanded(
@@ -184,7 +182,8 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                             child: Row(
                               children: [
                                 CircleAvatar(
-                                  backgroundImage: NetworkImage("https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4"),
+                                  backgroundImage: NetworkImage(
+                                      "https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4"),
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
@@ -193,17 +192,15 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Text("Dreamwalker"),
-                                      Text("Minato-Ku at Tokyo. 10 min ago", style: TextStyle(
-                                        fontSize: 12,
-                                        color: Colors.grey
-                                      ),)
+                                      Text(
+                                        "Minato-Ku at Tokyo. 10 min ago",
+                                        style: TextStyle(fontSize: 12, color: Colors.grey),
+                                      )
                                     ],
                                   ),
                                 ),
                                 Spacer(),
-                                IconButton(icon: Icon(Icons.more_horiz), onPressed: (){
-
-                                })
+                                IconButton(icon: Icon(Icons.more_horiz), onPressed: () {})
                               ],
                             ),
                           ),
@@ -212,31 +209,31 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                           flex: 2,
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: Text("Flutter is a powerful framework. Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
-                            overflow: TextOverflow.fade,),
+                            child: Text(
+                              "Flutter is a powerful framework. Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
+                              overflow: TextOverflow.fade,
+                            ),
                           ),
                         ),
                         Expanded(
                           flex: 10,
                           child: Container(
                             decoration: BoxDecoration(
-                              image: DecorationImage(
-                                image: NetworkImage("https://cdn.pixabay.com/photo/2020/09/17/12/39/sunflowers-5579060_960_720.jpg"),
-                                fit: BoxFit.cover
-                              )
-                            ),
+                                image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2020/09/17/12/39/sunflowers-5579060_960_720.jpg"),
+                                    fit: BoxFit.cover)),
                           ),
                         ),
                         Expanded(
                           flex: 1,
-                          child:  Padding(
+                          child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Row(
                               children: [
                                 Icon(
                                   Icons.thumb_up,
                                   size: 16,
-
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
@@ -249,7 +246,6 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 Icon(
                                   Icons.message,
                                   size: 16,
-
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
@@ -262,7 +258,6 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                                 Icon(
                                   Icons.share,
                                   size: 16,
-
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 8),
