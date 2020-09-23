@@ -53,8 +53,8 @@ class _ProfilePageState extends State<ProfilePage> {
                               Row(
                                 children: [
                                   Container(
-                                    height: 84,
-                                    width: 84,
+                                    height: 64,
+                                    width: 64,
                                     decoration: BoxDecoration(
                                       color: Colors.green
                                     ),
@@ -76,7 +76,43 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                   ),
-                  Card(),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: SizedBox(
+                      width: double.infinity,
+                      child: Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Activity"),
+                              Row(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    width: 64,
+                                    decoration: BoxDecoration(
+                                        color: Colors.green
+                                    ),
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+
+                                      Text("Flutter Live Coding"),
+                                      Text("Flutter Live Coding in YouTube"),
+                                    ],
+                                  )
+                                ],
+                              )
+
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             )
