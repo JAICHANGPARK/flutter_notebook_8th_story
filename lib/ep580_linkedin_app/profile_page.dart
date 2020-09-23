@@ -16,7 +16,11 @@ class _ProfilePageState extends State<ProfilePage> {
             child: Placeholder(),
           ),
           Expanded(
-            child: Placeholder(),
+            child: Column(
+              children: [
+                
+              ],
+            ),
           )
 
         ],
