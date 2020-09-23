@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_8th_story/ep580_linkedin_app/profile_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LinkedinMainPage extends StatefulWidget {
