@@ -34,7 +34,13 @@ class _LinkedinMainPageState extends State<LinkedinMainPage> {
                   child: Row(
                     children: [
                       GestureDetector(
-                        onTap: (){},
+                        onTap: (){
+                          Navigator.of(context).push(MaterialPageRoute(builder: (context)
+                          {
+                            return ProfilePage();
+                          }));
+
+                        },
                         child: CircleAvatar(
 
                           backgroundImage: NetworkImage("https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4"),
