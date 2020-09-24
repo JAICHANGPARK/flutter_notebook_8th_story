@@ -44,15 +44,18 @@ class _ProfilePageState extends State<ProfilePage> {
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: [
-                            Row(
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.grey,
-                                ),
-                                CircleAvatar(
-                                  backgroundColor: Colors.grey,
-                                )
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.only(top: 24),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.grey,
+                                  ),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.grey,
+                                  )
+                                ],
+                              ),
                             )
                         ],
                       ),
