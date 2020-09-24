@@ -34,7 +34,14 @@ class _ProfilePageState extends State<ProfilePage> {
                     bottom: 24,
                     right: 0,
                     child: Container(
-                      child: Column(),
+                      decoration: BoxDecoration(
+                        image: DecorationImage()
+                      ),
+                      child: Column(
+                        children: [
+
+                        ],
+                      ),
                     ),
                   )
                 ],
