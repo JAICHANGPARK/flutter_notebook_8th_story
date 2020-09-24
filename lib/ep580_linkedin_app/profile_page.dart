@@ -74,8 +74,14 @@ class _ProfilePageState extends State<ProfilePage> {
                                   image: NetworkImage("https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4")
                                 )
                               ),
-
                             ),
+                          ),
+                          Text("Dreamwalker"),
+                          Text("Flutter / Android Developer"),
+                          Row(
+                            children: [
+                              
+                            ],
                           )
                         ],
                       ),
