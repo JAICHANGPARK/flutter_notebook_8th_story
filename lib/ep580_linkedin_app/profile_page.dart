@@ -31,7 +31,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   Positioned(
                     top: 0,
                     left: 0,
-                    bottom: 24,
+                    bottom: 38,
                     right: 0,
                     child: Container(
                       decoration: BoxDecoration(
