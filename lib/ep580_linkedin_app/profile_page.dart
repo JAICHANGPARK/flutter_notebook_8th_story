@@ -41,6 +41,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                         borderRadius: BorderRadius.circular(24)
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: [
                             Row(
