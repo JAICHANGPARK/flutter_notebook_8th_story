@@ -35,7 +35,9 @@ class _ProfilePageState extends State<ProfilePage> {
                     right: 0,
                     child: Container(
                       decoration: BoxDecoration(
-                        image: DecorationImage()
+                        image: DecorationImage(
+                          image: NetworkImage("")
+                        )
                       ),
                       child: Column(
                         children: [
