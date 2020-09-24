@@ -21,6 +21,7 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Column(
           children: [
             Expanded(
+        flex: 4,
               child: Stack(
                 children: [
                   Positioned(
@@ -104,6 +105,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
             Expanded(
+              flex: 5,
               child: Column(
                 children: [
                   Padding(
