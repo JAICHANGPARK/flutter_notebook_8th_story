@@ -61,18 +61,21 @@ class _ProfilePageState extends State<ProfilePage> {
                                 ],
                               ),
                             ),
-                          
-                          Container(
-                            height: 64,
-                            width: 64,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white),
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: NetworkImage("https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4")
-                              )
-                            ),
 
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 24),
+                            child: Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.white),
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
+                                  image: NetworkImage("https://avatars0.githubusercontent.com/u/19484515?s=460&u=0ec7b31ff9129826cccc5cd971887a9dd0e0a538&v=4")
+                                )
+                              ),
+
+                            ),
                           )
                         ],
                       ),
