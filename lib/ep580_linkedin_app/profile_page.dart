@@ -37,6 +37,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           borderRadius: BorderRadius.circular(24)),
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 24),
@@ -83,6 +84,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             ),
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Icon(Icons.add_location),
                               Text(
