@@ -106,9 +106,16 @@ class _ProfilePageState extends State<ProfilePage> {
                     right: 32,
                     bottom: 0,
                     child: Card(
-                      child: Column(
+                      child: Row(
                         children: [
-                          
+                          Column(
+                            children: [
+                              Text("990+"),
+                              Text("Connections"),
+
+                            ],
+                          ),
+                          VerticalDivider(),
                         ],
                       ),
                     ),
