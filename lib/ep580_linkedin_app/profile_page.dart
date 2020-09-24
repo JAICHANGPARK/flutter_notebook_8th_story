@@ -43,7 +43,16 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                       child: Column(
                         children: [
-
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.grey,
+                                ),
+                                CircleAvatar(
+                                  backgroundColor: Colors.grey,
+                                )
+                              ],
+                            )
                         ],
                       ),
                     ),
