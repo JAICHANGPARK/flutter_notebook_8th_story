@@ -128,12 +128,12 @@ class _ProfilePageState extends State<ProfilePage> {
                             VerticalDivider(),
                             Column(
                               children: [
-                                Text("990+",style: TextStyle(
+                                Text("550+",style: TextStyle(
                                   color: Colors.blue,
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                 ),),
-                                Text("Connections"),
+                                Text("Profile Views"),
                               ],
                             ),
                           ],
