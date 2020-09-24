@@ -51,10 +51,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   CircleAvatar(
+                                    child: Center(child: Icon(Icons.arrow_back_ios, size: 18,)),
                                     backgroundColor: Colors.grey[300],
                                   ),
                                   CircleAvatar(
                                     backgroundColor: Colors.grey[300],
+                                    child: Icon(Icons.more_horiz),
                                   )
                                 ],
                               ),
