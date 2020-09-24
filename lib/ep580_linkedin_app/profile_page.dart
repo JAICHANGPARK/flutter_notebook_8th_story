@@ -28,7 +28,15 @@ class _ProfilePageState extends State<ProfilePage> {
             Expanded(
               child: Stack(
                 children: [
-                  
+                  Positioned(
+                    top: 0,
+                    left: 0,
+                    bottom: 24,
+                    right: 0,
+                    child: Container(
+                      child: Column(),
+                    ),
+                  )
                 ],
               ),
             ),
