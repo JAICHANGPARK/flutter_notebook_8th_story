@@ -60,7 +60,10 @@ class _ProfilePageState extends State<ProfilePage> {
                                   )
                                 ],
                               ),
-                            )
+                            ),
+                          Container(
+                            decoration: BoxDecoration(),
+                          )
                         ],
                       ),
                     ),
