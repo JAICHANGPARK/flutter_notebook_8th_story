@@ -106,6 +106,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     right: 48,
                     bottom: 0,
                     child: Card(
+                      elevation: 14,
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Row(
@@ -113,9 +114,12 @@ class _ProfilePageState extends State<ProfilePage> {
                           children: [
                             Column(
                               children: [
-                                Text("990+"),
+                                Text("990+",style: TextStyle(
+                                  color: Colors.blue,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),),
                                 Text("Connections"),
-
                               ],
                             ),
                             VerticalDivider(),
