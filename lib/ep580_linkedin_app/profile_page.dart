@@ -102,13 +102,14 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                   ),
                   Positioned(
-                    left: 32,
-                    right: 32,
+                    left: 48,
+                    right: 48,
                     bottom: 0,
                     child: Card(
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Column(
                               children: [
@@ -118,6 +119,13 @@ class _ProfilePageState extends State<ProfilePage> {
                               ],
                             ),
                             VerticalDivider(),
+                            Column(
+                              children: [
+                                Text("990+"),
+                                Text("Connections"),
+
+                              ],
+                            ),
                           ],
                         ),
                       ),
