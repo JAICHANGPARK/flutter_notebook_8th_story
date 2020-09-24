@@ -38,7 +38,8 @@ class _ProfilePageState extends State<ProfilePage> {
                         image: DecorationImage(
                           image: NetworkImage("https://cdn.pixabay.com/photo/2020/09/21/09/54/tulips-5589607_960_720.jpg"),
                           fit: BoxFit.cover
-                        )
+                        ),
+                        borderRadius: BorderRadius.circular(24)
                       ),
                       child: Column(
                         children: [
