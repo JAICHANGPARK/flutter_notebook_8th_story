@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -47,12 +48,13 @@ class _ProfilePageState extends State<ProfilePage> {
                             Padding(
                               padding: const EdgeInsets.only(top: 24),
                               child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   CircleAvatar(
-                                    backgroundColor: Colors.grey,
+                                    backgroundColor: Colors.grey[300],
                                   ),
                                   CircleAvatar(
-                                    backgroundColor: Colors.grey,
+                                    backgroundColor: Colors.grey[300],
                                   )
                                 ],
                               ),
