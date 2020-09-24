@@ -100,6 +100,18 @@ class _ProfilePageState extends State<ProfilePage> {
                         ],
                       ),
                     ),
+                  ),
+                  Positioned(
+                    left: 32,
+                    right: 32,
+                    bottom: 0,
+                    child: Card(
+                      child: Column(
+                        children: [
+                          
+                        ],
+                      ),
+                    ),
                   )
                 ],
               ),
