@@ -80,7 +80,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           Text("Flutter / Android Developer"),
                           Row(
                             children: [
-                              
+
                             ],
                           )
                         ],
