@@ -106,6 +106,9 @@ class _ProfilePageState extends State<ProfilePage> {
                     right: 48,
                     bottom: 0,
                     child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(48)
+                      ),
                       elevation: 14,
                       child: Padding(
                         padding: const EdgeInsets.all(16.0),
