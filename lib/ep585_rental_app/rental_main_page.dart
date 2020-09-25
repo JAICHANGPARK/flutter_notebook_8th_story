@@ -13,12 +13,15 @@ class _RentalMainPageState extends State<RentalMainPage> {
       body: Column(
         children: [
           Expanded(
+            flex: 2,
             child: Placeholder(),
           ),
           Expanded(
+            flex: 2,
             child: Placeholder(),
           ),
           Expanded(
+            flex: 15,
             child: Placeholder(),
           )
         ],
