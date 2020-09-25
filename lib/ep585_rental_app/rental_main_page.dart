@@ -25,10 +25,13 @@ class _RentalMainPageState extends State<RentalMainPage> {
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: TextField(
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                   decoration: InputDecoration(
                     suffixIcon: Icon(CupertinoIcons.search),
                     border: InputBorder.none,
-
                   ),
                 ),
               ),
