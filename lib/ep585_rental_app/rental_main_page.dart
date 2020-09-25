@@ -24,7 +24,9 @@ class _RentalMainPageState extends State<RentalMainPage> {
                 ),
                 child: TextField(
                   decoration: InputDecoration(
-                    suffixIcon: Icon(CupertinoIcons.search)
+                    suffixIcon: Icon(CupertinoIcons.search),
+                    border: InputBorder.none,
+
                   ),
                 ),
               ),
