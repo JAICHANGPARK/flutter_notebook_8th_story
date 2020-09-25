@@ -10,21 +10,23 @@ class _RentalMainPageState extends State<RentalMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Expanded(
-            flex: 2,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 2,
-            child: Placeholder(),
-          ),
-          Expanded(
-            flex: 15,
-            child: Placeholder(),
-          )
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(
+              flex: 2,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 2,
+              child: Placeholder(),
+            ),
+            Expanded(
+              flex: 15,
+              child: Placeholder(),
+            )
+          ],
+        ),
       ),
     );
   }
