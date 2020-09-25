@@ -39,7 +39,11 @@ class _RentalMainPageState extends State<RentalMainPage> {
             ),
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Row(
+                children: [
+                  
+                ],
+              ),
             ),
             Expanded(
               flex: 15,
