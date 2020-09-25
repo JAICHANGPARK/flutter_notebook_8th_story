@@ -9,6 +9,14 @@ class RentalMainPage extends StatefulWidget {
 class _RentalMainPageState extends State<RentalMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(
+        children: [
+          Expanded(
+            child: Placeholder(),
+          )
+        ],
+      ),
+    );
   }
 }
