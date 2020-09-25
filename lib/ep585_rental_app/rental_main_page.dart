@@ -21,6 +21,9 @@ class _RentalMainPageState extends State<RentalMainPage> {
                   color: Colors.grey[300],
                   borderRadius: BorderRadius.circular(8),
                 ),
+                child: TextField(
+                  
+                ),
               ),
             ),
             Expanded(
