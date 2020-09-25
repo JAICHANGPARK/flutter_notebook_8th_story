@@ -40,11 +40,34 @@ class _RentalMainPageState extends State<RentalMainPage> {
             Expanded(
               flex: 2,
               child: Padding(
-                padding: const EdgeInsets.only(left: 16, right: 16, top: 20, bottom: 20),
+                padding: const EdgeInsets.only(left: 16, right: 16, top: 16, bottom: 20),
                 child: Row(
                   children: [
                     Container(
-
+                      decoration: BoxDecoration(
+                        color: Colors.teal,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: Text("House"),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.teal,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: Center(
+                          child: Text("House"),
+                        ),
+                      ),
+                    ),
+                    Container(
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         borderRadius: BorderRadius.circular(8),
@@ -61,7 +84,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
               ),
             ),
             Expanded(
-              flex: 15,
+              flex: 16,
               child: Placeholder(),
             )
           ],
