@@ -22,7 +22,9 @@ class _RentalMainPageState extends State<RentalMainPage> {
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: TextField(
-                  
+                  decoration: InputDecoration(
+                    suffixIcon: Icon(Icons.search)
+                  ),
                 ),
               ),
             ),
