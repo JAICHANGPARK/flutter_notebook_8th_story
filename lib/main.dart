@@ -3,6 +3,7 @@ import 'package:flutter_notebook_8th_story/ep570_riverpod_app/todo/model/todo_li
 import 'package:flutter_notebook_8th_story/ep570_riverpod_app/todo/model/todos.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'ep580_linkedin_app/linkedin_app.dart';
+import 'ep585_rental_app/rental_app.dart';
 
 enum TodoListFilter{
   all,
@@ -72,7 +73,7 @@ final filteredTodos = Provider((ref) {
 });
 
 void main() {
-  runApp(LinkedinApp());
+  runApp(RentalApp());
 }
 
 
