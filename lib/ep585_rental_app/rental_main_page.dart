@@ -41,7 +41,15 @@ class _RentalMainPageState extends State<RentalMainPage> {
               flex: 2,
               child: Row(
                 children: [
-                  
+                  Container(
+                    
+                    decoration: BoxDecoration(
+                      color: Colors.teal,
+                    ),
+                    child: Center(
+                      child: Text("House"),
+                    ),
+                  )
                 ],
               ),
             ),
