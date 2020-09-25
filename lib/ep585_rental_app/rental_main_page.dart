@@ -14,6 +14,12 @@ class _RentalMainPageState extends State<RentalMainPage> {
         children: [
           Expanded(
             child: Placeholder(),
+          ),
+          Expanded(
+            child: Placeholder(),
+          ),
+          Expanded(
+            child: Placeholder(),
           )
         ],
       ),
