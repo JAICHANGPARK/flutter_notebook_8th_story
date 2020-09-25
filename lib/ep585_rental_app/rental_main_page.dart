@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -23,7 +24,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                 ),
                 child: TextField(
                   decoration: InputDecoration(
-                    suffixIcon: Icon(Icons.search)
+                    suffixIcon: Icon(CupertinoIcons.search)
                   ),
                 ),
               ),
