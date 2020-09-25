@@ -15,7 +15,13 @@ class _RentalMainPageState extends State<RentalMainPage> {
           children: [
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Container(
+                margin: EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.grey[300],
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
             ),
             Expanded(
               flex: 2,
