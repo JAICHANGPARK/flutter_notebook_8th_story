@@ -116,6 +116,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                           borderRadius: BorderRadius.circular(24)
                         ),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                               Text("Map View"),
                               CircleAvatar(
