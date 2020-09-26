@@ -137,6 +137,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     child: ListView(
                       children: [
                         Container(
+                          margin: EdgeInsets.symmetric(horizontal: 16),
                           height: MediaQuery.of(context).size.height / 3,
                           decoration: BoxDecoration(color: Colors.blue),
                         ),
@@ -144,6 +145,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                           height: 16,
                         ),
                         Container(
+                          margin: EdgeInsets.symmetric(horizontal: 16),
                           height: MediaQuery.of(context).size.height / 3,
                           decoration: BoxDecoration(color: Colors.blue),
                         ),
@@ -151,6 +153,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                           height: 16,
                         ),
                         Container(
+                          margin: EdgeInsets.symmetric(horizontal: 16),
                           height: MediaQuery.of(context).size.height / 3,
                           decoration: BoxDecoration(color: Colors.blue),
                         ),
