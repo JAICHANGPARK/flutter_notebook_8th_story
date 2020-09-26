@@ -54,7 +54,9 @@ class _RentalMainPageState extends State<RentalMainPage> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 8,),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.teal[200],
@@ -63,11 +65,16 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
-                          child: Text("Price",style: TextStyle(color: Colors.white),),
+                          child: Text(
+                            "Price",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
-                    SizedBox(width: 8,),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.teal[200],
@@ -76,13 +83,16 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
-                          child: Text("Willa",style: TextStyle(color: Colors.white),),
+                          child: Text(
+                            "Willa",
+                            style: TextStyle(color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
-                    IconButton(icon: Icon(Icons.tune), onPressed: (){
-
-                    },
+                    IconButton(
+                      icon: Icon(Icons.tune),
+                      onPressed: () {},
                       color: Colors.teal,
                     )
                   ],
@@ -99,9 +109,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     bottom: 0,
                     right: 0,
                     child: ListView(
-                      children: [
-
-                      ],
+                      children: [],
                     ),
                   ),
                   Positioned(
@@ -111,17 +119,20 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     child: Center(
                       child: Container(
                         height: 48,
-                        decoration: BoxDecoration(
-                          color: Colors.teal,
-                          borderRadius: BorderRadius.circular(24)
-                        ),
+                        decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(24)),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                              Text("Map View"),
-                              CircleAvatar(
-                                backgroundColor: Colors.white,
-                              )
+                            Text(
+                              "Map View",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            CircleAvatar(
+                              backgroundColor: Colors.white,
+                            )
                           ],
                         ),
                       ),
@@ -136,13 +147,6 @@ class _RentalMainPageState extends State<RentalMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
 
 
 
