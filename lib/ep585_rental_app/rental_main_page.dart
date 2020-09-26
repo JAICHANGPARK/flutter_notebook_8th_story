@@ -110,9 +110,26 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     right: 0,
                     child: ListView(
                       children: [
-
-                        
-
+                          Container(
+                            height: MediaQuery.of(context).size.height / 3,
+                            decoration: BoxDecoration(
+                              color: Colors.blue
+                            ),
+                          ),
+                        SizedBox(height: 16,),
+                        Container(
+                          height: MediaQuery.of(context).size.height / 3,
+                          decoration: BoxDecoration(
+                              color: Colors.blue
+                          ),
+                        ),
+                        SizedBox(height: 16,),
+                        Container(
+                          height: MediaQuery.of(context).size.height / 3,
+                          decoration: BoxDecoration(
+                              color: Colors.blue
+                          ),
+                        ),
                       ],
                     ),
                   ),
