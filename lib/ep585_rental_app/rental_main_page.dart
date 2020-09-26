@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
 class RentalMainPage extends StatefulWidget {
   @override
   _RentalMainPageState createState() => _RentalMainPageState();
@@ -93,23 +92,3 @@ class _RentalMainPageState extends State<RentalMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
