@@ -7,6 +7,7 @@ class RentalMainPage extends StatefulWidget {
 }
 
 class _RentalMainPageState extends State<RentalMainPage> {
+  int _pageIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,15 +43,24 @@ class _RentalMainPageState extends State<RentalMainPage> {
                 padding: const EdgeInsets.only(left: 16, right: 16, top: 16, bottom: 20),
                 child: Row(
                   children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.teal,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text("House"),
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          _pageIndex = 0;
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: _pageIndex == 0 ? Colors.teal : Colors.teal[200],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text("House", style: TextStyle(
+                              color: Colors.white
+                            ),),
+                          ),
                         ),
                       ),
                     ),
@@ -110,25 +120,23 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     right: 0,
                     child: ListView(
                       children: [
-                          Container(
-                            height: MediaQuery.of(context).size.height / 3,
-                            decoration: BoxDecoration(
-                              color: Colors.blue
-                            ),
-                          ),
-                        SizedBox(height: 16,),
                         Container(
                           height: MediaQuery.of(context).size.height / 3,
-                          decoration: BoxDecoration(
-                              color: Colors.blue
-                          ),
+                          decoration: BoxDecoration(color: Colors.blue),
                         ),
-                        SizedBox(height: 16,),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Container(
                           height: MediaQuery.of(context).size.height / 3,
-                          decoration: BoxDecoration(
-                              color: Colors.blue
-                          ),
+                          decoration: BoxDecoration(color: Colors.blue),
+                        ),
+                        SizedBox(
+                          height: 16,
+                        ),
+                        Container(
+                          height: MediaQuery.of(context).size.height / 3,
+                          decoration: BoxDecoration(color: Colors.blue),
                         ),
                       ],
                     ),
