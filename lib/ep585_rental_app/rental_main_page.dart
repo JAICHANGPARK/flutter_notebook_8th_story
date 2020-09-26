@@ -91,7 +91,21 @@ class _RentalMainPageState extends State<RentalMainPage> {
             ),
             Expanded(
               flex: 16,
-              child: Placeholder(),
+              child: Stack(
+                children: [
+                  Positioned(
+                    top: 0,
+                    left: 0,
+                    bottom: 0,
+                    right: 0,
+                    child: ListView(
+                      children: [
+                        
+                      ],
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
