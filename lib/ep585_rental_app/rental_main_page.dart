@@ -105,18 +105,21 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     ),
                   ),
                   Positioned(
-                    bottom: 0,
-                    child: Container(
-                      height: 64,
-                      width: 120,
-                      decoration: BoxDecoration(
-                        color: Colors.teal,
-                        borderRadius: BorderRadius.circular(24)
-                      ),
-                      child: Row(
-                        children: [
+                    bottom: 24,
+                    left: 120,
+                    right: 120,
+                    child: Center(
+                      child: Container(
+                        height: 48,
+                        decoration: BoxDecoration(
+                          color: Colors.teal,
+                          borderRadius: BorderRadius.circular(24)
+                        ),
+                        child: Row(
+                          children: [
 
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   )
