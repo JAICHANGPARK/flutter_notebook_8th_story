@@ -67,17 +67,24 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     SizedBox(
                       width: 8,
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.teal[200],
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text(
-                            "Price",
-                            style: TextStyle(color: Colors.white),
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          _pageIndex = 1;
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: _pageIndex == 1 ? Colors.teal : Colors.teal[200],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Price",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
