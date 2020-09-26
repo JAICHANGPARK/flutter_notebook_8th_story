@@ -109,7 +109,10 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     child: Container(
                       height: 64,
                       width: 120,
-                      decoration: BoxDecoration(),
+                      decoration: BoxDecoration(
+                        color: Colors.teal,
+                        borderRadius: BorderRadius.circular(24)
+                      ),
                       child: Row(
                         children: [
 
