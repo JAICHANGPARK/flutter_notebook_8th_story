@@ -54,22 +54,23 @@ class _RentalMainPageState extends State<RentalMainPage> {
                         ),
                       ),
                     ),
+                    SizedBox(width: 8,),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.teal,
+                        color: Colors.teal[200],
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
-                          child: Text("Price"),
+                          child: Text("Price",style: TextStyle(),),
                         ),
                       ),
                     ),
                     SizedBox(width: 8,),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.teal,
+                        color: Colors.teal[200],
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Padding(
