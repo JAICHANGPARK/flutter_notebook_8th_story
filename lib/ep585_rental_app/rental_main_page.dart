@@ -117,7 +117,10 @@ class _RentalMainPageState extends State<RentalMainPage> {
                         ),
                         child: Row(
                           children: [
-
+                              Text("Map View"),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                              )
                           ],
                         ),
                       ),
