@@ -100,8 +100,21 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     right: 0,
                     child: ListView(
                       children: [
-                        
+
                       ],
+                    ),
+                  ),
+                  Positioned(
+                    bottom: 0,
+                    child: Container(
+                      height: 64,
+                      width: 120,
+                      decoration: BoxDecoration(),
+                      child: Row(
+                        children: [
+
+                        ],
+                      ),
                     ),
                   )
                 ],
