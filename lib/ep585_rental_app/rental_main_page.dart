@@ -8,6 +8,7 @@ class RentalMainPage extends StatefulWidget {
 
 class _RentalMainPageState extends State<RentalMainPage> {
   int _pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +45,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           _pageIndex = 0;
                         });
@@ -57,9 +58,10 @@ class _RentalMainPageState extends State<RentalMainPage> {
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Center(
-                            child: Text("House", style: TextStyle(
-                              color: Colors.white
-                            ),),
+                            child: Text(
+                              "House",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
@@ -68,7 +70,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       width: 8,
                     ),
                     GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           _pageIndex = 1;
                         });
@@ -92,17 +94,24 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     SizedBox(
                       width: 8,
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.teal[200],
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Center(
-                          child: Text(
-                            "Willa",
-                            style: TextStyle(color: Colors.white),
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _pageIndex = 2;
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: _pageIndex == 2 ? Colors.teal : Colors.teal[200],
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Center(
+                            child: Text(
+                              "Willa",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
