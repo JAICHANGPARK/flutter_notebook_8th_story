@@ -76,7 +76,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
-                          child: Text("Willa"),
+                          child: Text("Willa",style: TextStyle(color: Colors.white),),
                         ),
                       ),
                     ),
