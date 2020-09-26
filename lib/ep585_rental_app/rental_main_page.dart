@@ -62,10 +62,11 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
-                          child: Text("House"),
+                          child: Text("Price"),
                         ),
                       ),
                     ),
+                    SizedBox(width: 8,),
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.teal,
@@ -74,9 +75,14 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: Center(
-                          child: Text("House"),
+                          child: Text("Willa"),
                         ),
                       ),
+                    ),
+                    IconButton(icon: Icon(Icons.tune), onPressed: (){
+
+                    },
+                      color: Colors.teal,
                     )
                   ],
                 ),
@@ -92,3 +98,23 @@ class _RentalMainPageState extends State<RentalMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
