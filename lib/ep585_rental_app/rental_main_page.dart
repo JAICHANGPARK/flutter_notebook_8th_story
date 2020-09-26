@@ -109,7 +109,11 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     bottom: 0,
                     right: 0,
                     child: ListView(
-                      children: [],
+                      children: [
+
+                        
+
+                      ],
                     ),
                   ),
                   Positioned(
@@ -132,6 +136,8 @@ class _RentalMainPageState extends State<RentalMainPage> {
                             ),
                             CircleAvatar(
                               backgroundColor: Colors.white,
+                              child: Icon(Icons.add_location_rounded),
+                              foregroundColor: Colors.teal,
                             )
                           ],
                         ),
@@ -147,16 +153,3 @@ class _RentalMainPageState extends State<RentalMainPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
