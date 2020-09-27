@@ -149,16 +149,17 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                 bottom: 0,
                                 top: 0,
                                 child: Container(
-                                  width: 200,
+                                  width: 220,
                                   decoration: BoxDecoration(
                                     color: _appColor,
                                   ),
                                 ),
                               ),
                               Positioned(
-                                left: 0,
-                                bottom: 0,
-                                top: 0,
+                                right: 0,
+                                bottom: 32,
+                                top: 32,
+                                left: 180,
                                 child: Card()
                               )
                             ],
