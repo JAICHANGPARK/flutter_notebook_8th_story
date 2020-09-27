@@ -166,7 +166,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
 
                                           child: Container(
                                             width: 120,
-                                            height: 48,
+                                            height: 52,
                                             decoration: BoxDecoration(
                                               color: Colors.white
                                             ),
