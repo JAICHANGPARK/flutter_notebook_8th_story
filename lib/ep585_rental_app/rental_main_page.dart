@@ -121,7 +121,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     IconButton(
                       icon: Icon(Icons.tune),
                       onPressed: () {},
-                      color: Colors.teal,
+                      color: _appColor
                     )
                   ],
                 ),
@@ -169,7 +169,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                     child: Center(
                       child: Container(
                         height: 48,
-                        decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.circular(24)),
+                        decoration: BoxDecoration(color: _appColor, borderRadius: BorderRadius.circular(24)),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
