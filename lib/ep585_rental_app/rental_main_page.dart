@@ -138,7 +138,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 16),
                           height: MediaQuery.of(context).size.height / 3,
-                          decoration: BoxDecoration(color: Colors.blue),
+                          // decoration: BoxDecoration(color: Colors.blue),
                           child: Stack(
                             children: [
                               Positioned(
