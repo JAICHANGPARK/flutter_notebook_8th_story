@@ -6,12 +6,10 @@ class RentalApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute:"/",
+      initialRoute: "/",
       routes: {
-        "/" : (context) => RentalMainPage(),
+        "/": (context) => RentalMainPage(),
       },
     );
   }
 }
-
-
