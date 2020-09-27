@@ -154,6 +154,12 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                     color: _appColor,
                                   ),
                                 ),
+                              ),
+                              Positioned(
+                                left: 0,
+                                bottom: 0,
+                                top: 0,
+                                child: Card()
                               )
                             ],
                           ),
