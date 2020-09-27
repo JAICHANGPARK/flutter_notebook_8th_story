@@ -249,6 +249,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                             ],
                                           ),
                                           Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                                             children: [
                                               Container(
                                                 height: 32,
