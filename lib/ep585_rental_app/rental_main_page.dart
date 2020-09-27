@@ -79,7 +79,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: _pageIndex == 1 ? Colors.teal : Colors.teal[200],
+                          color: _pageIndex == 1 ? _appColor : _appColor.withOpacity(0.5),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Padding(
@@ -104,7 +104,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: _pageIndex == 2 ? Colors.teal : Colors.teal[200],
+                          color: _pageIndex == 2 ?_appColor : _appColor.withOpacity(0.5),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Padding(
