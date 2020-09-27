@@ -226,16 +226,58 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                             Text("per month"),
                                           ],
                                         ),
-                                        Text("Pretty self-explanatory", style: TextStyle(
-                                          fontSize: 12
-                                        ),),
+                                        Text(
+                                          "Pretty self-explanatory",
+                                          style: TextStyle(fontSize: 12),
+                                        ),
                                         Row(
                                           children: [
-                                          ... List.generate(5, (index) => Icon(Icons.star, color: Colors.orangeAccent,
-                                          size: 12,)),
+                                            ...List.generate(
+                                                5,
+                                                (index) => Icon(
+                                                      Icons.star,
+                                                      color: Colors.orangeAccent,
+                                                      size: 12,
+                                                    )),
                                             Text("(324 + Review)")
                                           ],
                                         ),
+                                        Row(
+                                          children: [
+                                            Container(
+                                              height: 32,
+                                              width: 32,
+                                              decoration: BoxDecoration(
+                                                color: _appColor,
+                                                borderRadius: BorderRadius.circular(5),
+                                              ),
+                                            ),
+                                            Container(
+                                              height: 32,
+                                              width: 32,
+                                              decoration: BoxDecoration(
+                                                color: _appColor,
+                                                borderRadius: BorderRadius.circular(5),
+                                              ),
+                                            ),
+                                            Container(
+                                              height: 32,
+                                              width: 32,
+                                              decoration: BoxDecoration(
+                                                color: _appColor,
+                                                borderRadius: BorderRadius.circular(5),
+                                              ),
+                                            ),
+                                            Container(
+                                              height: 32,
+                                              width: 32,
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                borderRadius: BorderRadius.circular(5),
+                                              ),
+                                            )
+                                          ],
+                                        )
                                       ],
                                     ),
                                   ))
