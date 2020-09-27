@@ -152,6 +152,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                   width: 220,
                                   decoration: BoxDecoration(
                                     color: _appColor,
+                                    borderRadius: BorderRadius.circular(16)
                                   ),
                                 ),
                               ),
