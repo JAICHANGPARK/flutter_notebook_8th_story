@@ -8,6 +8,7 @@ class RentalMainPage extends StatefulWidget {
 
 class _RentalMainPageState extends State<RentalMainPage> {
   int _pageIndex = 0;
+
   // 82 115 101 ==> 52 73 65
   Color _appColor = Color(0xff527365);
 
@@ -104,7 +105,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: _pageIndex == 2 ?_appColor : _appColor.withOpacity(0.5),
+                          color: _pageIndex == 2 ? _appColor : _appColor.withOpacity(0.5),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Padding(
@@ -118,11 +119,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                         ),
                       ),
                     ),
-                    IconButton(
-                      icon: Icon(Icons.tune),
-                      onPressed: () {},
-                      color: _appColor
-                    )
+                    IconButton(icon: Icon(Icons.tune), onPressed: () {}, color: _appColor)
                   ],
                 ),
               ),
@@ -152,46 +149,38 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                 child: Card(
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                        image: NetworkImage("https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
-                                        ),
-                                        fit: BoxFit.cover
-                                      )
-                                    ),
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
+                                            ),
+                                            fit: BoxFit.cover)),
                                     child: Stack(
                                       children: [
                                         Positioned(
                                           left: 16,
                                           bottom: 16,
-
                                           child: Container(
                                             width: 120,
                                             height: 52,
-                                            decoration: BoxDecoration(
-                                              color: Colors.white
-                                            ),
+                                            decoration: BoxDecoration(color: Colors.white),
                                             child: Row(
-                                              children: [
-
-                                              ],
+                                              children: [],
                                             ),
                                           ),
                                         )
                                       ],
                                     ),
                                   ),
-
                                 ),
                               ),
                               Positioned(
-                                right: 16,
-                                bottom: 48,
-                                top: 48,
-                                left: 160,
-                                child: Card(
-                                  elevation: 4,
-                                )
-                              )
+                                  right: 16,
+                                  bottom: 48,
+                                  top: 48,
+                                  left: 160,
+                                  child: Card(
+                                    elevation: 4,
+                                  ))
                             ],
                           ),
                         ),
@@ -233,10 +222,9 @@ class _RentalMainPageState extends State<RentalMainPage> {
                               ),
                             ),
                             CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: Icon(Icons.add_location_rounded),
-                              foregroundColor: _appColor
-                            )
+                                backgroundColor: Colors.white,
+                                child: Icon(Icons.add_location_rounded),
+                                foregroundColor: _appColor)
                           ],
                         ),
                       ),
