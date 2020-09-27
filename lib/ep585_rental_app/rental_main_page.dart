@@ -458,7 +458,159 @@ class _RentalMainPageState extends State<RentalMainPage> {
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 16),
                           height: MediaQuery.of(context).size.height / 3,
-                          decoration: BoxDecoration(color: Colors.blue),
+                          // decoration: BoxDecoration(color: Colors.blue),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 0,
+                                bottom: 0,
+                                top: 0,
+                                right: 160,
+                                child: Card(
+                                  elevation: 5,
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(16),
+                                        image: DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
+                                            ),
+                                            fit: BoxFit.cover)),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          left: 16,
+                                          bottom: 16,
+                                          child: Container(
+                                            width: 120,
+                                            height: 52,
+                                            decoration: BoxDecoration(
+                                                color: Colors.white.withOpacity(0.5),
+                                                borderRadius: BorderRadius.circular(8)),
+                                            child: Row(
+                                              crossAxisAlignment: CrossAxisAlignment.center,
+                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                              children: [
+                                                Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  children: [
+                                                    Text(
+                                                      "Primrose",
+                                                    ),
+                                                    Text("Cottage"),
+                                                  ],
+                                                ),
+                                                Container(
+                                                  height: 32,
+                                                  width: 32,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius: BorderRadius.circular(5),
+                                                  ),
+                                                  child: Center(
+                                                    child: CircleAvatar(
+                                                      radius: 10,
+                                                      backgroundColor: _appColor,
+                                                      foregroundColor: Colors.white,
+                                                      child: Icon(
+                                                        Icons.location_on,
+                                                        size: 12,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                  right: 16,
+                                  bottom: 48,
+                                  top: 48,
+                                  left: 160,
+                                  child: Card(
+                                    elevation: 4,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Text("\$1300"),
+                                              Text("per month"),
+                                            ],
+                                          ),
+                                          Text(
+                                            "Pretty self-explanatory",
+                                            style: TextStyle(fontSize: 12),
+                                          ),
+                                          Row(
+                                            children: [
+                                              ...List.generate(
+                                                  5,
+                                                      (index) => Icon(
+                                                    Icons.star,
+                                                    color: Colors.orangeAccent,
+                                                    size: 12,
+                                                  )),
+                                              Text(
+                                                "(324 + Review)",
+                                                style: TextStyle(fontSize: 12),
+                                              )
+                                            ],
+                                          ),
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                            children: [
+                                              Container(
+                                                height: 32,
+                                                width: 32,
+                                                decoration: BoxDecoration(
+                                                  color: _appColor,
+                                                  borderRadius: BorderRadius.circular(5),
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 32,
+                                                width: 32,
+                                                decoration: BoxDecoration(
+                                                  color: _appColor,
+                                                  borderRadius: BorderRadius.circular(5),
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 32,
+                                                width: 32,
+                                                decoration: BoxDecoration(
+                                                  color: _appColor,
+                                                  borderRadius: BorderRadius.circular(5),
+                                                ),
+                                              ),
+                                              Container(
+                                                height: 32,
+                                                width: 32,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius: BorderRadius.circular(5),
+                                                ),
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ))
+                            ],
+                          ),
                         ),
                       ],
                     ),
