@@ -158,6 +158,25 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                         fit: BoxFit.cover
                                       )
                                     ),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                          left: 16,
+                                          bottom: 16,
+                                          child: Container(
+                                            width: 160,
+                                            decoration: BoxDecoration(
+                                              color: Colors.white
+                                            ),
+                                            child: Row(
+                                              children: [
+
+                                              ],
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
 
                                 ),
