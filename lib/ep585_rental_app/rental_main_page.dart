@@ -149,7 +149,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                 bottom: 0,
                                 top: 0,
                                 child: Container(
-                                  width: 220,
+                                  width: 200,
                                   decoration: BoxDecoration(
                                     color: _appColor,
                                     borderRadius: BorderRadius.circular(16)
@@ -157,10 +157,10 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                 ),
                               ),
                               Positioned(
-                                right: 0,
-                                bottom: 32,
-                                top: 32,
-                                left: 180,
+                                right: 16,
+                                bottom: 48,
+                                top: 48,
+                                left: 160,
                                 child: Card()
                               )
                             ],
