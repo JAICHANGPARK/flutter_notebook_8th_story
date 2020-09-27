@@ -163,8 +163,10 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                         Positioned(
                                           left: 16,
                                           bottom: 16,
+
                                           child: Container(
-                                            width: 160,
+                                            width: 120,
+                                            height: 48,
                                             decoration: BoxDecoration(
                                               color: Colors.white
                                             ),
