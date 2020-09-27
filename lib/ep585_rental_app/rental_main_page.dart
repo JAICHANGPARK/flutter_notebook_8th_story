@@ -147,8 +147,10 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                 top: 0,
                                 right: 160,
                                 child: Card(
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                                   child: Container(
                                     decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(16),
                                         image: DecorationImage(
                                             image: NetworkImage(
                                               "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
@@ -162,9 +164,9 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                           child: Container(
                                             width: 120,
                                             height: 52,
-                                            decoration: BoxDecoration(color: Colors.white.withOpacity(0.5),
-                                            borderRadius: BorderRadius.circular(8)
-                                            ),
+                                            decoration: BoxDecoration(
+                                                color: Colors.white.withOpacity(0.5),
+                                                borderRadius: BorderRadius.circular(8)),
                                             child: Row(
                                               crossAxisAlignment: CrossAxisAlignment.center,
                                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -173,7 +175,9 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   mainAxisAlignment: MainAxisAlignment.center,
                                                   children: [
-                                                    Text("Primrose",),
+                                                    Text(
+                                                      "Primrose",
+                                                    ),
                                                     Text("Cottage"),
                                                   ],
                                                 ),
@@ -189,7 +193,10 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                                       radius: 10,
                                                       backgroundColor: _appColor,
                                                       foregroundColor: Colors.white,
-                                                      child: Icon(Icons.location_on, size: 12,),
+                                                      child: Icon(
+                                                        Icons.location_on,
+                                                        size: 12,
+                                                      ),
                                                     ),
                                                   ),
                                                 )
