@@ -183,7 +183,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                             CircleAvatar(
                               backgroundColor: Colors.white,
                               child: Icon(Icons.add_location_rounded),
-                              foregroundColor: Colors.teal,
+                              foregroundColor: _appColor
                             )
                           ],
                         ),
