@@ -228,7 +228,14 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                         ),
                                         Text("Pretty self-explanatory", style: TextStyle(
                                           fontSize: 12
-                                        ),)
+                                        ),),
+                                        Row(
+                                          children: [
+                                          ... List.generate(5, (index) => Icon(Icons.star, color: Colors.orangeAccent,
+                                          size: 12,)),
+                                            Text("(324 + Review)")
+                                          ],
+                                        ),
                                       ],
                                     ),
                                   ))
