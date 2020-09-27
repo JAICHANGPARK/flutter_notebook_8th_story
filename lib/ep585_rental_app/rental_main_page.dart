@@ -217,6 +217,17 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                   left: 160,
                                   child: Card(
                                     elevation: 4,
+                                    child: Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Text("\$1300"),
+                                            Text("per month"),
+                                          ],
+                                        ),
+                                        Text("Pretty self-explanatory", )
+                                      ],
+                                    ),
                                   ))
                             ],
                           ),
