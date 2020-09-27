@@ -171,10 +171,26 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                               children: [
                                                 Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                                  mainAxisAlignment: MainAxisAlignment.center,
                                                   children: [
                                                     Text("Primrose",),
                                                     Text("Cottage"),
                                                   ],
+                                                ),
+                                                Container(
+                                                  height: 32,
+                                                  width: 32,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius: BorderRadius.circular(5),
+                                                  ),
+                                                  child: Center(
+                                                    child: CircleAvatar(
+                                                      radius: 10,
+                                                      backgroundColor: _appColor,
+                                                      child: Icon(Icons.location_on, size: 12,),
+                                                    ),
+                                                  ),
                                                 )
                                               ],
                                             ),
