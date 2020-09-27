@@ -142,6 +142,21 @@ class _RentalMainPageState extends State<RentalMainPage> {
                           margin: EdgeInsets.symmetric(horizontal: 16),
                           height: MediaQuery.of(context).size.height / 3,
                           decoration: BoxDecoration(color: Colors.blue),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                left: 0,
+                                bottom: 0,
+                                top: 0,
+                                child: Container(
+                                  width: 200,
+                                  decoration: BoxDecoration(
+                                    color: _appColor,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         SizedBox(
                           height: 16,
