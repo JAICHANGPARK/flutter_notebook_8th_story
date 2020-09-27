@@ -218,6 +218,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                   child: Card(
                                     elevation: 4,
                                     child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Row(
                                           children: [
@@ -225,7 +226,9 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                             Text("per month"),
                                           ],
                                         ),
-                                        Text("Pretty self-explanatory", )
+                                        Text("Pretty self-explanatory", style: TextStyle(
+                                          fontSize: 12
+                                        ),)
                                       ],
                                     ),
                                   ))
