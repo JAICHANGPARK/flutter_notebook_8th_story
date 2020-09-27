@@ -147,6 +147,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                                 top: 0,
                                 right: 160,
                                 child: Card(
+                                  elevation: 5,
                                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                                   child: Container(
                                     decoration: BoxDecoration(
