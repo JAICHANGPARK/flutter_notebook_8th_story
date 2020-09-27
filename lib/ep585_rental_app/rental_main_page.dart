@@ -8,6 +8,8 @@ class RentalMainPage extends StatefulWidget {
 
 class _RentalMainPageState extends State<RentalMainPage> {
   int _pageIndex = 0;
+  // 82 115 101 ==> 52 73 65
+  Color _appColor = Color(0xff527365);
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +54,7 @@ class _RentalMainPageState extends State<RentalMainPage> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: _pageIndex == 0 ? Colors.teal : Colors.teal[200],
+                          color: _pageIndex == 0 ? _appColor : _appColor.withOpacity(0.5),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Padding(
