@@ -9,6 +9,7 @@ class SocialApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         "/": (context) => SocialEnterPage(),
+        "/home" :(context) => SocialHomePage(),
       },
     );
   }
