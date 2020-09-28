@@ -26,6 +26,7 @@ class SocialEnterPage extends StatelessWidget {
             SizedBox(height: 32,),
             Text("Join Millions of Squads From Around "
                 "\nWorld,learning On Chat!",
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 14,
               color: Colors.white
