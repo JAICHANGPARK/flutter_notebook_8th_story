@@ -36,10 +36,15 @@ class SocialEnterPage extends StatelessWidget {
             Spacer(),
             Container(
               height: 48,
-              width: 100,
+              width: 120,
               decoration: BoxDecoration(
                 color: Colors.tealAccent[100],
                 borderRadius: BorderRadius.circular(24)
+              ),
+              child: Center(
+                child: Text("Explore", style: GoogleFonts.montserrat(
+                  fontWeight: FontWeight.normal
+                ),),
               ),
             ),
            SizedBox(height: 42,)
