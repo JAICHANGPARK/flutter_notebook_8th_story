@@ -11,29 +11,35 @@ class SocialEnterPage extends StatelessWidget {
             Text("New Notification(12)", style: TextStyle(
               color: Colors.white,
             ),),
+            Spacer(),
             Container(
               height: 120,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
               ),
-            ),
+            ),Spacer(),
             Text("Solve Doubts",style: GoogleFonts.montserrat(
               color: Colors.white,
               fontSize: 20,
             ),),
-            Text("Join Millions of Squads From Around World, learning On Chat!",
+            SizedBox(height: 32,),
+            Text("Join Millions of Squads From Around "
+                "\nWorld,learning On Chat!",
             style: TextStyle(
-              fontSize: 12,
+              fontSize: 14,
               color: Colors.white
             ),),
+            Spacer(),
             Container(
               height: 48,
               width: 100,
               decoration: BoxDecoration(
-                color: Colors.tealAccent[100]
+                color: Colors.tealAccent[100],
+                borderRadius: BorderRadius.circular(24)
               ),
-            )
+            ),
+            Spacer(),
           ],
         ),
       ),
