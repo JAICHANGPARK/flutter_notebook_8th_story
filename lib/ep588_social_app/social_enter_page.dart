@@ -8,12 +8,12 @@ class SocialEnterPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Text("New Notification(12)", style: GoogleFonts.montserrat(
+            Text("New Notification (12)", style: GoogleFonts.montserrat(
               color: Colors.white.withOpacity(0.8),
             ),),
             Spacer(),
             Container(
-              height: 120,
+              height: 150,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -22,6 +22,7 @@ class SocialEnterPage extends StatelessWidget {
             Text("Solve Doubts",style: GoogleFonts.montserrat(
               color: Colors.white,
               fontSize: 20,
+              fontWeight: FontWeight.bold
             ),),
             SizedBox(height: 32,),
             Text("Join Millions of Squads From Around "
@@ -29,7 +30,8 @@ class SocialEnterPage extends StatelessWidget {
             textAlign: TextAlign.center,
             style: GoogleFonts.montserrat(
               fontSize: 14,
-              color: Colors.white
+              color: Colors.white,
+
             ),),
             Spacer(),
             Container(
@@ -40,7 +42,7 @@ class SocialEnterPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(24)
               ),
             ),
-            Spacer(),
+           SizedBox(height: 42,)
           ],
         ),
       ),
