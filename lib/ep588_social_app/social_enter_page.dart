@@ -21,7 +21,7 @@ class SocialEnterPage extends StatelessWidget {
             ),Spacer(),
             Text("Solve Doubts",style: GoogleFonts.montserrat(
               color: Colors.white,
-              fontSize: 20,
+              fontSize: 32,
               fontWeight: FontWeight.bold
             ),),
             SizedBox(height: 32,),
