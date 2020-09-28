@@ -8,8 +8,8 @@ class SocialEnterPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Text("New Notification(12)", style: TextStyle(
-              color: Colors.white,
+            Text("New Notification(12)", style: GoogleFonts.montserrat(
+              color: Colors.white.withOpacity(0.8),
             ),),
             Spacer(),
             Container(
