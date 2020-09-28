@@ -26,10 +26,34 @@ class SocialEnterPage extends StatelessWidget {
             style: TextStyle(
               fontSize: 12,
               color: Colors.white
-            ),)
+            ),),
+            Container(
+              height: 48,
+              width: 100,
+              decoration: BoxDecoration(
+                color: Colors.tealAccent[100]
+              ),
+            )
           ],
         ),
       ),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
