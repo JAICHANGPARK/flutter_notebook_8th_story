@@ -11,3 +11,9 @@ class SocialApp extends StatelessWidget {
     );
   }
 }
+class SocialEnterPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
