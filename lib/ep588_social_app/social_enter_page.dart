@@ -8,7 +8,14 @@ class SocialEnterPage extends StatelessWidget {
         children: [
           Text("New Notification(12)", style: TextStyle(
             color: Colors.white,
-          ),)
+          ),),
+          Container(
+            height: 120,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: Colors.white,
+            ),
+          )
         ],
       ),
     );
