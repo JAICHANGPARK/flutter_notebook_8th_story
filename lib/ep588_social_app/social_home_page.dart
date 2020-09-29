@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SocialHomePage extends StatefulWidget {
   @override
@@ -31,6 +32,13 @@ class _SocialHomePageState extends State<SocialHomePage> {
               Icon(Icons.person_outline),
               Icon(Icons.chat_outlined),
               Icon(Icons.crop_square),
+              Container(
+                child: Center(
+                  child: Text("Rooms", style: GoogleFonts.montserrat(
+                    color: Colors.white
+                  ),),
+                ),
+              )
             ],
           ),
         ),
@@ -38,6 +46,27 @@ class _SocialHomePageState extends State<SocialHomePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
