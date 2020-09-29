@@ -29,8 +29,8 @@ class _SocialHomePageState extends State<SocialHomePage> {
           child: Row(
             children: [
               Icon(Icons.person_outline),
-              Icon(Icons.chat_outlined)
-,
+              Icon(Icons.chat_outlined),
+              Icon(Icons.crop_square),
             ],
           ),
         ),
@@ -38,13 +38,6 @@ class _SocialHomePageState extends State<SocialHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
 
 
 
