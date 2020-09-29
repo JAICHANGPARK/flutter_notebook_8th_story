@@ -28,14 +28,15 @@ class _SocialHomePageState extends State<SocialHomePage> {
           height: 64,
           decoration: BoxDecoration(color: Colors.grey[100]),
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Icon(Icons.person_outline, size: 32,),
               Icon(Icons.chat_outlined, size: 32,),
               Icon(Icons.crop_square, size: 32,),
 
               Container(
-                margin: EdgeInsets.only(top: 12, bottom: 12),
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                margin: EdgeInsets.only(top: 16, bottom: 16),
+                padding: EdgeInsets.symmetric(horizontal: 20),
                 decoration: BoxDecoration(
                   color: Colors.black,
                   borderRadius: BorderRadius.circular(24)
