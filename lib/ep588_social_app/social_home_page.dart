@@ -29,9 +29,9 @@ class _SocialHomePageState extends State<SocialHomePage> {
           decoration: BoxDecoration(color: Colors.grey[100]),
           child: Row(
             children: [
-              Icon(Icons.person_outline),
-              Icon(Icons.chat_outlined),
-              Icon(Icons.crop_square),
+              Icon(Icons.person_outline, size: 32,),
+              Icon(Icons.chat_outlined, size: 32,),
+              Icon(Icons.crop_square, size: 32,),
 
               Container(
                 margin: EdgeInsets.only(top: 12, bottom: 12),
