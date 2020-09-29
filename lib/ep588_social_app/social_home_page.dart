@@ -28,6 +28,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
           decoration: BoxDecoration(color: Colors.grey[100]),
           child: Row(
             children: [
+              Icon(Icons.person_outline),
               Icon()
             ],
           ),
