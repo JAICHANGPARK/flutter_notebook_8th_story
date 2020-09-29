@@ -8,6 +8,12 @@ class SocialHomePage extends StatefulWidget {
 class _SocialHomePageState extends State<SocialHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
