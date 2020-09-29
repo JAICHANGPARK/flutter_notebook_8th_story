@@ -20,6 +20,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
             )
           ],
         ),
+
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 64,
+        ),
       ),
     );
   }
