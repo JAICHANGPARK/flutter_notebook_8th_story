@@ -9,6 +9,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           children: [
@@ -20,14 +21,11 @@ class _SocialHomePageState extends State<SocialHomePage> {
             )
           ],
         ),
-
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 64,
-          decoration: BoxDecoration(
-            color: Colors.grey[100]
-          ),
+          decoration: BoxDecoration(color: Colors.grey[100]),
         ),
       ),
     );
