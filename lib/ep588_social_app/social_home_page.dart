@@ -34,11 +34,11 @@ class _SocialHomePageState extends State<SocialHomePage> {
               Icon(Icons.crop_square),
 
               Container(
-                margin: EdgeInsets.only(top: 8, bottom: 8),
+                margin: EdgeInsets.only(top: 12, bottom: 12),
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 decoration: BoxDecoration(
                   color: Colors.black,
-                  borderRadius: BorderRadius.circular(18)
+                  borderRadius: BorderRadius.circular(24)
                 ),
                 child: Center(
                   child: Text("Rooms", style: GoogleFonts.montserrat(
