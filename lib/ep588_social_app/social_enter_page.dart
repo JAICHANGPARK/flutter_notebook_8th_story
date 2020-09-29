@@ -29,10 +29,9 @@ class SocialEnterPage extends StatelessWidget {
                 "\nWorld, learning On Chat!",
             textAlign: TextAlign.center,
             style: GoogleFonts.montserrat(
-              fontSize: 14,
-              color: Colors.white,
-
-            ),),
+                fontSize: 14,
+                color: Colors.white,
+              ),),
             Spacer(),
             GestureDetector(
               onTap: (){
