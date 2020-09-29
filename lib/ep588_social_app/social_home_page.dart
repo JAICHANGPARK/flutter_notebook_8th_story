@@ -9,10 +9,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
+      body: SafeArea(
+        child: Column(
+          children: [
 
-        ],
+          ],
+        ),
       ),
     );
   }
