@@ -59,12 +59,14 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("Today"),
-                              FlatButton(onPressed: (){}, child: Text("Clear"))
+                              FlatButton(onPressed: (){}, child: Text("Clear", style: TextStyle(fontSize: 12),))
                             ],
                           )
                         ],
