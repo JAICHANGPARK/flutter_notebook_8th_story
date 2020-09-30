@@ -201,7 +201,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      "James Lee started",
+                                      "Naomi Choi now started",
                                       style: TextStyle(fontSize: 13),
                                     ),
                                     SizedBox(
@@ -226,7 +226,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
 
                                 ),
                                 child: Center(
-                                  child: Text("Follow", style: TextStyle(
+                                  child: Text("Following", style: TextStyle(
                                     color: Colors.white,
                                   ),),
                                 ),
