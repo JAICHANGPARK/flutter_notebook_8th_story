@@ -55,12 +55,14 @@ class _SocialHomePageState extends State<SocialHomePage> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    SizedBox(height: 24,),
+                    SizedBox(
+                      height: 24,
+                    ),
                     Container(
                       height: MediaQuery.of(context).size.height / 2.7,
                       decoration: BoxDecoration(
-                        // color: Colors.blue,
-                      ),
+                          // color: Colors.blue,
+                          ),
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: [
@@ -69,9 +71,10 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text("Today",style: TextStyle(
-                                  fontSize: 16
-                                ),),
+                                Text(
+                                  "Today",
+                                  style: TextStyle(fontSize: 16),
+                                ),
                                 Text(
                                   "Clear",
                                   style: TextStyle(fontSize: 12),
@@ -164,11 +167,15 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               Container(
                                 height: 36,
                                 width: 84,
-                                decoration: BoxDecoration(
-                                  color: Colors.black
-
+                                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
+                                child: Center(
+                                  child: Text(
+                                    "Follow",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ),
-                                child: Icon(Icons.phone),
                               )
                             ],
                           ),
@@ -177,7 +184,56 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             child: Divider(
                               color: Colors.grey,
                             ),
-                          )
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 40,
+                                width: 40,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: Colors.black)),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "James Lee started",
+                                      style: TextStyle(fontSize: 13),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "following you.",
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Spacer(),
+                              Container(
+                                height: 36,
+                                width: 84,
+                                decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    borderRadius: BorderRadius.circular(24)
+
+                                ),
+                                child: Center(
+                                  child: Text("Follow", style: TextStyle(
+                                    color: Colors.white,
+                                  ),),
+                                ),
+                              )
+                            ],
+                          ),
+
                         ],
                       ),
                     ),
