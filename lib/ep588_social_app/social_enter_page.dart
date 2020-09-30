@@ -13,7 +13,7 @@ class SocialEnterPage extends StatelessWidget {
             ),),
             Spacer(),
             Container(
-              height: 150,
+              height: 200,
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
