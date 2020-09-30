@@ -55,9 +55,26 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 child: Column(
                   children: [
                     Container(
-                      height: MediaQuery.of(context).size.height / 2,
+                      height: MediaQuery.of(context).size.height / 2.7,
                       decoration: BoxDecoration(
-                        color: Colors.blue
+                        color: Colors.blue,
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text("Today"),
+                              FlatButton(onPressed: (){}, child: Text("Clear"))
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 24,),
+                    Container(
+                      height: MediaQuery.of(context).size.height / 4,
+                      decoration: BoxDecoration(
+                          color: Colors.blue
                       ),
                     )
                   ],
