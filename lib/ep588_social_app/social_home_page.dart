@@ -40,6 +40,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           )
                         ],
                       ),
+                      SizedBox(height: 8,),
                       Text(
                         "Notifications",
                         style: GoogleFonts.montserrat(fontWeight: FontWeight.bold,
