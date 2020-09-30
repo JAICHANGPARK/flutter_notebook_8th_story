@@ -21,8 +21,8 @@ class _SocialHomePageState extends State<SocialHomePage> {
                   Row(
                     children: [
                       Container(
-                        height: 64,
-                        width: 64,
+                        height: 48,
+                        width: 48,
                         decoration: BoxDecoration(
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(8),
