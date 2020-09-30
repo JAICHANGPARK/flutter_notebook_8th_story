@@ -15,34 +15,37 @@ class _SocialHomePageState extends State<SocialHomePage> {
         child: Column(
           children: [
             Expanded(
-              flex: 2,
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          height: 48,
-                          width: 48,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(8),
-
-                          ),
-                          child: Center(
-                            child: Text("RC", style: TextStyle(
-                              color: Colors.white
-                            ),),
-                          ),
-                        )
-                      ],
-                    ),
-                    Text("Notifications", style: GoogleFonts.montserrat(),)
-                  ],
-                ),
-              )
-            ),
+                flex: 2,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "RC",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                      Text(
+                        "Notifications",
+                        style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
+                )),
             Expanded(
               flex: 10,
               child: Placeholder(),
@@ -57,21 +60,27 @@ class _SocialHomePageState extends State<SocialHomePage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Icon(Icons.person_outline, size: 32,),
-              Icon(Icons.chat_outlined, size: 32,),
-              Icon(Icons.crop_square, size: 32,),
-
+              Icon(
+                Icons.person_outline,
+                size: 32,
+              ),
+              Icon(
+                Icons.chat_outlined,
+                size: 32,
+              ),
+              Icon(
+                Icons.crop_square,
+                size: 32,
+              ),
               Container(
                 margin: EdgeInsets.only(top: 16, bottom: 16),
                 padding: EdgeInsets.symmetric(horizontal: 20),
-                decoration: BoxDecoration(
-                  color: Colors.black,
-                  borderRadius: BorderRadius.circular(24)
-                ),
+                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
                 child: Center(
-                  child: Text("Rooms", style: GoogleFonts.montserrat(
-                    color: Colors.white
-                  ),),
+                  child: Text(
+                    "Rooms",
+                    style: GoogleFonts.montserrat(color: Colors.white),
+                  ),
                 ),
               )
             ],
@@ -81,34 +90,3 @@ class _SocialHomePageState extends State<SocialHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
