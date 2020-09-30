@@ -81,6 +81,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                 ),
                               ),
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text("Missed call from Jenifer"),
                                   Text("Anitson.")
