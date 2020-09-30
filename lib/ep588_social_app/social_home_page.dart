@@ -68,6 +68,18 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               Text("Today"),
                               FlatButton(onPressed: (){}, child: Text("Clear", style: TextStyle(fontSize: 12),))
                             ],
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 36,
+                                width: 36,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  border: Border.all(color: Colors.black)
+                                ),
+                              )
+                            ],
                           )
                         ],
                       ),
