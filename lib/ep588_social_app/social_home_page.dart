@@ -17,7 +17,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
             Expanded(
                 flex: 2,
                 child: Padding(
-                  padding: const EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.only(top: 16, left: 16),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
