@@ -55,10 +55,11 @@ class _SocialHomePageState extends State<SocialHomePage> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
+                    SizedBox(height: 24,),
                     Container(
                       height: MediaQuery.of(context).size.height / 2.7,
                       decoration: BoxDecoration(
-                        color: Colors.blue,
+                        // color: Colors.blue,
                       ),
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
