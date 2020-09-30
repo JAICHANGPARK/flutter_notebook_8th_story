@@ -79,6 +79,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                   shape: BoxShape.circle,
                                   border: Border.all(color: Colors.black)
                                 ),
+                              ),
+                              Column(
+                                children: [
+                                  Text("Missed call from Jenifer"),
+                                  Text("Anitson.")
+                                ],
                               )
                             ],
                           )
