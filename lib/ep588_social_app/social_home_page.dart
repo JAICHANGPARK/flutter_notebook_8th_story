@@ -20,6 +20,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Row(
                         children: [
@@ -41,7 +42,8 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       ),
                       Text(
                         "Notifications",
-                        style: GoogleFonts.montserrat(fontWeight: FontWeight.bold),
+                        style: GoogleFonts.montserrat(fontWeight: FontWeight.bold,
+                        fontSize: 20),
                       )
                     ],
                   ),
