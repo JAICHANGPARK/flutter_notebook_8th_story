@@ -59,7 +59,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       height: 24,
                     ),
                     Container(
-                      height: MediaQuery.of(context).size.height / 2.7,
+                      height: MediaQuery.of(context).size.height / 3.1,
                       decoration: BoxDecoration(
                           // color: Colors.blue,
                           ),
@@ -219,7 +219,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               Spacer(),
                               Container(
                                 height: 36,
-                                width: 84,
+                                width: 100,
                                 decoration: BoxDecoration(
                                     color: Colors.black,
                                     borderRadius: BorderRadius.circular(24)
