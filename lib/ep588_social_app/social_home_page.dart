@@ -51,7 +51,18 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 )),
             Expanded(
               flex: 10,
-              child: Placeholder(),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      height: MediaQuery.of(context).size.height / 2,
+                      decoration: BoxDecoration(
+                        color: Colors.blue
+                      ),
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),
