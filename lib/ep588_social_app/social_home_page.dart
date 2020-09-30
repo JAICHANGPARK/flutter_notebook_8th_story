@@ -63,17 +63,20 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Today"),
-                              FlatButton(
-                                  onPressed: () {},
-                                  child: Text(
-                                    "Clear",
-                                    style: TextStyle(fontSize: 12),
-                                  ))
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 16, top: 8),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Today",style: TextStyle(
+                                  fontSize: 16
+                                ),),
+                                Text(
+                                  "Clear",
+                                  style: TextStyle(fontSize: 12),
+                                ),
+                              ],
+                            ),
                           ),
                           Row(
                             children: [
@@ -107,6 +110,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                   ],
                                 ),
                               ),
+                              Spacer(),
                               Container(
                                 height: 36,
                                 width: 36,
@@ -114,6 +118,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                   color: Colors.tealAccent[100],
                                   shape: BoxShape.circle,
                                 ),
+                                child: Icon(Icons.phone),
                               )
                             ],
                           )
