@@ -40,11 +40,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
                           )
                         ],
                       ),
-                      SizedBox(height: 8,),
+                      SizedBox(
+                        height: 8,
+                      ),
                       Text(
                         "Notifications",
-                        style: GoogleFonts.montserrat(fontWeight: FontWeight.bold,
-                        fontSize: 22),
+                        style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 22),
                       )
                     ],
                   ),
@@ -66,38 +67,65 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text("Today"),
-                              FlatButton(onPressed: (){}, child: Text("Clear", style: TextStyle(fontSize: 12),))
+                              FlatButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Clear",
+                                    style: TextStyle(fontSize: 12),
+                                  ))
                             ],
                           ),
                           Row(
                             children: [
                               Container(
+                                height: 40,
+                                width: 40,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: Colors.black)),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Missed call from Jenifer",
+                                      style: TextStyle(fontSize: 13),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "Anitson.",
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Container(
                                 height: 36,
                                 width: 36,
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Colors.tealAccent[100],
                                   shape: BoxShape.circle,
-                                  border: Border.all(color: Colors.black)
                                 ),
-                              ),
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text("Missed call from Jenifer"),
-                                  Text("Anitson.")
-                                ],
                               )
                             ],
                           )
                         ],
                       ),
                     ),
-                    SizedBox(height: 24,),
+                    SizedBox(
+                      height: 24,
+                    ),
                     Container(
                       height: MediaQuery.of(context).size.height / 4,
-                      decoration: BoxDecoration(
-                          color: Colors.blue
-                      ),
+                      decoration: BoxDecoration(color: Colors.blue),
                     )
                   ],
                 ),
