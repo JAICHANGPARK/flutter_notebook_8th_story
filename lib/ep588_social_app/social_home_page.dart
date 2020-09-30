@@ -25,8 +25,8 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       Row(
                         children: [
                           Container(
-                            height: 48,
-                            width: 48,
+                            height: 42,
+                            width: 42,
                             decoration: BoxDecoration(
                               color: Colors.black,
                               borderRadius: BorderRadius.circular(8),
@@ -44,7 +44,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       Text(
                         "Notifications",
                         style: GoogleFonts.montserrat(fontWeight: FontWeight.bold,
-                        fontSize: 20),
+                        fontSize: 22),
                       )
                     ],
                   ),
