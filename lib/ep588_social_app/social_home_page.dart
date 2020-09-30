@@ -16,7 +16,17 @@ class _SocialHomePageState extends State<SocialHomePage> {
           children: [
             Expanded(
               flex: 2,
-              child: Placeholder(),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 64,
+                      )
+                    ],
+                  )
+                ],
+              )
             ),
             Expanded(
               flex: 10,
