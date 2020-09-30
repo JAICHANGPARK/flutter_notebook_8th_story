@@ -76,6 +76,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                 width: 36,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
+                                  shape: BoxShape.circle,
                                   border: Border.all(color: Colors.black)
                                 ),
                               )
