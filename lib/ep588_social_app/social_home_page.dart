@@ -128,6 +128,55 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             child: Divider(
                               color: Colors.grey,
                             ),
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 40,
+                                width: 40,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: Colors.black)),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "James Lee started",
+                                      style: TextStyle(fontSize: 13),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "following you.",
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Spacer(),
+                              Container(
+                                height: 36,
+                                width: 84,
+                                decoration: BoxDecoration(
+                                  color: Colors.black
+
+                                ),
+                                child: Icon(Icons.phone),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 48),
+                            child: Divider(
+                              color: Colors.grey,
+                            ),
                           )
                         ],
                       ),
