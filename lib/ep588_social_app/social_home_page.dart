@@ -16,27 +16,31 @@ class _SocialHomePageState extends State<SocialHomePage> {
           children: [
             Expanded(
               flex: 2,
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        height: 48,
-                        width: 48,
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(8),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          height: 48,
+                          width: 48,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(8),
 
-                        ),
-                        child: Center(
-                          child: Text("RC", style: TextStyle(
-                            color: Colors.white
-                          ),),
-                        ),
-                      )
-                    ],
-                  )
-                ],
+                          ),
+                          child: Center(
+                            child: Text("RC", style: TextStyle(
+                              color: Colors.white
+                            ),),
+                          ),
+                        )
+                      ],
+                    ),
+                    Text("Notifications", style: GoogleFonts.montserrat(),)
+                  ],
+                ),
               )
             ),
             Expanded(
