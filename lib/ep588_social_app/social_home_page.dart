@@ -121,6 +121,12 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                 child: Icon(Icons.phone),
                               )
                             ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 48),
+                            child: Divider(
+                              color: Colors.grey,
+                            ),
                           )
                         ],
                       ),
@@ -131,7 +137,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                     Container(
                       height: MediaQuery.of(context).size.height / 4,
                       decoration: BoxDecoration(color: Colors.blue),
-                    )
+                    ),
                   ],
                 ),
               ),
