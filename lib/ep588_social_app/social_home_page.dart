@@ -549,7 +549,13 @@ class _SocialHomePageState extends State<SocialHomePage> {
     );
   }
 }
-class UserListTilePhoneItem extends StatelessWidget {
+class UserListTilePhoneWidget extends StatelessWidget {
+  String title;
+  String subtitle;
+  String name;
+
+  UserListTilePhoneWidget(this.title, this.subtitle, this.name);
+
   @override
   Widget build(BuildContext context) {
     return    Row(
@@ -571,11 +577,11 @@ class UserListTilePhoneItem extends StatelessWidget {
                   TextSpan(
                       children: [
                         TextSpan(
-                          text: "Missed call from ",
+                          text: title,
                           style: TextStyle(fontSize: 13),
                         ),
                         TextSpan(
-                          text: "Jenifer",
+                          text: name,
                           style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                         )
                       ]
@@ -585,7 +591,7 @@ class UserListTilePhoneItem extends StatelessWidget {
                 height: 8,
               ),
               Text(
-                "Anitson.",
+                subtitle,
                 style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.bold,
