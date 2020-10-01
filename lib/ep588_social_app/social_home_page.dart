@@ -253,8 +253,122 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       width: double.infinity,
                       decoration: BoxDecoration(color: Colors.blue),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("This Week",style: GoogleFonts.montserrat(),)
+                          Text("This Week",style: GoogleFonts.montserrat(),),
+                          Row(
+                            children: [
+                              Container(
+                                height: 40,
+                                width: 40,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: Colors.black)),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text.rich(
+                                        TextSpan(
+                                            children: [
+                                              TextSpan(
+                                                text: "Missed call from ",
+                                                style: TextStyle(fontSize: 13),
+                                              ),
+                                              TextSpan(
+                                                text: "Jenifer",
+                                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                                              )
+                                            ]
+                                        )
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "Anitson.",
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Spacer(),
+                              Container(
+                                height: 36,
+                                width: 36,
+                                decoration: BoxDecoration(
+                                  color: Colors.tealAccent[100],
+                                  shape: BoxShape.circle,
+                                ),
+                                child: Icon(Icons.phone),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 48),
+                            child: Divider(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Container(
+                                height: 40,
+                                width: 40,
+                                decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    shape: BoxShape.circle,
+                                    border: Border.all(color: Colors.black)),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "James Lee started",
+                                      style: TextStyle(fontSize: 13),
+                                    ),
+                                    SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text(
+                                      "following you.",
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Spacer(),
+                              Container(
+                                height: 36,
+                                width: 84,
+                                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
+                                child: Center(
+                                  child: Text(
+                                    "Follow",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 48),
+                            child: Divider(
+                              color: Colors.grey,
+                            ),
+                          ),
                         ],
                       ),
                     ),
