@@ -250,6 +250,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                     ),
                     Container(
                       height: MediaQuery.of(context).size.height / 4,
+                      width: double.infinity,
                       decoration: BoxDecoration(color: Colors.blue),
                       child: Column(
                         children: [
