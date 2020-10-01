@@ -251,6 +251,11 @@ class _SocialHomePageState extends State<SocialHomePage> {
                     Container(
                       height: MediaQuery.of(context).size.height / 4,
                       decoration: BoxDecoration(color: Colors.blue),
+                      child: Column(
+                        children: [
+                          Text("This Week",style: GoogleFonts.montserrat(),)
+                        ],
+                      ),
                     ),
                   ],
                 ),
