@@ -375,6 +375,9 @@ class _SocialHomePageState extends State<SocialHomePage> {
                         ],
                       ),
                     ),
+                    SizedBox(
+                      height: 24,
+                    ),
                     Container(
                       height: MediaQuery.of(context).size.height / 4,
                       width: double.infinity,
@@ -382,7 +385,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("This Week",style: GoogleFonts.montserrat(
+                          Text("Earlier",style: GoogleFonts.montserrat(
                             fontSize: 18,
                           ),),
                           SizedBox(height: 16,),
