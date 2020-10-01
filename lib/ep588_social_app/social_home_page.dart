@@ -391,7 +391,11 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             fontSize: 18,
                           ),),
                           SizedBox(height: 16,),
-                          UserListTilePhoneWidget(),
+                          UserListTilePhoneWidget(
+                            "Missed Call from ",
+                            "John",
+                            "Richard",
+                          ),
                           Padding(
                             padding: const EdgeInsets.only(left: 48),
                             child: Divider(
