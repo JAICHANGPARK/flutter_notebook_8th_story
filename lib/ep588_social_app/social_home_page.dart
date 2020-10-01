@@ -484,14 +484,19 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 Icons.crop_square,
                 size: 32,
               ),
-              Container(
-                margin: EdgeInsets.only(top: 16, bottom: 16),
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
-                child: Center(
-                  child: Text(
-                    "Rooms",
-                    style: GoogleFonts.montserrat(color: Colors.white),
+              GestureDetector(
+                onTap: (){
+
+                },
+                child: Container(
+                  margin: EdgeInsets.only(top: 16, bottom: 16),
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
+                  child: Center(
+                    child: Text(
+                      "Rooms",
+                      style: GoogleFonts.montserrat(color: Colors.white),
+                    ),
                   ),
                 ),
               )
