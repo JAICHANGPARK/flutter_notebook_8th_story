@@ -220,20 +220,18 @@ class _SocialHomePageState extends State<SocialHomePage> {
                               Container(
                                 height: 36,
                                 width: 100,
-                                decoration: BoxDecoration(
-                                    color: Colors.black,
-                                    borderRadius: BorderRadius.circular(24)
-
-                                ),
+                                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(24)),
                                 child: Center(
-                                  child: Text("Following", style: TextStyle(
-                                    color: Colors.white,
-                                  ),),
+                                  child: Text(
+                                    "Following",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                 ),
                               )
                             ],
                           ),
-
                         ],
                       ),
                     ),
