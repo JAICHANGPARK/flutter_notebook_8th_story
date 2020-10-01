@@ -552,7 +552,60 @@ class _SocialHomePageState extends State<SocialHomePage> {
 class UserListTilePhoneItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return    Row(
+      children: [
+        Container(
+          height: 40,
+          width: 40,
+          decoration: BoxDecoration(
+              color: Colors.white,
+              shape: BoxShape.circle,
+              border: Border.all(color: Colors.black)),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text.rich(
+                  TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "Missed call from ",
+                          style: TextStyle(fontSize: 13),
+                        ),
+                        TextSpan(
+                          text: "Jenifer",
+                          style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                        )
+                      ]
+                  )
+              ),
+              SizedBox(
+                height: 8,
+              ),
+              Text(
+                "Anitson.",
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                ),
+              )
+            ],
+          ),
+        ),
+        Spacer(),
+        Container(
+          height: 36,
+          width: 36,
+          decoration: BoxDecoration(
+            color: Colors.tealAccent[100],
+            shape: BoxShape.circle,
+          ),
+          child: Icon(Icons.phone),
+        )
+      ],
+    );
   }
 }
 
