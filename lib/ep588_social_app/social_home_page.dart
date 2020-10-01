@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'user_list_tile_phone.dart';
+
 class SocialHomePage extends StatefulWidget {
   @override
   _SocialHomePageState createState() => _SocialHomePageState();
@@ -389,60 +391,7 @@ class _SocialHomePageState extends State<SocialHomePage> {
                             fontSize: 18,
                           ),),
                           SizedBox(height: 16,),
-                          Row(
-                            children: [
-                              Container(
-                                height: 40,
-                                width: 40,
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    shape: BoxShape.circle,
-                                    border: Border.all(color: Colors.black)),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text.rich(
-                                        TextSpan(
-                                            children: [
-                                              TextSpan(
-                                                text: "Missed call from ",
-                                                style: TextStyle(fontSize: 13),
-                                              ),
-                                              TextSpan(
-                                                text: "Jenifer",
-                                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
-                                              )
-                                            ]
-                                        )
-                                    ),
-                                    SizedBox(
-                                      height: 8,
-                                    ),
-                                    Text(
-                                      "Anitson.",
-                                      style: TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
-                              Spacer(),
-                              Container(
-                                height: 36,
-                                width: 36,
-                                decoration: BoxDecoration(
-                                  color: Colors.tealAccent[100],
-                                  shape: BoxShape.circle,
-                                ),
-                                child: Icon(Icons.phone),
-                              )
-                            ],
-                          ),
+                          UserListTilePhoneWidget(),
                           Padding(
                             padding: const EdgeInsets.only(left: 48),
                             child: Divider(
