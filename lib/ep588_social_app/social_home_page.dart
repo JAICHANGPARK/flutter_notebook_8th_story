@@ -99,20 +99,16 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text.rich(
+                                    Text.rich(TextSpan(children: [
                                       TextSpan(
-                                        children: [
-                                          TextSpan(
-                                            text: "Missed call from ",
-                                            style: TextStyle(fontSize: 13),
-                                          ),
-                                          TextSpan(
-                                            text: "Jenifer",
-                                            style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
-                                          )
-                                        ]
+                                        text: "Missed call from ",
+                                        style: TextStyle(fontSize: 13),
+                                      ),
+                                      TextSpan(
+                                        text: "Jenifer",
+                                        style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                                       )
-                                    ),
+                                    ])),
                                     SizedBox(
                                       height: 8,
                                     ),
@@ -257,10 +253,15 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("This Week",style: GoogleFonts.montserrat(
-                            fontSize: 18,
-                          ),),
-                          SizedBox(height: 16,),
+                          Text(
+                            "This Week",
+                            style: GoogleFonts.montserrat(
+                              fontSize: 18,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Row(
                             children: [
                               Container(
@@ -276,20 +277,16 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text.rich(
-                                        TextSpan(
-                                            children: [
-                                              TextSpan(
-                                                text: "Missed call from ",
-                                                style: TextStyle(fontSize: 13),
-                                              ),
-                                              TextSpan(
-                                                text: "Jenifer",
-                                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
-                                              )
-                                            ]
-                                        )
-                                    ),
+                                    Text.rich(TextSpan(children: [
+                                      TextSpan(
+                                        text: "Missed call from ",
+                                        style: TextStyle(fontSize: 13),
+                                      ),
+                                      TextSpan(
+                                        text: "Jenifer",
+                                        style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                                      )
+                                    ])),
                                     SizedBox(
                                       height: 8,
                                     ),
@@ -387,10 +384,15 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Earlier",style: GoogleFonts.montserrat(
-                            fontSize: 18,
-                          ),),
-                          SizedBox(height: 16,),
+                          Text(
+                            "Earlier",
+                            style: GoogleFonts.montserrat(
+                              fontSize: 18,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           UserListTilePhoneWidget(
                             "Missed Call from ",
                             "John",
@@ -485,8 +487,8 @@ class _SocialHomePageState extends State<SocialHomePage> {
                 size: 32,
               ),
               GestureDetector(
-                onTap: (){
-
+                onTap: () {
+                  Navigator.of(context).pushNamed("/rooms");
                 },
                 child: Container(
                   margin: EdgeInsets.only(top: 16, bottom: 16),
@@ -507,24 +509,3 @@ class _SocialHomePageState extends State<SocialHomePage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
