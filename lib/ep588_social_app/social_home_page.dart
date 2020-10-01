@@ -97,9 +97,19 @@ class _SocialHomePageState extends State<SocialHomePage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
-                                      "Missed call from Jenifer",
-                                      style: TextStyle(fontSize: 13),
+                                    Text.rich(
+                                      TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: "Missed call from ",
+                                            style: TextStyle(fontSize: 13),
+                                          ),
+                                          TextSpan(
+                                            text: "Jenifer",
+                                            style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+                                          )
+                                        ]
+                                      )
                                     ),
                                     SizedBox(
                                       height: 8,
