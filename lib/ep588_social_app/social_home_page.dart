@@ -255,7 +255,10 @@ class _SocialHomePageState extends State<SocialHomePage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("This Week",style: GoogleFonts.montserrat(),),
+                          Text("This Week",style: GoogleFonts.montserrat(
+                            fontSize: 18,
+                          ),),
+                          SizedBox(height: 16,),
                           Row(
                             children: [
                               Container(
