@@ -549,3 +549,29 @@ class _SocialHomePageState extends State<SocialHomePage> {
     );
   }
 }
+class UserListTilePhoneItem extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
