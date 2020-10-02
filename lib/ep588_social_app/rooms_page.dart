@@ -67,7 +67,7 @@ class _RoomsPageState extends State<RoomsPage> {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
-                            
+                            border: Border.all(color: Colors.black)
                           ),
                         ),
                       ],
