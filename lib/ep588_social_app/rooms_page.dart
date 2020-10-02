@@ -71,7 +71,30 @@ class _RoomsPageState extends State<RoomsPage> {
                           ),
                           child: Column(
                             children: [
-                              
+                              Container(
+                                height: 54,
+                                width: 54,
+                                decoration: BoxDecoration(
+                                  color: Colors.blue,
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 4,
+                                      bottom: 4,
+                                      right: 4,
+                                      top: 4,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.tealAccent,
+                                          border: Border.all(color: Colors.black),
+                                          borderRadius: BorderRadius.circular(16)
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              )
                             ],
                           ),
                         ),
