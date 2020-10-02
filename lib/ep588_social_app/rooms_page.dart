@@ -290,18 +290,24 @@ class _RoomsPageState extends State<RoomsPage> {
                       children: [
                         Expanded(
                           flex: 2,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Your Groups",
-                                style: GoogleFonts.montserrat(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.bold,
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 8, bottom: 8, left: 16),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Your Groups",
+                                  style: GoogleFonts.montserrat(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
-                              ),
-                              Text("Favorite group those you follows")
-                            ],
+                                SizedBox(
+                                  height: 7,
+                                ),
+                                Text("Favorite group those you follows")
+                              ],
+                            ),
                           ),
                         ),
                         Expanded(
