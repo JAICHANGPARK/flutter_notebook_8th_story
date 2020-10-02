@@ -141,6 +141,71 @@ class _RoomsPageState extends State<RoomsPage> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
                               border: Border.all(color: Colors.black)),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Container(
+                                height: 54,
+                                width: 54,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 4,
+                                      bottom: 4,
+                                      right: 4,
+                                      top: 4,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.black),
+                                            borderRadius: BorderRadius.circular(16)),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      right: 4,
+                                      top: 4,
+                                      child: Container(
+                                        height: 13,
+                                        width: 13,
+                                        decoration: BoxDecoration(
+                                          color: Colors.tealAccent[100],
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.add,
+                                            size: 10,
+                                          ),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Text(
+                                "Create Room",
+                                style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 12),
+                              ),
+                              Text(
+                                "John Doe",
+                                style: GoogleFonts.montserrat(fontSize: 12),
+                              ),
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 16),
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                                decoration: BoxDecoration(
+                                    color: Colors.tealAccent[100], borderRadius: BorderRadius.circular(16)),
+                                child: Center(
+                                  child: Text(
+                                    "Join New",
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                         Container(
                           margin: EdgeInsets.all(8),
@@ -149,6 +214,71 @@ class _RoomsPageState extends State<RoomsPage> {
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
                               border: Border.all(color: Colors.black)),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Container(
+                                height: 54,
+                                width: 54,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      left: 4,
+                                      bottom: 4,
+                                      right: 4,
+                                      top: 4,
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.black),
+                                            borderRadius: BorderRadius.circular(16)),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      right: 4,
+                                      top: 4,
+                                      child: Container(
+                                        height: 13,
+                                        width: 13,
+                                        decoration: BoxDecoration(
+                                          color: Colors.tealAccent[100],
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.add,
+                                            size: 10,
+                                          ),
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Text(
+                                "Create Room",
+                                style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 12),
+                              ),
+                              Text(
+                                "John Doe",
+                                style: GoogleFonts.montserrat(fontSize: 12),
+                              ),
+                              Container(
+                                margin: EdgeInsets.symmetric(horizontal: 16),
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                                decoration: BoxDecoration(
+                                    color: Colors.tealAccent[100], borderRadius: BorderRadius.circular(16)),
+                                child: Center(
+                                  child: Text(
+                                    "Join New",
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ],
                     ),
