@@ -58,10 +58,15 @@ class _RoomsPageState extends State<RoomsPage> {
                 children: [
                   Expanded(
                     flex: 3,
-                    child: Placeholder(),
+                    child: ListView(
+                      
+                      children: [
+
+                      ],
+                    ),
                   ),
                   Expanded(
-                    flex: 10,
+                    flex: 6,
                     child: Placeholder(),
                   ),
                 ],
