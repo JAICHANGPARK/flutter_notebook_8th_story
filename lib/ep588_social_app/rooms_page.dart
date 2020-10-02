@@ -92,10 +92,10 @@ class _RoomsPageState extends State<RoomsPage> {
                                       right:4,
                                       top: 4,
                                       child: Container(
-                                        height: 12,
-                                        width: 12,
+                                        height: 13,
+                                        width: 13,
                                         decoration: BoxDecoration(
-                                          color: Colors.tealAccent,
+                                          color: Colors.tealAccent[100],
                                           shape: BoxShape.circle,
                                         ),
                                         child: Center(
