@@ -98,7 +98,11 @@ class _RoomsPageState extends State<RoomsPage> {
                               Text("Create Room"),
                               Text("John Doe"),
                               Container(
-                                padding: EdgeInsets.symmetric(horizontal: 8),
+                                margin: EdgeInsets.symmetric(horizontal: 16),
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                decoration: BoxDecoration(
+                                  color: Colors.tealAccent[100]
+                                ),
                                 child: Center(
                                   child: Text("Join New"),
                                 ),
