@@ -95,8 +95,14 @@ class _RoomsPageState extends State<RoomsPage> {
                                   ],
                                 ),
                               ),
-                              Text("Create Room"),
-                              Text("John Doe"),
+                              Text("Create Room", style: GoogleFonts.montserrat(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 12
+                              ),),
+                              Text("John Doe", style: GoogleFonts.montserrat(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12
+                              ),),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 16),
                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
