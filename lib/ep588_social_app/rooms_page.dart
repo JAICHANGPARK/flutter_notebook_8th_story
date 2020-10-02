@@ -287,13 +287,17 @@ class _RoomsPageState extends State<RoomsPage> {
                     flex: 6,
                     child: Column(
                       children: [
-                      Expanded(
-                        flex : 2,
-                        child: Placeholder(),
-                      )
-                        ,
                         Expanded(
-                          flex : 8,
+                          flex: 2,
+                          child: Column(
+                            children: [
+                              Text("Your Groups"),
+                              Text("Favorite group those you follows")
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          flex: 8,
                           child: Placeholder(),
                         )
                       ],
@@ -309,18 +313,6 @@ class _RoomsPageState extends State<RoomsPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
