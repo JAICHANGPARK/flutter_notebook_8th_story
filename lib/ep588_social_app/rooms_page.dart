@@ -59,9 +59,17 @@ class _RoomsPageState extends State<RoomsPage> {
                   Expanded(
                     flex: 3,
                     child: ListView(
-                      
+                      scrollDirection: Axis.horizontal,
                       children: [
+                        Container(
 
+                          width: MediaQuery.of(context).size.width / 3,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
+                            
+                          ),
+                        ),
                       ],
                     ),
                   ),
