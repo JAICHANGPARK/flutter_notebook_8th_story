@@ -286,6 +286,7 @@ class _RoomsPageState extends State<RoomsPage> {
                   Expanded(
                     flex: 6,
                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Expanded(
                           flex: 2,
