@@ -94,7 +94,10 @@ class _RoomsPageState extends State<RoomsPage> {
                                     )
                                   ],
                                 ),
-                              )
+                              ),
+                              Text("Create Room"),
+                              Text("John Doe"),
+                              
                             ],
                           ),
                         ),
