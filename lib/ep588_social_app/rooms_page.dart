@@ -100,7 +100,7 @@ class _RoomsPageState extends State<RoomsPage> {
                                 fontSize: 12
                               ),),
                               Text("John Doe", style: GoogleFonts.montserrat(
-                                  fontWeight: FontWeight.bold,
+
                                   fontSize: 12
                               ),),
                               Container(
