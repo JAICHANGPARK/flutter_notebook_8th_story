@@ -285,7 +285,11 @@ class _RoomsPageState extends State<RoomsPage> {
                   ),
                   Expanded(
                     flex: 6,
-                    child: Placeholder(),
+                    child: Column(
+                      children: [
+                        
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -297,3 +301,29 @@ class _RoomsPageState extends State<RoomsPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
