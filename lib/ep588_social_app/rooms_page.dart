@@ -12,7 +12,14 @@ class _RoomsPageState extends State<RoomsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Column(
+          children: [
+            
+          ],
+        ),
 
+      ),
       bottomNavigationBar: SocialBottomNavBar(),
     );
   }
