@@ -74,7 +74,6 @@ class _RoomsPageState extends State<RoomsPage> {
                               Container(
                                 height: 54,
                                 width: 54,
-
                                 child: Stack(
                                   children: [
                                     Positioned(
@@ -89,7 +88,7 @@ class _RoomsPageState extends State<RoomsPage> {
                                       ),
                                     ),
                                     Positioned(
-                                      right:4,
+                                      right: 4,
                                       top: 4,
                                       child: Container(
                                         height: 13,
@@ -99,9 +98,11 @@ class _RoomsPageState extends State<RoomsPage> {
                                           shape: BoxShape.circle,
                                         ),
                                         child: Center(
-                                          child: Icon(Icons.add, size: 10,),
+                                          child: Icon(
+                                            Icons.add,
+                                            size: 10,
+                                          ),
                                         ),
-
                                       ),
                                     )
                                   ],
