@@ -62,7 +62,7 @@ class _RoomsPageState extends State<RoomsPage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
-                          margin: EdgeInsets.all(9),
+                          margin: EdgeInsets.all(8),
                           width: MediaQuery.of(context).size.width / 3,
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -119,7 +119,7 @@ class _RoomsPageState extends State<RoomsPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(9),
+                          margin: EdgeInsets.all(8),
                           width: MediaQuery.of(context).size.width / 3,
                           decoration: BoxDecoration(
                               color: Colors.white,
@@ -128,7 +128,7 @@ class _RoomsPageState extends State<RoomsPage> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(9),
+                          margin: EdgeInsets.all(8),
                           width: MediaQuery.of(context).size.width / 3,
                           decoration: BoxDecoration(
                               color: Colors.white,
