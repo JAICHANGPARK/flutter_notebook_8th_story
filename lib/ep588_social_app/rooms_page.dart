@@ -89,12 +89,14 @@ class _RoomsPageState extends State<RoomsPage> {
                                       ),
                                     ),
                                     Positioned(
-                                      right: 0,
-                                      top: 0,
+                                      right:4,
+                                      top: 4,
                                       child: Container(
-                                        height: 5,
-                                        width: 6,
-                                        
+                                        height: 8,
+                                        width: 8,
+                                        decoration: BoxDecoration(
+                                          color: Colors.tealAccent
+                                        ),
                                       ),
                                     )
                                   ],
