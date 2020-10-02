@@ -10,7 +10,6 @@ class _RoomsPageState extends State<RoomsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bo
     );
   }
 }
