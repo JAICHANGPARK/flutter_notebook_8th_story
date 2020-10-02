@@ -290,7 +290,9 @@ class _RoomsPageState extends State<RoomsPage> {
                       children: [
                         Expanded(
                           flex: 2,
-                          child: Column(
+                          child: Column
+                            (
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 "Your Groups",
