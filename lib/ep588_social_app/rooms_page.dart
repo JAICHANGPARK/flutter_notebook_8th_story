@@ -65,19 +65,16 @@ class _RoomsPageState extends State<RoomsPage> {
                           margin: EdgeInsets.all(8),
                           width: MediaQuery.of(context).size.width / 3,
                           decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(8),
-                            border: Border.all(color: Colors.black)
-                          ),
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(8),
+                              border: Border.all(color: Colors.black)),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Container(
                                 height: 54,
                                 width: 54,
-                                decoration: BoxDecoration(
-                                  color: Colors.blue,
-                                ),
+
                                 child: Stack(
                                   children: [
                                     Positioned(
@@ -87,33 +84,37 @@ class _RoomsPageState extends State<RoomsPage> {
                                       top: 4,
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          color: Colors.tealAccent,
-                                          border: Border.all(color: Colors.black),
-                                          borderRadius: BorderRadius.circular(16)
-                                        ),
+                                            border: Border.all(color: Colors.black),
+                                            borderRadius: BorderRadius.circular(16)),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      right: 0,
+                                      top: 0,
+                                      child: Container(
+                                        height: 5,
+                                        width: 6,
+                                        
                                       ),
                                     )
                                   ],
                                 ),
                               ),
-                              Text("Create Room", style: GoogleFonts.montserrat(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 12
-                              ),),
-                              Text("John Doe", style: GoogleFonts.montserrat(
-
-                                  fontSize: 12
-                              ),),
+                              Text(
+                                "Create Room",
+                                style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 12),
+                              ),
+                              Text(
+                                "John Doe",
+                                style: GoogleFonts.montserrat(fontSize: 12),
+                              ),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 16),
                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                                decoration: BoxDecoration(
-                                  color: Colors.tealAccent[100]
-                                ),
+                                decoration: BoxDecoration(color: Colors.tealAccent[100]),
                                 child: Center(
                                   child: Text("Join New"),
                                 ),
-
                               )
                             ],
                           ),
@@ -124,8 +125,7 @@ class _RoomsPageState extends State<RoomsPage> {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: Colors.black)
-                          ),
+                              border: Border.all(color: Colors.black)),
                         ),
                         Container(
                           margin: EdgeInsets.all(8),
@@ -133,10 +133,8 @@ class _RoomsPageState extends State<RoomsPage> {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: Colors.black)
-                          ),
+                              border: Border.all(color: Colors.black)),
                         ),
-
                       ],
                     ),
                   ),
@@ -154,15 +152,3 @@ class _RoomsPageState extends State<RoomsPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
