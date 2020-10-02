@@ -70,6 +70,7 @@ class _RoomsPageState extends State<RoomsPage> {
                             border: Border.all(color: Colors.black)
                           ),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Container(
                                 height: 54,
