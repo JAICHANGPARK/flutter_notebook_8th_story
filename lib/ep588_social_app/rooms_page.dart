@@ -118,10 +118,17 @@ class _RoomsPageState extends State<RoomsPage> {
                               ),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 16),
-                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-                                decoration: BoxDecoration(color: Colors.tealAccent[100]),
+                                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                                decoration: BoxDecoration(
+                                    color: Colors.tealAccent[100], borderRadius: BorderRadius.circular(16)),
                                 child: Center(
-                                  child: Text("Join New"),
+                                  child: Text(
+                                    "Join New",
+                                    style: GoogleFonts.montserrat(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ),
                               )
                             ],
