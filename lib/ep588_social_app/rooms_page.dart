@@ -14,8 +14,18 @@ class _RoomsPageState extends State<RoomsPage> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            
+              Expanded(
+                flex: 2,
+                child: Placeholder(),
+              ),
+            Expanded(
+              flex: 2,
+              child: Placeholder(),
+            ),
+
+
           ],
         ),
 
