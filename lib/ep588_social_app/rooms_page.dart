@@ -291,7 +291,13 @@ class _RoomsPageState extends State<RoomsPage> {
                           flex: 2,
                           child: Column(
                             children: [
-                              Text("Your Groups"),
+                              Text(
+                                "Your Groups",
+                                style: GoogleFonts.montserrat(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                               Text("Favorite group those you follows")
                             ],
                           ),
@@ -313,17 +319,3 @@ class _RoomsPageState extends State<RoomsPage> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
