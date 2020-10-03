@@ -317,7 +317,7 @@ class _RoomsPageState extends State<RoomsPage> {
                                   child: Card(
                                       elevation: 8,
                                       child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
+                                        padding: const EdgeInsets.all(16.0),
                                         child: Column(
                                           children: [
                                             Row(
