@@ -366,13 +366,13 @@ class _RoomsPageState extends State<RoomsPage> {
                                                   ),
                                                   Spacer(),
                                                   Container(
-                                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                                    padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                                                     decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
                                                     child: Center(
                                                       child: Text(
                                                         "Request",
                                                         style: GoogleFonts.montserrat(
-                                                            fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white),
+                                                            fontSize: 12, color: Colors.white),
                                                       ),
                                                     ),
                                                   )
@@ -381,7 +381,8 @@ class _RoomsPageState extends State<RoomsPage> {
                                             )
                                           ],
                                         ),
-                                      )),
+                                      ),
+                                  ),
                                 ),
                               ),
                               SizedBox(
