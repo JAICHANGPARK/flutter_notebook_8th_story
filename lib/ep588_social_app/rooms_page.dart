@@ -321,8 +321,13 @@ class _RoomsPageState extends State<RoomsPage> {
                                         Row(
                                           children: [
                                             Container(
-                                              height: 32,
-                                              width:32,
+                                              height: 42,
+                                              width: 42,
+                                              decoration: BoxDecoration(
+                                                border: Border.all(color: Colors.black),
+                                                shape: BoxShape.circle,
+
+                                              ),
                                             )
                                           ],
                                         )
