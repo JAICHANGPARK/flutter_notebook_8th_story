@@ -273,6 +273,7 @@ class _RoomsPageState extends State<RoomsPage> {
                                     style: GoogleFonts.montserrat(
                                       fontSize: 12,
                                       fontWeight: FontWeight.bold,
+                                      color: Colors.white
                                     ),
                                   ),
                                 ),
