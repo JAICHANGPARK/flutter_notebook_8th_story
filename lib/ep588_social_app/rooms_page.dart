@@ -335,8 +335,13 @@ class _RoomsPageState extends State<RoomsPage> {
                                                   child: Column(
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
-                                                      Text("The Dance Crew"),
-                                                      Text("MoonWalk Tutorials"),
+                                                      Text("The Dance Crew", style: TextStyle(
+                                                        fontSize: 12,
+                                                      ),),
+                                                      SizedBox(height: 4,),
+                                                      Text("MoonWalk Tutorials",style: TextStyle(
+                                                        fontWeight: FontWeight.bold
+                                                      ),),
                                                     ],
                                                   ),
                                                 ),
