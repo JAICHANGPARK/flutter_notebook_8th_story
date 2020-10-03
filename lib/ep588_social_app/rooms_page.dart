@@ -393,6 +393,74 @@ class _RoomsPageState extends State<RoomsPage> {
                                   child: Card(
                                     color: Colors.black,
                                     elevation: 8,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(16.0),
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Row(
+                                            children: [
+                                              Container(
+                                                height: 42,
+                                                width: 42,
+                                                decoration: BoxDecoration(
+                                                  border: Border.all(color: Colors.black),
+                                                  shape: BoxShape.circle,
+                                                  color: Colors.white
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text("Singing Mania", style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.white
+                                                    ),),
+                                                    SizedBox(height: 4,),
+                                                    Text("MoonWalk Tutorials",style: TextStyle(
+                                                        fontWeight: FontWeight.bold
+                                                    ),),
+                                                  ],
+                                                ),
+                                              ),
+                                              Spacer(),
+                                              Icon(Icons.lock, size: 20,)
+
+                                            ],
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 10,
+                                                ),
+                                                CircleAvatar(
+                                                  radius: 10,
+                                                ),
+                                                CircleAvatar(
+                                                  radius: 10,
+                                                ),
+                                                Spacer(),
+                                                Container(
+                                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                                                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "Request",
+                                                      style: GoogleFonts.montserrat(
+                                                          fontSize: 12, color: Colors.white),
+                                                    ),
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ),
