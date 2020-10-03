@@ -365,7 +365,17 @@ class _RoomsPageState extends State<RoomsPage> {
                                                     radius: 10,
                                                   ),
                                                   Spacer(),
-                                                  
+                                                  Container(
+                                                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                                                    decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                                                    child: Center(
+                                                      child: Text(
+                                                        "Request",
+                                                        style: GoogleFonts.montserrat(
+                                                            fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white),
+                                                      ),
+                                                    ),
+                                                  )
                                                 ],
                                               ),
                                             )
