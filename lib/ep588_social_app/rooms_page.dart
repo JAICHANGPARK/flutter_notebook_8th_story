@@ -168,15 +168,14 @@ class _RoomsPageState extends State<RoomsPage> {
                                         height: 10,
                                         width: 24,
                                         decoration: BoxDecoration(
-                                            color: Colors.grey[400],
-                                            borderRadius: BorderRadius.circular(4)
-                                        ),
+                                            color: Colors.grey[400], borderRadius: BorderRadius.circular(4)),
                                         child: Center(
-                                            child: Text("LIVE", style: TextStyle(
-                                              fontSize: 8,
-
-                                            ),)
-                                        ),
+                                            child: Text(
+                                          "LIVE",
+                                          style: TextStyle(
+                                            fontSize: 8,
+                                          ),
+                                        )),
                                       ),
                                     )
                                   ],
@@ -193,16 +192,12 @@ class _RoomsPageState extends State<RoomsPage> {
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 16),
                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-                                decoration: BoxDecoration(
-                                    color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
                                 child: Center(
                                   child: Text(
                                     "Join Now",
                                     style: GoogleFonts.montserrat(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white
-                                    ),
+                                        fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white),
                                   ),
                                 ),
                               )
@@ -243,15 +238,14 @@ class _RoomsPageState extends State<RoomsPage> {
                                         height: 10,
                                         width: 24,
                                         decoration: BoxDecoration(
-                                          color: Colors.grey[400],
-                                          borderRadius: BorderRadius.circular(4)
-                                        ),
+                                            color: Colors.grey[400], borderRadius: BorderRadius.circular(4)),
                                         child: Center(
-                                          child: Text("LIVE", style: TextStyle(
+                                            child: Text(
+                                          "LIVE",
+                                          style: TextStyle(
                                             fontSize: 8,
-
-                                          ),)
-                                        ),
+                                          ),
+                                        )),
                                       ),
                                     )
                                   ],
@@ -268,16 +262,12 @@ class _RoomsPageState extends State<RoomsPage> {
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 16),
                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-                                decoration: BoxDecoration(
-                                    color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                                decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
                                 child: Center(
                                   child: Text(
                                     "Join Now",
                                     style: GoogleFonts.montserrat(
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white
-                                    ),
+                                        fontSize: 12, fontWeight: FontWeight.bold, color: Colors.white),
                                   ),
                                 ),
                               )
@@ -317,12 +307,16 @@ class _RoomsPageState extends State<RoomsPage> {
                         Expanded(
                           flex: 8,
                           child: ListView(
+                            padding: EdgeInsets.zero,
                             children: [
                               SizedBox(
                                 height: MediaQuery.of(context).size.height / 5,
                                 width: double.infinity,
-                                child: Card(
-
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Card(
+                                    elevation: 8,
+                                  ),
                                 ),
                               ),
                             ],
