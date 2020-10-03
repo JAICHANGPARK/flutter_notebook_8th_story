@@ -259,17 +259,17 @@ class _RoomsPageState extends State<RoomsPage> {
                                 style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 12),
                               ),
                               Text(
-                                "John Doe",
+                                "10 Mins Ago",
                                 style: GoogleFonts.montserrat(fontSize: 12),
                               ),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 16),
                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
                                 decoration: BoxDecoration(
-                                    color: Colors.tealAccent[100], borderRadius: BorderRadius.circular(16)),
+                                    color: Colors.black, borderRadius: BorderRadius.circular(16)),
                                 child: Center(
                                   child: Text(
-                                    "Join New",
+                                    "Join Now",
                                     style: GoogleFonts.montserrat(
                                       fontSize: 12,
                                       fontWeight: FontWeight.bold,
