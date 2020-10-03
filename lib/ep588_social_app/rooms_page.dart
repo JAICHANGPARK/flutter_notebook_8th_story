@@ -241,8 +241,8 @@ class _RoomsPageState extends State<RoomsPage> {
                                         height: 10,
                                         width: 24,
                                         decoration: BoxDecoration(
-                                          color: Colors.grey
-
+                                          color: Colors.grey[400],
+                                          borderRadius: BorderRadius.circular(4)
                                         ),
                                         child: Center(
                                           child: Text("LIVE", style: TextStyle(
