@@ -419,8 +419,9 @@ class _RoomsPageState extends State<RoomsPage> {
                                                       color: Colors.white
                                                     ),),
                                                     SizedBox(height: 4,),
-                                                    Text("MoonWalk Tutorials",style: TextStyle(
-                                                        fontWeight: FontWeight.bold
+                                                    Text("Tri-Rap Tutorials",style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                        color: Colors.white
                                                     ),),
                                                   ],
                                                 ),
@@ -446,10 +447,10 @@ class _RoomsPageState extends State<RoomsPage> {
                                                 Spacer(),
                                                 Container(
                                                   padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                                                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(16)),
+                                                  decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
                                                   child: Center(
                                                     child: Text(
-                                                      "Request",
+                                                      "Join",
                                                       style: GoogleFonts.montserrat(
                                                           fontSize: 12, color: Colors.white),
                                                     ),
