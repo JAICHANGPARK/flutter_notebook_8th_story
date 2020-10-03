@@ -311,6 +311,7 @@ class _RoomsPageState extends State<RoomsPage> {
                           ),
                         ),
                         Expanded(
+                          
                           flex: 8,
                           child: Placeholder(),
                         )
