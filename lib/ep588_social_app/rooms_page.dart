@@ -161,20 +161,21 @@ class _RoomsPageState extends State<RoomsPage> {
                                       ),
                                     ),
                                     Positioned(
-                                      right: 4,
-                                      top: 4,
+                                      right: 16,
+                                      top: 0,
+                                      left: 16,
                                       child: Container(
-                                        height: 13,
-                                        width: 13,
+                                        height: 10,
+                                        width: 24,
                                         decoration: BoxDecoration(
-                                          color: Colors.tealAccent[100],
-                                          shape: BoxShape.circle,
+                                            color: Colors.grey[400],
+                                            borderRadius: BorderRadius.circular(4)
                                         ),
                                         child: Center(
-                                          child: Icon(
-                                            Icons.add,
-                                            size: 10,
-                                          ),
+                                            child: Text("LIVE", style: TextStyle(
+                                              fontSize: 8,
+
+                                            ),)
                                         ),
                                       ),
                                     )
@@ -182,24 +183,25 @@ class _RoomsPageState extends State<RoomsPage> {
                                 ),
                               ),
                               Text(
-                                "Create Room",
+                                "Flutter Live",
                                 style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 12),
                               ),
                               Text(
-                                "John Doe",
+                                "1 Mins Ago",
                                 style: GoogleFonts.montserrat(fontSize: 12),
                               ),
                               Container(
                                 margin: EdgeInsets.symmetric(horizontal: 16),
                                 padding: EdgeInsets.symmetric(horizontal: 8, vertical: 6),
                                 decoration: BoxDecoration(
-                                    color: Colors.tealAccent[100], borderRadius: BorderRadius.circular(16)),
+                                    color: Colors.black, borderRadius: BorderRadius.circular(16)),
                                 child: Center(
                                   child: Text(
-                                    "Join New",
+                                    "Join Now",
                                     style: GoogleFonts.montserrat(
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.bold,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white
                                     ),
                                   ),
                                 ),
