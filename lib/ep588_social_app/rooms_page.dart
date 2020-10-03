@@ -337,6 +337,8 @@ class _RoomsPageState extends State<RoomsPage> {
                                                     Text("MoonWalk Tutorials"),
                                                   ],
                                                 ),
+                                                Spacer(),
+                                                Icon(Icons.lock, size: 20,)
 
                                               ],
                                             )
