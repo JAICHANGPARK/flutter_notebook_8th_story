@@ -316,12 +316,22 @@ class _RoomsPageState extends State<RoomsPage> {
                         ),
                         Expanded(
                           flex: 8,
-                          child: SingleChildScrollView(
-                            child: Column(
-                              children: [
+                          child: ListView(
+                            children: [
+                              SizedBox(
+                                height: MediaQuery.of(context).size.height / 4,
+                                width: double.infinity,
+                                child: Card(
 
-                              ],
-                            ),
+                                ),
+                              ),
+                              Container(
+
+                                decoration: BoxDecoration(
+                                  color: Colors.white
+                                ),
+                              )
+                            ],
                           ),
                         )
                       ],
