@@ -319,18 +319,12 @@ class _RoomsPageState extends State<RoomsPage> {
                           child: ListView(
                             children: [
                               SizedBox(
-                                height: MediaQuery.of(context).size.height / 4,
+                                height: MediaQuery.of(context).size.height / 5,
                                 width: double.infinity,
                                 child: Card(
 
                                 ),
                               ),
-                              Container(
-
-                                decoration: BoxDecoration(
-                                  color: Colors.white
-                                ),
-                              )
                             ],
                           ),
                         )
