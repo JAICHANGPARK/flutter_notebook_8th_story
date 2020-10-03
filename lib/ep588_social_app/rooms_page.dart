@@ -315,9 +315,14 @@ class _RoomsPageState extends State<RoomsPage> {
                           ),
                         ),
                         Expanded(
-                          
                           flex: 8,
-                          child: Placeholder(),
+                          child: SingleChildScrollView(
+                            child: Column(
+                              children: [
+
+                              ],
+                            ),
+                          ),
                         )
                       ],
                     ),
