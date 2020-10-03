@@ -351,12 +351,23 @@ class _RoomsPageState extends State<RoomsPage> {
 
                                               ],
                                             ),
-                                            Row(
-                                              children: [
-                                                CircleAvatar(
-                                                  radius: 10,
-                                                )
-                                              ],
+                                            Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Row(
+                                                children: [
+                                                  CircleAvatar(
+                                                    radius: 10,
+                                                  ),
+                                                  CircleAvatar(
+                                                    radius: 10,
+                                                  ),
+                                                  CircleAvatar(
+                                                    radius: 10,
+                                                  ),
+                                                  Spacer(),
+                                                  
+                                                ],
+                                              ),
                                             )
                                           ],
                                         ),
