@@ -238,14 +238,17 @@ class _RoomsPageState extends State<RoomsPage> {
                                       top: 0,
                                       left: 16,
                                       child: Container(
-                                        height: 8,
+                                        height: 10,
                                         width: 24,
                                         decoration: BoxDecoration(
                                           color: Colors.grey
 
                                         ),
                                         child: Center(
-                                          child: Text("LIVE")
+                                          child: Text("LIVE", style: TextStyle(
+                                            fontSize: 8,
+
+                                          ),)
                                         ),
                                       ),
                                     )
