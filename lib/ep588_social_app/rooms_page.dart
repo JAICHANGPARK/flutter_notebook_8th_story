@@ -319,6 +319,7 @@ class _RoomsPageState extends State<RoomsPage> {
                                       child: Padding(
                                         padding: const EdgeInsets.all(16.0),
                                         child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
                                             Row(
                                               children: [
@@ -348,6 +349,13 @@ class _RoomsPageState extends State<RoomsPage> {
                                                 Spacer(),
                                                 Icon(Icons.lock, size: 20,)
 
+                                              ],
+                                            ),
+                                            Row(
+                                              children: [
+                                                CircleAvatar(
+                                                  radius: 10,
+                                                )
                                               ],
                                             )
                                           ],
