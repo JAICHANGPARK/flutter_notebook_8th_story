@@ -255,7 +255,7 @@ class _RoomsPageState extends State<RoomsPage> {
                                 ),
                               ),
                               Text(
-                                "Create Room",
+                                "Me UnBoxing",
                                 style: GoogleFonts.montserrat(fontWeight: FontWeight.bold, fontSize: 12),
                               ),
                               Text(
