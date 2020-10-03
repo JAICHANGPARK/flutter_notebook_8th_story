@@ -315,25 +315,34 @@ class _RoomsPageState extends State<RoomsPage> {
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Card(
-                                    elevation: 8,
-                                    child:Column(
-                                      children: [
-                                        Row(
+                                      elevation: 8,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
                                           children: [
-                                            Container(
-                                              height: 42,
-                                              width: 42,
-                                              decoration: BoxDecoration(
-                                                border: Border.all(color: Colors.black),
-                                                shape: BoxShape.circle,
+                                            Row(
+                                              children: [
+                                                Container(
+                                                  height: 42,
+                                                  width: 42,
+                                                  decoration: BoxDecoration(
+                                                    border: Border.all(color: Colors.black),
+                                                    shape: BoxShape.circle,
+                                                  ),
+                                                ),
+                                                Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text("The Dance Crew"),
+                                                    Text("MoonWalk Tutorials"),
+                                                  ],
+                                                ),
 
-                                              ),
+                                              ],
                                             )
                                           ],
-                                        )
-                                      ],
-                                    )
-                                  ),
+                                        ),
+                                      )),
                                 ),
                               ),
                               SizedBox(
