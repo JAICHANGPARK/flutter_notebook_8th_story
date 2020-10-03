@@ -241,14 +241,11 @@ class _RoomsPageState extends State<RoomsPage> {
                                         height: 8,
                                         width: 24,
                                         decoration: BoxDecoration(
-                                          color: Colors.tealAccent[100],
+                                          color: Colors.grey
 
                                         ),
                                         child: Center(
-                                          child: Icon(
-                                            Icons.add,
-                                            size: 10,
-                                          ),
+                                          child: Text("LIVE")
                                         ),
                                       ),
                                     )
