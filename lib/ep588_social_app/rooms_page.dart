@@ -452,7 +452,7 @@ class _RoomsPageState extends State<RoomsPage> {
                                                     child: Text(
                                                       "Join",
                                                       style: GoogleFonts.montserrat(
-                                                          fontSize: 12, color: Colors.white),
+                                                          fontSize: 12, ),
                                                     ),
                                                   ),
                                                 )
