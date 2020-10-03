@@ -330,12 +330,15 @@ class _RoomsPageState extends State<RoomsPage> {
                                                     shape: BoxShape.circle,
                                                   ),
                                                 ),
-                                                Column(
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text("The Dance Crew"),
-                                                    Text("MoonWalk Tutorials"),
-                                                  ],
+                                                Padding(
+                                                  padding: const EdgeInsets.all(8.0),
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text("The Dance Crew"),
+                                                      Text("MoonWalk Tutorials"),
+                                                    ],
+                                                  ),
                                                 ),
                                                 Spacer(),
                                                 Icon(Icons.lock, size: 20,)
