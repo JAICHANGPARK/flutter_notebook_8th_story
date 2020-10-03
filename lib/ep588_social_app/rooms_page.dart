@@ -310,11 +310,34 @@ class _RoomsPageState extends State<RoomsPage> {
                             padding: EdgeInsets.zero,
                             children: [
                               SizedBox(
-                                height: MediaQuery.of(context).size.height / 5,
+                                height: MediaQuery.of(context).size.height / 4.5,
                                 width: double.infinity,
                                 child: Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Card(
+                                    elevation: 8,
+                                    child:Column(
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Container(
+                                              height: 32,
+                                              width:32,
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    )
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: MediaQuery.of(context).size.height / 4.5,
+                                width: double.infinity,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Card(
+                                    color: Colors.black,
                                     elevation: 8,
                                   ),
                                 ),
