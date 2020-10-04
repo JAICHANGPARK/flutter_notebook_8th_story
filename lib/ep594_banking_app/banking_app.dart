@@ -33,7 +33,7 @@ class BankingCardPage extends StatelessWidget {
             ),
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.white
+                color: Colors.white.withOpacity(0.7)
               ),
             ),
           ),
