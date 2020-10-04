@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 
@@ -18,10 +20,13 @@ class BankingCardPage extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Center(
         child: Container(
-          height: MediaQuery.of(context).size.height / 3,
+          height: MediaQuery.of(context).size.height / 2.5,
           width: MediaQuery.of(context).size.width / 1.5,
           decoration: BoxDecoration(
             color: Colors.white
+          ),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(),
           ),
         ),
 
