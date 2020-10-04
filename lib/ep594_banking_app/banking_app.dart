@@ -68,9 +68,15 @@ class BankingCardPage extends StatelessWidget {
                           Text("2720",style: TextStyle(
                             fontSize: 22
                           ),),
-                          Text("2720"),
-                          Text("2720"),
-                          Text("2720")
+                          Text("2720",style: TextStyle(
+                              fontSize: 22
+                          ),),
+                          Text("2720",style: TextStyle(
+                              fontSize: 22
+                          ),),
+                          Text("2720",style: TextStyle(
+                              fontSize: 22
+                          ),)
                         ],
                       ),
                     ),
