@@ -20,20 +20,21 @@ class BankingCardPage extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Center(
         child: Container(
-          height: MediaQuery.of(context).size.height / 2.5,
-          width: MediaQuery.of(context).size.width / 1.5,
+          height: MediaQuery.of(context).size.height / 2.3,
+          width: MediaQuery.of(context).size.width / 1.7,
           decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.7)
+            color: Colors.white.withOpacity(0.5),
+            borderRadius: BorderRadius.circular(16)
           ),
           child: BackdropFilter(
             filter: ImageFilter.blur(
-              sigmaX: 0.2,
-              sigmaY: 0.2,
+              sigmaX: 0.1,
+              sigmaY: 0.1,
 
             ),
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.7)
+                color: Colors.black.withOpacity(0.1)
               ),
             ),
           ),
