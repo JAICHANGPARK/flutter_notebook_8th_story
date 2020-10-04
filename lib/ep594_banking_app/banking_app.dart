@@ -16,6 +16,11 @@ class BankingCardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      body: Center(
+        child: Container(
+          
+        ),
+      ),
     );
   }
 }
