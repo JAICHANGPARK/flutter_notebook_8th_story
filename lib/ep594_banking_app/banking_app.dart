@@ -19,7 +19,7 @@ class BankingCardPage extends StatelessWidget {
       body: Center(
         child: Container(
           height: MediaQuery.of(context).size.height / 2.3,
-          width: MediaQuery.of(context).size.width / 1.7,
+          width: MediaQuery.of(context).size.width / 1.6,
           decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.8),
               borderRadius: BorderRadius.circular(16),
@@ -46,7 +46,7 @@ class BankingCardPage extends StatelessWidget {
                           color: Colors.pink,
                           borderRadius:
                               BorderRadius.only(bottomLeft: Radius.circular(16), topLeft: Radius.circular(16))),
-                      padding: EdgeInsets.only(top: 16, left: 12),
+                      padding: EdgeInsets.only(top: 16, left: 16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
