@@ -53,6 +53,15 @@ class BankingCardPage extends StatelessWidget {
                                 topLeft: Radius.circular(16)
                             )
                           ),
+                      
+                      child: Column(
+
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("PNK"),
+                          Text("FLUTTER PINK \$ Card")
+                        ],
+                      ),
                     ),
                   )
                 ],
