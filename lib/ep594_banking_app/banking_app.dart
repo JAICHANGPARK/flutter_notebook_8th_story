@@ -23,7 +23,7 @@ class BankingCardPage extends StatelessWidget {
           height: MediaQuery.of(context).size.height / 2.5,
           width: MediaQuery.of(context).size.width / 1.5,
           decoration: BoxDecoration(
-            
+            color: Colors.white.withOpacity(0.5)
           ),
           child: BackdropFilter(
             filter: ImageFilter.blur(),
