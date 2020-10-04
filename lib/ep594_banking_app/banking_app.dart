@@ -63,7 +63,11 @@ class BankingCardPage extends StatelessWidget {
                           ),),
                           Text("FLUTTER PINK \$ Card", style: TextStyle(
                             fontSize: 10
-                          ),)
+                          ),),
+                          Text("2720"),
+                          Text("2720"),
+                          Text("2720"),
+                          Text("2720")
                         ],
                       ),
                     ),
