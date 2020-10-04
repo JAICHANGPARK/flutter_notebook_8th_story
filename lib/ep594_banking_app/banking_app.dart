@@ -18,7 +18,8 @@ class BankingCardPage extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Center(
         child: Container(
-          height: MediaQuery.of(context).size.height / 2,
+          height: MediaQuery.of(context).size.height / 3,
+          width: MediaQuery.of(context).size.width / 1.5,
           decoration: BoxDecoration(
             color: Colors.white
           ),
