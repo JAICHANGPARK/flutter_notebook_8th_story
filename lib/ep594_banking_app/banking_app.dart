@@ -11,3 +11,9 @@ class BankingApp extends StatelessWidget {
 }
 
 
+class BankingCardPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}
