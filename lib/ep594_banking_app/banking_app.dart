@@ -55,7 +55,6 @@ class BankingCardPage extends StatelessWidget {
                           ),
                       padding: EdgeInsets.only(top: 16, left: 12),
                       child: Column(
-
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("PNK", style: TextStyle(
