@@ -34,7 +34,7 @@ class BankingCardPage extends StatelessWidget {
             ),
             child: Container(
               decoration: BoxDecoration(
-                // color: Colors.white.withOpacity(.15),
+                color: Colors.black.withOpacity(0.01),
                 border: Border.all(color: Colors.grey),
                 borderRadius: BorderRadius.circular(16)
               ),
