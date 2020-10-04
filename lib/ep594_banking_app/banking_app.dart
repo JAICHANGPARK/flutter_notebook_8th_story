@@ -29,8 +29,8 @@ class BankingCardPage extends StatelessWidget {
           ),
           child: BackdropFilter(
             filter: ImageFilter.blur(
-              sigmaX: 4,
-              sigmaY: 4,
+              sigmaX: 2,
+              sigmaY: 2,
             ),
             child: Container(
               decoration: BoxDecoration(
