@@ -32,8 +32,18 @@ class _BankMainPageState extends State<BankMainPage> {
                 )
               ),
               child: ListView(
+                padding: EdgeInsets.zero,
                 children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 170, vertical: 16),
+                    child: Container(
+                      height: 3,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
 
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
