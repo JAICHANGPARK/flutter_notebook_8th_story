@@ -45,7 +45,7 @@ class _BankMainPageState extends State<BankMainPage> {
                   ),
 
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
                     child: Column(
                       children: [
                         Row(
