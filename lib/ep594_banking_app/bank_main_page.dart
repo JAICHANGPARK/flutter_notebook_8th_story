@@ -58,10 +58,11 @@ class _BankMainPageState extends State<BankMainPage> {
                             }),
                           ],
                         ),
+                        SizedBox(height: 16,),
                         Container(
-                          height: 48,
+                          height: 32,
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.7),
+                            color: Colors.white.withOpacity(0.3),
                           ),
                         )
                       ],
