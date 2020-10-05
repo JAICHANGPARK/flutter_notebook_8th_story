@@ -55,9 +55,14 @@ class _BankMainPageState extends State<BankMainPage> {
                                 color: Colors.white,
                                 iconSize: 32,
                                 onPressed: (){
-
-                            })
+                            }),
                           ],
+                        ),
+                        Container(
+                          height: 48,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(0.7),
+                          ),
                         )
                       ],
                     ),
