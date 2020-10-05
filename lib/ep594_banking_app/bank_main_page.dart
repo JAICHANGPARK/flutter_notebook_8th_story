@@ -19,7 +19,11 @@ class _BankMainPageState extends State<BankMainPage> {
             right: 0,
             bottom: 0,
             child: Container(
+              
               decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(24),
+                ),
                   gradient: LinearGradient(colors: [
                 Colors.white.withOpacity(0.2),
                 Colors.black.withOpacity(0.1),
