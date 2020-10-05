@@ -39,21 +39,25 @@ class _BankMainPageState extends State<BankMainPage> {
                     ),
                   ),
 
-                  Column(
-                    children: [
-                      Row(
-                        children: [
-                          Text("Spendings report", style: GoogleFonts.montserrat(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24
-                          ),),
-                          IconButton(icon: Icon(Icons.keyboard_arrow_right), onPressed: (){
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text("Spendings report", style: GoogleFonts.montserrat(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24
+                            ),),
+                            IconButton(icon: Icon(Icons.keyboard_arrow_right), onPressed: (){
 
-                          })
-                        ],
-                      )
-                    ],
+                            })
+                          ],
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
