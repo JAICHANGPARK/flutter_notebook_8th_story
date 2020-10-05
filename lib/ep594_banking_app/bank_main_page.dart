@@ -36,6 +36,23 @@ class _BankMainPageState extends State<BankMainPage> {
                         color: Colors.grey,
                       ),
                     ),
+                  ),
+
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text("Spendings report", style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24
+                          ),),
+                          IconButton(icon: Icon(Icons.keyboard_arrow_right), onPressed: (){
+
+                          })
+                        ],
+                      )
+                    ],
                   )
                 ],
               ),
