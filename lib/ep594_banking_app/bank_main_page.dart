@@ -83,7 +83,7 @@ class _BankMainPageState extends State<BankMainPage> {
                                 ),
                               ),
                               Container(
-                                width: 84,
+                                width: 100,
                                 decoration: BoxDecoration(
                                   color: Colors.yellow,
 
@@ -92,11 +92,11 @@ class _BankMainPageState extends State<BankMainPage> {
                               Container(
                                 width: 64,
                                 decoration: BoxDecoration(
-                                  color: Colors.tealAccent,
+                                  color: Colors.greenAccent,
                                 ),
                               ),
                               Container(
-                                width: 32,
+                                width: 16,
                                 decoration: BoxDecoration(
                                   color: Colors.indigo,
 
