@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BankMainPage extends StatefulWidget {
   @override
@@ -42,7 +43,7 @@ class _BankMainPageState extends State<BankMainPage> {
                     children: [
                       Row(
                         children: [
-                          Text("Spendings report", style: TextStyle(
+                          Text("Spendings report", style: GoogleFonts.montserrat(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 24
