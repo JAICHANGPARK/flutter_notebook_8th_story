@@ -51,7 +51,10 @@ class _BankMainPageState extends State<BankMainPage> {
                               fontWeight: FontWeight.bold,
                               fontSize: 24
                             ),),
-                            IconButton(icon: Icon(Icons.keyboard_arrow_right), onPressed: (){
+                            IconButton(icon: Icon(Icons.keyboard_arrow_right),
+                                color: Colors.white,
+                                iconSize: 32,
+                                onPressed: (){
 
                             })
                           ],
