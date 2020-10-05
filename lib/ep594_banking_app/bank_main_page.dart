@@ -9,6 +9,6 @@ class BankMainPage extends StatefulWidget {
 class _BankMainPageState extends State<BankMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
