@@ -23,6 +23,7 @@ class _BankMainPageState extends State<BankMainPage> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(24),
+                  topRight: Radius.circular(24),
                 ),
                   gradient: LinearGradient(colors: [
                 Colors.white.withOpacity(0.2),
