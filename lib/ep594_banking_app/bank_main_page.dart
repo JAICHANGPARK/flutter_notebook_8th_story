@@ -9,6 +9,13 @@ class BankMainPage extends StatefulWidget {
 class _BankMainPageState extends State<BankMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Column(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
