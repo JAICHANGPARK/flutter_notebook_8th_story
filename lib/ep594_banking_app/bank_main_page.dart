@@ -76,6 +76,16 @@ class _BankMainPageState extends State<BankMainPage> {
                                     bottomLeft: Radius.circular(16),
                                   ),
                                 ),
+                              ),
+                              Container(
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(16),
+                                    bottomLeft: Radius.circular(16),
+                                  )
+                                ),
                               )
                             ],
                           ),
