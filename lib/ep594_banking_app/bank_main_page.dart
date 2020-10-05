@@ -63,7 +63,17 @@ class _BankMainPageState extends State<BankMainPage> {
                           height: 32,
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(0.3),
-                            borderRadius: BorderRadius.circular(24)
+                            borderRadius: BorderRadius.circular(24),
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 64,
+                                decoration: BoxDecoration(
+                                  color: Colors.pink,
+                                ),
+                              )
+                            ],
                           ),
                         )
                       ],
