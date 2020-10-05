@@ -31,6 +31,11 @@ class _BankMainPageState extends State<BankMainPage> {
                   end: Alignment.bottomCenter
                 )
               ),
+              child: ListView(
+                children: [
+
+                ],
+              ),
             ),
           )
 
@@ -39,3 +44,17 @@ class _BankMainPageState extends State<BankMainPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
