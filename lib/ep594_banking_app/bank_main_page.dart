@@ -14,7 +14,7 @@ class _BankMainPageState extends State<BankMainPage> {
       body: Stack(
         children: [
           Positioned(
-            top: 32,
+            top: 48,
             left: 0,
             right: 0,
             bottom: 0,
@@ -22,11 +22,13 @@ class _BankMainPageState extends State<BankMainPage> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
+                    Colors.grey,
                     Colors.black.withOpacity(0.1),
                     Colors.black.withOpacity(0.5),
                     Colors.black
                   ],
-                  begin: 
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter
                 )
               ),
             ),
