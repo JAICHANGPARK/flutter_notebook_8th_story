@@ -22,7 +22,7 @@ class _BankMainPageState extends State<BankMainPage> {
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Colors.grey,
+                    Colors.white.withOpacity(0.2),
                     Colors.black.withOpacity(0.1),
                     Colors.black.withOpacity(0.5),
                     Colors.black
