@@ -11,7 +11,7 @@ class _BankMainPageState extends State<BankMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
+      body: Stack(
         children: [
           
         ],
