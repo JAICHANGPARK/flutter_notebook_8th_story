@@ -121,17 +121,25 @@ class _BankMainPageState extends State<BankMainPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Netflix Standard",style: GoogleFonts.montserrat(
-                                    color: Colors.white,
-                                    fontSize: 18,
-                                  ),),
-                                  Text("Monthly payment", style: GoogleFonts.montserrat(
-                                    color: Colors.white.withOpacity(.2)
-                                  ),)
+                                  Text(
+                                    "Netflix Standard",
+                                    style: GoogleFonts.montserrat(
+                                      color: Colors.white,
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                  Text(
+                                    "Monthly payment",
+                                    style: GoogleFonts.montserrat(color: Colors.white.withOpacity(.2)),
+                                  )
                                 ],
                               ),
                             ),
-                            Text("")
+                            Spacer(),
+                            Text(
+                              "- \$ 12.99",
+                              style: GoogleFonts.montserrat(color: Colors.white, fontSize: 24),
+                            )
                           ],
                         )
                       ],
