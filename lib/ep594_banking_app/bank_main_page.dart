@@ -130,7 +130,8 @@ class _BankMainPageState extends State<BankMainPage> {
                                   ),)
                                 ],
                               ),
-                            )
+                            ),
+                            Text("")
                           ],
                         )
                       ],
