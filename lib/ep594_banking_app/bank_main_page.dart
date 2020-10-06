@@ -113,6 +113,7 @@ class _BankMainPageState extends State<BankMainPage> {
                           children: [
                             CircleAvatar(),
                             Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text("Netflix Standard",style: GoogleFonts.montserrat(
                                   color: Colors.white,
