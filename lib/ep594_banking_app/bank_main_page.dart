@@ -118,7 +118,9 @@ class _BankMainPageState extends State<BankMainPage> {
                                   color: Colors.white,
                                   fontSize: 18,
                                 ),),
-                                Text("Monthly payment")
+                                Text("Monthly payment", style: GoogleFonts.montserrat(
+                                  color: Colors.white.withOpacity(.2)
+                                ),)
                               ],
                             )
                           ],
