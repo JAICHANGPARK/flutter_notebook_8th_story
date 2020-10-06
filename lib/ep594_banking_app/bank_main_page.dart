@@ -254,7 +254,14 @@ class _BankMainPageState extends State<BankMainPage> {
                               )
                             ],
                           ),
-                        )
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 32),
+                          child: Text(
+                            "Monday",
+                            style: TextStyle(color: Colors.white.withOpacity(0.2)),
+                          ),
+                        ),
                       ],
                     ),
                   ),
