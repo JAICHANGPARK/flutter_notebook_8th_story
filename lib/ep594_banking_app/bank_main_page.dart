@@ -119,6 +119,7 @@ class _BankMainPageState extends State<BankMainPage> {
                             Padding(
                               padding: const EdgeInsets.only(left: 16),
                               child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
@@ -130,7 +131,7 @@ class _BankMainPageState extends State<BankMainPage> {
                                   ),
                                   Text(
                                     "Monthly payment",
-                                    style: GoogleFonts.montserrat(color: Colors.white.withOpacity(.2)),
+                                    style: GoogleFonts.montserrat(color: Colors.white.withOpacity(.5)),
                                   )
                                 ],
                               ),
