@@ -99,15 +99,16 @@ class _BankMainPageState extends State<BankMainPage> {
                                 width: 16,
                                 decoration: BoxDecoration(
                                   color: Colors.indigo,
-
                                 ),
                               )
                             ],
                           ),
-                        )
+                        ),
+                        Text("Today", style: TextStyle(),)
                       ],
                     ),
-                  )
+                  ),
+
                 ],
               ),
             ),
