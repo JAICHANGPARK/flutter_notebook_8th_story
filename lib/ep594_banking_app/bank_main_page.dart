@@ -261,7 +261,8 @@ class _BankMainPageState extends State<BankMainPage> {
                             "Monday",
                             style: TextStyle(color: Colors.white.withOpacity(0.2)),
                           ),
-                        ), Padding(
+                        ),
+                        Padding(
                           padding: const EdgeInsets.symmetric(vertical: 16),
                           child: Row(
                             children: [
