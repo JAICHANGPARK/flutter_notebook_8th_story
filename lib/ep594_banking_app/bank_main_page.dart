@@ -115,6 +115,7 @@ class _BankMainPageState extends State<BankMainPage> {
                           children: [
                             CircleAvatar(
                               radius: 24,
+                              backgroundColor: Colors.white.withOpacity(0.5),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 16),
