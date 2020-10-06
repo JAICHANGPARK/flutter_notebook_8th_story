@@ -114,7 +114,10 @@ class _BankMainPageState extends State<BankMainPage> {
                             CircleAvatar(),
                             Column(
                               children: [
-                                Text("Netflix Standard"),
+                                Text("Netflix Standard",style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                ),),
                                 Text("Monthly payment")
                               ],
                             )
