@@ -114,7 +114,8 @@ class _BankMainPageState extends State<BankMainPage> {
                             CircleAvatar(),
                             Column(
                               children: [
-                                
+                                Text("Netflix Standard"),
+                                Text("Monthly payment")
                               ],
                             )
                           ],
