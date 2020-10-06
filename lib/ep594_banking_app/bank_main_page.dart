@@ -138,7 +138,7 @@ class _BankMainPageState extends State<BankMainPage> {
                             Spacer(),
                             Text(
                               "- \$ 12.99",
-                              style: GoogleFonts.montserrat(color: Colors.white, fontSize: 24),
+                              style: GoogleFonts.montserrat(color: Colors.white, fontSize: 20),
                             )
                           ],
                         )
