@@ -109,20 +109,26 @@ class _BankMainPageState extends State<BankMainPage> {
                           "Today",
                           style: TextStyle(color: Colors.white.withOpacity(0.2)),
                         ),
+                        SizedBox(height: 32,),
                         Row(
                           children: [
-                            CircleAvatar(),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Netflix Standard",style: GoogleFonts.montserrat(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                ),),
-                                Text("Monthly payment", style: GoogleFonts.montserrat(
-                                  color: Colors.white.withOpacity(.2)
-                                ),)
-                              ],
+                            CircleAvatar(
+                              radius: 24,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Netflix Standard",style: GoogleFonts.montserrat(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                  ),),
+                                  Text("Monthly payment", style: GoogleFonts.montserrat(
+                                    color: Colors.white.withOpacity(.2)
+                                  ),)
+                                ],
+                              ),
                             )
                           ],
                         )
