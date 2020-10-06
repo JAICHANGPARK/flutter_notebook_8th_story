@@ -104,7 +104,9 @@ class _BankMainPageState extends State<BankMainPage> {
                             ],
                           ),
                         ),
-                        Text("Today", style: TextStyle(),)
+                        Text("Today", style: TextStyle(
+                          color: Colors.white.withOpacity(0.2)
+                        ),)
                       ],
                     ),
                   ),
