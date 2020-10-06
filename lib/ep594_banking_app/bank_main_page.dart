@@ -19,18 +19,17 @@ class _BankMainPageState extends State<BankMainPage> {
             right: 0,
             bottom: 0,
             child: Container(
-              
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(24),
-                  topRight: Radius.circular(24),
-                ),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(24),
+                    topRight: Radius.circular(24),
+                  ),
                   gradient: LinearGradient(colors: [
-                Colors.white.withOpacity(0.2),
-                Colors.black.withOpacity(0.1),
-                Colors.black.withOpacity(0.5),
-                Colors.black
-              ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+                    Colors.white.withOpacity(0.2),
+                    Colors.black.withOpacity(0.1),
+                    Colors.black.withOpacity(0.5),
+                    Colors.black
+                  ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: [
@@ -43,7 +42,6 @@ class _BankMainPageState extends State<BankMainPage> {
                       ),
                     ),
                   ),
-
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
                     child: Column(
@@ -52,19 +50,21 @@ class _BankMainPageState extends State<BankMainPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("Spendings report", style: GoogleFonts.montserrat(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24
-                            ),),
-                            IconButton(icon: Icon(Icons.keyboard_arrow_right),
+                            Text(
+                              "Spendings report",
+                              style: GoogleFonts.montserrat(
+                                  color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
+                            ),
+                            IconButton(
+                                icon: Icon(Icons.keyboard_arrow_right),
                                 color: Colors.white,
                                 iconSize: 32,
-                                onPressed: (){
-                            }),
+                                onPressed: () {}),
                           ],
                         ),
-                        SizedBox(height: 16,),
+                        SizedBox(
+                          height: 16,
+                        ),
                         Container(
                           height: 32,
                           decoration: BoxDecoration(
@@ -87,7 +87,6 @@ class _BankMainPageState extends State<BankMainPage> {
                                 width: 100,
                                 decoration: BoxDecoration(
                                   color: Colors.yellow,
-
                                 ),
                               ),
                               Container(
@@ -105,13 +104,14 @@ class _BankMainPageState extends State<BankMainPage> {
                             ],
                           ),
                         ),
-                        Text("Today", style: TextStyle(
-                          color: Colors.white.withOpacity(0.2)
-                        ),)
+                        SizedBox(height: 32,),
+                        Text(
+                          "Today",
+                          style: TextStyle(color: Colors.white.withOpacity(0.2)),
+                        )
                       ],
                     ),
                   ),
-
                 ],
               ),
             ),
