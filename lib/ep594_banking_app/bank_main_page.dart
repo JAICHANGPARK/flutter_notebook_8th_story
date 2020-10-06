@@ -111,38 +111,41 @@ class _BankMainPageState extends State<BankMainPage> {
                             style: TextStyle(color: Colors.white.withOpacity(0.2)),
                           ),
                         ),
-                        Row(
-                          children: [
-                            CircleAvatar(
-                              radius: 24,
-                              backgroundColor: Colors.white.withOpacity(0.5),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 16),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Netflix Standard",
-                                    style: GoogleFonts.montserrat(
-                                      color: Colors.white,
-                                      fontSize: 18,
-                                    ),
-                                  ),
-                                  Text(
-                                    "Monthly payment",
-                                    style: GoogleFonts.montserrat(color: Colors.white.withOpacity(.5)),
-                                  )
-                                ],
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                radius: 24,
+                                backgroundColor: Colors.white.withOpacity(0.5),
                               ),
-                            ),
-                            Spacer(),
-                            Text(
-                              "- \$ 12.99",
-                              style: GoogleFonts.montserrat(color: Colors.white, fontSize: 20),
-                            )
-                          ],
+                              Padding(
+                                padding: const EdgeInsets.only(left: 16),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Netflix Standard",
+                                      style: GoogleFonts.montserrat(
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    Text(
+                                      "Monthly payment",
+                                      style: GoogleFonts.montserrat(color: Colors.white.withOpacity(.5)),
+                                    )
+                                  ],
+                                ),
+                              ),
+                              Spacer(),
+                              Text(
+                                "- \$ 12.99",
+                                style: GoogleFonts.montserrat(color: Colors.white, fontSize: 20),
+                              )
+                            ],
+                          ),
                         ),
 
                         Padding(
