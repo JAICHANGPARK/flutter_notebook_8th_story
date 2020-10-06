@@ -105,9 +105,12 @@ class _BankMainPageState extends State<BankMainPage> {
                           ),
                         ),
                         SizedBox(height: 32,),
-                        Text(
-                          "Today",
-                          style: TextStyle(color: Colors.white.withOpacity(0.2)),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 32),
+                          child: Text(
+                            "Today",
+                            style: TextStyle(color: Colors.white.withOpacity(0.2)),
+                          ),
                         ),
                         SizedBox(height: 32,),
                         Row(
