@@ -104,7 +104,6 @@ class _BankMainPageState extends State<BankMainPage> {
                             ],
                           ),
                         ),
-                        SizedBox(height: 32,),
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 32),
                           child: Text(
@@ -112,7 +111,6 @@ class _BankMainPageState extends State<BankMainPage> {
                             style: TextStyle(color: Colors.white.withOpacity(0.2)),
                           ),
                         ),
-                        SizedBox(height: 32,),
                         Row(
                           children: [
                             CircleAvatar(
