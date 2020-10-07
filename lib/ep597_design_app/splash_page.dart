@@ -37,8 +37,11 @@ class SplashPage extends StatelessWidget {
                 ),
                 MaterialButton(
                   onPressed: (){},
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(24)
+                  ),
                   height: 48,
-                  minWidth: 320,
+                  minWidth: 240,
                   color: Colors.white,
                   child: Text("START EXPLORING"),
                 ),
