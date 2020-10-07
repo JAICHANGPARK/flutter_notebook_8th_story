@@ -20,9 +20,12 @@ class SplashPage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          Image.network(
-            "https://s3.amazonaws.com/designco-web-assets/uploads/2017/07/Podcast-large_2x-1450x1112.png",
-            fit: BoxFit.cover,
+          Positioned(
+            
+            child: Image.network(
+              "https://s3.amazonaws.com/designco-web-assets/uploads/2017/07/Podcast-large_2x-1450x1112.png",
+              fit: BoxFit.cover,
+            ),
           )
         ],
       ),
