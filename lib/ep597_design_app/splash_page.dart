@@ -33,7 +33,10 @@ class SplashPage extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24),
-                  child: Text("Discover. Learn. Elevate."),
+                  child: Text("Discover. Learn. Elevate.", style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24
+                  ),),
                 ),
                 MaterialButton(
                   onPressed: (){},
