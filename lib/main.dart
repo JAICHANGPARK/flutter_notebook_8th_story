@@ -4,6 +4,7 @@ import 'package:flutter_notebook_8th_story/ep570_riverpod_app/todo/model/todos.d
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'ep588_social_app/social_app.dart';
 import 'ep594_banking_app/banking_app.dart';
+import 'ep597_design_app/design_app.dart';
 
 enum TodoListFilter{
   all,
@@ -73,7 +74,7 @@ final filteredTodos = Provider((ref) {
 });
 
 void main() {
-  runApp(BankingApp());
+  runApp(DesignApp());
 }
 
 
