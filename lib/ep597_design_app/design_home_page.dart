@@ -9,6 +9,19 @@ class DesignHomePage extends StatefulWidget {
 class _DesignHomePageState extends State<DesignHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      children: [
+        Container(
+          height: 84,
+          width: 84,
+          decoration: BoxDecoration(
+            color: Colors.white,
+
+          ),
+          child: Text("Place Logo"),
+
+        )
+      ],
+    );
   }
 }
