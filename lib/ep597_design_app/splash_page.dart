@@ -46,12 +46,17 @@ class SplashPage extends StatelessWidget {
                   height: 48,
                   minWidth: 240,
                   color: Colors.white,
-                  child: Text("START EXPLORING"),
+                  child: Text("START EXPLORING", style: TextStyle(
+                    color: Colors.indigo,
+                    fontSize: 17
+                  ),),
                 ),
                 Spacer(),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24),
-                  child: Text("BY xxxxx"),
+                  child: Text("BY xxxxx", style: TextStyle(
+                    color: Colors.white
+                  ),),
                 ),
 
 
