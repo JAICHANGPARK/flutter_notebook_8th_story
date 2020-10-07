@@ -12,10 +12,12 @@ class DesignApp extends StatelessWidget {
   }
 }
 
-class  extends StatelessWidget {
+class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+
+    );
   }
 }
 
