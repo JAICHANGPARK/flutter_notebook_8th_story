@@ -29,7 +29,7 @@ class SplashPage extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
-                  child: Text("Place Logo"),
+                  child: Center(child: Text("Place Logo")),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24),
