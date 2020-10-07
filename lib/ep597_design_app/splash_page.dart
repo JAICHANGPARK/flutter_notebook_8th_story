@@ -35,14 +35,15 @@ class SplashPage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 24),
                   child: Text("Discover. Learn. Elevate.", style: TextStyle(
                     color: Colors.white,
-                    fontSize: 24
+                    fontSize: 24,
+                    letterSpacing: 1.5
                   ),),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: MaterialButton(
                     onPressed: (){
-
+                        Navigator.of(context).pushNamed("/home");
                     },
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(24)
