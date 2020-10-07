@@ -22,15 +22,21 @@ class SplashPage extends StatelessWidget {
             top: 0,
             child: Column(
               children: [
+                Spacer(),
                 Container(
                   height: 84,
                   width: 84,
                   decoration: BoxDecoration(
                     color: Colors.white,
-
                   ),
                   child: Text("Place Logo"),
-
+                ),
+                Text("Discover. Learn. Elevate."),
+                MaterialButton(
+                  height: 48,
+                  minWidth: 320,
+                  color: Colors.white,
+                  child: Text("START EXPLORING"),
                 )
               ],
             ),
