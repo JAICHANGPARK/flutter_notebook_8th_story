@@ -33,6 +33,7 @@ class SplashPage extends StatelessWidget {
                 ),
                 Text("Discover. Learn. Elevate."),
                 MaterialButton(
+                  onPressed: (){},
                   height: 48,
                   minWidth: 320,
                   color: Colors.white,
