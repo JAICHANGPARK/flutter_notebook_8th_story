@@ -5,8 +5,8 @@ class DesignApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        
         "/" : (context) => SplashPage(),
+        "/home" : (context) => DesignHomePage(),
       },
     );
   }
