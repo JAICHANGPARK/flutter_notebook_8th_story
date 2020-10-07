@@ -31,14 +31,24 @@ class SplashPage extends StatelessWidget {
                   ),
                   child: Text("Place Logo"),
                 ),
-                Text("Discover. Learn. Elevate."),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24),
+                  child: Text("Discover. Learn. Elevate."),
+                ),
                 MaterialButton(
                   onPressed: (){},
                   height: 48,
                   minWidth: 320,
                   color: Colors.white,
                   child: Text("START EXPLORING"),
-                )
+                ),
+                Spacer(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24),
+                  child: Text("BY xxxxx"),
+                ),
+
+
               ],
             ),
           )
