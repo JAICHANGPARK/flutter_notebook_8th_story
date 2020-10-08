@@ -38,6 +38,25 @@ class _DesignHomePageState extends State<DesignHomePage> {
               ),
             ),
           ),
+          Positioned(
+            left: 0,
+            right: 0,
+            top: 160,
+            child: Hero(
+
+              tag: "logoText",
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 24),
+                child: Center(
+                  child: Text("Discover. Learn. Elevate.", style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      letterSpacing: 1.5
+                  ),),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
