@@ -47,13 +47,16 @@ class SplashPage extends StatelessWidget {
                     child: Center(child: Text("Place Logo",style: TextStyle(),)),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 24),
-                  child: Text("Discover. Learn. Elevate.", style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    letterSpacing: 1.5
-                  ),),
+                Hero(
+                  tag: "logoText",
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 24),
+                    child: Text("Discover. Learn. Elevate.", style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      letterSpacing: 1.5
+                    ),),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
