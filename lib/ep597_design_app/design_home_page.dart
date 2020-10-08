@@ -86,13 +86,24 @@ class _DesignHomePageState extends State<DesignHomePage> {
                 topLeft: Radius.circular(24),
                 topRight: Radius.circular(24),
               )),
-              child: Column(
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: Placeholder(),
-                  )
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16, top: 16),
+                child: Column(
+                  children: [
+                    Expanded(
+                      flex: 1,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Placeholder(),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Placeholder(),
+                    )
+                  ],
+                ),
               ),
             ),
           )
