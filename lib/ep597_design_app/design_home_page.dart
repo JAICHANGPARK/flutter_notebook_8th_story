@@ -34,7 +34,7 @@ class _DesignHomePageState extends State<DesignHomePage> {
                 height: 84,
                 width: 84,
                 decoration: BoxDecoration(color: Colors.white),
-                child: Center(child: Text("Place Logo")),
+                child: Center(child: Text("Place Logo",style: TextStyle(),)),
               ),
             ),
           ),
