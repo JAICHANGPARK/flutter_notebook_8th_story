@@ -23,13 +23,16 @@ class SplashPage extends StatelessWidget {
             child: Column(
               children: [
                 Spacer(),
-                Container(
-                  height: 84,
-                  width: 84,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
+                Hero(
+                  tag: "logo",
+                  child: Container(
+                    height: 84,
+                    width: 84,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: Center(child: Text("Place Logo")),
                   ),
-                  child: Center(child: Text("Place Logo")),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24),
