@@ -11,7 +11,6 @@ class _DesignHomePageState extends State<DesignHomePage> {
     return Scaffold(
       body: Stack(
         children: [
-
           Positioned(
             left: 0,
             right: 0,
@@ -22,19 +21,19 @@ class _DesignHomePageState extends State<DesignHomePage> {
                   image: DecorationImage(
                       image: NetworkImage(
                           "https://s3.amazonaws.com/designco-web-assets/uploads/2017/07/Podcast-large_2x-1450x1112.png"),
-                  fit: BoxFit.cover)),
+                      fit: BoxFit.cover)),
             ),
           ),
           Positioned(
             top: 64,
-            child:  Hero(
+            left: 150,
+            right: 150,
+            child: Hero(
               tag: "logo",
               child: Container(
                 height: 84,
                 width: 84,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                ),
+                decoration: BoxDecoration(color: Colors.white),
                 child: Center(child: Text("Place Logo")),
               ),
             ),
