@@ -6,8 +6,21 @@ class DesignHomePage extends StatefulWidget {
 }
 
 class _DesignHomePageState extends State<DesignHomePage> {
+
+  double _topHeight = 0;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    setState(() {
+      _topHeight =  263.3766233766234;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    print(MediaQuery.of(context).size.height / 2.8);
     return Scaffold(
       body: Stack(
         children: [
