@@ -13,6 +13,21 @@ class _DesignHomePageState extends State<DesignHomePage> {
         children: [
           Positioned(
             left: 0,
+            top: 64,
+            child:  Hero(
+              tag: "logo",
+              child: Container(
+                height: 84,
+                width: 84,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Center(child: Text("Place Logo")),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 0,
             right: 0,
             bottom: 0,
             top: 0,
