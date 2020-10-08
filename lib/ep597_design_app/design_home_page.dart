@@ -11,7 +11,15 @@ class _DesignHomePageState extends State<DesignHomePage> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-
+        Positioned(
+          left: 0,
+          right: 0,
+          bottom: 0,
+          top: 0,
+          child:  Container(
+            decoration: BoxDecoration(),
+          ),
+        )
       ],
     );
   }
