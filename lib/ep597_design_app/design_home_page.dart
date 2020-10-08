@@ -13,9 +13,9 @@ class _DesignHomePageState extends State<DesignHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(milliseconds: 200),(){
+    Future.delayed(Duration(milliseconds: 100),(){
       setState(() {
-        _topHeight =  263.3766233766234;
+        _topHeight =  250.3766233766234;
       });
 
     });
@@ -75,14 +75,25 @@ class _DesignHomePageState extends State<DesignHomePage> {
           ),
           AnimatedPositioned(
 
-            duration: Duration(milliseconds: 300),
+            duration: Duration(milliseconds: 150),
             bottom: 0,
             left: 0,
             right: 0,
             top:  _topHeight,
             child: Container(
-              decoration: BoxDecoration(color: Colors.white),
-
+              decoration: BoxDecoration(color: Colors.white,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(24),
+                topRight: Radius.circular(24),
+              )),
+              child: Column(
+                children: [
+                  Expanded(
+                    flex: 1,
+                    child: Placeholder(),
+                  )
+                ],
+              ),
             ),
           )
 
