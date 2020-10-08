@@ -63,9 +63,10 @@ class _DesignHomePageState extends State<DesignHomePage> {
             bottom: 0,
             left: 0,
             right: 0,
-            top: MediaQuery.of(context).size.height / 2,
+            top: MediaQuery.of(context).size.height / 2.8,
             child: Container(
               decoration: BoxDecoration(color: Colors.white),
+
             ),
           )
 
