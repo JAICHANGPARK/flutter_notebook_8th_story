@@ -9,7 +9,7 @@ class DesignHomePage extends StatefulWidget {
 class _DesignHomePageState extends State<DesignHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Stack(
       children: [
 
       ],
