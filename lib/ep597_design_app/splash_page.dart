@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+
 class SplashPage extends StatelessWidget {
   Widget _flightShuttleBuilder(
-      BuildContext flightContext,
-      Animation<double> animation,
-      HeroFlightDirection flightDirection,
-      BuildContext fromHeroContext,
-      BuildContext toHeroContext,
-      ) {
+    BuildContext flightContext,
+    Animation<double> animation,
+    HeroFlightDirection flightDirection,
+    BuildContext fromHeroContext,
+    BuildContext toHeroContext,
+  ) {
     return DefaultTextStyle(
       style: DefaultTextStyle.of(toHeroContext).style,
       child: toHeroContext.widget,
     );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,47 +46,48 @@ class SplashPage extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.white,
                     ),
-                    child: Center(child: Text("Place Logo",style: TextStyle(),)),
+                    child: Center(
+                        child: Text(
+                      "Place Logo",
+                      style: TextStyle(),
+                    )),
                   ),
                 ),
                 Hero(
                   tag: "logoText",
+                  flightShuttleBuilder: _flightShuttleBuilder,
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 24),
-                    child: Text("Discover. Learn. Elevate.", style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      letterSpacing: 1.5
-                    ),),
+                    child: Text(
+                      "Discover. Learn. Elevate.",
+                      style: TextStyle(color: Colors.white, fontSize: 24, letterSpacing: 1.5),
+                    ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: MaterialButton(
-                    onPressed: (){
-                        Navigator.of(context).pushNamed("/home");
+                    onPressed: () {
+                      Navigator.of(context).pushNamed("/home");
                     },
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(24)
-                    ),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
                     height: 48,
                     minWidth: 240,
                     color: Colors.white,
-                    child: Text("START EXPLORING", style: TextStyle(
-                      color: Colors.indigo,
-                      fontSize: 17
-                    ),),
+                    child: Text(
+                      "START EXPLORING",
+                      style: TextStyle(color: Colors.indigo, fontSize: 17),
+                    ),
                   ),
                 ),
                 Spacer(),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 24),
-                  child: Text("BY xxxxx", style: TextStyle(
-                    color: Colors.white
-                  ),),
+                  child: Text(
+                    "BY xxxxx",
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
-
-
               ],
             ),
           )
