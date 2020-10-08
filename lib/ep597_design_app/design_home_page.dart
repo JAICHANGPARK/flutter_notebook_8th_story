@@ -7,13 +7,13 @@ class DesignHomePage extends StatefulWidget {
 
 class _DesignHomePageState extends State<DesignHomePage> {
 
-  double _topHeight = 600;
+  double _topHeight = 840;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(milliseconds: 300),(){
+    Future.delayed(Duration(milliseconds: 200),(){
       setState(() {
         _topHeight =  263.3766233766234;
       });
@@ -75,7 +75,7 @@ class _DesignHomePageState extends State<DesignHomePage> {
           ),
           AnimatedPositioned(
 
-            duration: Duration(seconds: 1),
+            duration: Duration(milliseconds: 300),
             bottom: 0,
             left: 0,
             right: 0,
