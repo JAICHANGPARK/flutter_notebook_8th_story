@@ -91,15 +91,17 @@ class _DesignHomePageState extends State<DesignHomePage> {
                 child: Column(
                   children: [
                     Expanded(
-                      flex: 1,
+                      flex: 3,
+                      child: TabBar(
+                        tabs: [],
+                      ),
+                    ),
+                    Expanded(
+                      flex: 20,
                       child: Placeholder(),
                     ),
                     Expanded(
-                      flex: 1,
-                      child: Placeholder(),
-                    ),
-                    Expanded(
-                      flex: 1,
+                      flex: 2,
                       child: Placeholder(),
                     )
                   ],
