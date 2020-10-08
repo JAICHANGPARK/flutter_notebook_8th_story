@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 class SplashPage extends StatelessWidget {
+  Widget _flightShuttleBuilder(
+      BuildContext flightContext,
+      Animation<double> animation,
+      HeroFlightDirection flightDirection,
+      BuildContext fromHeroContext,
+      BuildContext toHeroContext,
+      ) {
+    return DefaultTextStyle(
+      style: DefaultTextStyle.of(toHeroContext).style,
+      child: toHeroContext.widget,
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,13 +37,14 @@ class SplashPage extends StatelessWidget {
                 Spacer(),
                 Hero(
                   tag: "logo",
+                  flightShuttleBuilder: _flightShuttleBuilder,
                   child: Container(
                     height: 84,
                     width: 84,
                     decoration: BoxDecoration(
                       color: Colors.white,
                     ),
-                    child: Center(child: Text("Place Logo")),
+                    child: Center(child: Text("Place Logo",style: TextStyle(),)),
                   ),
                 ),
                 Padding(
