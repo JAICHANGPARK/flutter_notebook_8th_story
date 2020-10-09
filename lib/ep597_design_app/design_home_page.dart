@@ -157,16 +157,19 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                           children: [
                                             Expanded(
                                               flex: 3,
-                                              child: Container(
-                                                decoration: BoxDecoration(
-                                                  borderRadius: BorderRadius.only(
-                                                    topRight: Radius.circular(16),
-                                                    topLeft: Radius.circular(16),
-                                                  ),
-                                                  image: DecorationImage(
-                                                    image: NetworkImage(
-                                                        "https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
-                                                    fit: BoxFit.cover,
+                                              child: Hero(
+                                                tag: "id_img",
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    borderRadius: BorderRadius.only(
+                                                      topRight: Radius.circular(16),
+                                                      topLeft: Radius.circular(16),
+                                                    ),
+                                                    image: DecorationImage(
+                                                      image: NetworkImage(
+                                                          "https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
+                                                      fit: BoxFit.cover,
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -189,13 +192,9 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                                       shape: RoundedRectangleBorder(
                                                           borderRadius: BorderRadius.circular(24)),
                                                       onPressed: () {
-                                                        Navigator.of(context).push(
-                                                          MaterialPageRoute(
-                                                            builder: (context) => DesignBookDetailPage(),
-                                                          )
-                                                        );
-
-
+                                                        Navigator.of(context).push(MaterialPageRoute(
+                                                          builder: (context) => DesignBookDetailPage(),
+                                                        ));
                                                       },
                                                       color: Colors.indigo,
                                                       child: Text(
