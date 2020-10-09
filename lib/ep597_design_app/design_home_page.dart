@@ -92,7 +92,8 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
               child: Padding(
                 padding: const EdgeInsets.only(left: 16, top: 16),
                 child: Container(
-                  child: Column( crossAxisAlignment: CrossAxisAlignment.start,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
                         flex: 3,
@@ -148,9 +149,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                       width: 320,
                                       child: Card(
                                         elevation: 4,
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(16)
-                                        ),
+                                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                                         child: Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
@@ -164,8 +163,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                                   ),
                                                   image: DecorationImage(
                                                     image: NetworkImage(
-                                                      "https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"
-                                                    ),
+                                                        "https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -177,28 +175,30 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                                 padding: const EdgeInsets.all(16.0),
                                                 child: Column(
                                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                   children: [
-                                                    Text("Principles\nof Product\nDesign",style: TextStyle(
-                                                      fontSize: 32,
-                                                      fontWeight: FontWeight.w600,
-                                                      letterSpacing: 2
-                                                    ),),
+                                                    Text(
+                                                      "Principles\nof Product\nDesign",
+                                                      style: TextStyle(
+                                                          fontSize: 32, fontWeight: FontWeight.w600, letterSpacing: 2),
+                                                    ),
                                                     Text("By Dreamwalker"),
                                                     MaterialButton(
                                                       shape: RoundedRectangleBorder(
-                                                        borderRadius: BorderRadius.circular(24)
-                                                      ),
-                                                    onPressed: (){},
+                                                          borderRadius: BorderRadius.circular(24)),
+                                                      onPressed: () {},
                                                       color: Colors.indigo,
-                                                    child: Text("READ BOOK",style: TextStyle(
-                                                      color: Colors.white,
-                                                      
-                                                    ),),)
+                                                      child: Text(
+                                                        "READ BOOK",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                    )
                                                   ],
                                                 ),
                                               ),
                                             ),
-
                                           ],
                                         ),
                                       ),
@@ -210,16 +210,122 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                       width: 320,
                                       child: Card(
                                         elevation: 4,
+                                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                                         child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Expanded(
-                                              child: Placeholder(),
-                                            )
+                                              flex: 3,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius.only(
+                                                    topRight: Radius.circular(16),
+                                                    topLeft: Radius.circular(16),
+                                                  ),
+                                                  image: DecorationImage(
+                                                    image: NetworkImage(
+                                                        "https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              flex: 4,
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(16.0),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                  children: [
+                                                    Text(
+                                                      "Principles\nof Product\nDesign",
+                                                      style: TextStyle(
+                                                          fontSize: 32, fontWeight: FontWeight.w600, letterSpacing: 2),
+                                                    ),
+                                                    Text("By Dreamwalker"),
+                                                    MaterialButton(
+                                                      shape: RoundedRectangleBorder(
+                                                          borderRadius: BorderRadius.circular(24)),
+                                                      onPressed: () {},
+                                                      color: Colors.indigo,
+                                                      child: Text(
+                                                        "READ BOOK",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
                                           ],
                                         ),
                                       ),
                                     ),
-                                  )
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                                    child: SizedBox(
+                                      width: 320,
+                                      child: Card(
+                                        elevation: 4,
+                                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Expanded(
+                                              flex: 3,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius.only(
+                                                    topRight: Radius.circular(16),
+                                                    topLeft: Radius.circular(16),
+                                                  ),
+                                                  image: DecorationImage(
+                                                    image: NetworkImage(
+                                                        "https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              flex: 4,
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(16.0),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                  children: [
+                                                    Text(
+                                                      "Principles\nof Product\nDesign",
+                                                      style: TextStyle(
+                                                          fontSize: 32, fontWeight: FontWeight.w600, letterSpacing: 2),
+                                                    ),
+                                                    Text("By Dreamwalker"),
+                                                    MaterialButton(
+                                                      shape: RoundedRectangleBorder(
+                                                          borderRadius: BorderRadius.circular(24)),
+                                                      onPressed: () {},
+                                                      color: Colors.indigo,
+                                                      child: Text(
+                                                        "READ BOOK",
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
