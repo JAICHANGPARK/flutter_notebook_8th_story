@@ -98,6 +98,9 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                       flex: 3,
                       child: TabBar(
                         controller: _tabController,
+                        onTap: (index){
+
+                        },
                         labelStyle: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -109,6 +112,7 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                         tabs: [
                          Tab(
                            text: "Books",
+                           // child: Text("Books"),
                          ),
                           Tab(
                             text: "Books",
