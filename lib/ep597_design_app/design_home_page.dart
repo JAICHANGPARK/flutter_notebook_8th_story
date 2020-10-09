@@ -120,14 +120,14 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                             isScrollable: false,
                             tabs: [
                              Tab(
-                               text: "Books",
+                               text: "BOOKS",
                                // child: Text("Books"),
                              ),
                               Tab(
-                                text: "Books",
+                                text: "PODCAST",
                               ),
                               Tab(
-                                text: "Books",
+                                text: "WORKSHOPS",
                               ),
                             ],
                           ),
