@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class DesignBookDetailPage extends StatefulWidget {
+  final String imgString;
+
+  DesignBookDetailPage(this.imgString);
+
   @override
   _DesignBookDetailPageState createState() => _DesignBookDetailPageState();
 }
