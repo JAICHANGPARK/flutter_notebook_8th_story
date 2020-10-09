@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'design_book_detail.dart';
+
 class DesignHomePage extends StatefulWidget {
   @override
   _DesignHomePageState createState() => _DesignHomePageState();
@@ -186,7 +188,15 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                                     MaterialButton(
                                                       shape: RoundedRectangleBorder(
                                                           borderRadius: BorderRadius.circular(24)),
-                                                      onPressed: () {},
+                                                      onPressed: () {
+                                                        Navigator.of(context).push(
+                                                          MaterialPageRoute(
+                                                            builder: (context) => DesignBookDetailPage(),
+                                                          )
+                                                        );
+
+
+                                                      },
                                                       color: Colors.indigo,
                                                       child: Text(
                                                         "READ BOOK",
