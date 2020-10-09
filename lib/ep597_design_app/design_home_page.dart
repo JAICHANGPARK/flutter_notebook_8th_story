@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class DesignHomePage extends StatefulWidget {
@@ -97,8 +98,24 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                       flex: 3,
                       child: TabBar(
                         controller: _tabController,
-                        tabs: [
+                        labelStyle: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        unselectedLabelStyle: TextStyle(
+                          color: Colors.grey,
                           
+                        ),
+                        tabs: [
+                         Tab(
+                           text: "Books",
+                         ),
+                          Tab(
+                            text: "Books",
+                          ),
+                          Tab(
+                            text: "Books",
+                          ),
                         ],
                       ),
                     ),
