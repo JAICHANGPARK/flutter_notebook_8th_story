@@ -172,14 +172,23 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                             ),
                                             Expanded(
                                               flex: 4,
-                                              child: Column(
-                                                children: [
-                                                  Text("Principles\nof Product\nDesign",style: TextStyle(
-                                                    fontSize: 32,
-                                                    fontWeight: FontWeight.w600,
-                                                    letterSpacing: 2
-                                                  ),)
-                                                ],
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(16.0),
+                                                child: Column(
+                                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                                  children: [
+                                                    Text("Principles\nof Product\nDesign",style: TextStyle(
+                                                      fontSize: 32,
+                                                      fontWeight: FontWeight.w600,
+                                                      letterSpacing: 2
+                                                    ),),
+                                                    Text("By Dreamwalker"),
+                                                    MaterialButton(
+                                                    onPressed: (){},
+                                                      color: Colors.indigo,
+                                                    child: Text("READ BOOK"),)
+                                                  ],
+                                                ),
                                               ),
                                             ),
 
