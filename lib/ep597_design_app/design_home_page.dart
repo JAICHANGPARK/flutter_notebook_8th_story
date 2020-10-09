@@ -6,10 +6,9 @@ class DesignHomePage extends StatefulWidget {
   _DesignHomePageState createState() => _DesignHomePageState();
 }
 
-class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProviderStateMixin{
+class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProviderStateMixin {
   double _topHeight = 840;
   TabController _tabController;
-
 
   @override
   void initState() {
@@ -93,7 +92,6 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
               child: Padding(
                 padding: const EdgeInsets.only(left: 16, top: 16),
                 child: Container(
-
                   child: Column(
                     children: [
                       Expanded(
@@ -102,9 +100,7 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                           padding: const EdgeInsets.only(bottom: 16),
                           child: TabBar(
                             controller: _tabController,
-                            onTap: (index){
-
-                            },
+                            onTap: (index) {},
                             indicatorWeight: 4,
                             indicatorColor: Colors.indigo,
                             indicatorSize: TabBarIndicatorSize.label,
@@ -120,10 +116,10 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                             ),
                             isScrollable: false,
                             tabs: [
-                             Tab(
-                               text: "BOOKS",
-                               // child: Text("Books"),
-                             ),
+                              Tab(
+                                text: "BOOKS",
+                                // child: Text("Books"),
+                              ),
                               Tab(
                                 text: "PODCAST",
                               ),
@@ -139,11 +135,9 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                         child: TabBarView(
                           controller: _tabController,
                           children: [
-                              ListView(
-                                children: [
-
-                                ],
-                              ),
+                            ListView(
+                              children: [],
+                            ),
                             ListView(),
                             ListView(),
                           ],
