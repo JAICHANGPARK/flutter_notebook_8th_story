@@ -42,7 +42,9 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
             left: 24,
             top: 32,
             child: IconButton(
-              onPressed: (){},
+              onPressed: (){
+                Navigator.of(context).pop();
+              },
               icon: Icon(Icons.arrow_back_ios),
             ),
           ),
@@ -51,3 +53,26 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
