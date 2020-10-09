@@ -85,53 +85,59 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
             top: _topHeight,
             child: Container(
               decoration: BoxDecoration(
-                  color: Colors.white,
+
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(24),
                     topRight: Radius.circular(24),
                   )),
               child: Padding(
                 padding: const EdgeInsets.only(left: 16, top: 16),
-                child: Column(
-                  children: [
-                    Expanded(
-                      flex: 3,
-                      child: TabBar(
-                        controller: _tabController,
-                        onTap: (index){
+                child: Container(
 
-                        },
-                        labelStyle: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        unselectedLabelStyle: TextStyle(
-                          color: Colors.grey,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        tabs: [
-                         Tab(
-                           text: "Books",
-                           // child: Text("Books"),
-                         ),
-                          Tab(
-                            text: "Books",
+                  child: Column(
+                    children: [
+                      Expanded(
+                        flex: 3,
+                        child: TabBar(
+                          controller: _tabController,
+                          onTap: (index){
+
+                          },
+                          labelColor: Colors.black,
+                          unselectedLabelColor: Colors.grey,
+                          labelStyle: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
                           ),
-                          Tab(
-                            text: "Books",
+                          unselectedLabelStyle: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
                           ),
-                        ],
+                          isScrollable: false,
+                          tabs: [
+                           Tab(
+                             text: "Books",
+                             // child: Text("Books"),
+                           ),
+                            Tab(
+                              text: "Books",
+                            ),
+                            Tab(
+                              text: "Books",
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      flex: 20,
-                      child: Placeholder(),
-                    ),
-                    Expanded(
-                      flex: 2,
-                      child: Placeholder(),
-                    )
-                  ],
+                      Expanded(
+                        flex: 20,
+                        child: Placeholder(),
+                      ),
+                      Expanded(
+                        flex: 2,
+                        child: Placeholder(),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
