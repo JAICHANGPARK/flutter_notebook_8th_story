@@ -98,34 +98,39 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                     children: [
                       Expanded(
                         flex: 3,
-                        child: TabBar(
-                          controller: _tabController,
-                          onTap: (index){
+                        child: Padding(
+                          padding: const EdgeInsets.only(bottom: 16),
+                          child: TabBar(
+                            controller: _tabController,
+                            onTap: (index){
 
-                          },
-                          labelColor: Colors.black,
-                          unselectedLabelColor: Colors.grey,
-                          labelStyle: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          unselectedLabelStyle: TextStyle(
-                            color: Colors.grey,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          isScrollable: false,
-                          tabs: [
-                           Tab(
-                             text: "Books",
-                             // child: Text("Books"),
-                           ),
-                            Tab(
-                              text: "Books",
+                            },
+                            indicatorWeight: 2,
+                            indicatorSize: TabBarIndicatorSize.label,
+                            labelColor: Colors.black,
+                            unselectedLabelColor: Colors.grey,
+                            labelStyle: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
                             ),
-                            Tab(
-                              text: "Books",
+                            unselectedLabelStyle: TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
                             ),
-                          ],
+                            isScrollable: false,
+                            tabs: [
+                             Tab(
+                               text: "Books",
+                               // child: Text("Books"),
+                             ),
+                              Tab(
+                                text: "Books",
+                              ),
+                              Tab(
+                                text: "Books",
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Expanded(
