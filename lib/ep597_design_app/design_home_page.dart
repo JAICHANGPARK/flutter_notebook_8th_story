@@ -193,7 +193,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                                           borderRadius: BorderRadius.circular(24)),
                                                       onPressed: () {
                                                         Navigator.of(context).push(MaterialPageRoute(
-                                                          builder: (context) => DesignBookDetailPage(),
+                                                          builder: (context) => DesignBookDetailPage("https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
                                                         ));
                                                       },
                                                       color: Colors.indigo,
