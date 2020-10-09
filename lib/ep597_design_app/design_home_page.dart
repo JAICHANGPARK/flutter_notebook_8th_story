@@ -151,8 +151,26 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                         child: Column(
                                           children: [
                                             Expanded(
+                                              flex: 3,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius.only(
+                                                    topRight: Radius.circular(16),
+                                                  ),
+                                                  image: DecorationImage(
+                                                    image: NetworkImage(
+                                                      "https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"
+                                                    ),
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              flex: 4,
                                               child: Placeholder(),
-                                            )
+                                            ),
+
                                           ],
                                         ),
                                       ),
