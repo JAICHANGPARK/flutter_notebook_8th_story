@@ -104,7 +104,7 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                         ),
                         unselectedLabelStyle: TextStyle(
                           color: Colors.grey,
-                          
+                          fontWeight: FontWeight.bold,
                         ),
                         tabs: [
                          Tab(
