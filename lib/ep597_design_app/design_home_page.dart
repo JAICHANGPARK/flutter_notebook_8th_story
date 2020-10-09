@@ -137,22 +137,45 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                         child: TabBarView(
                           controller: _tabController,
                           children: [
-                            ListView(
-                              scrollDirection: Axis.horizontal,
-                              children: [
-                                SizedBox(
-                                  width: 320,
-                                  child: Card(
-                                    child: Column(
-                                      children: [
-                                        Expanded(
-                                          child: Placeholder(),
-                                        )
-                                      ],
+                            Padding(
+                              padding: const EdgeInsets.only(left: 8),
+                              child: ListView(
+                                scrollDirection: Axis.horizontal,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                                    child: SizedBox(
+                                      width: 320,
+                                      child: Card(
+                                        elevation: 4,
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              child: Placeholder(),
+                                            )
+                                          ],
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                )
-                              ],
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                                    child: SizedBox(
+                                      width: 320,
+                                      child: Card(
+                                        elevation: 4,
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              child: Placeholder(),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                             ListView(),
                             ListView(),
