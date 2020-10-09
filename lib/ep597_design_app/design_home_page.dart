@@ -159,6 +159,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                                 decoration: BoxDecoration(
                                                   borderRadius: BorderRadius.only(
                                                     topRight: Radius.circular(16),
+                                                    topLeft: Radius.circular(16),
                                                   ),
                                                   image: DecorationImage(
                                                     image: NetworkImage(
