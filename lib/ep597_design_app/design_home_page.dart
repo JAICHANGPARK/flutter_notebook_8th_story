@@ -148,6 +148,9 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                       width: 320,
                                       child: Card(
                                         elevation: 4,
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(16)
+                                        ),
                                         child: Column(
                                           children: [
                                             Expanded(
