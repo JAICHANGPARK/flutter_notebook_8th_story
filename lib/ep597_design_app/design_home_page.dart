@@ -99,6 +99,8 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                         child: Padding(
                           padding: const EdgeInsets.only(bottom: 16),
                           child: TabBar(
+                            labelPadding: EdgeInsets.zero,
+                            indicatorPadding: EdgeInsets.zero,
                             controller: _tabController,
                             onTap: (index) {},
                             indicatorWeight: 4,
@@ -136,7 +138,21 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                           controller: _tabController,
                           children: [
                             ListView(
-                              children: [],
+                              scrollDirection: Axis.horizontal,
+                              children: [
+                                SizedBox(
+                                  width: 320,
+                                  child: Card(
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          child: Placeholder(),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
                             ),
                             ListView(),
                             ListView(),
