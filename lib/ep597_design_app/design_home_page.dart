@@ -105,7 +105,8 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                             onTap: (index){
 
                             },
-                            indicatorWeight: 2,
+                            indicatorWeight: 4,
+                            indicatorColor: Colors.indigo,
                             indicatorSize: TabBarIndicatorSize.label,
                             labelColor: Colors.black,
                             unselectedLabelColor: Colors.grey,
