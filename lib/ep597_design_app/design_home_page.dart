@@ -96,7 +96,10 @@ class _DesignHomePageState extends State<DesignHomePage>  with SingleTickerProvi
                     Expanded(
                       flex: 3,
                       child: TabBar(
-                        tabs: [],
+                        controller: _tabController,
+                        tabs: [
+                          
+                        ],
                       ),
                     ),
                     Expanded(
