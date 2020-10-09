@@ -6,18 +6,16 @@ class DesignHomePage extends StatefulWidget {
 }
 
 class _DesignHomePageState extends State<DesignHomePage> {
-
   double _topHeight = 840;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(milliseconds: 100),(){
+    Future.delayed(Duration(milliseconds: 100), () {
       setState(() {
-        _topHeight =  250.3766233766234;
+        _topHeight = 250.3766233766234;
       });
-
     });
   }
 
@@ -50,7 +48,11 @@ class _DesignHomePageState extends State<DesignHomePage> {
                 height: 84,
                 width: 84,
                 decoration: BoxDecoration(color: Colors.white),
-                child: Center(child: Text("Place Logo",style: TextStyle(),)),
+                child: Center(
+                    child: Text(
+                  "Place Logo",
+                  style: TextStyle(),
+                )),
               ),
             ),
           ),
@@ -59,33 +61,31 @@ class _DesignHomePageState extends State<DesignHomePage> {
             right: 0,
             top: 160,
             child: Hero(
-
               tag: "logoText",
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 24),
                 child: Center(
-                  child: Text("Discover. Learn. Elevate.", style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      letterSpacing: 1.5
-                  ),),
+                  child: Text(
+                    "Discover. Learn. Elevate.",
+                    style: TextStyle(color: Colors.white, fontSize: 24, letterSpacing: 1.5),
+                  ),
                 ),
               ),
             ),
           ),
           AnimatedPositioned(
-
             duration: Duration(milliseconds: 150),
             bottom: 0,
             left: 0,
             right: 0,
-            top:  _topHeight,
+            top: _topHeight,
             child: Container(
-              decoration: BoxDecoration(color: Colors.white,
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(24),
-                topRight: Radius.circular(24),
-              )),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(24),
+                    topRight: Radius.circular(24),
+                  )),
               child: Padding(
                 padding: const EdgeInsets.only(left: 16, top: 16),
                 child: Column(
@@ -109,7 +109,6 @@ class _DesignHomePageState extends State<DesignHomePage> {
               ),
             ),
           )
-
         ],
       ),
     );
