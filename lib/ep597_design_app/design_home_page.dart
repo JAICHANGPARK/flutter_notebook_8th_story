@@ -92,7 +92,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
               child: Padding(
                 padding: const EdgeInsets.only(left: 16, top: 16),
                 child: Container(
-                  child: Column(
+                  child: Column( crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
                         flex: 3,
@@ -152,6 +152,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                           borderRadius: BorderRadius.circular(16)
                                         ),
                                         child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Expanded(
                                               flex: 3,
@@ -184,9 +185,15 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                                     ),),
                                                     Text("By Dreamwalker"),
                                                     MaterialButton(
+                                                      shape: RoundedRectangleBorder(
+                                                        borderRadius: BorderRadius.circular(24)
+                                                      ),
                                                     onPressed: (){},
                                                       color: Colors.indigo,
-                                                    child: Text("READ BOOK"),)
+                                                    child: Text("READ BOOK",style: TextStyle(
+                                                      color: Colors.white,
+                                                      
+                                                    ),),)
                                                   ],
                                                 ),
                                               ),
