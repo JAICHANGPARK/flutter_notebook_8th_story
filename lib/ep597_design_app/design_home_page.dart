@@ -172,7 +172,15 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                             ),
                                             Expanded(
                                               flex: 4,
-                                              child: Placeholder(),
+                                              child: Column(
+                                                children: [
+                                                  Text("Principles\nof Product\nDesign",style: TextStyle(
+                                                    fontSize: 32,
+                                                    fontWeight: FontWeight.w600,
+                                                    letterSpacing: 2
+                                                  ),)
+                                                ],
+                                              ),
                                             ),
 
                                           ],
