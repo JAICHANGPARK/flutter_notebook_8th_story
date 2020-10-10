@@ -150,7 +150,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                 controller: _pageController,
                                 onPageChanged: (pIdx){
                                   setState(() {
-                                    
+                                    _pageIndex = pIdx;
                                   });
                                 },
                                 scrollDirection: Axis.horizontal,
