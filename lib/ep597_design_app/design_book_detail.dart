@@ -68,17 +68,24 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
             top: 320,
             left: 16,
             right: 16,
+            bottom: 0,
             child: ListView(
               children: [
-                Text(
-                  "DREAM WALKER PRESENTS",
-                  style: TextStyle(
-                    fontSize: 12,
+                Center(
+                  child: Text(
+                    "DREAM WALKER PRESENTS",
+                    style: TextStyle(
+                      fontSize: 12,
+                    ),
                   ),
                 ),
-                Text(
-                  "Principles of Product Design",
-                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.w600),
+                Center(
+                  child: Text(
+                    "Principles of Product Design",
+                    style: TextStyle(fontSize: 32, fontWeight: FontWeight.w600,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
