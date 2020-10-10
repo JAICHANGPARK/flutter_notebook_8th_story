@@ -50,17 +50,23 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
           ),
 
           Positioned(
-            left: 24,
-
-            top: 32,
-            child: IconButton(
-              onPressed: (){
-                Navigator.of(context).pop();
-              },
-              icon: Icon(Icons.arrow_back_ios),
+            top: 280,
+            left: 150,
+            right: 150,
+            child: Hero(
+              tag: "logo",
+              child: Container(
+                height: 84,
+                width: 84,
+                decoration: BoxDecoration(color: Colors.white),
+                child: Center(
+                    child: Text(
+                      "Place Logo",
+                      style: TextStyle(),
+                    )),
+              ),
             ),
           ),
-
         ],
       ),
     );
