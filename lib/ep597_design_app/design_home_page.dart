@@ -14,6 +14,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
   PageController _pageController;
 
   int _pageIndex = 0;
+
   @override
   void initState() {
     // TODO: implement initState
@@ -145,7 +146,13 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                           children: [
                             Padding(
                               padding: const EdgeInsets.only(left: 8),
-                              child: ListView(
+                              child: PageView(
+                                controller: _pageController,
+                                onPageChanged: (pIdx){
+                                  setState(() {
+                                    
+                                  });
+                                },
                                 scrollDirection: Axis.horizontal,
                                 children: [
                                   Padding(
@@ -196,7 +203,8 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                                           borderRadius: BorderRadius.circular(24)),
                                                       onPressed: () {
                                                         Navigator.of(context).push(MaterialPageRoute(
-                                                          builder: (context) => DesignBookDetailPage("https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
+                                                          builder: (context) => DesignBookDetailPage(
+                                                              "https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
                                                         ));
                                                       },
                                                       color: Colors.indigo,
