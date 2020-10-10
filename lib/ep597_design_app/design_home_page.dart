@@ -358,13 +358,14 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                         child: Padding(
                           padding: const EdgeInsets.only(left: 16),
                           child: Container(
+                            width: double.infinity,
                             margin: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                             decoration: BoxDecoration(
                               color: Colors.grey,
                               borderRadius: BorderRadius.circular(8)
                             ),
                             child: Container(
-                              width: 240,
+                              margin: EdgeInsets.only(right: 240),
                               decoration: BoxDecoration(
                                 color: Colors.indigo
                               ),
