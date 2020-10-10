@@ -111,7 +111,9 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
           CustomScrollView(
             slivers: [
               SliverAppBar(
+                pinned: true,
                 expandedHeight: 280,
+
                 flexibleSpace: FlexibleSpaceBar(
                   background:
                   Image.network("https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg",
