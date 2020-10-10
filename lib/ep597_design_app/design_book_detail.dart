@@ -48,6 +48,19 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
               icon: Icon(Icons.arrow_back_ios),
             ),
           ),
+
+          Positioned(
+            left: 24,
+            
+            top: 32,
+            child: IconButton(
+              onPressed: (){
+                Navigator.of(context).pop();
+              },
+              icon: Icon(Icons.arrow_back_ios),
+            ),
+          ),
+
         ],
       ),
     );
