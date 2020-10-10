@@ -11,11 +11,14 @@ class DesignHomePage extends StatefulWidget {
 class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProviderStateMixin {
   double _topHeight = 840;
   TabController _tabController;
+  PageController _pageController;
 
+  int _pageIndex = 0;
   @override
   void initState() {
     // TODO: implement initState
     _tabController = TabController(length: 3, vsync: this);
+    _pageController = PageController(initialPage: _pageIndex);
     super.initState();
     Future.delayed(Duration(milliseconds: 100), () {
       setState(() {
