@@ -107,7 +107,16 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
       //   ],
       // ),
       body: CustomScrollView(
-
+        slivers: [
+          SliverAppBar(
+            title: Text("Tesdt"),
+            expandedHeight: 280,
+            flexibleSpace: FlexibleSpaceBar(
+              background: 
+              Image.network(src),
+            ),
+          )
+        ],
       ),
     );
   }
