@@ -15,7 +15,6 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
     return Scaffold(
       body: Stack(
         children: [
-
           Positioned(
             left: 0,
             right: 0,
@@ -30,8 +29,7 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
                     topLeft: Radius.circular(16),
                   ),
                   image: DecorationImage(
-                    image: NetworkImage(
-                        "https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
+                    image: NetworkImage("https://cdn.pixabay.com/photo/2019/12/12/13/42/castle-4690710_960_720.jpg"),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -42,13 +40,12 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
             left: 24,
             top: 32,
             child: IconButton(
-              onPressed: (){
+              onPressed: () {
                 Navigator.of(context).pop();
               },
               icon: Icon(Icons.arrow_back_ios),
             ),
           ),
-
           Positioned(
             top: 280,
             left: 150,
@@ -61,28 +58,32 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
                 decoration: BoxDecoration(color: Colors.white),
                 child: Center(
                     child: Text(
-                      "Place Logo",
-                      style: TextStyle(),
-                    )),
+                  "Place Logo",
+                  style: TextStyle(),
+                )),
               ),
             ),
           ),
           Positioned(
-top: 320,
+            top: 320,
             left: 16,
             right: 16,
             child: ListView(
               children: [
-                Center(child: Text("DREAM WALKER PRESENTS",style: TextStyle(
-                  fontSize: 12,
-                ),)),
-                Center(child: Text("Principles of Product Design", style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.w600
-                ),)),
+                Text(
+                  "DREAM WALKER PRESENTS",
+                  style: TextStyle(
+                    fontSize: 12,
+                  ),
+                ),
+                Text(
+                  "Principles of Product Design",
+                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.w600),
+                ),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
+                  child: Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
                 )
               ],
             ),
@@ -92,26 +93,3 @@ top: 320,
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
