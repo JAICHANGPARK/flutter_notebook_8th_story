@@ -19,7 +19,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
   void initState() {
     // TODO: implement initState
     _tabController = TabController(length: 3, vsync: this);
-    _pageController = PageController(initialPage: _pageIndex);
+    _pageController = PageController(initialPage: _pageIndex, viewportFraction: 0.9, );
     super.initState();
     Future.delayed(Duration(milliseconds: 100), () {
       setState(() {
@@ -158,7 +158,6 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                                   Padding(
                                     padding: const EdgeInsets.symmetric(horizontal: 8),
                                     child: SizedBox(
-                                      width: 320,
                                       child: Card(
                                         elevation: 4,
                                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
@@ -356,7 +355,11 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                       ),
                       Expanded(
                         flex: 2,
-                        child: Placeholder(),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey
+                          ),
+                        ),
                       )
                     ],
                   ),
