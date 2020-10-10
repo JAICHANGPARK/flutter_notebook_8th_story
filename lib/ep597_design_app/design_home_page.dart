@@ -356,6 +356,7 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                       Expanded(
                         flex: 2,
                         child: Container(
+                          margin: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                           decoration: BoxDecoration(
                             color: Colors.grey
                           ),
