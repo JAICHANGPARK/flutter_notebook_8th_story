@@ -51,7 +51,7 @@ class _DesignBookDetailPageState extends State<DesignBookDetailPage> {
 
           Positioned(
             left: 24,
-            
+
             top: 32,
             child: IconButton(
               onPressed: (){
