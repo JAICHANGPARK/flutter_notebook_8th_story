@@ -363,6 +363,12 @@ class _DesignHomePageState extends State<DesignHomePage> with SingleTickerProvid
                               color: Colors.grey,
                               borderRadius: BorderRadius.circular(8)
                             ),
+                            child: Container(
+                              width: 240,
+                              decoration: BoxDecoration(
+                                color: Colors.indigo
+                              ),
+                            ),
                           ),
                         ),
                       )
